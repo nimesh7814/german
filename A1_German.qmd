@@ -1,5 +1,5 @@
 ---
-title: "🇩🇪 German A1 — Day 04"
+title: "🇩🇪 German A1"
 format:
   html:
     toc: false
@@ -260,7 +260,7 @@ format:
 ═══════════════════════════════════════════ -->
 <div id="top-navbar">
   <div id="nav-title">
-    🇩🇪 German A1 — Day 04
+    🇩🇪 German A1 Language
     <span class="subtitle">Beginner Study Notes · Click a topic to navigate</span>
   </div>
   <div id="nav-tabs">
