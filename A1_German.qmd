@@ -1,0 +1,998 @@
+---
+title: "German A1 — Complete Study Notes"
+subtitle: "Deutsch für Anfänger · Beginner's German"
+author: "A1 Language Course"
+date: today
+format:
+  pdf:
+    papersize: a4
+    geometry:
+      - top=20mm
+      - bottom=20mm
+      - left=20mm
+      - right=20mm
+    fontsize: 11pt
+    colorlinks: true
+    toc: true
+    toc-depth: 2
+    toc-title: "Table of Contents"
+    number-sections: true
+    include-in-header:
+      text: |
+        \usepackage{tcolorbox}
+        \usepackage{fontawesome5}
+        \usepackage{xcolor}
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{longtable}
+        \usepackage{multicol}
+        \definecolor{germanblue}{RGB}{0,70,150}
+        \definecolor{lightyellow}{RGB}{255,250,220}
+        \definecolor{lightgreen}{RGB}{220,255,220}
+        \definecolor{lightblue}{RGB}{220,235,255}
+        \definecolor{lightpink}{RGB}{255,220,230}
+        \definecolor{lightgray}{RGB}{245,245,245}
+        \tcbuselibrary{most}
+        \newtcolorbox{vocabbox}[1][]{colback=lightblue,colframe=germanblue,fonttitle=\bfseries,#1}
+        \newtcolorbox{grammarbox}[1][]{colback=lightgreen,colframe=green!60!black,fonttitle=\bfseries,#1}
+        \newtcolorbox{tipbox}[1][]{colback=lightyellow,colframe=orange!80!black,fonttitle=\bfseries,#1}
+        \newtcolorbox{dialogbox}[1][]{colback=lightpink,colframe=red!60!black,fonttitle=\bfseries,#1}
+        \newcommand{\ger}[1]{\textcolor{germanblue}{\textbf{#1}}}
+        \newcommand{\eng}[1]{\textit{#1}}
+        \newcommand{\pron}[1]{\texttt{[#1]}}
+---
+
+<!-- ============================================================ -->
+<!-- LEGEND -->
+<!-- ============================================================ -->
+
+\begin{tcolorbox}[colback=lightgray,colframe=black!40,title={\textbf{📖 Legend / How to Use These Notes}},fonttitle=\bfseries]
+\begin{multicols}{2}
+\begin{itemize}
+  \item \ger{Blue bold text} = German word or phrase
+  \item \eng{Italic text} = English translation / meaning
+  \item \pron{[bracket text]} = Approximate English pronunciation guide
+  \item \colorbox{lightblue}{\strut Blue box} = Vocabulary section
+  \item \colorbox{lightgreen}{\strut Green box} = Grammar rule
+  \item \colorbox{lightyellow}{\strut Yellow box} = Tips \& notes
+  \item \colorbox{lightpink}{\strut Pink box} = Dialogue / conversation
+  \item \textbf{Sie} = Formal ``you'' (strangers, elders, officials)
+  \item \textbf{du} = Informal ``you'' (friends, family, children)
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{4mm}
+
+<!-- ============================================================ -->
+<!-- SECTION 1: GREETINGS -->
+<!-- ============================================================ -->
+
+\newpage
+# Greetings \& Farewells — *Grüße und Verabschiedungen* \pron{[GROO-suh]}
+
+\begin{tipbox}[title={💡 Tip: When to use what}]
+Use \textbf{Guten Tag} or \textbf{Guten Morgen} in formal settings. With friends, \textbf{Hallo} or \textbf{Hi} works perfectly. Regional greetings like \textbf{Servus} (Austria/Bavaria) and \textbf{Moin} (Northern Germany) are common among locals.
+\end{tipbox}
+
+## Basic Greetings
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation Guide} \\
+\midrule
+Hallo / Hi / Hey & Hello / Hi & \pron{[HA-lo]} \\
+Guten Morgen & Good Morning & \pron{[GOO-ten MOR-gen]} \\
+Guten Tag & Good Day / Hello & \pron{[GOO-ten TAHK]} \\
+Guten Abend & Good Evening (after 6pm) & \pron{[GOO-ten AH-bent]} \\
+Gute Nacht & Good Night (going to sleep) & \pron{[GOO-tuh NAKHT]} \\
+\midrule
+Servus! & Hello (Austria/Bavaria) & \pron{[ZER-voos]} \\
+Grüß Gott! & Hello (Southern/Austria) & \pron{[GROOS GOT]} \\
+Moin! & Hello (Northern Germany) & \pron{[MOYN]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Farewells
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
+\midrule
+Tschüs / Ciao / Tschau & Bye / Goodbye & \pron{[CHOOSS]} \\
+Auf Wiedersehen! & Goodbye (formal) & \pron{[owf VEE-der-zay-en]} \\
+Auf Wiederhören! & Goodbye (phone) & \pron{[owf VEE-der-hoe-ren]} \\
+Bis morgen! & See you tomorrow & \pron{[biss MOR-gen]} \\
+Bis dann! & See you then & \pron{[biss DAN]} \\
+Bis später! & See you later & \pron{[biss SHPAY-ter]} \\
+Bis gleich! & See you soon & \pron{[biss GLYSH]} \\
+Bis nächste Woche! & See you next week & \pron{[biss NEKH-stuh VO-khuh]} \\
+Bis zum nächsten Mal! & See you next time & \pron{[biss tsoom NEKH-sten mahl]} \\
+\midrule
+Schönen Tag noch! & Have a nice rest of the day & \pron{[SHUR-nen TAHK nokh]} \\
+Schönes Wochenende! & Have a nice weekend & \pron{[SHUR-nes VO-khen-en-duh]} \\
+Schönen Abend noch! & Have a nice evening & \pron{[SHUR-nen AH-bent nokh]} \\
+Mach's gut! & Take care / Stay well & \pron{[MAKHS goot]} \\
+Viel Spaß! & Have fun / Enjoy! & \pron{[feel SHPASS]} \\
+Pass auf dich auf! & Take care of yourself & \pron{[pass owf dish owf]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Special Expressions
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{5cm} p{4cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
+\midrule
+Gute Besserung! & Get well soon & \pron{[GOO-tuh BES-uh-roong]} \\
+Gesundheit! & Bless you (after sneeze) & \pron{[guh-ZOONT-hyte]} \\
+Frohes neues Jahr! & Happy New Year! & \pron{[FRO-es NOY-es yahr]} \\
+Prost! / Zum Wohl! & Cheers! & \pron{[PROHST / tsoom VOL]} \\
+Entschuldigung & Excuse me (informal) & \pron{[ent-SHOOL-dee-goong]} \\
+Verzeihung & Excuse me (formal) & \pron{[fer-TSYE-oong]} \\
+Es tut mir leid & I am sorry & \pron{[es toot meer lyte]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 2: HOW ARE YOU -->
+<!-- ============================================================ -->
+
+\newpage
+# How Are You? — *Wie geht es Ihnen / dir?*
+
+\begin{dialogbox}[title={💬 Typical Conversation (Formal — Sie)}]
+\textbf{A:} \ger{Wie geht es Ihnen?} \eng{How are you?} \pron{[vee gayt es EE-nen]}\\
+\textbf{B:} \ger{Es geht mir gut, danke. Und Ihnen?} \eng{I'm doing well, thank you. And you?} \\
+\textbf{A:} \ger{Es geht mir auch gut, danke.} \eng{I'm doing well too, thank you.}
+\end{dialogbox}
+
+\begin{dialogbox}[title={💬 Typical Conversation (Informal — du)}]
+\textbf{A:} \ger{Wie geht es dir? / Wie geht's?} \eng{How are you?} \pron{[vee gayts]}\\
+\textbf{B:} \ger{[answer], danke. Und dir? / Und selbst?} \eng{[answer], thanks. And you?}
+\end{dialogbox}
+
+## Possible Answers — *Mögliche Antworten*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{5cm}}
+\toprule
+\textbf{\normalcolor German Answer} & \textbf{English Meaning} \\
+\midrule
+Sehr gut / Super / Prima / Toll / Wunderbar / Fantastisch & Very good / Excellent \\
+Gut & Good \\
+Ganz gut & Pretty good \\
+Es geht / So la la / Okay & Okay / So-so \\
+Naja, es geht & Well, it's okay \\
+Nichts besonders & Nothing special \\
+Immer das Gleiche & Always the same \\
+Nicht gut / Schlecht & Not good / Bad \\
+Sehr schlecht / Total schlimm & Very bad / Terrible \\
+Überhaupt nicht gut & Not good at all \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Common Questions — *Häufige Fragen*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
+\toprule
+\textbf{\normalcolor Question} & \textbf{English} & \textbf{Answer} \\
+\midrule
+Alles klar? & Everything okay? & Ja, alles klar. \\
+Alles in Ordnung? & All in order? & Ja, alles in Ordnung. / Ja, kein Problem. \\
+Na, wie geht's? & Hey, how's it going? & Ganz gut. / Naja, es geht. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 3: INTRODUCING YOURSELF -->
+<!-- ============================================================ -->
+
+\newpage
+# Introducing Yourself — *Sich vorstellen* \pron{[zikh FOR-shtel-en]}
+
+\begin{tipbox}[title={💡 Three ways to say your name}]
+\begin{itemize}
+  \item \ger{Ich heiße Nimesh.} \eng{My name is Nimesh.} (lit. "I am called") \pron{[ikh HY-suh]}
+  \item \ger{Ich bin Nimesh.} \eng{I am Nimesh.} \pron{[ikh bin]}
+  \item \ger{Mein Name ist Nimesh.} \eng{My name is Nimesh.} \pron{[myne NAH-muh ist]}
+\end{itemize}
+\end{tipbox}
+
+## Questions \& Answers
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\bfseries\color{germanblue}}p{4.5cm} >{\itshape}p{3cm}}
+\toprule
+\textbf{\normalcolor Formal (Sie)} & \textbf{\normalcolor Informal (du)} & \textbf{English} \\
+\midrule
+Wie heißen Sie? & Wie heißt du? & What is your name? \\
+\multicolumn{2}{l}{\ger{Ich heiße \_\_\_ / Ich bin \_\_\_ / Mein Name ist \_\_\_}} & My name is \_\_\_ \\
+\midrule
+Wie ist Ihr Vorname? & Wie ist dein Vorname? & What is your first name? \\
+Wie ist Ihr Nachname? & Wie ist dein Nachname? & What is your surname? \\
+\multicolumn{2}{l}{\ger{Mein Vorname ist \_\_\_ / Mein Nachname ist \_\_\_}} & My first/last name is \_\_\_ \\
+\midrule
+Woher kommen Sie? & Woher kommst du? & Where are you from? \\
+\multicolumn{2}{l}{\ger{Ich komme aus Sri Lanka / Deutschland / der Schweiz.}} & I come from \_\_\_ \\
+\midrule
+Wo wohnen Sie? & Wo wohnst du? & Where do you live? \\
+\multicolumn{2}{l}{\ger{Ich wohne in Münster / Berlin.}} & I live in \_\_\_ \\
+\midrule
+Wie alt sind Sie? & Wie alt bist du? & How old are you? \\
+\multicolumn{2}{l}{\ger{Ich bin 29 Jahre alt.}} & I am 29 years old. \\
+\midrule
+Wie ist Ihre/deine Adresse? & & What is your address? \\
+\multicolumn{2}{l}{\ger{Meine Adresse ist \_\_\_ / Straße, Hausnummer, Postleitzahl}} & My address is \_\_\_ \\
+\midrule
+Wie ist Ihre/deine E-Mail-Adresse? & & What is your email? \\
+\midrule
+Wie ist Ihre/deine Telefonnummer? & & What is your phone number? \\
+Wie ist Ihre/deine Handynummer? & & What is your mobile number? \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Spelling Your Name — *Buchstabieren* \pron{[bookh-SHTAH-bee-ren]}
+
+\begin{vocabbox}[title={Spelling out a name: Können Sie bitte buchstabieren? \eng{Can you please spell that?}}]
+Letters are spelled using reference words, e.g.: \ger{N wie Nordpol, I wie Inge, M wie Martha, E wie Emil, S wie Samuel, H wie Heinrich}
+\end{vocabbox}
+
+## Introducing Someone Else — *Jemanden vorstellen*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Das ist Hirani. & This is Hirani. \\
+Er/Sie kommt aus Sri Lanka. & He/She comes from Sri Lanka. \\
+Er/Sie wohnt in Kassel. & He/She lives in Kassel. \\
+Er/Sie ist 20 Jahre alt. & He/She is 20 years old. \\
+Er/Sie ist verheiratet. & He/She is married. \\
+Er/Sie hat ein Kind. & He/She has one child. \\
+Er/Sie spricht Singhalesisch, Englisch, Deutsch und etwas Tamil. & He/She speaks Sinhala, English, German and a little Tamil. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Titles — *Anrede* \pron{[AN-ray-duh]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{5cm} p{4cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Note} \\
+\midrule
+Herr & Mr. & for men \\
+Frau & Mrs. / Ms. & for women \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 4: MARITAL STATUS & FAMILY -->
+<!-- ============================================================ -->
+
+\newpage
+# Marital Status \& Family — *Familienstand \& Familie*
+
+## Marital Status — *Familienstand* \pron{[fa-MEE-lee-en-shtant]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
+\midrule
+verheiratet & married & \pron{[fer-HY-rah-tet]} \\
+nicht verheiratet / ledig / Single & not married / single & \pron{[LAY-dish]} \\
+geschieden & divorced & \pron{[guh-SHEE-den]} \\
+verwitwet & widowed & \pron{[fer-VIT-vet]} \\
+\midrule
+Sind Sie verheiratet? & Are you married? (formal) & \\
+Bist du verheiratet? & Are you married? (informal) & \\
+Ja, ich bin verheiratet. & Yes, I am married. & \\
+Nein, ich bin ledig. & No, I am single. & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Children — *Kinder* \pron{[KIN-der]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Haben Sie / Hast du Kinder? & Do you have children? \\
+Nein, ich habe keine Kinder. & No, I have no children. \\
+Ja, ich habe ein Kind. & Yes, I have one child. \\
+Ja, ich habe 2 / 3 Kinder. & Yes, I have 2 / 3 children. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 5: LANGUAGES & COUNTRIES -->
+<!-- ============================================================ -->
+
+\newpage
+# Languages \& Countries — *Sprachen \& Länder*
+
+## German-Speaking Countries
+
+\begin{vocabbox}[title={The 3 main German-speaking countries}]
+\begin{itemize}
+  \item \ger{Deutschland} \eng{Germany} \pron{[DOYTSH-lant]}
+  \item \ger{Österreich} \eng{Austria} \pron{[UR-ster-rysh]}
+  \item \ger{die Schweiz} \eng{Switzerland} \pron{[dee SHVYTS]}
+\end{itemize}
+The language \ger{Deutsch} \pron{[DOYTSH]} is spoken in all three countries and beyond.
+\end{vocabbox}
+
+## Countries with Special Articles
+
+Some countries in German require an article:
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
+\toprule
+\textbf{\normalcolor To say "from …"} & \textbf{Country} & \textbf{Pronunciation} \\
+\midrule
+aus Deutschland & from Germany & \\
+aus Sri Lanka & from Sri Lanka & \\
+aus \textbf{der} Schweiz & from Switzerland & (die Schweiz → aus der) \\
+aus \textbf{der} Ukraine & from Ukraine & \\
+aus \textbf{der} Türkei & from Turkey & \\
+aus \textbf{den} USA & from the USA & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Languages — *Sprachen* \pron{[SHPRA-khen]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{4cm} >{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{2cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Deutsch & German & Singhalesisch & Sinhala \\
+Englisch & English & Tamil & Tamil \\
+Französisch & French & Arabisch & Arabic \\
+Spanisch & Spanish & Chinesisch & Chinese \\
+Italienisch & Italian & Japanisch & Japanese \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Language Questions
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Welche Sprachen sprechen Sie? & Which languages do you speak? (formal) \\
+Welche Sprachen sprichst du? & Which languages do you speak? (informal) \\
+Ich spreche Singhalesisch, Tamil, Englisch und etwas Deutsch. & I speak Sinhala, Tamil, English and a little German. \\
+Ich lerne Deutsch. & I am learning German. \\
+Was ist Ihre Muttersprache? & What is your mother tongue? \\
+Meine Muttersprache ist \_\_\_. & My mother tongue is \_\_\_ \\
+Welche Sprache spricht man in Deutschland? & What language do they speak in Germany? \\
+In Deutschland spricht man Deutsch. & In Germany, they speak German. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 6: THE ALPHABET -->
+<!-- ============================================================ -->
+
+\newpage
+# The German Alphabet — *Das deutsche Alphabet* \pron{[al-fah-BET]}
+
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm}}
+\toprule
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & \textbf{F} \\
+\pron{ah} & \pron{bay} & \pron{tsay} & \pron{day} & \pron{ay} & \pron{ef} \\
+\midrule
+\textbf{G} & \textbf{H} & \textbf{I} & \textbf{J} & \textbf{K} & \textbf{L} \\
+\pron{gay} & \pron{hah} & \pron{ee} & \pron{yot} & \pron{kah} & \pron{el} \\
+\midrule
+\textbf{M} & \textbf{N} & \textbf{O} & \textbf{P} & \textbf{Q} & \textbf{R} \\
+\pron{em} & \pron{en} & \pron{oh} & \pron{pay} & \pron{koo} & \pron{err} \\
+\midrule
+\textbf{S} & \textbf{T} & \textbf{U} & \textbf{V} & \textbf{W} & \textbf{X} \\
+\pron{ess} & \pron{tay} & \pron{oo} & \pron{fow} & \pron{vay} & \pron{iks} \\
+\midrule
+\textbf{Y} & \textbf{Z} & \textbf{Ä} & \textbf{Ö} & \textbf{Ü} & \textbf{ß} \\
+\pron{üp-si-lon} & \pron{tset} & \pron{ay-Um} & \pron{oh-Um} & \pron{ü-Um} & \pron{ess-tset} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{tipbox}[title={💡 Special German Letters — Umlauts \& ß}]
+\begin{itemize}
+  \item \ger{Ä / ä} — "Umlaut A" — sounds like "eh" in "bed". When no umlaut available: write \textbf{ae}. Examples: \ger{Äpfel} (apples), \ger{Käse} (cheese)
+  \item \ger{Ö / ö} — "Umlaut O" — sounds like "ur" in "nurse". Write as \textbf{oe}. Examples: \ger{Möhren} (carrots), \ger{Österreich}
+  \item \ger{Ü / ü} — "Umlaut U" — like French "u". Write as \textbf{ue}. Examples: \ger{Tür} (door), \ger{müde} (tired/sleepy)
+  \item \ger{ß} — "Eszett" or "scharfes S" — pronounced like "ss". Example: \ger{heißen} (to be called), \ger{Straße} (street)
+  \item \textbf{In German, ALL nouns are written with a capital letter!}
+\end{itemize}
+\end{tipbox}
+
+<!-- ============================================================ -->
+<!-- SECTION 7: NUMBERS -->
+<!-- ============================================================ -->
+
+\newpage
+# Numbers — *Die Zahlen* \pron{[dee TSAH-len]}
+
+## 0–19
+
+\begin{center}
+\begin{tabular}{r >{\bfseries\color{germanblue}}l p{3.5cm} | r >{\bfseries\color{germanblue}}l p{3.5cm}}
+\toprule
+\textbf{\#} & \textbf{German} & \textbf{Pronunciation} & \textbf{\#} & \textbf{German} & \textbf{Pronunciation} \\
+\midrule
+0 & null & \pron{[nool]} & 10 & zehn & \pron{[tsayn]} \\
+1 & eins & \pron{[ynts]} & 11 & elf & \pron{[elf]} \\
+2 & zwei & \pron{[tsvye]} & 12 & zwölf & \pron{[tsvurlf]} \\
+3 & drei & \pron{[drye]} & 13 & dreizehn & \pron{[DRY-tsayn]} \\
+4 & vier & \pron{[feer]} & 14 & vierzehn & \pron{[FEER-tsayn]} \\
+5 & fünf & \pron{[fünf]} & 15 & fünfzehn & \pron{[FÜNF-tsayn]} \\
+6 & sechs & \pron{[zeks]} & 16 & sechzehn & \pron{[ZEKH-tsayn]} \\
+7 & sieben & \pron{[ZEE-ben]} & 17 & siebzehn & \pron{[ZEEP-tsayn]} \\
+8 & acht & \pron{[akht]} & 18 & achtzehn & \pron{[AKHT-tsayn]} \\
+9 & neun & \pron{[noyn]} & 19 & neunzehn & \pron{[NOYN-tsayn]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Tens (20–90)
+
+\begin{center}
+\begin{tabular}{r >{\bfseries\color{germanblue}}l p{4cm} | r >{\bfseries\color{germanblue}}l p{4cm}}
+\toprule
+20 & zwanzig & \pron{[TSVAN-tsikh]} & 60 & sechzig & \pron{[ZEKH-tsikh]} \\
+30 & dreißig & \pron{[DRY-sikh]} & 70 & siebzig & \pron{[ZEEP-tsikh]} \\
+40 & vierzig & \pron{[FEER-tsikh]} & 80 & achtzig & \pron{[AKHT-tsikh]} \\
+50 & fünfzig & \pron{[FÜNF-tsikh]} & 90 & neunzig & \pron{[NOYN-tsikh]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{grammarbox}[title={📐 Rule: Numbers 21–99}]
+For numbers 21–99, say: \textbf{ones + und + tens} (with "und" = "and")\\
+Examples: 21 = \ger{einundzwanzig} \pron{[YNE-oont-tsvan-tsikh]}, 45 = \ger{fünfundvierzig}, 98 = \ger{achtundneunzig}
+\end{grammarbox}
+
+## Hundreds \& Thousands
+
+\begin{center}
+\begin{tabular}{r >{\bfseries\color{germanblue}}l | r >{\bfseries\color{germanblue}}l}
+\toprule
+100 & einhundert / hundert & 1,000 & eintausend / tausend \\
+200 & zweihundert & 2,000 & zweitausend \\
+500 & fünfhundert & 10,000 & zehntausend \\
+999 & neunhundertneunundneunzig & 100,000 & hunderttausend \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Phone Numbers \& Country Codes
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Wie ist Ihre/deine Telefonnummer? & What is your phone number? \\
+Wie ist Ihre/deine Handynummer? & What is your mobile number? \\
+Meine Telefonnummer ist 0155 655 8145. & My phone number is … \\
+\midrule
+Wie ist die Vorwahl? & What is the country/area code? \\
+Die Vorwahl von Sri Lanka ist 0094. & The country code of Sri Lanka is 0094. \\
+Die Vorwahl von Deutschland ist 0049. & Germany's country code is 0049. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 8: COLORS -->
+<!-- ============================================================ -->
+
+\newpage
+# Colors — *Die Farben* \pron{[dee FAR-ben]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{3cm} >{\itshape}p{3cm} p{3cm} | >{\bfseries\color{germanblue}}p{3cm} >{\itshape}p{3cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} & \textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+rot & red & \pron{[roht]} & grün & green \\
+blau & blue & \pron{[blow]} & hellgrün & light green \\
+gelb & yellow & \pron{[gelp]} & dunkelgrün & dark green \\
+grün & green & \pron{[grün]} & hellblau & light blue \\
+schwarz & black & \pron{[shvarts]} & dunkelblau & dark blue \\
+weiß & white & \pron{[vyss]} & türkis & turquoise / cyan \\
+grau & grey & \pron{[grow]} & lila & purple \\
+braun & brown & \pron{[brown]} & orange & orange \\
+rosa / pink & pink & \pron{[ROH-za]} & bunt & colorful \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Asking About Favorite Colors
+
+\begin{dialogbox}[title={💬 Favorite Color Conversation}]
+\ger{Was ist deine Lieblingsfarbe?} \eng{What is your favorite color?} \pron{[LEEB-lings-far-buh]}\\
+\ger{Meine Lieblingsfarbe ist blau.} \eng{My favorite color is blue.}\\[4pt]
+\ger{Magst du blau?} \eng{Do you like blue?}\\
+\ger{Ja, blau mag ich.} / \ger{Ja, ich mag blau.} \eng{Yes, I like blue.}\\
+\ger{Ja, rot finde ich schön.} / \ger{Ja, mir gefällt rot.} \eng{Yes, I find red beautiful / I like red.}
+\end{dialogbox}
+
+<!-- ============================================================ -->
+<!-- SECTION 9: PERSONAL PRONOUNS -->
+<!-- ============================================================ -->
+
+\newpage
+# Personal Pronouns — *Personalpronomen* \pron{[per-zo-NAHL-pro-no-men]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l l}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Notes} \\
+\midrule
+ich & I & \pron{[ikh]} \\
+du & you (informal singular) & \pron{[doo]} — friends, family, children \\
+er & he & \pron{[air]} \\
+sie & she & \pron{[zee]} \\
+es & it & \pron{[es]} \\
+wir & we & \pron{[veer]} \\
+ihr & you (informal plural) & \pron{[eer]} — group of friends \\
+Sie & you (formal) & \pron{[zee]} — always capitalized \\
+sie & they & \pron{[zee]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{tipbox}[title={💡 Sie vs. sie vs. Sie}]
+\textbf{sie} (lowercase) = she or they | \textbf{Sie} (uppercase) = formal you. Context and verb form help distinguish them.
+\end{tipbox}
+
+<!-- ============================================================ -->
+<!-- SECTION 10: VERBS — SEIN & HABEN -->
+<!-- ============================================================ -->
+
+\newpage
+# Core Verbs — *sein* (to be) \& *haben* (to have)
+
+\begin{grammarbox}[title={⚡ Key Rule: The verb is ALWAYS in position 2 in a German sentence!}]
+\textit{Das Verb ist immer in Position 2.}\\
+Example: \ger{Gestern war ich im Büro.} (Yesterday \underline{was} I in the office.) — verb stays at position 2!
+\end{grammarbox}
+
+## *sein* — to be \pron{[zyne]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l l l l}
+\toprule
+\textbf{Pronoun} & \textbf{Present} & \textbf{Past} & \textbf{English} \\
+\midrule
+ich & bin & war & I am / was \\
+du & bist & warst & you are / were \\
+er/sie/es & ist & war & he/she/it is / was \\
+wir & sind & waren & we are / were \\
+ihr & seid & wart & you (pl.) are / were \\
+Sie/sie & sind & waren & you (formal)/they are / were \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## *haben* — to have \pron{[HAH-ben]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l l l l}
+\toprule
+\textbf{Pronoun} & \textbf{Present} & \textbf{Past} & \textbf{English} \\
+\midrule
+ich & habe & hatte & I have / had \\
+du & hast & hattest & you have / had \\
+er/sie/es & hat & hatte & he/she/it has / had \\
+wir & haben & hatten & we have / had \\
+ihr & habt & hattet & you (pl.) have / had \\
+Sie/sie & haben & hatten & you (formal)/they have / had \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Practice Sentences
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Ich habe ein Haus. & I have a house. \\
+Ich bin zu Hause. & I am at home. \\
+Sie hat viel Geld. & She has a lot of money. \\
+Er hat eine Schwester. & He has a sister. \\
+Wir sind in Sri Lanka. & We are in Sri Lanka. \\
+Ihr habt Fieber. & You (all) have a fever. \\
+\midrule
+Gestern hatte ich viel Geld, heute habe ich kein Geld. & Yesterday I had a lot of money, today I have no money. \\
+Gestern war ich im Büro, heute bin ich im Restaurant. & Yesterday I was in the office, today I am in the restaurant. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 11: REGULAR VERB CONJUGATION -->
+<!-- ============================================================ -->
+
+\newpage
+# Regular Verb Conjugation — *Verben konjugieren*
+
+\begin{grammarbox}[title={📐 Rule: 99\% of German verbs end in -en (infinitive form)}]
+To conjugate, remove \textbf{-en} from the infinitive and add the correct ending:
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l l l}
+\toprule
+\textbf{Pronoun} & \textbf{Ending} & \textbf{Example: kommen (to come)} \\
+\midrule
+ich & -e & komme \\
+du & -st & kommst \\
+er/sie/es & -t & kommt \\
+wir & -en & kommen \\
+ihr & -t & kommt \\
+Sie/sie & -en & kommen \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{grammarbox}
+
+## Conjugation Table — Common Verbs
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l l l l l}
+\toprule
+\textbf{} & \textbf{kommen} & \textbf{wohnen} & \textbf{trinken} & \textbf{gehen} \\
+& \eng{to come} & \eng{to live} & \eng{to drink} & \eng{to go} \\
+\midrule
+ich & komme & wohne & trinke & gehe \\
+du & kommst & wohnst & trinkst & gehst \\
+er/sie/es & kommt & wohnt & trinkt & geht \\
+wir & kommen & wohnen & trinken & gehen \\
+ihr & kommt & wohnt & trinkt & geht \\
+Sie/sie & kommen & wohnen & trinken & gehen \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Special Conjugation: Verbs ending in -ten, -den (arbeiten, warten, reden, baden)
+
+\begin{tipbox}[title={💡 Extra -e- rule}]
+If the verb stem ends in \textbf{-t} or \textbf{-d}, add an extra \textbf{-e-} before \textbf{-st} and \textbf{-t} endings (du, er/sie/es, ihr). This makes pronunciation easier.\\
+Example: \ger{arbeiten} → \ger{du arbeit\textbf{e}st}, \ger{er arbeit\textbf{e}t}, \ger{ihr arbeit\textbf{e}t}
+\end{tipbox}
+
+## Irregular Verbs: essen (to eat) \& lesen (to read)
+
+Some verbs change their stem vowel for du and er/sie/es:
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l l l}
+\toprule
+\textbf{} & \textbf{essen} \eng{(to eat)} & \textbf{lesen} \eng{(to read)} \\
+\midrule
+ich & esse & lese \\
+du & \textbf{isst} & \textbf{liest} \\
+er/sie/es & \textbf{isst} & \textbf{liest} \\
+wir & essen & lesen \\
+ihr & esst & lest \\
+Sie/sie & essen & lesen \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Common Verbs Vocabulary
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l p{3cm} | >{\bfseries\color{germanblue}}l >{\itshape}l}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} & \textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+kommen & to come & \pron{[KOM-en]} & lesen & to read \\
+wohnen & to live & \pron{[VOH-nen]} & lernen & to learn \\
+gehen & to go & \pron{[GAY-en]} & hören & to hear/listen \\
+trinken & to drink & \pron{[TRINK-en]} & schreiben & to write \\
+essen & to eat & \pron{[ES-en]} & sprechen & to speak \\
+kochen & to cook & \pron{[KOKH-en]} & arbeiten & to work \\
+backen & to bake & \pron{[BAK-en]} & malen & to paint/draw \\
+machen & to make/do & \pron{[MAKH-en]} & sehen & to see \\
+schlafen & to sleep & \pron{[SHLAH-fen]} & fahren & to drive/travel \\
+schwimmen & to swim & \pron{[SHVIM-en]} & fliegen & to fly \\
+duschen & to shower & \pron{[DOO-shen]} & spielen & to play \\
+laufen & to run & \pron{[LOW-fen]} & bringen & to bring \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 12: ARTICLES & NOUNS -->
+<!-- ============================================================ -->
+
+\newpage
+# Articles \& Nouns — *Artikel \& Nomen*
+
+\begin{tipbox}[title={💡 German Noun Gender Rule}]
+Every German noun has a gender: \textbf{Maskulin} (masculine), \textbf{Feminin} (feminine), or \textbf{Neutrum} (neuter). \textbf{Always learn the article with the noun!} Also, \textbf{ALL nouns are capitalized} in German.
+\end{tipbox}
+
+## Definite Articles (the)
+
+\begin{center}
+\begin{tabular}{l >{\bfseries\color{germanblue}}l >{\bfseries\color{red!60!black}}l >{\bfseries\color{green!60!black}}l >{\bfseries\color{germanblue}}l}
+\toprule
+& \textbf{Maskulin} & \textbf{Feminin} & \textbf{Neutrum} & \textbf{Plural} \\
+\midrule
+\textbf{the} & der & die & das & die \\
+\textbf{pronoun} & er (he) & sie (she) & es (it) & sie (they) \\
+\textbf{example} & der Computer & die Tasche & das Buch & die Bücher \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Indefinite \& Negative Articles (a / not a)
+
+\begin{center}
+\begin{tabular}{l >{\bfseries\color{germanblue}}l >{\bfseries\color{red!60!black}}l >{\bfseries\color{green!60!black}}l >{\bfseries\color{germanblue}}l}
+\toprule
+& \textbf{Maskulin} & \textbf{Feminin} & \textbf{Neutrum} & \textbf{Plural} \\
+\midrule
+\textbf{a} & ein & eine & ein & — (no article) \\
+\textbf{not a / no} & kein & keine & kein & keine \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Das ist / Das sind
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} >{\bfseries\color{germanblue}}p{5cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Example} \\
+\midrule
+Das ist der \_\_\_ & This is the (m.) & Das ist der Kuli. \\
+Das ist die \_\_\_ & This is the (f.) & Das ist die Tasche. \\
+Das ist das \_\_\_ & This is the (n.) & Das ist das Buch. \\
+Das sind die \_\_\_ & These are the (pl.) & Das sind die Bücher. \\
+\midrule
+Das ist ein \_\_\_ & This is a … & Das ist ein Computer. \\
+Das ist kein \_\_\_ & This is not a … & Das ist kein Computer. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 13: SCHOOL & CLASSROOM -->
+<!-- ============================================================ -->
+
+\newpage
+# School \& Classroom — *Schule \& Kursraum*
+
+## School Subjects — *Schulfächer* \pron{[SHOOL-fe-kher]}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l | >{\bfseries\color{germanblue}}l >{\itshape}l}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Englisch & English & Physik & Physics \\
+Mathematik & Maths & Biologie & Biology \\
+Deutsch & German & Informatik & IT / Computer Science \\
+Französisch & French & Geographie & Geography \\
+Spanisch & Spanish & Geschichte & History \\
+Kunst & Art & Musik & Music \\
+Sport & Sport / PE & Wissenschaft & Science \\
+Literatur & Literature & Tanzen & Dancing \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## School Timetable Phrases
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Wann hast du Mathematik? & When do you have Maths? \\
+Am Montag habe ich Deutsch. & On Monday I have German. \\
+Am Mittwoch und am Donnerstag habe ich Informatik. & On Wednesday and Thursday I have IT. \\
+Am Freitag in der vierten Stunde habe ich frei. & On Friday in the 4th period I am free. \\
+Jeden Tag habe ich … & Every day I have … \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{3cm} >{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{3cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+die erste Stunde & 1st period & die zweite Stunde & 2nd period \\
+die dritte Stunde & 3rd period & die vierte Stunde & 4th period \\
+die fünfte Stunde & 5th period & die sechste Stunde & 6th period \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Classroom Objects — *Gegenstände im Kurs*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l | >{\bfseries\color{germanblue}}l >{\itshape}l}
+\toprule
+die Tafel & blackboard & der Tisch & table \\
+die Tasche & bag & die Uhr & clock \\
+das Laptop & laptop & das Buch & book \\
+das Fenster & window & das Heft & exercise book \\
+die Tür & door & der Bleistift & pencil \\
+der Stuhl & chair & der Kuli / Stift & pen \\
+der Radiergummi & eraser & das Lineal & ruler \\
+der Rucksack & backpack & die Schere & scissors \\
+das Handy & mobile phone & der Computer & computer \\
+die Brille & glasses & das Wörterbuch & dictionary \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Classroom Language — *Sprache im Kurs*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} \\
+\midrule
+Lesen Sie. & Please read. \\
+Lesen Sie bitte vor. & Please read aloud. \\
+Noch einmal, bitte. & Once more, please. \\
+Ergänzen Sie. & Fill in the gaps. \\
+Ordnen Sie zu. & Match/sort. \\
+Ist das richtig? & Is that correct? \\
+Ich habe eine Frage. & I have a question. \\
+Wie heißt das auf Deutsch? & What is that called in German? \\
+Schreiben Sie / Notieren Sie. & Write it down / Note it. \\
+Unterstreichen Sie. & Underline it. \\
+Können Sie das wiederholen, bitte? & Can you repeat that, please? \\
+Ich verstehe das nicht. & I don't understand this. \\
+Können Sie mir helfen? & Can you help me? \\
+Darf ich kurz auf die Toilette gehen? & May I quickly go to the bathroom? \\
+Was sind die Hausaufgaben? & What is the homework? \\
+Wann ist die Prüfung? & When is the exam? \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 14: POLITE WORDS -->
+<!-- ============================================================ -->
+
+\newpage
+# Polite Words \& Thanks — *Höfliche Ausdrücke*
+
+\begin{center}
+\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{4.5cm}}
+\toprule
+\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
+\midrule
+Danke & Thank you & \pron{[DANK-uh]} \\
+Vielen Dank & Thank you very much & \pron{[FEE-len dank]} \\
+Bitte & Please / You're welcome & \pron{[BIT-uh]} \\
+Danke schön & Thank you (nice) & \pron{[DANK-uh shurn]} \\
+Bitte schön & You're welcome & \pron{[BIT-uh shurn]} \\
+Gern geschehen & My pleasure & \pron{[gern guh-SHAY-en]} \\
+Ja & Yes & \pron{[yah]} \\
+Nein / Nö / Nee & No & \pron{[nyne]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+<!-- ============================================================ -->
+<!-- SECTION 15: EMAIL & ADDRESS FORMAT -->
+<!-- ============================================================ -->
+
+\newpage
+# Email \& Address — *E-Mail \& Adresse*
+
+## Email Address Symbols
+
+\begin{center}
+\begin{tabular}{c >{\bfseries\color{germanblue}}l >{\itshape}l}
+\toprule
+\textbf{Symbol} & \textbf{German name} & \textbf{English} \\
+\midrule
+@ & at (Klammeraffe) & at \\
+. & Punkt & dot / period \\
+- & Minus & hyphen / minus \\
+\_ & Unterstrich & underscore \\
++ & Plus & plus \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+## Address Format
+
+\begin{vocabbox}[title={Address Components — Adressbestandteile}]
+\begin{itemize}
+  \item \ger{die Straße} \eng{street} + \ger{die Hausnummer} \eng{house number}
+  \item \ger{die Postleitzahl (PLZ)} \eng{postal code / zip code}
+  \item \ger{der Ort / die Stadt} \eng{city / town}
+  \item Example: \ger{Steinfurder Straße 71, Zimmer 1/\#3, Münster}
+\end{itemize}
+\end{vocabbox}
+
+<!-- ============================================================ -->
+<!-- SECTION 16: QUICK REFERENCE SUMMARY -->
+<!-- ============================================================ -->
+
+\newpage
+# Quick Reference Summary — *Schnellübersicht*
+
+\begin{multicols}{2}
+
+\subsection*{Key Question Words}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l}
+Wie? & How? \\
+Was? & What? \\
+Wer? & Who? \\
+Wo? & Where? \\
+Woher? & Where from? \\
+Wann? & When? \\
+Welche(r/s)? & Which? \\
+Wie viel? & How much/many? \\
+\end{tabular}
+
+\columnbreak
+
+\subsection*{Useful Words}
+\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l}
+und & and \\
+oder & or \\
+aber & but \\
+auch & also / too \\
+nicht & not \\
+kein/keine & no / not a \\
+etwas / ein bisschen & a little / some \\
+viel & a lot / much \\
+\end{tabular}
+
+\end{multicols}
+
+\vspace{4mm}
+
+\begin{grammarbox}[title={🗺 Countries with articles in German}]
+Most country names have no article. These require one: \ger{die Schweiz}, \ger{die Ukraine}, \ger{die Türkei}, \ger{die USA} (pl.) → always use \textbf{aus der / aus den} when saying "from".
+\end{grammarbox}
+
+\vspace{4mm}
+
+\begin{tipbox}[title={🧠 Memory Tricks}]
+\begin{itemize}
+  \item \textbf{Word order}: Verb is \textit{always} second in a German statement.
+  \item \textbf{Nouns}: Always capitalized in German — easier to spot them!
+  \item \textbf{Gender}: Learn \textit{der/die/das} with every new noun from day one.
+  \item \textbf{Pronunciation}: \textbf{w} sounds like English \textbf{v} (Wasser = VAH-ser), \textbf{v} sounds like \textbf{f} (Vater = FAH-ter), \textbf{z} sounds like \textbf{ts} (Zeit = TSYTE).
+  \item \textbf{-tion} words (Nation, Information) are the same in German and always feminine: \ger{die Nation, die Information}.
+\end{itemize}
+\end{tipbox}
