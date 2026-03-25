@@ -1,998 +1,1394 @@
 ---
-title: "German A1 — Complete Study Notes"
-subtitle: "Deutsch für Anfänger · Beginner's German"
-author: "A1 Language Course"
-date: today
+title: "🇩🇪 German A1 — Day 04"
 format:
-  pdf:
-    papersize: a4
-    geometry:
-      - top=20mm
-      - bottom=20mm
-      - left=20mm
-      - right=20mm
-    fontsize: 11pt
-    colorlinks: true
-    toc: true
-    toc-depth: 2
-    toc-title: "Table of Contents"
-    number-sections: true
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
     include-in-header:
       text: |
-        \usepackage{tcolorbox}
-        \usepackage{fontawesome5}
-        \usepackage{xcolor}
-        \usepackage{booktabs}
-        \usepackage{array}
-        \usepackage{longtable}
-        \usepackage{multicol}
-        \definecolor{germanblue}{RGB}{0,70,150}
-        \definecolor{lightyellow}{RGB}{255,250,220}
-        \definecolor{lightgreen}{RGB}{220,255,220}
-        \definecolor{lightblue}{RGB}{220,235,255}
-        \definecolor{lightpink}{RGB}{255,220,230}
-        \definecolor{lightgray}{RGB}{245,245,245}
-        \tcbuselibrary{most}
-        \newtcolorbox{vocabbox}[1][]{colback=lightblue,colframe=germanblue,fonttitle=\bfseries,#1}
-        \newtcolorbox{grammarbox}[1][]{colback=lightgreen,colframe=green!60!black,fonttitle=\bfseries,#1}
-        \newtcolorbox{tipbox}[1][]{colback=lightyellow,colframe=orange!80!black,fonttitle=\bfseries,#1}
-        \newtcolorbox{dialogbox}[1][]{colback=lightpink,colframe=red!60!black,fonttitle=\bfseries,#1}
-        \newcommand{\ger}[1]{\textcolor{germanblue}{\textbf{#1}}}
-        \newcommand{\eng}[1]{\textit{#1}}
-        \newcommand{\pron}[1]{\texttt{[#1]}}
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+          /* ── Reset & Base ─────────────────────────── */
+          *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+          body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #f0ebff 0%, #fdf4ff 40%, #ebf4ff 100%);
+            min-height: 100vh;
+            color: #2d2250;
+          }
+
+          /* ── Top Nav Bar ─────────────────────────── */
+          #top-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, #3b1fa3 0%, #7c3aed 60%, #c026d3 100%);
+            box-shadow: 0 4px 20px rgba(60,20,163,.35);
+          }
+          #nav-title {
+            padding: .6rem 1.4rem .4rem;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: .03em;
+            border-bottom: 1px solid rgba(255,255,255,.15);
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          }
+          #nav-title .subtitle {
+            font-weight: 400;
+            font-size: .8rem;
+            opacity: .75;
+            margin-left: .5rem;
+          }
+
+          /* Scrollable pill row */
+          #nav-tabs {
+            display: flex;
+            gap: 6px;
+            padding: .5rem 1rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255,255,255,.3) transparent;
+          }
+          #nav-tabs::-webkit-scrollbar { height: 4px; }
+          #nav-tabs::-webkit-scrollbar-thumb { background: rgba(255,255,255,.3); border-radius: 4px; }
+
+          .nav-tab {
+            flex-shrink: 0;
+            background: rgba(255,255,255,.15);
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,.25);
+            border-radius: 50px;
+            padding: .38rem 1.1rem;
+            font-size: .85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .18s, transform .12s, border-color .18s;
+            white-space: nowrap;
+            user-select: none;
+          }
+          .nav-tab:hover { background: rgba(255,255,255,.28); transform: translateY(-1px); }
+          .nav-tab.active { background: #fff; color: #5b21b6; border-color: #fff; }
+
+          /* Dropdown subheadings panel */
+          #nav-dropdown {
+            display: none;
+            background: rgba(40, 10, 120, .97);
+            backdrop-filter: blur(8px);
+            padding: .5rem 1rem .6rem;
+            border-top: 1px solid rgba(255,255,255,.1);
+            overflow-x: auto;
+            white-space: nowrap;
+            gap: 6px;
+          }
+          #nav-dropdown.open { display: flex; }
+          .nav-sub {
+            flex-shrink: 0;
+            color: #e9d5ff;
+            font-size: .8rem;
+            font-weight: 600;
+            padding: .28rem .9rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,.2);
+            cursor: pointer;
+            transition: background .15s;
+            white-space: nowrap;
+          }
+          .nav-sub:hover { background: rgba(255,255,255,.18); color: #fff; }
+
+          /* ── Main Content ──────────────────────────── */
+          #main-content {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 2rem 1.4rem 4rem;
+          }
+
+          /* Hero */
+          .hero {
+            background: linear-gradient(135deg,#3b1fa3,#7c3aed 55%,#c026d3);
+            color: #fff; border-radius: 20px; padding: 2.5rem 2rem 2rem;
+            margin-bottom: 2.5rem; text-align: center; position: relative; overflow: hidden;
+          }
+          .hero h1 { font-size: 2.4rem; font-weight: 900; }
+          .hero p  { font-size: 1.05rem; opacity: .88; margin: .5rem 0 0; }
+          .hero .flags { font-size: 2.4rem; letter-spacing:.3rem; margin-bottom:.5rem; }
+          .hero::before {
+            content:''; position:absolute; top:-40px; right:-40px;
+            width:200px; height:200px; border-radius:50%;
+            background:rgba(255,255,255,.07);
+          }
+
+          /* Content Sections */
+          .content-section { display: none; }
+          .content-section.visible { display: block; }
+
+          /* Headings */
+          h2 {
+            color: #5b21b6;
+            border-left: 5px solid #7c3aed;
+            padding: .3rem 0 .3rem .75rem;
+            margin-top: 2.4rem;
+            margin-bottom: .9rem;
+            font-weight: 800;
+            font-size: 1.35rem;
+          }
+          h2:first-child { margin-top: 0; }
+          h3 { color: #7c3aed; font-weight: 700; margin: 1.5rem 0 .6rem; font-size: 1.1rem; }
+          h4 { color: #9333ea; font-weight: 700; margin: 1.2rem 0 .4rem; }
+
+          /* Section anchor headings */
+          .section-title {
+            font-size: 1.9rem;
+            font-weight: 900;
+            color: #3b1fa3;
+            margin-bottom: 1.5rem;
+            padding-bottom: .6rem;
+            border-bottom: 3px solid #e9d5ff;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          }
+
+          /* Callouts */
+          .callout-tip    { border-left: 4px solid #059669 !important; background: #ecfdf5 !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+          .callout-note   { border-left: 4px solid #3b82f6 !important; background: #eff6ff !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+          .callout-important { border-left: 4px solid #f59e0b !important; background: #fffbeb !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+          .callout-warning{ border-left: 4px solid #ef4444 !important; background: #fef2f2 !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+          .callout-note p, .callout-tip p, .callout-important p, .callout-warning p { margin: 0; font-size: .92rem; }
+
+          /* Tables */
+          table { border-collapse: collapse; width: 100%; margin: 1rem 0; border-radius: 12px; overflow: hidden; font-size: .92rem; }
+          thead tr { background: linear-gradient(90deg,#5b21b6,#7c3aed); color: #fff; }
+          thead th { padding: .65rem .9rem; font-weight: 700; text-align: left; }
+          tbody tr:nth-child(even) { background: #f5f0ff; }
+          tbody tr:nth-child(odd)  { background: #fff; }
+          tbody td { padding: .5rem .9rem; border-bottom: 1px solid #e9d5ff; }
+          tbody tr:hover { background: #ede9fe; transition: background .15s; }
+
+          /* Vocab cards */
+          .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px,1fr)); gap: 12px; margin: 1.2rem 0; }
+          .vocab-card {
+            background: #fff; border-radius: 12px; padding: .9rem .7rem;
+            text-align: center; box-shadow: 0 2px 8px rgba(124,58,237,.1);
+            border: 1.5px solid #e9d5ff; transition: transform .15s, box-shadow .15s;
+          }
+          .vocab-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(124,58,237,.2); }
+          .vocab-card .de   { font-size: 1.05rem; font-weight: 800; color: #5b21b6; }
+          .vocab-card .pron { font-size: .73rem; color: #9333ea; font-family: 'Fira Code', monospace; }
+          .vocab-card .en   { font-size: .83rem; color: #6b7280; margin-top: 4px; }
+
+          /* Color swatches */
+          .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px,1fr)); gap: 10px; margin: 1rem 0; }
+          .color-swatch { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.12); text-align: center; font-weight: 700; }
+          .color-swatch .swatch-block { height: 60px; }
+          .color-swatch .swatch-label { padding: 6px 4px; font-size: .82rem; background: #fff; color: #2d2250; border-top: 1px solid #e9d5ff; }
+
+          /* Dialogue */
+          .dialogue {
+            background: linear-gradient(135deg,#ede9fe,#fdf4ff);
+            border-radius: 14px; padding: 1.2rem 1.4rem;
+            margin: 1rem 0; border: 1.5px solid #c4b5fd;
+          }
+          .dialogue p { margin: .4rem 0; font-size: .93rem; }
+          .dialogue .speaker-a { color: #5b21b6; font-weight: 700; }
+          .dialogue .speaker-b { color: #0369a1; font-weight: 700; }
+
+          /* Conjugation box */
+          .conj-box { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1rem 0; }
+          .conj-card { background: #fff; border-radius: 14px; padding: 1rem 1.2rem; border: 2px solid #e9d5ff; box-shadow: 0 2px 8px rgba(124,58,237,.08); }
+          .conj-card h5 { margin: 0 0 .6rem; color: #7c3aed; font-size: 1rem; font-weight: 800; }
+          .conj-card table { margin: 0; font-size: .87rem; }
+          .conj-card thead tr { background: #7c3aed; }
+
+          /* Number grid */
+          .num-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px,1fr)); gap: 8px; margin: 1rem 0; }
+          .num-card { background: #fff; border-radius: 10px; padding: .6rem .4rem; text-align: center; border: 1.5px solid #e9d5ff; box-shadow: 0 1px 4px rgba(124,58,237,.1); transition: transform .12s; }
+          .num-card:hover { transform: scale(1.04); }
+          .num-card .num  { font-size: 1.3rem; font-weight: 900; color: #5b21b6; }
+          .num-card .word { font-size: .75rem; color: #7c3aed; font-weight: 600; }
+          .num-card .pron { font-size: .67rem; color: #9ca3af; font-family:'Fira Code',monospace; }
+
+          /* Alphabet */
+          .alpha-table td:first-child { font-size: 1.2rem; font-weight: 900; color: #5b21b6; }
+          .alpha-table td:nth-child(2){ font-family:'Fira Code',monospace; color:#7c3aed; }
+
+          /* Seasons */
+          .season-grid { display: grid; grid-template-columns: repeat(4,1fr); gap:12px; margin:1rem 0; }
+          .season-card { border-radius:14px; padding:1rem; text-align:center; font-weight:700; }
+          .season-card .icon { font-size:2.2rem; }
+          .season-card .name { font-size:1rem; margin:.3rem 0 .1rem; }
+          .season-card .eng  { font-size:.82rem; opacity:.75; }
+          .season-card .months { font-size:.75rem; margin-top:.4rem; opacity:.65; }
+          .winter { background:linear-gradient(135deg,#bfdbfe,#eff6ff); color:#1e40af; border:2px solid #93c5fd; }
+          .spring { background:linear-gradient(135deg,#bbf7d0,#f0fdf4); color:#166534; border:2px solid #86efac; }
+          .summer { background:linear-gradient(135deg,#fef08a,#fefce8); color:#713f12; border:2px solid #fde047; }
+          .autumn { background:linear-gradient(135deg,#fed7aa,#fff7ed); color:#7c2d12; border:2px solid #fb923c; }
+
+          /* Clock */
+          .clock-row { display:flex; gap:12px; flex-wrap:wrap; margin:1rem 0; }
+          .clock-item { background:#fff; border-radius:12px; padding:.7rem 1rem; border:2px solid #e9d5ff; min-width:155px; flex:1; }
+          .clock-item .time { font-size:1.2rem; font-weight:900; color:#5b21b6; }
+          .clock-item .de   { font-size:.9rem; color:#7c3aed; font-weight:700; }
+          .clock-item .en   { font-size:.8rem; color:#6b7280; }
+
+          /* Pronoun badges */
+          .pronoun-grid { display:flex; flex-wrap:wrap; gap:10px; margin:1rem 0; }
+          .pronoun-badge { background:linear-gradient(135deg,#5b21b6,#7c3aed); color:#fff; border-radius:50px; padding:.45rem 1.1rem; font-weight:700; font-size:.9rem; display:flex; gap:.5rem; align-items:center; }
+          .pronoun-badge .eng { font-weight:400; opacity:.8; font-size:.82rem; }
+
+          /* hr */
+          hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
+
+          /* Responsive */
+          @media(max-width:640px){
+            .season-grid { grid-template-columns:1fr 1fr; }
+            .conj-box     { grid-template-columns:1fr; }
+            .hero h1 { font-size: 1.7rem; }
+          }
+        </style>
 ---
 
-<!-- ============================================================ -->
-<!-- LEGEND -->
-<!-- ============================================================ -->
-
-\begin{tcolorbox}[colback=lightgray,colframe=black!40,title={\textbf{📖 Legend / How to Use These Notes}},fonttitle=\bfseries]
-\begin{multicols}{2}
-\begin{itemize}
-  \item \ger{Blue bold text} = German word or phrase
-  \item \eng{Italic text} = English translation / meaning
-  \item \pron{[bracket text]} = Approximate English pronunciation guide
-  \item \colorbox{lightblue}{\strut Blue box} = Vocabulary section
-  \item \colorbox{lightgreen}{\strut Green box} = Grammar rule
-  \item \colorbox{lightyellow}{\strut Yellow box} = Tips \& notes
-  \item \colorbox{lightpink}{\strut Pink box} = Dialogue / conversation
-  \item \textbf{Sie} = Formal ``you'' (strangers, elders, officials)
-  \item \textbf{du} = Informal ``you'' (friends, family, children)
-\end{itemize}
-\end{multicols}
-\end{tcolorbox}
-
-\vspace{4mm}
-
-<!-- ============================================================ -->
-<!-- SECTION 1: GREETINGS -->
-<!-- ============================================================ -->
-
-\newpage
-# Greetings \& Farewells — *Grüße und Verabschiedungen* \pron{[GROO-suh]}
-
-\begin{tipbox}[title={💡 Tip: When to use what}]
-Use \textbf{Guten Tag} or \textbf{Guten Morgen} in formal settings. With friends, \textbf{Hallo} or \textbf{Hi} works perfectly. Regional greetings like \textbf{Servus} (Austria/Bavaria) and \textbf{Moin} (Northern Germany) are common among locals.
-\end{tipbox}
-
-## Basic Greetings
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation Guide} \\
-\midrule
-Hallo / Hi / Hey & Hello / Hi & \pron{[HA-lo]} \\
-Guten Morgen & Good Morning & \pron{[GOO-ten MOR-gen]} \\
-Guten Tag & Good Day / Hello & \pron{[GOO-ten TAHK]} \\
-Guten Abend & Good Evening (after 6pm) & \pron{[GOO-ten AH-bent]} \\
-Gute Nacht & Good Night (going to sleep) & \pron{[GOO-tuh NAKHT]} \\
-\midrule
-Servus! & Hello (Austria/Bavaria) & \pron{[ZER-voos]} \\
-Grüß Gott! & Hello (Southern/Austria) & \pron{[GROOS GOT]} \\
-Moin! & Hello (Northern Germany) & \pron{[MOYN]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Farewells
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
-\midrule
-Tschüs / Ciao / Tschau & Bye / Goodbye & \pron{[CHOOSS]} \\
-Auf Wiedersehen! & Goodbye (formal) & \pron{[owf VEE-der-zay-en]} \\
-Auf Wiederhören! & Goodbye (phone) & \pron{[owf VEE-der-hoe-ren]} \\
-Bis morgen! & See you tomorrow & \pron{[biss MOR-gen]} \\
-Bis dann! & See you then & \pron{[biss DAN]} \\
-Bis später! & See you later & \pron{[biss SHPAY-ter]} \\
-Bis gleich! & See you soon & \pron{[biss GLYSH]} \\
-Bis nächste Woche! & See you next week & \pron{[biss NEKH-stuh VO-khuh]} \\
-Bis zum nächsten Mal! & See you next time & \pron{[biss tsoom NEKH-sten mahl]} \\
-\midrule
-Schönen Tag noch! & Have a nice rest of the day & \pron{[SHUR-nen TAHK nokh]} \\
-Schönes Wochenende! & Have a nice weekend & \pron{[SHUR-nes VO-khen-en-duh]} \\
-Schönen Abend noch! & Have a nice evening & \pron{[SHUR-nen AH-bent nokh]} \\
-Mach's gut! & Take care / Stay well & \pron{[MAKHS goot]} \\
-Viel Spaß! & Have fun / Enjoy! & \pron{[feel SHPASS]} \\
-Pass auf dich auf! & Take care of yourself & \pron{[pass owf dish owf]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Special Expressions
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{5cm} p{4cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
-\midrule
-Gute Besserung! & Get well soon & \pron{[GOO-tuh BES-uh-roong]} \\
-Gesundheit! & Bless you (after sneeze) & \pron{[guh-ZOONT-hyte]} \\
-Frohes neues Jahr! & Happy New Year! & \pron{[FRO-es NOY-es yahr]} \\
-Prost! / Zum Wohl! & Cheers! & \pron{[PROHST / tsoom VOL]} \\
-Entschuldigung & Excuse me (informal) & \pron{[ent-SHOOL-dee-goong]} \\
-Verzeihung & Excuse me (formal) & \pron{[fer-TSYE-oong]} \\
-Es tut mir leid & I am sorry & \pron{[es toot meer lyte]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 2: HOW ARE YOU -->
-<!-- ============================================================ -->
-
-\newpage
-# How Are You? — *Wie geht es Ihnen / dir?*
-
-\begin{dialogbox}[title={💬 Typical Conversation (Formal — Sie)}]
-\textbf{A:} \ger{Wie geht es Ihnen?} \eng{How are you?} \pron{[vee gayt es EE-nen]}\\
-\textbf{B:} \ger{Es geht mir gut, danke. Und Ihnen?} \eng{I'm doing well, thank you. And you?} \\
-\textbf{A:} \ger{Es geht mir auch gut, danke.} \eng{I'm doing well too, thank you.}
-\end{dialogbox}
-
-\begin{dialogbox}[title={💬 Typical Conversation (Informal — du)}]
-\textbf{A:} \ger{Wie geht es dir? / Wie geht's?} \eng{How are you?} \pron{[vee gayts]}\\
-\textbf{B:} \ger{[answer], danke. Und dir? / Und selbst?} \eng{[answer], thanks. And you?}
-\end{dialogbox}
-
-## Possible Answers — *Mögliche Antworten*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{5cm}}
-\toprule
-\textbf{\normalcolor German Answer} & \textbf{English Meaning} \\
-\midrule
-Sehr gut / Super / Prima / Toll / Wunderbar / Fantastisch & Very good / Excellent \\
-Gut & Good \\
-Ganz gut & Pretty good \\
-Es geht / So la la / Okay & Okay / So-so \\
-Naja, es geht & Well, it's okay \\
-Nichts besonders & Nothing special \\
-Immer das Gleiche & Always the same \\
-Nicht gut / Schlecht & Not good / Bad \\
-Sehr schlecht / Total schlimm & Very bad / Terrible \\
-Überhaupt nicht gut & Not good at all \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Common Questions — *Häufige Fragen*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
-\toprule
-\textbf{\normalcolor Question} & \textbf{English} & \textbf{Answer} \\
-\midrule
-Alles klar? & Everything okay? & Ja, alles klar. \\
-Alles in Ordnung? & All in order? & Ja, alles in Ordnung. / Ja, kein Problem. \\
-Na, wie geht's? & Hey, how's it going? & Ganz gut. / Naja, es geht. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 3: INTRODUCING YOURSELF -->
-<!-- ============================================================ -->
-
-\newpage
-# Introducing Yourself — *Sich vorstellen* \pron{[zikh FOR-shtel-en]}
-
-\begin{tipbox}[title={💡 Three ways to say your name}]
-\begin{itemize}
-  \item \ger{Ich heiße Nimesh.} \eng{My name is Nimesh.} (lit. "I am called") \pron{[ikh HY-suh]}
-  \item \ger{Ich bin Nimesh.} \eng{I am Nimesh.} \pron{[ikh bin]}
-  \item \ger{Mein Name ist Nimesh.} \eng{My name is Nimesh.} \pron{[myne NAH-muh ist]}
-\end{itemize}
-\end{tipbox}
-
-## Questions \& Answers
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\bfseries\color{germanblue}}p{4.5cm} >{\itshape}p{3cm}}
-\toprule
-\textbf{\normalcolor Formal (Sie)} & \textbf{\normalcolor Informal (du)} & \textbf{English} \\
-\midrule
-Wie heißen Sie? & Wie heißt du? & What is your name? \\
-\multicolumn{2}{l}{\ger{Ich heiße \_\_\_ / Ich bin \_\_\_ / Mein Name ist \_\_\_}} & My name is \_\_\_ \\
-\midrule
-Wie ist Ihr Vorname? & Wie ist dein Vorname? & What is your first name? \\
-Wie ist Ihr Nachname? & Wie ist dein Nachname? & What is your surname? \\
-\multicolumn{2}{l}{\ger{Mein Vorname ist \_\_\_ / Mein Nachname ist \_\_\_}} & My first/last name is \_\_\_ \\
-\midrule
-Woher kommen Sie? & Woher kommst du? & Where are you from? \\
-\multicolumn{2}{l}{\ger{Ich komme aus Sri Lanka / Deutschland / der Schweiz.}} & I come from \_\_\_ \\
-\midrule
-Wo wohnen Sie? & Wo wohnst du? & Where do you live? \\
-\multicolumn{2}{l}{\ger{Ich wohne in Münster / Berlin.}} & I live in \_\_\_ \\
-\midrule
-Wie alt sind Sie? & Wie alt bist du? & How old are you? \\
-\multicolumn{2}{l}{\ger{Ich bin 29 Jahre alt.}} & I am 29 years old. \\
-\midrule
-Wie ist Ihre/deine Adresse? & & What is your address? \\
-\multicolumn{2}{l}{\ger{Meine Adresse ist \_\_\_ / Straße, Hausnummer, Postleitzahl}} & My address is \_\_\_ \\
-\midrule
-Wie ist Ihre/deine E-Mail-Adresse? & & What is your email? \\
-\midrule
-Wie ist Ihre/deine Telefonnummer? & & What is your phone number? \\
-Wie ist Ihre/deine Handynummer? & & What is your mobile number? \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Spelling Your Name — *Buchstabieren* \pron{[bookh-SHTAH-bee-ren]}
-
-\begin{vocabbox}[title={Spelling out a name: Können Sie bitte buchstabieren? \eng{Can you please spell that?}}]
-Letters are spelled using reference words, e.g.: \ger{N wie Nordpol, I wie Inge, M wie Martha, E wie Emil, S wie Samuel, H wie Heinrich}
-\end{vocabbox}
-
-## Introducing Someone Else — *Jemanden vorstellen*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Das ist Hirani. & This is Hirani. \\
-Er/Sie kommt aus Sri Lanka. & He/She comes from Sri Lanka. \\
-Er/Sie wohnt in Kassel. & He/She lives in Kassel. \\
-Er/Sie ist 20 Jahre alt. & He/She is 20 years old. \\
-Er/Sie ist verheiratet. & He/She is married. \\
-Er/Sie hat ein Kind. & He/She has one child. \\
-Er/Sie spricht Singhalesisch, Englisch, Deutsch und etwas Tamil. & He/She speaks Sinhala, English, German and a little Tamil. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Titles — *Anrede* \pron{[AN-ray-duh]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{5cm} p{4cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Note} \\
-\midrule
-Herr & Mr. & for men \\
-Frau & Mrs. / Ms. & for women \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 4: MARITAL STATUS & FAMILY -->
-<!-- ============================================================ -->
-
-\newpage
-# Marital Status \& Family — *Familienstand \& Familie*
-
-## Marital Status — *Familienstand* \pron{[fa-MEE-lee-en-shtant]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
-\midrule
-verheiratet & married & \pron{[fer-HY-rah-tet]} \\
-nicht verheiratet / ledig / Single & not married / single & \pron{[LAY-dish]} \\
-geschieden & divorced & \pron{[guh-SHEE-den]} \\
-verwitwet & widowed & \pron{[fer-VIT-vet]} \\
-\midrule
-Sind Sie verheiratet? & Are you married? (formal) & \\
-Bist du verheiratet? & Are you married? (informal) & \\
-Ja, ich bin verheiratet. & Yes, I am married. & \\
-Nein, ich bin ledig. & No, I am single. & \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Children — *Kinder* \pron{[KIN-der]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Haben Sie / Hast du Kinder? & Do you have children? \\
-Nein, ich habe keine Kinder. & No, I have no children. \\
-Ja, ich habe ein Kind. & Yes, I have one child. \\
-Ja, ich habe 2 / 3 Kinder. & Yes, I have 2 / 3 children. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 5: LANGUAGES & COUNTRIES -->
-<!-- ============================================================ -->
-
-\newpage
-# Languages \& Countries — *Sprachen \& Länder*
-
-## German-Speaking Countries
-
-\begin{vocabbox}[title={The 3 main German-speaking countries}]
-\begin{itemize}
-  \item \ger{Deutschland} \eng{Germany} \pron{[DOYTSH-lant]}
-  \item \ger{Österreich} \eng{Austria} \pron{[UR-ster-rysh]}
-  \item \ger{die Schweiz} \eng{Switzerland} \pron{[dee SHVYTS]}
-\end{itemize}
-The language \ger{Deutsch} \pron{[DOYTSH]} is spoken in all three countries and beyond.
-\end{vocabbox}
-
-## Countries with Special Articles
-
-Some countries in German require an article:
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{5cm}}
-\toprule
-\textbf{\normalcolor To say "from …"} & \textbf{Country} & \textbf{Pronunciation} \\
-\midrule
-aus Deutschland & from Germany & \\
-aus Sri Lanka & from Sri Lanka & \\
-aus \textbf{der} Schweiz & from Switzerland & (die Schweiz → aus der) \\
-aus \textbf{der} Ukraine & from Ukraine & \\
-aus \textbf{der} Türkei & from Turkey & \\
-aus \textbf{den} USA & from the USA & \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Languages — *Sprachen* \pron{[SHPRA-khen]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{4cm} >{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{2cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Deutsch & German & Singhalesisch & Sinhala \\
-Englisch & English & Tamil & Tamil \\
-Französisch & French & Arabisch & Arabic \\
-Spanisch & Spanish & Chinesisch & Chinese \\
-Italienisch & Italian & Japanisch & Japanese \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Language Questions
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Welche Sprachen sprechen Sie? & Which languages do you speak? (formal) \\
-Welche Sprachen sprichst du? & Which languages do you speak? (informal) \\
-Ich spreche Singhalesisch, Tamil, Englisch und etwas Deutsch. & I speak Sinhala, Tamil, English and a little German. \\
-Ich lerne Deutsch. & I am learning German. \\
-Was ist Ihre Muttersprache? & What is your mother tongue? \\
-Meine Muttersprache ist \_\_\_. & My mother tongue is \_\_\_ \\
-Welche Sprache spricht man in Deutschland? & What language do they speak in Germany? \\
-In Deutschland spricht man Deutsch. & In Germany, they speak German. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 6: THE ALPHABET -->
-<!-- ============================================================ -->
-
-\newpage
-# The German Alphabet — *Das deutsche Alphabet* \pron{[al-fah-BET]}
-
-\begin{center}
-\begin{tabular}{>{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{1.5cm}}
-\toprule
-\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & \textbf{F} \\
-\pron{ah} & \pron{bay} & \pron{tsay} & \pron{day} & \pron{ay} & \pron{ef} \\
-\midrule
-\textbf{G} & \textbf{H} & \textbf{I} & \textbf{J} & \textbf{K} & \textbf{L} \\
-\pron{gay} & \pron{hah} & \pron{ee} & \pron{yot} & \pron{kah} & \pron{el} \\
-\midrule
-\textbf{M} & \textbf{N} & \textbf{O} & \textbf{P} & \textbf{Q} & \textbf{R} \\
-\pron{em} & \pron{en} & \pron{oh} & \pron{pay} & \pron{koo} & \pron{err} \\
-\midrule
-\textbf{S} & \textbf{T} & \textbf{U} & \textbf{V} & \textbf{W} & \textbf{X} \\
-\pron{ess} & \pron{tay} & \pron{oo} & \pron{fow} & \pron{vay} & \pron{iks} \\
-\midrule
-\textbf{Y} & \textbf{Z} & \textbf{Ä} & \textbf{Ö} & \textbf{Ü} & \textbf{ß} \\
-\pron{üp-si-lon} & \pron{tset} & \pron{ay-Um} & \pron{oh-Um} & \pron{ü-Um} & \pron{ess-tset} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\begin{tipbox}[title={💡 Special German Letters — Umlauts \& ß}]
-\begin{itemize}
-  \item \ger{Ä / ä} — "Umlaut A" — sounds like "eh" in "bed". When no umlaut available: write \textbf{ae}. Examples: \ger{Äpfel} (apples), \ger{Käse} (cheese)
-  \item \ger{Ö / ö} — "Umlaut O" — sounds like "ur" in "nurse". Write as \textbf{oe}. Examples: \ger{Möhren} (carrots), \ger{Österreich}
-  \item \ger{Ü / ü} — "Umlaut U" — like French "u". Write as \textbf{ue}. Examples: \ger{Tür} (door), \ger{müde} (tired/sleepy)
-  \item \ger{ß} — "Eszett" or "scharfes S" — pronounced like "ss". Example: \ger{heißen} (to be called), \ger{Straße} (street)
-  \item \textbf{In German, ALL nouns are written with a capital letter!}
-\end{itemize}
-\end{tipbox}
-
-<!-- ============================================================ -->
-<!-- SECTION 7: NUMBERS -->
-<!-- ============================================================ -->
-
-\newpage
-# Numbers — *Die Zahlen* \pron{[dee TSAH-len]}
-
-## 0–19
-
-\begin{center}
-\begin{tabular}{r >{\bfseries\color{germanblue}}l p{3.5cm} | r >{\bfseries\color{germanblue}}l p{3.5cm}}
-\toprule
-\textbf{\#} & \textbf{German} & \textbf{Pronunciation} & \textbf{\#} & \textbf{German} & \textbf{Pronunciation} \\
-\midrule
-0 & null & \pron{[nool]} & 10 & zehn & \pron{[tsayn]} \\
-1 & eins & \pron{[ynts]} & 11 & elf & \pron{[elf]} \\
-2 & zwei & \pron{[tsvye]} & 12 & zwölf & \pron{[tsvurlf]} \\
-3 & drei & \pron{[drye]} & 13 & dreizehn & \pron{[DRY-tsayn]} \\
-4 & vier & \pron{[feer]} & 14 & vierzehn & \pron{[FEER-tsayn]} \\
-5 & fünf & \pron{[fünf]} & 15 & fünfzehn & \pron{[FÜNF-tsayn]} \\
-6 & sechs & \pron{[zeks]} & 16 & sechzehn & \pron{[ZEKH-tsayn]} \\
-7 & sieben & \pron{[ZEE-ben]} & 17 & siebzehn & \pron{[ZEEP-tsayn]} \\
-8 & acht & \pron{[akht]} & 18 & achtzehn & \pron{[AKHT-tsayn]} \\
-9 & neun & \pron{[noyn]} & 19 & neunzehn & \pron{[NOYN-tsayn]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Tens (20–90)
-
-\begin{center}
-\begin{tabular}{r >{\bfseries\color{germanblue}}l p{4cm} | r >{\bfseries\color{germanblue}}l p{4cm}}
-\toprule
-20 & zwanzig & \pron{[TSVAN-tsikh]} & 60 & sechzig & \pron{[ZEKH-tsikh]} \\
-30 & dreißig & \pron{[DRY-sikh]} & 70 & siebzig & \pron{[ZEEP-tsikh]} \\
-40 & vierzig & \pron{[FEER-tsikh]} & 80 & achtzig & \pron{[AKHT-tsikh]} \\
-50 & fünfzig & \pron{[FÜNF-tsikh]} & 90 & neunzig & \pron{[NOYN-tsikh]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\begin{grammarbox}[title={📐 Rule: Numbers 21–99}]
-For numbers 21–99, say: \textbf{ones + und + tens} (with "und" = "and")\\
-Examples: 21 = \ger{einundzwanzig} \pron{[YNE-oont-tsvan-tsikh]}, 45 = \ger{fünfundvierzig}, 98 = \ger{achtundneunzig}
-\end{grammarbox}
-
-## Hundreds \& Thousands
-
-\begin{center}
-\begin{tabular}{r >{\bfseries\color{germanblue}}l | r >{\bfseries\color{germanblue}}l}
-\toprule
-100 & einhundert / hundert & 1,000 & eintausend / tausend \\
-200 & zweihundert & 2,000 & zweitausend \\
-500 & fünfhundert & 10,000 & zehntausend \\
-999 & neunhundertneunundneunzig & 100,000 & hunderttausend \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Phone Numbers \& Country Codes
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Wie ist Ihre/deine Telefonnummer? & What is your phone number? \\
-Wie ist Ihre/deine Handynummer? & What is your mobile number? \\
-Meine Telefonnummer ist 0155 655 8145. & My phone number is … \\
-\midrule
-Wie ist die Vorwahl? & What is the country/area code? \\
-Die Vorwahl von Sri Lanka ist 0094. & The country code of Sri Lanka is 0094. \\
-Die Vorwahl von Deutschland ist 0049. & Germany's country code is 0049. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 8: COLORS -->
-<!-- ============================================================ -->
-
-\newpage
-# Colors — *Die Farben* \pron{[dee FAR-ben]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{3cm} >{\itshape}p{3cm} p{3cm} | >{\bfseries\color{germanblue}}p{3cm} >{\itshape}p{3cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} & \textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-rot & red & \pron{[roht]} & grün & green \\
-blau & blue & \pron{[blow]} & hellgrün & light green \\
-gelb & yellow & \pron{[gelp]} & dunkelgrün & dark green \\
-grün & green & \pron{[grün]} & hellblau & light blue \\
-schwarz & black & \pron{[shvarts]} & dunkelblau & dark blue \\
-weiß & white & \pron{[vyss]} & türkis & turquoise / cyan \\
-grau & grey & \pron{[grow]} & lila & purple \\
-braun & brown & \pron{[brown]} & orange & orange \\
-rosa / pink & pink & \pron{[ROH-za]} & bunt & colorful \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Asking About Favorite Colors
-
-\begin{dialogbox}[title={💬 Favorite Color Conversation}]
-\ger{Was ist deine Lieblingsfarbe?} \eng{What is your favorite color?} \pron{[LEEB-lings-far-buh]}\\
-\ger{Meine Lieblingsfarbe ist blau.} \eng{My favorite color is blue.}\\[4pt]
-\ger{Magst du blau?} \eng{Do you like blue?}\\
-\ger{Ja, blau mag ich.} / \ger{Ja, ich mag blau.} \eng{Yes, I like blue.}\\
-\ger{Ja, rot finde ich schön.} / \ger{Ja, mir gefällt rot.} \eng{Yes, I find red beautiful / I like red.}
-\end{dialogbox}
-
-<!-- ============================================================ -->
-<!-- SECTION 9: PERSONAL PRONOUNS -->
-<!-- ============================================================ -->
-
-\newpage
-# Personal Pronouns — *Personalpronomen* \pron{[per-zo-NAHL-pro-no-men]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l l}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Notes} \\
-\midrule
-ich & I & \pron{[ikh]} \\
-du & you (informal singular) & \pron{[doo]} — friends, family, children \\
-er & he & \pron{[air]} \\
-sie & she & \pron{[zee]} \\
-es & it & \pron{[es]} \\
-wir & we & \pron{[veer]} \\
-ihr & you (informal plural) & \pron{[eer]} — group of friends \\
-Sie & you (formal) & \pron{[zee]} — always capitalized \\
-sie & they & \pron{[zee]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\begin{tipbox}[title={💡 Sie vs. sie vs. Sie}]
-\textbf{sie} (lowercase) = she or they | \textbf{Sie} (uppercase) = formal you. Context and verb form help distinguish them.
-\end{tipbox}
-
-<!-- ============================================================ -->
-<!-- SECTION 10: VERBS — SEIN & HABEN -->
-<!-- ============================================================ -->
-
-\newpage
-# Core Verbs — *sein* (to be) \& *haben* (to have)
-
-\begin{grammarbox}[title={⚡ Key Rule: The verb is ALWAYS in position 2 in a German sentence!}]
-\textit{Das Verb ist immer in Position 2.}\\
-Example: \ger{Gestern war ich im Büro.} (Yesterday \underline{was} I in the office.) — verb stays at position 2!
-\end{grammarbox}
-
-## *sein* — to be \pron{[zyne]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l l l l}
-\toprule
-\textbf{Pronoun} & \textbf{Present} & \textbf{Past} & \textbf{English} \\
-\midrule
-ich & bin & war & I am / was \\
-du & bist & warst & you are / were \\
-er/sie/es & ist & war & he/she/it is / was \\
-wir & sind & waren & we are / were \\
-ihr & seid & wart & you (pl.) are / were \\
-Sie/sie & sind & waren & you (formal)/they are / were \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## *haben* — to have \pron{[HAH-ben]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l l l l}
-\toprule
-\textbf{Pronoun} & \textbf{Present} & \textbf{Past} & \textbf{English} \\
-\midrule
-ich & habe & hatte & I have / had \\
-du & hast & hattest & you have / had \\
-er/sie/es & hat & hatte & he/she/it has / had \\
-wir & haben & hatten & we have / had \\
-ihr & habt & hattet & you (pl.) have / had \\
-Sie/sie & haben & hatten & you (formal)/they have / had \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Practice Sentences
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{6cm} >{\itshape}p{7cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Ich habe ein Haus. & I have a house. \\
-Ich bin zu Hause. & I am at home. \\
-Sie hat viel Geld. & She has a lot of money. \\
-Er hat eine Schwester. & He has a sister. \\
-Wir sind in Sri Lanka. & We are in Sri Lanka. \\
-Ihr habt Fieber. & You (all) have a fever. \\
-\midrule
-Gestern hatte ich viel Geld, heute habe ich kein Geld. & Yesterday I had a lot of money, today I have no money. \\
-Gestern war ich im Büro, heute bin ich im Restaurant. & Yesterday I was in the office, today I am in the restaurant. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 11: REGULAR VERB CONJUGATION -->
-<!-- ============================================================ -->
-
-\newpage
-# Regular Verb Conjugation — *Verben konjugieren*
-
-\begin{grammarbox}[title={📐 Rule: 99\% of German verbs end in -en (infinitive form)}]
-To conjugate, remove \textbf{-en} from the infinitive and add the correct ending:
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l l l}
-\toprule
-\textbf{Pronoun} & \textbf{Ending} & \textbf{Example: kommen (to come)} \\
-\midrule
-ich & -e & komme \\
-du & -st & kommst \\
-er/sie/es & -t & kommt \\
-wir & -en & kommen \\
-ihr & -t & kommt \\
-Sie/sie & -en & kommen \\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{grammarbox}
-
-## Conjugation Table — Common Verbs
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l l l l l}
-\toprule
-\textbf{} & \textbf{kommen} & \textbf{wohnen} & \textbf{trinken} & \textbf{gehen} \\
-& \eng{to come} & \eng{to live} & \eng{to drink} & \eng{to go} \\
-\midrule
-ich & komme & wohne & trinke & gehe \\
-du & kommst & wohnst & trinkst & gehst \\
-er/sie/es & kommt & wohnt & trinkt & geht \\
-wir & kommen & wohnen & trinken & gehen \\
-ihr & kommt & wohnt & trinkt & geht \\
-Sie/sie & kommen & wohnen & trinken & gehen \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Special Conjugation: Verbs ending in -ten, -den (arbeiten, warten, reden, baden)
-
-\begin{tipbox}[title={💡 Extra -e- rule}]
-If the verb stem ends in \textbf{-t} or \textbf{-d}, add an extra \textbf{-e-} before \textbf{-st} and \textbf{-t} endings (du, er/sie/es, ihr). This makes pronunciation easier.\\
-Example: \ger{arbeiten} → \ger{du arbeit\textbf{e}st}, \ger{er arbeit\textbf{e}t}, \ger{ihr arbeit\textbf{e}t}
-\end{tipbox}
-
-## Irregular Verbs: essen (to eat) \& lesen (to read)
-
-Some verbs change their stem vowel for du and er/sie/es:
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l l l}
-\toprule
-\textbf{} & \textbf{essen} \eng{(to eat)} & \textbf{lesen} \eng{(to read)} \\
-\midrule
-ich & esse & lese \\
-du & \textbf{isst} & \textbf{liest} \\
-er/sie/es & \textbf{isst} & \textbf{liest} \\
-wir & essen & lesen \\
-ihr & esst & lest \\
-Sie/sie & essen & lesen \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Common Verbs Vocabulary
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l p{3cm} | >{\bfseries\color{germanblue}}l >{\itshape}l}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} & \textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-kommen & to come & \pron{[KOM-en]} & lesen & to read \\
-wohnen & to live & \pron{[VOH-nen]} & lernen & to learn \\
-gehen & to go & \pron{[GAY-en]} & hören & to hear/listen \\
-trinken & to drink & \pron{[TRINK-en]} & schreiben & to write \\
-essen & to eat & \pron{[ES-en]} & sprechen & to speak \\
-kochen & to cook & \pron{[KOKH-en]} & arbeiten & to work \\
-backen & to bake & \pron{[BAK-en]} & malen & to paint/draw \\
-machen & to make/do & \pron{[MAKH-en]} & sehen & to see \\
-schlafen & to sleep & \pron{[SHLAH-fen]} & fahren & to drive/travel \\
-schwimmen & to swim & \pron{[SHVIM-en]} & fliegen & to fly \\
-duschen & to shower & \pron{[DOO-shen]} & spielen & to play \\
-laufen & to run & \pron{[LOW-fen]} & bringen & to bring \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 12: ARTICLES & NOUNS -->
-<!-- ============================================================ -->
-
-\newpage
-# Articles \& Nouns — *Artikel \& Nomen*
-
-\begin{tipbox}[title={💡 German Noun Gender Rule}]
-Every German noun has a gender: \textbf{Maskulin} (masculine), \textbf{Feminin} (feminine), or \textbf{Neutrum} (neuter). \textbf{Always learn the article with the noun!} Also, \textbf{ALL nouns are capitalized} in German.
-\end{tipbox}
-
-## Definite Articles (the)
-
-\begin{center}
-\begin{tabular}{l >{\bfseries\color{germanblue}}l >{\bfseries\color{red!60!black}}l >{\bfseries\color{green!60!black}}l >{\bfseries\color{germanblue}}l}
-\toprule
-& \textbf{Maskulin} & \textbf{Feminin} & \textbf{Neutrum} & \textbf{Plural} \\
-\midrule
-\textbf{the} & der & die & das & die \\
-\textbf{pronoun} & er (he) & sie (she) & es (it) & sie (they) \\
-\textbf{example} & der Computer & die Tasche & das Buch & die Bücher \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Indefinite \& Negative Articles (a / not a)
-
-\begin{center}
-\begin{tabular}{l >{\bfseries\color{germanblue}}l >{\bfseries\color{red!60!black}}l >{\bfseries\color{green!60!black}}l >{\bfseries\color{germanblue}}l}
-\toprule
-& \textbf{Maskulin} & \textbf{Feminin} & \textbf{Neutrum} & \textbf{Plural} \\
-\midrule
-\textbf{a} & ein & eine & ein & — (no article) \\
-\textbf{not a / no} & kein & keine & kein & keine \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Das ist / Das sind
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} >{\bfseries\color{germanblue}}p{5cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Example} \\
-\midrule
-Das ist der \_\_\_ & This is the (m.) & Das ist der Kuli. \\
-Das ist die \_\_\_ & This is the (f.) & Das ist die Tasche. \\
-Das ist das \_\_\_ & This is the (n.) & Das ist das Buch. \\
-Das sind die \_\_\_ & These are the (pl.) & Das sind die Bücher. \\
-\midrule
-Das ist ein \_\_\_ & This is a … & Das ist ein Computer. \\
-Das ist kein \_\_\_ & This is not a … & Das ist kein Computer. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 13: SCHOOL & CLASSROOM -->
-<!-- ============================================================ -->
-
-\newpage
-# School \& Classroom — *Schule \& Kursraum*
-
-## School Subjects — *Schulfächer* \pron{[SHOOL-fe-kher]}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l | >{\bfseries\color{germanblue}}l >{\itshape}l}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Englisch & English & Physik & Physics \\
-Mathematik & Maths & Biologie & Biology \\
-Deutsch & German & Informatik & IT / Computer Science \\
-Französisch & French & Geographie & Geography \\
-Spanisch & Spanish & Geschichte & History \\
-Kunst & Art & Musik & Music \\
-Sport & Sport / PE & Wissenschaft & Science \\
-Literatur & Literature & Tanzen & Dancing \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## School Timetable Phrases
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Wann hast du Mathematik? & When do you have Maths? \\
-Am Montag habe ich Deutsch. & On Monday I have German. \\
-Am Mittwoch und am Donnerstag habe ich Informatik. & On Wednesday and Thursday I have IT. \\
-Am Freitag in der vierten Stunde habe ich frei. & On Friday in the 4th period I am free. \\
-Jeden Tag habe ich … & Every day I have … \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{3cm} >{\bfseries\color{germanblue}}p{4cm} >{\itshape}p{3cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-die erste Stunde & 1st period & die zweite Stunde & 2nd period \\
-die dritte Stunde & 3rd period & die vierte Stunde & 4th period \\
-die fünfte Stunde & 5th period & die sechste Stunde & 6th period \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Classroom Objects — *Gegenstände im Kurs*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l | >{\bfseries\color{germanblue}}l >{\itshape}l}
-\toprule
-die Tafel & blackboard & der Tisch & table \\
-die Tasche & bag & die Uhr & clock \\
-das Laptop & laptop & das Buch & book \\
-das Fenster & window & das Heft & exercise book \\
-die Tür & door & der Bleistift & pencil \\
-der Stuhl & chair & der Kuli / Stift & pen \\
-der Radiergummi & eraser & das Lineal & ruler \\
-der Rucksack & backpack & die Schere & scissors \\
-das Handy & mobile phone & der Computer & computer \\
-die Brille & glasses & das Wörterbuch & dictionary \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Classroom Language — *Sprache im Kurs*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{7cm} >{\itshape}p{6cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} \\
-\midrule
-Lesen Sie. & Please read. \\
-Lesen Sie bitte vor. & Please read aloud. \\
-Noch einmal, bitte. & Once more, please. \\
-Ergänzen Sie. & Fill in the gaps. \\
-Ordnen Sie zu. & Match/sort. \\
-Ist das richtig? & Is that correct? \\
-Ich habe eine Frage. & I have a question. \\
-Wie heißt das auf Deutsch? & What is that called in German? \\
-Schreiben Sie / Notieren Sie. & Write it down / Note it. \\
-Unterstreichen Sie. & Underline it. \\
-Können Sie das wiederholen, bitte? & Can you repeat that, please? \\
-Ich verstehe das nicht. & I don't understand this. \\
-Können Sie mir helfen? & Can you help me? \\
-Darf ich kurz auf die Toilette gehen? & May I quickly go to the bathroom? \\
-Was sind die Hausaufgaben? & What is the homework? \\
-Wann ist die Prüfung? & When is the exam? \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 14: POLITE WORDS -->
-<!-- ============================================================ -->
-
-\newpage
-# Polite Words \& Thanks — *Höfliche Ausdrücke*
-
-\begin{center}
-\begin{tabular}{>{\bfseries\color{germanblue}}p{5cm} >{\itshape}p{4cm} p{4.5cm}}
-\toprule
-\textbf{\normalcolor German} & \textbf{English} & \textbf{Pronunciation} \\
-\midrule
-Danke & Thank you & \pron{[DANK-uh]} \\
-Vielen Dank & Thank you very much & \pron{[FEE-len dank]} \\
-Bitte & Please / You're welcome & \pron{[BIT-uh]} \\
-Danke schön & Thank you (nice) & \pron{[DANK-uh shurn]} \\
-Bitte schön & You're welcome & \pron{[BIT-uh shurn]} \\
-Gern geschehen & My pleasure & \pron{[gern guh-SHAY-en]} \\
-Ja & Yes & \pron{[yah]} \\
-Nein / Nö / Nee & No & \pron{[nyne]} \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-<!-- ============================================================ -->
-<!-- SECTION 15: EMAIL & ADDRESS FORMAT -->
-<!-- ============================================================ -->
-
-\newpage
-# Email \& Address — *E-Mail \& Adresse*
-
-## Email Address Symbols
-
-\begin{center}
-\begin{tabular}{c >{\bfseries\color{germanblue}}l >{\itshape}l}
-\toprule
-\textbf{Symbol} & \textbf{German name} & \textbf{English} \\
-\midrule
-@ & at (Klammeraffe) & at \\
-. & Punkt & dot / period \\
-- & Minus & hyphen / minus \\
-\_ & Unterstrich & underscore \\
-+ & Plus & plus \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-## Address Format
-
-\begin{vocabbox}[title={Address Components — Adressbestandteile}]
-\begin{itemize}
-  \item \ger{die Straße} \eng{street} + \ger{die Hausnummer} \eng{house number}
-  \item \ger{die Postleitzahl (PLZ)} \eng{postal code / zip code}
-  \item \ger{der Ort / die Stadt} \eng{city / town}
-  \item Example: \ger{Steinfurder Straße 71, Zimmer 1/\#3, Münster}
-\end{itemize}
-\end{vocabbox}
-
-<!-- ============================================================ -->
-<!-- SECTION 16: QUICK REFERENCE SUMMARY -->
-<!-- ============================================================ -->
-
-\newpage
-# Quick Reference Summary — *Schnellübersicht*
-
-\begin{multicols}{2}
-
-\subsection*{Key Question Words}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l}
-Wie? & How? \\
-Was? & What? \\
-Wer? & Who? \\
-Wo? & Where? \\
-Woher? & Where from? \\
-Wann? & When? \\
-Welche(r/s)? & Which? \\
-Wie viel? & How much/many? \\
-\end{tabular}
-
-\columnbreak
-
-\subsection*{Useful Words}
-\begin{tabular}{>{\bfseries\color{germanblue}}l >{\itshape}l}
-und & and \\
-oder & or \\
-aber & but \\
-auch & also / too \\
-nicht & not \\
-kein/keine & no / not a \\
-etwas / ein bisschen & a little / some \\
-viel & a lot / much \\
-\end{tabular}
-
-\end{multicols}
-
-\vspace{4mm}
-
-\begin{grammarbox}[title={🗺 Countries with articles in German}]
-Most country names have no article. These require one: \ger{die Schweiz}, \ger{die Ukraine}, \ger{die Türkei}, \ger{die USA} (pl.) → always use \textbf{aus der / aus den} when saying "from".
-\end{grammarbox}
-
-\vspace{4mm}
-
-\begin{tipbox}[title={🧠 Memory Tricks}]
-\begin{itemize}
-  \item \textbf{Word order}: Verb is \textit{always} second in a German statement.
-  \item \textbf{Nouns}: Always capitalized in German — easier to spot them!
-  \item \textbf{Gender}: Learn \textit{der/die/das} with every new noun from day one.
-  \item \textbf{Pronunciation}: \textbf{w} sounds like English \textbf{v} (Wasser = VAH-ser), \textbf{v} sounds like \textbf{f} (Vater = FAH-ter), \textbf{z} sounds like \textbf{ts} (Zeit = TSYTE).
-  \item \textbf{-tion} words (Nation, Information) are the same in German and always feminine: \ger{die Nation, die Information}.
-\end{itemize}
-\end{tipbox}
+```{=html}
+<!-- ═══════════════════════════════════════════
+     TOP NAVIGATION BAR
+═══════════════════════════════════════════ -->
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 — Day 04
+    <span class="subtitle">Beginner Study Notes · Click a topic to navigate</span>
+  </div>
+  <div id="nav-tabs">
+    <div class="nav-tab active" data-section="communication" onclick="activateTab(this)">🗣️ Communication</div>
+    <div class="nav-tab" data-section="countries" onclick="activateTab(this)">🌍 Countries & Languages</div>
+    <div class="nav-tab" data-section="personal" onclick="activateTab(this)">👤 Personal Info</div>
+    <div class="nav-tab" data-section="numbers" onclick="activateTab(this)">🔢 Numbers</div>
+    <div class="nav-tab" data-section="alphabet" onclick="activateTab(this)">🔤 Alphabet</div>
+    <div class="nav-tab" data-section="colors" onclick="activateTab(this)">🎨 Colors</div>
+    <div class="nav-tab" data-section="grammar" onclick="activateTab(this)">📐 Grammar</div>
+    <div class="nav-tab" data-section="family" onclick="activateTab(this)">👨‍👩‍👧‍👦 Family</div>
+    <div class="nav-tab" data-section="school" onclick="activateTab(this)">🏫 School</div>
+    <div class="nav-tab" data-section="time" onclick="activateTab(this)">📅 Time & Calendar</div>
+  </div>
+  <div id="nav-dropdown"></div>
+</div>
+
+<!-- Section sub-heading map -->
+<script>
+const subheadings = {
+  communication: [
+    { label: "Introductions", id: "sub-introductions" },
+    { label: "Greetings & Farewells", id: "sub-greetings" },
+    { label: "Feelings & Wellbeing", id: "sub-feelings" },
+  ],
+  countries: [
+    { label: "Countries (Länder)", id: "sub-countries-list" },
+    { label: "Languages (Sprachen)", id: "sub-languages" },
+  ],
+  personal: [
+    { label: "Names & Forms of Address", id: "sub-names" },
+    { label: "Age, Address & Contact", id: "sub-contact" },
+    { label: "Marital Status & Children", id: "sub-marital" },
+  ],
+  numbers: [
+    { label: "0 – 19", id: "sub-num0" },
+    { label: "20 – 99", id: "sub-num20" },
+    { label: "Hundreds & Thousands", id: "sub-numlarge" },
+  ],
+  alphabet: [
+    { label: "The German Alphabet", id: "sub-alpha" },
+    { label: "Special Characters (Umlauts)", id: "sub-umlauts" },
+  ],
+  colors: [
+    { label: "Color Swatches", id: "sub-colorswatches" },
+    { label: "Talking About Colors", id: "sub-colortalk" },
+  ],
+  grammar: [
+    { label: "sein & haben", id: "sub-seinhabn" },
+    { label: "Regular Verb Conjugation", id: "sub-regverbs" },
+    { label: "Articles & Nouns", id: "sub-articles" },
+    { label: "Plural Forms", id: "sub-plurals" },
+    { label: "Possessive Pronouns", id: "sub-poss" },
+    { label: "Personal Pronouns", id: "sub-persp" },
+  ],
+  family: [
+    { label: "Family Members", id: "sub-familymembers" },
+    { label: "Possessive Sentences", id: "sub-familysent" },
+  ],
+  school: [
+    { label: "School Vocabulary", id: "sub-schoolvocab" },
+    { label: "School Subjects", id: "sub-subjects" },
+    { label: "Timetable Phrases", id: "sub-timetable" },
+    { label: "Classroom Objects", id: "sub-classobj" },
+    { label: "Classroom Language", id: "sub-classlang" },
+  ],
+  time: [
+    { label: "Days of the Week", id: "sub-days" },
+    { label: "Months", id: "sub-months" },
+    { label: "Seasons", id: "sub-seasons" },
+    { label: "Time Expressions", id: "sub-timeexpr" },
+    { label: "Telling the Time", id: "sub-telling" },
+  ],
+};
+
+function activateTab(el) {
+  // Deactivate all tabs
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+
+  const sec = el.dataset.section;
+
+  // Show / hide sections
+  document.querySelectorAll('.content-section').forEach(s => s.classList.remove('visible'));
+  const target = document.getElementById('sec-' + sec);
+  if (target) { target.classList.add('visible'); }
+
+  // Build dropdown
+  const dropdown = document.getElementById('nav-dropdown');
+  const subs = subheadings[sec] || [];
+  if (subs.length) {
+    dropdown.innerHTML = subs.map(s =>
+      `<div class="nav-sub" onclick="scrollToSub('${s.id}')">${s.label}</div>`
+    ).join('');
+    dropdown.classList.add('open');
+  } else {
+    dropdown.innerHTML = '';
+    dropdown.classList.remove('open');
+  }
+
+  // Scroll to top of content
+  window.scrollTo({ top: document.getElementById('top-navbar').offsetHeight - 2, behavior: 'smooth' });
+}
+
+function scrollToSub(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const offset = document.getElementById('top-navbar').offsetHeight + 12;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
+// Init: show first section on load
+document.addEventListener('DOMContentLoaded', () => {
+  const firstTab = document.querySelector('.nav-tab[data-section="communication"]');
+  if (firstTab) activateTab(firstTab);
+});
+</script>
+
+<!-- ═══════════════════════════════════════════
+     MAIN CONTENT
+═══════════════════════════════════════════ -->
+<div id="main-content">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🇩🇪 German A1 — Day 04</h1>
+    <p>Complete Study Notes · Beginner Level · With Pronunciation &amp; English Translations</p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Communication ═══════════════════════════ -->
+
+::: {#sec-communication .content-section .visible}
+
+## Introductions {#sub-introductions}
+
+> **💡 DID YOU KNOW?** German is spoken in three countries: **Deutschland** (Germany), **Österreich** (Austria), and **die Schweiz** (Switzerland). Together called the **DACH** countries.
+
+### Formal (Sie) vs. Informal (du)
+
+::: {.callout-note}
+**Sie** (capital S) = formal/polite, used with strangers, elders, professionals.  
+**du** = informal/casual, used with friends, family, children.
+:::
+
+| Context | Question | Pronunciation | Meaning |
+|---------|----------|---------------|---------|
+| Formal (Sie) | Wie heißen Sie? | [vee HY-sen zee] | What is your name? |
+| Informal (du) | Wie heißt du? | [vee HYst doo] | What is your name? |
+| Answer 1 | Ich heiße ___. | [ikh HY-seh] | My name is ___. |
+| Answer 2 | Ich bin ___. | [ikh bin] | I am ___. |
+| Answer 3 | Mein Name ist ___. | [mine NAH-meh ist] | My name is ___. |
+
+### Asking Where Someone Is From
+
+| Type | German | Pronunciation | English |
+|------|--------|---------------|---------|
+| Formal Q | Woher kommen Sie? | [vo-HAIR KOM-en zee] | Where do you come from? |
+| Informal Q | Woher kommst du? | [vo-HAIR komst doo] | Where do you come from? |
+| Answer | Ich komme aus ___. | [ikh KOM-eh owss] | I come from ___. |
+
+### Asking Where Someone Lives
+
+| Type | German | Pronunciation | English |
+|------|--------|---------------|---------|
+| Formal Q | Wo wohnen Sie? | [vo VO-nen zee] | Where do you live? |
+| Informal Q | Wo wohnst du? | [vo vohnst doo] | Where do you live? |
+| Answer | Ich wohne in ___. | [ikh VO-neh in] | I live in ___. |
+
+### Self-Introduction Example
+
+::: {.dialogue}
+<p><span class="speaker-a">Ich heiße Nimesh.</span> — My name is Nimesh.</p>
+<p><span class="speaker-a">Ich komme aus Sri Lanka.</span> — I come from Sri Lanka.</p>
+<p><span class="speaker-a">Ich wohne in Münster.</span> — I live in Münster.</p>
+:::
+
+---
+
+## Greetings & Farewells {#sub-greetings}
+
+### Greetings by Time of Day
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Hallo!</div><div class="pron">[HA-lo]</div><div class="en">Hello – anytime</div></div>
+  <div class="vocab-card"><div class="de">Guten Morgen</div><div class="pron">[GOO-ten MOR-gen]</div><div class="en">Good morning</div></div>
+  <div class="vocab-card"><div class="de">Guten Tag</div><div class="pron">[GOO-ten tahk]</div><div class="en">Good day – daytime</div></div>
+  <div class="vocab-card"><div class="de">Guten Abend</div><div class="pron">[GOO-ten AH-bent]</div><div class="en">Good evening (after 6pm)</div></div>
+  <div class="vocab-card"><div class="de">Gute Nacht</div><div class="pron">[GOO-teh nakht]</div><div class="en">Good night – only at bedtime</div></div>
+  <div class="vocab-card"><div class="de">Servus!</div><div class="pron">[ZER-voos]</div><div class="en">Hi/Bye – Austrian/Bavarian</div></div>
+  <div class="vocab-card"><div class="de">Grüß Gott!</div><div class="pron">[groos got]</div><div class="en">Hello – Southern Germany</div></div>
+  <div class="vocab-card"><div class="de">Moin!</div><div class="pron">[moyn]</div><div class="en">Hello – Northern Germany</div></div>
+</div>
+```
+
+### Farewells
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Tschüs / Tschau / Ciao! | [choos / chow] | Bye |
+| Auf Wiedersehen! | [owf VEE-der-zayn] | Goodbye (formal) |
+| Bis morgen! | [biss MOR-gen] | See you tomorrow |
+| Bis dann! | [biss dan] | See you then |
+| Bis später! | [biss SHPAY-ter] | See you later |
+| Bis gleich! | [biss glysh] | See you soon |
+| Schönes Wochenende! | [SHUR-nes VO-khen-en-deh] | Have a nice weekend! |
+| Mach's gut! | [makhs goot] | Take care |
+
+### Useful Everyday Expressions
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Danke / Vielen Dank | [DAN-keh] | Thank you / Many thanks |
+| Bitte | [BIT-eh] | Please / You're welcome |
+| Entschuldigung | [ent-SHOOL-dee-goong] | Excuse me |
+| Es tut mir leid | [ess toot meer lyte] | I am sorry |
+| Gesundheit! | [geh-ZOONT-hyte] | Bless you (after sneezing) |
+| Prost! / Zum Wohl! | [prohst / tsoom vohl] | Cheers! |
+| Ja / Nein | [yah / nine] | Yes / No |
+
+---
+
+## Feelings & Wellbeing {#sub-feelings}
+
+### How to Ask
+
+| German | Pronunciation | English | Register |
+|--------|---------------|---------|----------|
+| Wie geht es Ihnen? | [vee gayt ess EE-nen] | How are you? | Formal |
+| Wie geht es dir? | [vee gayt ess deer] | How are you? | Informal |
+| Wie geht's? | [vee gayts] | How's it going? | Casual |
+| Alles klar? | [AL-less klahr] | Everything OK? | Informal |
+
+### Sample Conversation
+
+::: {.dialogue}
+<p><span class="speaker-a">A: Wie geht es Ihnen?</span> — How are you?</p>
+<p><span class="speaker-b">B: Es geht mir gut, danke. Und Ihnen?</span> — I'm fine, thank you. And you?</p>
+<p><span class="speaker-a">A: Es geht mir auch gut, danke.</span> — I'm also fine, thank you.</p>
+:::
+
+### Responses — from 😊 to 😞
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Fantastisch!</div><div class="en">Fantastic!</div></div>
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Sehr gut!</div><div class="en">Very good!</div></div>
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Super / Prima</div><div class="en">Great!</div></div>
+  <div class="vocab-card" style="border-color:#3b82f6"><div class="de">Gut</div><div class="en">Good</div></div>
+  <div class="vocab-card" style="border-color:#3b82f6"><div class="de">Ganz gut</div><div class="en">Pretty good</div></div>
+  <div class="vocab-card" style="border-color:#f59e0b"><div class="de">Es geht</div><div class="en">Okay / So-so</div></div>
+  <div class="vocab-card" style="border-color:#f59e0b"><div class="de">So la la</div><div class="en">So-so</div></div>
+  <div class="vocab-card" style="border-color:#ef4444"><div class="de">Nicht gut</div><div class="en">Not good</div></div>
+  <div class="vocab-card" style="border-color:#ef4444"><div class="de">Sehr schlecht</div><div class="en">Very bad</div></div>
+</div>
+```
+
+::: {.callout-tip}
+**'auch'** = also/too.  **'Und dir?'** (informal) / **'Und Ihnen?'** (formal) = And you?
+:::
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Countries ═══════════════════════════ -->
+
+::: {#sec-countries .content-section}
+
+## Countries (Länder) {#sub-countries-list}
+
+::: {.callout-note}
+Most countries have **NO article**. Exceptions: **die Schweiz**, **die Türkei**, **die Ukraine**, **die USA** (plural → den USA).
+:::
+
+| German | Pronunciation | English | Ich komme aus... |
+|--------|---------------|---------|-----------------|
+| Deutschland | [DOYCH-lant] | Germany | ... Deutschland |
+| Österreich | [OH-ster-rike] | Austria | ... Österreich |
+| die Schweiz | [dee shvites] | Switzerland | ... **der** Schweiz |
+| die Türkei | [dee tuer-KY] | Turkey | ... **der** Türkei |
+| die Ukraine | [dee oo-KRAY-neh] | Ukraine | ... **der** Ukraine |
+| die USA | [dee oo-es-AH] | USA | ... **den** USA |
+| Sri Lanka | [shree LAN-kah] | Sri Lanka | ... Sri Lanka |
+| England | [ENG-lant] | England | ... England |
+
+---
+
+## Languages (Sprachen) {#sub-languages}
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Deutsch</div><div class="pron">[doych]</div><div class="en">German</div></div>
+  <div class="vocab-card"><div class="de">Englisch</div><div class="pron">[ENG-lish]</div><div class="en">English</div></div>
+  <div class="vocab-card"><div class="de">Französisch</div><div class="pron">[fran-TSUR-zish]</div><div class="en">French</div></div>
+  <div class="vocab-card"><div class="de">Spanisch</div><div class="pron">[SHPAH-nish]</div><div class="en">Spanish</div></div>
+  <div class="vocab-card"><div class="de">Singhalesisch</div><div class="pron">[zing-hah-LAY-zish]</div><div class="en">Sinhala</div></div>
+  <div class="vocab-card"><div class="de">Tamil</div><div class="pron">[TAH-mil]</div><div class="en">Tamil</div></div>
+</div>
+```
+
+### Asking About Languages
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Welche Sprachen sprechen Sie? | [VEL-kheh SHPRAH-khen SHPREKH-en zee] | Which languages do you speak? (formal) |
+| Welche Sprachen sprichst du? | [VEL-kheh SHPRAH-khen shprikhst doo] | Which languages do you speak? (informal) |
+| Ich spreche Deutsch und etwas Englisch. | [ikh SHPREKH-eh...ET-vass] | I speak German and a little English. |
+| Was ist Ihre Muttersprache? | [vass ist EE-reh MOO-ter-shprah-kheh] | What is your mother tongue? |
+
+::: {.callout-tip}
+**'etwas'** or **'ein bisschen'** = a little.  
+*'Ich spreche ein bisschen Deutsch.'* — I speak a little German.
+:::
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Personal Info ═══════════════════════════ -->
+
+::: {#sec-personal .content-section}
+
+## Names & Forms of Address {#sub-names}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| der Vorname | [dare FOR-nah-meh] | First / Given name |
+| der Nachname / Familienname | [NAHKH-nah-meh] | Surname / Last name |
+| Frau | [frow] | Ms. / Mrs. |
+| Herr | [hair] | Mr. |
+| Wie ist Ihr Vorname? | [vee ist eer FOR-nah-meh] | What is your first name? (formal) |
+| Mein Vorname ist ___. | [mine FOR-nah-meh ist] | My first name is ___. |
+
+---
+
+## Age, Address & Contact {#sub-contact}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Wie alt sind Sie? | [vee alt zint zee] | How old are you? (formal) |
+| Wie alt bist du? | [vee alt bist doo] | How old are you? (informal) |
+| Ich bin 29 Jahre alt. | [ikh bin...YAH-reh alt] | I am 29 years old. |
+| die Straße | [dee SHTRAH-seh] | Street |
+| die Hausnummer | [dee HOWS-noo-mer] | House number |
+| die Postleitzahl (PLZ) | [dee POST-lite-tsahl] | Postal code |
+| die Telefonnummer | [dee teh-leh-FON-noo-mer] | Phone number |
+| die Handynummer | [dee HEN-dee-noo-mer] | Mobile number |
+| die E-Mail-Adresse | [dee ee-MAIL ah-DRESS-eh] | Email address |
+| @ = at | [ET] | at sign |
+| . = Punkt | [poonkt] | dot |
+
+---
+
+## Marital Status & Children {#sub-marital}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Sind Sie verheiratet? | [zint zee fer-HY-rah-tet] | Are you married? (formal) |
+| Ja, ich bin verheiratet. | [yah, ikh bin] | Yes, I am married. |
+| Nein, ich bin ledig. | [nine, ikh bin LAY-dikh] | No, I am single. |
+| geschieden | [geh-SHEE-den] | divorced |
+| verwitwet | [fer-VIT-vet] | widowed |
+| Haben Sie Kinder? | [HAH-ben zee KIN-der] | Do you have children? (formal) |
+| Nein, ich habe keine Kinder. | [nine, ikh HAH-beh KY-neh] | No, I have no children. |
+| Ja, ich habe zwei Kinder. | [yah, ikh HAH-beh tsvye] | Yes, I have two children. |
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Numbers ═══════════════════════════ -->
+
+::: {#sec-numbers .content-section}
+
+## 0 – 19 {#sub-num0}
+
+```{=html}
+<div class="num-grid">
+  <div class="num-card"><div class="num">0</div><div class="word">null</div><div class="pron">[nool]</div></div>
+  <div class="num-card"><div class="num">1</div><div class="word">eins</div><div class="pron">[ines]</div></div>
+  <div class="num-card"><div class="num">2</div><div class="word">zwei</div><div class="pron">[tsvye]</div></div>
+  <div class="num-card"><div class="num">3</div><div class="word">drei</div><div class="pron">[drye]</div></div>
+  <div class="num-card"><div class="num">4</div><div class="word">vier</div><div class="pron">[feer]</div></div>
+  <div class="num-card"><div class="num">5</div><div class="word">fünf</div><div class="pron">[fuenf]</div></div>
+  <div class="num-card"><div class="num">6</div><div class="word">sechs</div><div class="pron">[zeks]</div></div>
+  <div class="num-card"><div class="num">7</div><div class="word">sieben</div><div class="pron">[ZEE-ben]</div></div>
+  <div class="num-card"><div class="num">8</div><div class="word">acht</div><div class="pron">[akht]</div></div>
+  <div class="num-card"><div class="num">9</div><div class="word">neun</div><div class="pron">[noyn]</div></div>
+  <div class="num-card"><div class="num">10</div><div class="word">zehn</div><div class="pron">[tsayn]</div></div>
+  <div class="num-card"><div class="num">11</div><div class="word">elf</div><div class="pron">[elf]</div></div>
+  <div class="num-card"><div class="num">12</div><div class="word">zwölf</div><div class="pron">[tsvurlf]</div></div>
+  <div class="num-card"><div class="num">13</div><div class="word">dreizehn</div><div class="pron">[DRYE-tsayn]</div></div>
+  <div class="num-card"><div class="num">14</div><div class="word">vierzehn</div><div class="pron">[FEER-tsayn]</div></div>
+  <div class="num-card"><div class="num">15</div><div class="word">fünfzehn</div><div class="pron">[FUENF-tsayn]</div></div>
+  <div class="num-card"><div class="num">16</div><div class="word">sechzehn</div><div class="pron">[ZEKH-tsayn]</div></div>
+  <div class="num-card"><div class="num">17</div><div class="word">siebzehn</div><div class="pron">[ZEEP-tsayn]</div></div>
+  <div class="num-card"><div class="num">18</div><div class="word">achtzehn</div><div class="pron">[AHKHT-tsayn]</div></div>
+  <div class="num-card"><div class="num">19</div><div class="word">neunzehn</div><div class="pron">[NOYN-tsayn]</div></div>
+</div>
+```
+
+::: {.callout-warning}
+⚠️ **16 = sechzehn** (NOT sechszehn — the 's' drops!) · **17 = siebzehn** (NOT siebenzehn — the 'en' drops!)
+:::
+
+---
+
+## 20 – 99 {#sub-num20}
+
+::: {.callout-note}
+German builds compound numbers by saying the **unit FIRST**, then **'und'**, then the ten.  
+**21 = einundzwanzig** (one-and-twenty) — opposite to English!
+:::
+
+| # | German | Pronunciation |
+|---|--------|---------------|
+| 20 | zwanzig | [TSVAN-tsikh] |
+| 30 | dreißig | [DRY-ssikh] — special spelling! |
+| 40 | vierzig | [FEER-tsikh] |
+| 50 | fünfzig | [FUENF-tsikh] |
+| 60 | sechzig | [ZEKH-tsikh] |
+| 70 | siebzig | [ZEEP-tsikh] |
+| 80 | achtzig | [AHKH-tsikh] |
+| 90 | neunzig | [NOYN-tsikh] |
+| 21 | einundzwanzig | [INE-oont-tsvan-tsikh] |
+| 35 | fünfunddreißig | [FUENF-oont-dry-ssikh] |
+| 99 | neunundneunzig | [NOYN-oont-noyn-tsikh] |
+
+---
+
+## Hundreds & Thousands {#sub-numlarge}
+
+| # | German |
+|---|--------|
+| 100 | einhundert / hundert |
+| 200 | zweihundert |
+| 1,000 | eintausend / tausend |
+| 10,000 | zehntausend |
+| 100,000 | hunderttausend |
+| 123 | einhundertdreiundzwanzig |
+| 5,732 | fünftausend siebenhundert zweiunddreißig |
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Alphabet ═══════════════════════════ -->
+
+::: {#sec-alphabet .content-section}
+
+## The German Alphabet {#sub-alpha}
+
+::: {.callout-note}
+German has **26 standard letters** plus **4 special characters**: Ä/ä, Ö/ö, Ü/ü (Umlauts) and **ß** (Eszett).  
+**ALL nouns are capitalized** in German, regardless of position in the sentence!
+:::
+
+```{=html}
+<table class="alpha-table">
+<thead><tr><th>Letter</th><th>German Name</th><th>Letter</th><th>German Name</th><th>Letter</th><th>German Name</th></tr></thead>
+<tbody>
+<tr><td>A a</td><td>ah</td><td>J j</td><td>yot</td><td>S s</td><td>ess</td></tr>
+<tr><td>B b</td><td>beh</td><td>K k</td><td>kah</td><td>T t</td><td>teh</td></tr>
+<tr><td>C c</td><td>tseh</td><td>L l</td><td>ell</td><td>U u</td><td>oo</td></tr>
+<tr><td>D d</td><td>deh</td><td>M m</td><td>emm</td><td>V v</td><td>fow</td></tr>
+<tr><td>E e</td><td>eh</td><td>N n</td><td>enn</td><td>W w</td><td>veh</td></tr>
+<tr><td>F f</td><td>eff</td><td>O o</td><td>oh</td><td>X x</td><td>iks</td></tr>
+<tr><td>G g</td><td>geh</td><td>P p</td><td>peh</td><td>Y y</td><td>üp-si-lon</td></tr>
+<tr><td>H h</td><td>hah</td><td>Q q</td><td>koo</td><td>Z z</td><td>tset</td></tr>
+<tr><td>I i</td><td>ee</td><td>R r</td><td>err</td><td></td><td></td></tr>
+</tbody>
+</table>
+```
+
+---
+
+## Special Characters (Umlauts & ß) {#sub-umlauts}
+
+| Character | Name | Sounds like | Examples | Keyboard alternative |
+|-----------|------|-------------|----------|----------------------|
+| **Ä / ä** | A-Umlaut | 'e' in 'bed' | Äpfel (apples), Käse (cheese) | ä → **ae** |
+| **Ö / ö** | O-Umlaut | 'u' in 'burn' | Möhren (carrots), Österreich | ö → **oe** |
+| **Ü / ü** | U-Umlaut | French 'u' | Tür (door), müde (tired) | ü → **ue** |
+| **ß** | Eszett / scharfes S | double 's' | heißen, Straße, groß | ß → **ss** |
+
+::: {.callout-tip}
+No umlaut on your keyboard? Write: **ä = ae**, **ö = oe**, **ü = ue**, **ß = ss**.  
+Example: Müller = **Mueller**, Straße = **Strasse**.
+:::
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Colors ═══════════════════════════ -->
+
+::: {#sec-colors .content-section}
+
+## Color Swatches {#sub-colorswatches}
+
+```{=html}
+<div class="color-grid">
+  <div class="color-swatch"><div class="swatch-block" style="background:#e53e3e"></div><div class="swatch-label"><b>rot</b> · red</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#3182ce"></div><div class="swatch-label"><b>blau</b> · blue</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#38a169"></div><div class="swatch-label"><b>grün</b> · green</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#d69e2e"></div><div class="swatch-label"><b>gelb</b> · yellow</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#1a202c"></div><div class="swatch-label"><b>schwarz</b> · black</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#f7fafc;border:1px solid #e2e8f0"></div><div class="swatch-label"><b>weiß</b> · white</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#718096"></div><div class="swatch-label"><b>grau</b> · grey</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#92400e"></div><div class="swatch-label"><b>braun</b> · brown</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#ed8936"></div><div class="swatch-label"><b>orange</b> · orange</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#ed64a6"></div><div class="swatch-label"><b>rosa/pink</b> · pink</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#805ad5"></div><div class="swatch-label"><b>lila</b> · purple</div></div>
+  <div class="color-swatch"><div class="swatch-block" style="background:#0bc5ea"></div><div class="swatch-label"><b>türkis</b> · turquoise</div></div>
+</div>
+```
+
+::: {.callout-tip}
+Add **hell-** (light) or **dunkel-** (dark) as a prefix:  
+**hellgrün** = light green · **dunkelblau** = dark blue
+:::
+
+---
+
+## Talking About Colors {#sub-colortalk}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Was ist deine Lieblingsfarbe? | [vass ist DY-neh LEEB-lings-far-beh] | What is your favourite color? |
+| Meine Lieblingsfarbe ist ___. | [MY-neh LEEB-lings-far-beh ist] | My favourite color is ___. |
+| Magst du blau? | [mahkst doo blow] | Do you like blue? |
+| Ja, blau mag ich. | [yah blow mahk ikh] | Yes, I like blue. |
+| Ja, mir gefällt rot. | [yah meer geh-FELT roht] | Yes, I like red. |
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Grammar ═══════════════════════════ -->
+
+::: {#sec-grammar .content-section}
+
+## Verbs: sein & haben {#sub-seinhabn}
+
+::: {.callout-important}
+**'sein'** (to be) and **'haben'** (to have) are the **TWO most important verbs** in German. They are irregular — memorize them!
+:::
+
+```{=html}
+<div class="conj-box">
+  <div class="conj-card">
+    <h5>🔵 sein — to be (Present)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th><th>Pron.</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>bin</b></td><td>[bin]</td></tr>
+        <tr><td>du</td><td><b>bist</b></td><td>[bist]</td></tr>
+        <tr><td>er/sie/es</td><td><b>ist</b></td><td>[ist]</td></tr>
+        <tr><td>wir</td><td><b>sind</b></td><td>[zint]</td></tr>
+        <tr><td>ihr</td><td><b>seid</b></td><td>[zite]</td></tr>
+        <tr><td>Sie/sie</td><td><b>sind</b></td><td>[zint]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🟢 haben — to have (Present)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th><th>Pron.</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>habe</b></td><td>[HAH-beh]</td></tr>
+        <tr><td>du</td><td><b>hast</b></td><td>[hast]</td></tr>
+        <tr><td>er/sie/es</td><td><b>hat</b></td><td>[hat]</td></tr>
+        <tr><td>wir</td><td><b>haben</b></td><td>[HAH-ben]</td></tr>
+        <tr><td>ihr</td><td><b>habt</b></td><td>[hahbt]</td></tr>
+        <tr><td>Sie/sie</td><td><b>haben</b></td><td>[HAH-ben]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🔵 waren — were (Past)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>war</b> [var]</td></tr>
+        <tr><td>du</td><td><b>warst</b> [varst]</td></tr>
+        <tr><td>er/sie/es</td><td><b>war</b> [var]</td></tr>
+        <tr><td>wir</td><td><b>waren</b> [VAH-ren]</td></tr>
+        <tr><td>ihr</td><td><b>wart</b> [vart]</td></tr>
+        <tr><td>Sie/sie</td><td><b>waren</b> [VAH-ren]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🟢 hatten — had (Past)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>hatte</b> [HAT-eh]</td></tr>
+        <tr><td>du</td><td><b>hattest</b> [HAT-test]</td></tr>
+        <tr><td>er/sie/es</td><td><b>hatte</b> [HAT-eh]</td></tr>
+        <tr><td>wir</td><td><b>hatten</b> [HAT-en]</td></tr>
+        <tr><td>ihr</td><td><b>hattet</b> [HAT-tet]</td></tr>
+        <tr><td>Sie/sie</td><td><b>hatten</b> [HAT-en]</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+```
+
+::: {.callout-tip}
+**WORD ORDER RULE:** The verb is **ALWAYS in position 2** in a main sentence.  
+✅ *'Gestern war ich...'* — NOT ❌ *'Gestern ich war...'*
+:::
+
+---
+
+## Regular Verb Conjugation {#sub-regverbs}
+
+::: {.callout-note}
+**99% of German verbs** end in **'-en'** in their infinitive form.  
+Remove **'-en'** → get the **stem** → add the correct ending.
+:::
+
+### Standard Endings
+
+| Pronoun | Ending | kommen | wohnen | trinken |
+|---------|--------|--------|--------|---------|
+| ich | **-e** | komme | wohne | trinke |
+| du | **-st** | kommst | wohnst | trinkst |
+| er/sie/es | **-t** | kommt | wohnt | trinkt |
+| wir | **-en** | kommen | wohnen | trinken |
+| ihr | **-t** | kommt | wohnt | trinkt |
+| Sie/sie | **-en** | kommen | wohnen | trinken |
+
+### Verbs Ending in -t / -d (insert extra 'e')
+
+::: {.callout-note}
+If the verb stem ends in **'t'** or **'d'**, insert an extra **'e'** before -st and -t.
+:::
+
+| Pronoun | arbeiten | warten | reden |
+|---------|----------|--------|-------|
+| ich | arbeite | warte | rede |
+| du | arbeit**e**st | wart**e**st | red**e**st |
+| er/sie/es | arbeit**e**t | wart**e**t | red**e**t |
+| wir | arbeiten | warten | reden |
+| ihr | arbeitet | wartet | redet |
+| Sie/sie | arbeiten | warten | reden |
+
+### Irregular Verbs (stem-vowel change)
+
+| Pronoun | essen (eat) | lesen (read) | heißen (be named) |
+|---------|-------------|--------------|-------------------|
+| ich | esse | lese | heiße |
+| du | **isst** | **liest** | heißt |
+| er/sie/es | **isst** | **liest** | heißt |
+| wir | essen | lesen | heißen |
+| ihr | esst | lest | heißt |
+| Sie/sie | essen | lesen | heißen |
+
+### Common Verb Vocabulary
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">kommen</div><div class="pron">[KOM-en]</div><div class="en">to come</div></div>
+  <div class="vocab-card"><div class="de">wohnen</div><div class="pron">[VO-nen]</div><div class="en">to live / reside</div></div>
+  <div class="vocab-card"><div class="de">gehen</div><div class="pron">[GAY-en]</div><div class="en">to go</div></div>
+  <div class="vocab-card"><div class="de">trinken</div><div class="pron">[TRIN-ken]</div><div class="en">to drink</div></div>
+  <div class="vocab-card"><div class="de">essen</div><div class="pron">[ES-sen]</div><div class="en">to eat</div></div>
+  <div class="vocab-card"><div class="de">kochen</div><div class="pron">[KO-khen]</div><div class="en">to cook</div></div>
+  <div class="vocab-card"><div class="de">schlafen</div><div class="pron">[SHLAH-fen]</div><div class="en">to sleep</div></div>
+  <div class="vocab-card"><div class="de">sprechen</div><div class="pron">[SHPREKH-en]</div><div class="en">to speak</div></div>
+  <div class="vocab-card"><div class="de">arbeiten</div><div class="pron">[AR-by-ten]</div><div class="en">to work</div></div>
+  <div class="vocab-card"><div class="de">lesen</div><div class="pron">[LAY-zen]</div><div class="en">to read</div></div>
+  <div class="vocab-card"><div class="de">schreiben</div><div class="pron">[SHRY-ben]</div><div class="en">to write</div></div>
+  <div class="vocab-card"><div class="de">lernen</div><div class="pron">[LAIR-nen]</div><div class="en">to learn</div></div>
+  <div class="vocab-card"><div class="de">fahren</div><div class="pron">[FAH-ren]</div><div class="en">to drive</div></div>
+  <div class="vocab-card"><div class="de">fliegen</div><div class="pron">[FLEE-gen]</div><div class="en">to fly</div></div>
+  <div class="vocab-card"><div class="de">spielen</div><div class="pron">[SHPEE-len]</div><div class="en">to play</div></div>
+  <div class="vocab-card"><div class="de">schwimmen</div><div class="pron">[SHVIM-en]</div><div class="en">to swim</div></div>
+</div>
+```
+
+---
+
+## Articles & Nouns {#sub-articles}
+
+::: {.callout-important}
+German nouns have **THREE genders**: **Maskulin** (der), **Feminin** (die), **Neutrum** (das).  
+The plural article for ALL genders is **'die'**. Always learn the article with every noun!
+:::
+
+```{=html}
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:1rem 0;">
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#dbeafe,#eff6ff);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #93c5fd;">
+    <div style="font-size:2rem;font-weight:900;color:#1d4ed8">der</div>
+    <div style="font-size:.9rem;color:#1e40af;font-weight:700">Maskulin (m)</div>
+    <div style="font-size:.8rem;color:#3b82f6;margin-top:.4rem">der Computer<br>der Mann</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#fce7f3,#fdf2f8);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #f9a8d4;">
+    <div style="font-size:2rem;font-weight:900;color:#be185d">die</div>
+    <div style="font-size:.9rem;color:#9d174d;font-weight:700">Feminin (f)</div>
+    <div style="font-size:.8rem;color:#ec4899;margin-top:.4rem">die Tasche<br>die Frau</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#d1fae5,#ecfdf5);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #6ee7b7;">
+    <div style="font-size:2rem;font-weight:900;color:#065f46">das</div>
+    <div style="font-size:.9rem;color:#047857;font-weight:700">Neutrum (n)</div>
+    <div style="font-size:.8rem;color:#10b981;margin-top:.4rem">das Buch<br>das Kind</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#fef3c7,#fffbeb);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #fcd34d;">
+    <div style="font-size:2rem;font-weight:900;color:#92400e">die</div>
+    <div style="font-size:.9rem;color:#78350f;font-weight:700">Plural (pl)</div>
+    <div style="font-size:.8rem;color:#d97706;margin-top:.4rem">die Bücher<br>die Kinder</div>
+  </div>
+</div>
+```
+
+### Definite / Indefinite / Negation
+
+| | Maskulin | Feminin | Neutrum | Plural |
+|--|----------|---------|---------|--------|
+| **the** (definite) | **der** | **die** | **das** | **die** |
+| **a/an** (indefinite) | **ein** | **eine** | **ein** | — |
+| **not a / no** (negation) | **kein** | **keine** | **kein** | **keine** |
+
+### Example Sentences
+
+| German | English |
+|--------|---------|
+| Das ist **der** Kuli. / Das ist **ein** Kuli. / Das ist **kein** Kuli. | This is the pen. / a pen. / not a pen. (m) |
+| Das ist **die** Tasche. / Das ist **eine** Tasche. / Das ist **keine** Tasche. | This is the bag. / a bag. / not a bag. (f) |
+| Das sind **die** Bücher. / Das sind **keine** Bücher. | These are the books. / not books. (pl) |
+
+---
+
+## Plural Forms {#sub-plurals}
+
+::: {.callout-note}
+German plurals are complex — many patterns exist. Best approach: **learn each noun WITH its plural from the start**.
+:::
+
+| Pattern | Rule | Singular | Plural | English |
+|---------|------|----------|--------|---------|
+| **-e** | Add -e | der Tag | die Tage | day/days |
+| **-̈e** | Umlaut + -e | der Arzt | die Ärzte | doctor/doctors |
+| **-er** | Add -er | das Kind | die Kinder | child/children |
+| **-̈er** | Umlaut + -er | das Buch | die Bücher | book/books |
+| **-n** | Add -n | die Stunde | die Stunden | hour/hours |
+| **-en** | Add -en | der Patient | die Patienten | patient/patients |
+| **-s** | Add -s | das Auto | die Autos | car/cars |
+| **ü--** | Umlaut only | die Mutter | die Mütter | mother/mothers |
+| **—** | No change | der Kilometer | die Kilometer | kilometer/s |
+
+---
+
+## Possessive Pronouns {#sub-poss}
+
+::: {.callout-note}
+Possessive pronouns change their endings depending on the **gender** of the noun that follows.
+:::
+
+| Pronoun | Meaning | der (m) | die (f) | das (n) | die (pl) |
+|---------|---------|---------|---------|---------|---------|
+| ich | I / my | mein | meine | mein | meine |
+| du | you / your | dein | deine | dein | deine |
+| er | he / his | sein | seine | sein | seine |
+| sie | she / her | ihr | ihre | ihr | ihre |
+| wir | we / our | unser | unsere | unser | unsere |
+| ihr | you all / your | euer | eure | euer | eure |
+| **Sie** | you (formal) | **Ihr** | **Ihre** | **Ihr** | **Ihre** |
+| sie | they / their | ihr | ihre | ihr | ihre |
+
+---
+
+## Personal Pronouns {#sub-persp}
+
+```{=html}
+<div class="pronoun-grid">
+  <div class="pronoun-badge">ich <span class="eng">I</span></div>
+  <div class="pronoun-badge">du <span class="eng">you (informal)</span></div>
+  <div class="pronoun-badge">er <span class="eng">he</span></div>
+  <div class="pronoun-badge">sie <span class="eng">she</span></div>
+  <div class="pronoun-badge">es <span class="eng">it</span></div>
+  <div class="pronoun-badge">wir <span class="eng">we</span></div>
+  <div class="pronoun-badge">ihr <span class="eng">you all</span></div>
+  <div class="pronoun-badge" style="background:linear-gradient(135deg,#059669,#10b981)">Sie <span class="eng">you (FORMAL)</span></div>
+  <div class="pronoun-badge">sie <span class="eng">they</span></div>
+</div>
+```
+
+::: {.callout-warning}
+**'Sie'** (formal you, capital S) sounds exactly like **'sie'** (she/they, lowercase s).  
+Context and verb conjugation tell them apart.
+:::
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Family ═══════════════════════════ -->
+
+::: {#sec-family .content-section}
+
+## Family Members {#sub-familymembers}
+
+```{=html}
+<div style="background:linear-gradient(135deg,#fdf4ff,#ede9fe);border-radius:16px;padding:1.4rem;margin:1rem 0;border:2px solid #e9d5ff;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;">
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">👨 der Vater / Papa</div><div style="font-size:.82rem;color:#6b7280">father · die Eltern (parents)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👩 die Mutter / Mama</div><div style="font-size:.82rem;color:#6b7280">mother · die Eltern (parents)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">👦 der Bruder</div><div style="font-size:.82rem;color:#6b7280">brother · die Geschwister (siblings)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👧 die Schwester</div><div style="font-size:.82rem;color:#6b7280">sister · die Geschwister (siblings)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">👴 der Großvater / Opa</div><div style="font-size:.82rem;color:#6b7280">grandfather · die Großeltern</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👵 die Großmutter / Oma</div><div style="font-size:.82rem;color:#6b7280">grandmother · die Großeltern</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">👦 der Sohn</div><div style="font-size:.82rem;color:#6b7280">son · die Kinder (children)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👧 die Tochter</div><div style="font-size:.82rem;color:#6b7280">daughter · die Kinder (children)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">🤵 der Ehemann</div><div style="font-size:.82rem;color:#6b7280">husband · das Ehepaar (couple)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👰 die Ehefrau</div><div style="font-size:.82rem;color:#6b7280">wife · das Ehepaar (couple)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">🧑 der Onkel</div><div style="font-size:.82rem;color:#6b7280">uncle · die Verwandten (relatives)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👩 die Tante</div><div style="font-size:.82rem;color:#6b7280">aunt · die Verwandten (relatives)</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">🧑 der Cousin</div><div style="font-size:.82rem;color:#6b7280">male cousin</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👩 die Cousine</div><div style="font-size:.82rem;color:#6b7280">female cousin</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #3b82f6">
+      <div style="font-weight:800;color:#1d4ed8">🧑 der Neffe</div><div style="font-size:.82rem;color:#6b7280">nephew</div>
+    </div>
+    <div style="background:#fff;border-radius:10px;padding:.7rem 1rem;border-left:4px solid #ec4899">
+      <div style="font-weight:800;color:#be185d">👧 die Nichte</div><div style="font-size:.82rem;color:#6b7280">niece</div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## Possessive Sentences {#sub-familysent}
+
+| German | English |
+|--------|---------|
+| Das ist meine Mutter. | This is my mother. |
+| Das ist unser Vater. | This is our father. |
+| Das ist dein Bruder. | This is your brother. |
+| Das sind ihre Eltern. | These are their parents. |
+| Das ist sein Onkel. | This is his uncle. |
+| Das ist mein Buch. | This is my book. |
+| Das ist unser Haus. | This is our house. |
+| Das ist meine Brille. | This is my glasses. |
+| Das ist mein Kind. | This is my child. |
+
+:::
+
+<!-- ═══════════════════════════ SECTION: School ═══════════════════════════ -->
+
+::: {#sec-school .content-section}
+
+## School Vocabulary {#sub-schoolvocab}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| die Schule | [dee SHOO-leh] | school |
+| das Fach / die Fächer | [dass fakh / dee FEH-kher] | subject / subjects |
+| der Stundenplan | [dare SHTOON-den-plan] | timetable |
+| die Stunde | [dee SHTOON-deh] | period (1 hour) |
+| die Pause | [dee POW-zeh] | break / interval |
+| die Klasse | [dee KLAS-seh] | class |
+| frei | [fry] | free (no class) |
+
+---
+
+## School Subjects {#sub-subjects}
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Mathematik</div><div class="en">Mathematics</div></div>
+  <div class="vocab-card"><div class="de">Deutsch</div><div class="en">German</div></div>
+  <div class="vocab-card"><div class="de">Englisch</div><div class="en">English</div></div>
+  <div class="vocab-card"><div class="de">Französisch</div><div class="en">French</div></div>
+  <div class="vocab-card"><div class="de">Spanisch</div><div class="en">Spanish</div></div>
+  <div class="vocab-card"><div class="de">Geographie</div><div class="en">Geography</div></div>
+  <div class="vocab-card"><div class="de">Geschichte</div><div class="en">History</div></div>
+  <div class="vocab-card"><div class="de">Physik</div><div class="en">Physics</div></div>
+  <div class="vocab-card"><div class="de">Chemie</div><div class="en">Chemistry</div></div>
+  <div class="vocab-card"><div class="de">Biologie</div><div class="en">Biology</div></div>
+  <div class="vocab-card"><div class="de">Informatik</div><div class="en">IT / Computer Science</div></div>
+  <div class="vocab-card"><div class="de">Kunst</div><div class="en">Art</div></div>
+  <div class="vocab-card"><div class="de">Musik</div><div class="en">Music</div></div>
+  <div class="vocab-card"><div class="de">Sport</div><div class="en">Physical Education</div></div>
+  <div class="vocab-card"><div class="de">Religion</div><div class="en">Religious Studies</div></div>
+  <div class="vocab-card"><div class="de">Literatur</div><div class="en">Literature</div></div>
+</div>
+```
+
+---
+
+## Talking About Your Timetable {#sub-timetable}
+
+| German | English |
+|--------|---------|
+| Am Montag habe ich zwei Stunden Religion. | On Monday I have two periods of Religion. |
+| Wann hast du Mathematik? | When do you have Mathematics? |
+| Am Montag in der ersten Stunde habe ich ___. | On Monday in the first period I have ___. |
+| Am Freitag in der vierten Stunde habe ich frei. | On Friday in the fourth period I have a free period. |
+| Jeden Tag habe ich ___. | Every day I have ___. |
+
+### Ordinal Numbers for Periods
+
+| Ordinal | German | English |
+|---------|--------|---------|
+| 1. | erste(n) | first |
+| 2. | zweite(n) | second |
+| 3. | dritte(n) | third |
+| 4. | vierte(n) | fourth |
+| 5. | fünfte(n) | fifth |
+| 6. | sechste(n) | sixth |
+| 7. | siebte(n) | seventh |
+| 8. | achte(n) | eighth |
+
+---
+
+## Classroom Objects {#sub-classobj}
+
+| German | Article | English | German | Article | English |
+|--------|---------|---------|--------|---------|---------|
+| Tafel | die | blackboard | Stift | der | pen/marker |
+| Tasche | die | bag | Bleistift | der | pencil |
+| Laptop | das | laptop | Radiergummi | der | eraser |
+| Fenster | das | window | Tisch | der | table |
+| Tür | die | door | Stuhl | der | chair |
+| Kuli | der | ballpoint pen | Uhr | die | clock |
+| Buch | das | book | Heft | das | notebook |
+| Rucksack | der | backpack | Lineal | das | ruler |
+| Computer | der | computer | Handy | das | mobile phone |
+
+---
+
+## Classroom Language {#sub-classlang}
+
+| German | English |
+|--------|---------|
+| Lesen Sie bitte vor. | Please read aloud. |
+| Noch einmal, bitte. | Once more, please. |
+| Ergänzen Sie. | Fill in / Complete. |
+| Wie heißt das auf Deutsch? | How do you say that in German? |
+| Können Sie das wiederholen, bitte? | Can you repeat that, please? |
+| Ich verstehe das nicht. | I don't understand that. |
+| Ich brauche Hilfe. | I need help. |
+| Was sind die Hausaufgaben? | What is the homework? |
+| Wann ist die Pause? | When is the break? |
+| Darf ich kurz auf die Toilette gehen? | May I quickly go to the toilet? |
+
+:::
+
+<!-- ═══════════════════════════ SECTION: Time & Calendar ═══════════════════════════ -->
+
+::: {#sec-time .content-section}
+
+## Days of the Week {#sub-days}
+
+::: {.callout-note}
+Days of the week are all **masculine (der)**. Use without an article.  
+To say **'on Monday'**: use **'am Montag'** (am = an + dem).
+:::
+
+| German | Pronunciation | English | Short |
+|--------|---------------|---------|-------|
+| (der) Montag | [MON-tahk] | Monday | Mo |
+| (der) Dienstag | [DEENS-tahk] | Tuesday | Di |
+| (der) Mittwoch | [MIT-vokh] | Wednesday | Mi |
+| (der) Donnerstag | [DON-ners-tahk] | Thursday | Do |
+| (der) Freitag | [FRY-tahk] | Friday | Fr |
+| (der) Samstag | [ZAM-stahk] | Saturday | Sa |
+| (der) Sonntag | [ZON-tahk] | Sunday | So |
+| das Wochenende | [VO-khen-en-deh] | weekend | |
+
+---
+
+## Months {#sub-months}
+
+::: {.callout-note}
+Months are **masculine (der)**. Use **'im Januar'** to say 'in January'.
+:::
+
+```{=html}
+<div class="num-grid">
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Jan</div><div class="word">Januar</div></div>
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Feb</div><div class="word">Februar</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Mär</div><div class="word">März</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Apr</div><div class="word">April</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Mai</div><div class="word">Mai</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Jun</div><div class="word">Juni</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Jul</div><div class="word">Juli</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Aug</div><div class="word">August</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Sep</div><div class="word">September</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Okt</div><div class="word">Oktober</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Nov</div><div class="word">November</div></div>
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Dez</div><div class="word">Dezember</div></div>
+</div>
+```
+
+---
+
+## Seasons {#sub-seasons}
+
+```{=html}
+<div class="season-grid">
+  <div class="season-card winter">
+    <div class="icon">❄️</div>
+    <div class="name">der Winter</div>
+    <div class="eng">winter</div>
+    <div class="months">Dez · Jan · Feb</div>
+  </div>
+  <div class="season-card spring">
+    <div class="icon">🌸</div>
+    <div class="name">der Frühling</div>
+    <div class="eng">spring</div>
+    <div class="months">Mär · Apr · Mai</div>
+  </div>
+  <div class="season-card summer">
+    <div class="icon">☀️</div>
+    <div class="name">der Sommer</div>
+    <div class="eng">summer</div>
+    <div class="months">Jun · Jul · Aug</div>
+  </div>
+  <div class="season-card autumn">
+    <div class="icon">🍂</div>
+    <div class="name">der Herbst</div>
+    <div class="eng">autumn / fall</div>
+    <div class="months">Sep · Okt · Nov</div>
+  </div>
+</div>
+```
+
+::: {.callout-tip}
+All four seasons are **masculine (der)**. Use **'im Sommer'**, **'im Winter'** etc.  
+**'In welchem Monat hast du Geburtstag?'** = In which month is your birthday?
+:::
+
+---
+
+## Useful Time Expressions {#sub-timeexpr}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| heute | [HOY-teh] | today |
+| morgen | [MOR-gen] | tomorrow |
+| übermorgen | [UE-ber-mor-gen] | day after tomorrow |
+| gestern | [GES-tern] | yesterday |
+| vorgestern | [FOR-ges-tern] | day before yesterday |
+| diese Woche | [DEE-zeh VO-kheh] | this week |
+| nächste Woche | [NEKH-steh VO-kheh] | next week |
+| letzte Woche | [LETS-teh VO-kheh] | last week |
+| am Montag | [am MON-tahk] | on Monday |
+| im Januar | [im YAH-noo-ar] | in January |
+
+---
+
+## Telling the Time {#sub-telling}
+
+### Asking the Time
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Wie spät ist es? | [vee shpayt ist ess] | What time is it? |
+| Um wie viel Uhr ist es jetzt? | [oom vee feel oor ist ess yetst] | At what time is it now? |
+| Es ist ___. | [ess ist] | It is ___. |
+
+### Official Time (24-hour clock)
+
+| Time | German | English |
+|------|--------|---------|
+| 8:00 | Es ist acht Uhr. | It is 8 o'clock. |
+| 8:05 | Es ist acht Uhr fünf. | It is 8:05. |
+| 8:15 | Es ist acht Uhr fünfzehn. | It is 8:15. |
+| 8:30 | Es ist acht Uhr dreißig. | It is 8:30. |
+| 13:00 | Es ist dreizehn Uhr. | It is 1pm. |
+
+### Informal Time (12-hour with words)
+
+::: {.callout-warning}
+**⚠️ CRITICAL:** **'halb acht'** = **7:30**, NOT 8:30!  
+It means *'half [on the way to] eight'*.
+:::
+
+```{=html}
+<div class="clock-row">
+  <div class="clock-item"><div class="time">7:30</div><div class="de">halb acht</div><div class="en">half [to] eight → 7:30!</div></div>
+  <div class="clock-item"><div class="time">8:15</div><div class="de">Viertel nach acht</div><div class="en">quarter past eight</div></div>
+  <div class="clock-item"><div class="time">8:45</div><div class="de">Viertel vor neun</div><div class="en">quarter to nine</div></div>
+  <div class="clock-item"><div class="time">8:05</div><div class="de">fünf nach acht</div><div class="en">five past eight</div></div>
+  <div class="clock-item"><div class="time">8:55</div><div class="de">fünf vor neun</div><div class="en">five to nine</div></div>
+</div>
+```
+
+### Time Periods of the Day
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| der Morgen / früh | [MOR-gen / frue] | morning |
+| der Vormittag | [FOR-mit-tahk] | before noon |
+| der Mittag | [MIT-tahk] | noon |
+| der Nachmittag | [NAHKH-mit-tahk] | afternoon |
+| der Abend | [AH-bent] | evening |
+| die Nacht | [nakht] | night |
+| die Mitternacht | [MIT-ter-nakht] | midnight |
+
+:::
+
+```{=html}
+<!-- Footer -->
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  🎉 <strong>Herzlichen Glückwunsch</strong> — you've reviewed all of Day 04! Keep practising every day. <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```
