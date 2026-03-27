@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎯 Hobbies</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>/* ── Reset & Base ─────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(160deg, #f0ebff 0%, #fdf4ff 40%, #ebf4ff 100%);
+  min-height: 100vh;
+  color: #2d2250;
+}
+
+/* ── Top Nav Bar ─────────────────────────── */
+#top-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #3b1fa3 0%, #7c3aed 60%, #c026d3 100%);
+  box-shadow: 0 4px 20px rgba(60,20,163,.35);
+}
+#nav-title {
+  padding: .6rem 1.4rem .4rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: .03em;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+#nav-title .subtitle {
+  font-weight: 400;
+  font-size: .8rem;
+  opacity: .75;
+  margin-left: .5rem;
+}
+#nav-tabs {
+  display: flex;
+  gap: 6px;
+  padding: .5rem 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.3) transparent;
+}
+#nav-tabs::-webkit-scrollbar { height: 4px; }
+#nav-tabs::-webkit-scrollbar-thumb { background: rgba(255,255,255,.3); border-radius: 4px; }
+.nav-tab {
+  flex-shrink: 0;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,.25);
+  border-radius: 50px;
+  padding: .38rem 1.1rem;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .18s, transform .12s, border-color .18s;
+  white-space: nowrap;
+  user-select: none;
+}
+.nav-tab:hover { background: rgba(255,255,255,.28); transform: translateY(-1px); }
+.nav-tab.active { background: #fff; color: #5b21b6; border-color: #fff; }
+#nav-dropdown {
+  display: none;
+  background: rgba(40, 10, 120, .97);
+  backdrop-filter: blur(8px);
+  padding: .5rem 1rem .6rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 6px;
+}
+#nav-dropdown.open { display: flex; }
+.nav-sub {
+  flex-shrink: 0;
+  color: #e9d5ff;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .28rem .9rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,.2);
+  cursor: pointer;
+  transition: background .15s;
+  white-space: nowrap;
+}
+.nav-sub:hover { background: rgba(255,255,255,.18); color: #fff; }
+
+/* ── Main Content ──────────────────────────── */
+#main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem 1.4rem 4rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg,#3b1fa3,#7c3aed 55%,#c026d3);
+  color: #fff; border-radius: 20px; padding: 2.5rem 2rem 2rem;
+  margin-bottom: 2.5rem; text-align: center; position: relative; overflow: hidden;
+}
+.hero h1 { font-size: 2.4rem; font-weight: 900; }
+.hero p  { font-size: 1.05rem; opacity: .88; margin: .5rem 0 0; }
+.hero .flags { font-size: 2.4rem; letter-spacing:.3rem; margin-bottom:.5rem; }
+.hero::before {
+  content:''; position:absolute; top:-40px; right:-40px;
+  width:200px; height:200px; border-radius:50%;
+  background:rgba(255,255,255,.07);
+}
+
+/* Content Sections */
+.content-section { display: none; }
+.content-section.visible { display: block; }
+
+/* ── German Topic Banner ─────────────────── */
+.topic-banner {
+  background: linear-gradient(135deg, #ede9fe, #fdf4ff);
+  border: 2px solid #c4b5fd;
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.topic-banner .de-word {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #5b21b6;
+}
+.topic-banner .de-article {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #9333ea;
+  background: #e9d5ff;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-right: 4px;
+}
+.topic-banner .en-word {
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: italic;
+}
+.topic-banner .pron-word {
+  font-size: .85rem;
+  color: #9333ea;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Headings */
+h2 {
+  color: #5b21b6;
+  border-left: 5px solid #7c3aed;
+  padding: .3rem 0 .3rem .75rem;
+  margin-top: 2.4rem;
+  margin-bottom: .9rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+h2:first-child { margin-top: 0; }
+h3 { color: #7c3aed; font-weight: 700; margin: 1.5rem 0 .6rem; font-size: 1.1rem; }
+h4 { color: #9333ea; font-weight: 700; margin: 1.2rem 0 .4rem; }
+
+/* Callouts */
+.callout-tip    { border-left: 4px solid #059669 !important; background: #ecfdf5 !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+.callout-note   { border-left: 4px solid #3b82f6 !important; background: #eff6ff !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+.callout-important { border-left: 4px solid #f59e0b !important; background: #fffbeb !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+.callout-warning{ border-left: 4px solid #ef4444 !important; background: #fef2f2 !important; border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; }
+.callout-note p, .callout-tip p, .callout-important p, .callout-warning p { margin: 0; font-size: .92rem; }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; border-radius: 12px; overflow: hidden; font-size: .92rem; }
+thead tr { background: linear-gradient(90deg,#5b21b6,#7c3aed); color: #fff; }
+thead th { padding: .65rem .9rem; font-weight: 700; text-align: left; }
+tbody tr:nth-child(even) { background: #f5f0ff; }
+tbody tr:nth-child(odd)  { background: #fff; }
+tbody td { padding: .5rem .9rem; border-bottom: 1px solid #e9d5ff; }
+tbody tr:hover { background: #ede9fe; transition: background .15s; }
+
+/* Vocab cards */
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px,1fr)); gap: 12px; margin: 1.2rem 0; }
+.vocab-card {
+  background: #fff; border-radius: 12px; padding: .9rem .7rem;
+  text-align: center; box-shadow: 0 2px 8px rgba(124,58,237,.1);
+  border: 1.5px solid #e9d5ff; transition: transform .15s, box-shadow .15s;
+}
+.vocab-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(124,58,237,.2); }
+.vocab-card .de   { font-size: 1.05rem; font-weight: 800; color: #5b21b6; }
+.vocab-card .pron { font-size: .73rem; color: #9333ea; font-family: 'Fira Code', monospace; }
+.vocab-card .en   { font-size: .83rem; color: #6b7280; margin-top: 4px; }
+
+/* Color swatches */
+.color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px,1fr)); gap: 10px; margin: 1rem 0; }
+.color-swatch { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.12); text-align: center; font-weight: 700; }
+.color-swatch .swatch-block { height: 60px; }
+.color-swatch .swatch-label { padding: 6px 4px; font-size: .82rem; background: #fff; color: #2d2250; border-top: 1px solid #e9d5ff; }
+
+/* Dialogue */
+.dialogue {
+  background: linear-gradient(135deg,#ede9fe,#fdf4ff);
+  border-radius: 14px; padding: 1.2rem 1.4rem;
+  margin: 1rem 0; border: 1.5px solid #c4b5fd;
+}
+.dialogue p { margin: .4rem 0; font-size: .93rem; }
+.dialogue .speaker-a { color: #5b21b6; font-weight: 700; }
+.dialogue .speaker-b { color: #0369a1; font-weight: 700; }
+
+/* Conjugation box */
+.conj-box { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1rem 0; }
+.conj-card { background: #fff; border-radius: 14px; padding: 1rem 1.2rem; border: 2px solid #e9d5ff; box-shadow: 0 2px 8px rgba(124,58,237,.08); }
+.conj-card h5 { margin: 0 0 .6rem; color: #7c3aed; font-size: 1rem; font-weight: 800; }
+.conj-card table { margin: 0; font-size: .87rem; }
+.conj-card thead tr { background: #7c3aed; }
+
+/* Number grid */
+.num-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px,1fr)); gap: 8px; margin: 1rem 0; }
+.num-card { background: #fff; border-radius: 10px; padding: .6rem .4rem; text-align: center; border: 1.5px solid #e9d5ff; box-shadow: 0 1px 4px rgba(124,58,237,.1); transition: transform .12s; }
+.num-card:hover { transform: scale(1.04); }
+.num-card .num  { font-size: 1.3rem; font-weight: 900; color: #5b21b6; }
+.num-card .word { font-size: .75rem; color: #7c3aed; font-weight: 600; }
+.num-card .pron { font-size: .67rem; color: #9ca3af; font-family:'Fira Code',monospace; }
+
+/* Alphabet — full highlight for all 26 rows */
+.alpha-table td:first-child { font-size: 1.15rem; font-weight: 900; color: #5b21b6; }
+.alpha-table td:nth-child(2),
+.alpha-table td:nth-child(4),
+.alpha-table td:nth-child(6) { font-family:'Fira Code',monospace; color:#7c3aed; font-size:.9rem; }
+.alpha-table td:nth-child(3),
+.alpha-table td:nth-child(5) { font-size: 1.15rem; font-weight: 900; color: #5b21b6; }
+
+/* Seasons */
+.season-grid { display: grid; grid-template-columns: repeat(4,1fr); gap:12px; margin:1rem 0; }
+.season-card { border-radius:14px; padding:1rem; text-align:center; font-weight:700; }
+.season-card .icon { font-size:2.2rem; }
+.season-card .name { font-size:1rem; margin:.3rem 0 .1rem; }
+.season-card .eng  { font-size:.82rem; opacity:.75; }
+.season-card .months { font-size:.75rem; margin-top:.4rem; opacity:.65; }
+.winter { background:linear-gradient(135deg,#bfdbfe,#eff6ff); color:#1e40af; border:2px solid #93c5fd; }
+.spring { background:linear-gradient(135deg,#bbf7d0,#f0fdf4); color:#166534; border:2px solid #86efac; }
+.summer { background:linear-gradient(135deg,#fef08a,#fefce8); color:#713f12; border:2px solid #fde047; }
+.autumn { background:linear-gradient(135deg,#fed7aa,#fff7ed); color:#7c2d12; border:2px solid #fb923c; }
+
+/* Clock */
+.clock-row { display:flex; gap:12px; flex-wrap:wrap; margin:1rem 0; }
+.clock-item { background:#fff; border-radius:12px; padding:.7rem 1rem; border:2px solid #e9d5ff; min-width:155px; flex:1; }
+.clock-item .time { font-size:1.2rem; font-weight:900; color:#5b21b6; }
+.clock-item .de   { font-size:.9rem; color:#7c3aed; font-weight:700; }
+.clock-item .en   { font-size:.8rem; color:#6b7280; }
+
+/* Pronoun badges */
+.pronoun-grid { display:flex; flex-wrap:wrap; gap:10px; margin:1rem 0; }
+.pronoun-badge { background:linear-gradient(135deg,#5b21b6,#7c3aed); color:#fff; border-radius:50px; padding:.45rem 1.1rem; font-weight:700; font-size:.9rem; display:flex; gap:.5rem; align-items:center; }
+.pronoun-badge .eng { font-weight:400; opacity:.8; font-size:.82rem; }
+
+/* Number Converter Widget */
+.num-converter {
+  background: linear-gradient(135deg, #ede9fe, #fdf4ff);
+  border: 2px solid #c4b5fd;
+  border-radius: 18px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0;
+}
+.num-converter h4 { color: #5b21b6; font-size: 1.1rem; margin-bottom: 1rem; }
+.num-converter-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.num-converter input {
+  flex: 1;
+  min-width: 120px;
+  max-width: 220px;
+  padding: .6rem .9rem;
+  border: 2px solid #c4b5fd;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #3b1fa3;
+  outline: none;
+  transition: border-color .2s;
+}
+.num-converter input:focus { border-color: #7c3aed; }
+.num-converter button {
+  background: linear-gradient(135deg,#5b21b6,#7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: .6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: opacity .15s, transform .12s;
+}
+.num-converter button:hover { opacity: .88; transform: translateY(-1px); }
+.num-converter-result {
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e9d5ff;
+  display: none;
+}
+.num-converter-result .result-number { font-size: 2rem; font-weight: 900; color: #5b21b6; }
+.num-converter-result .result-word { font-size: 1.1rem; color: #7c3aed; font-weight: 700; margin-top: .3rem; }
+.num-converter-result .result-pron { font-size: .82rem; color: #9ca3af; font-family: 'Fira Code', monospace; margin-top: .2rem; }
+.num-converter-error { color: #ef4444; font-size: .9rem; margin-top: .6rem; display: none; }
+
+/* hr */
+hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
+
+/* Responsive */
+@media(max-width:640px){
+  .season-grid { grid-template-columns:1fr 1fr; }
+  .conj-box     { grid-template-columns:1fr; }
+  .hero h1 { font-size: 1.7rem; }
+}
+
+/* ── Komposita ─────────────────────────────── */
+.komp-equation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #e9d5ff;
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  margin: .9rem 0;
+  box-shadow: 0 2px 10px rgba(124,58,237,.08);
+}
+.komp-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.komp-word {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #2d2250;
+}
+.komp-article {
+  font-size: .72rem;
+  font-weight: 700;
+  color: #fff;
+  background: #7c3aed;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.komp-article.der { background: #3b82f6; }
+.komp-article.die { background: #ec4899; }
+.komp-article.das { background: #10b981; }
+.komp-op   { font-size: 1.4rem; color: #9333ea; font-weight: 900; }
+.komp-arrow{ font-size: 1.4rem; color: #7c3aed; }
+.komp-result { display: flex; flex-direction: column; align-items: center; }
+.komp-result-word {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+/* colour the two halves of the compound */
+.part-a { color: #2563eb; }
+.part-b { color: #db2777; }
+.komp-result-en {
+  font-size: .8rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 2px;
+}
+.komp-emoji { font-size: 1.6rem; }
+.komp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  gap: 12px;
+  margin: 1rem 0;
+}
+.komp-rule-box {
+  background: linear-gradient(135deg,#ede9fe,#fdf4ff);
+  border: 2px solid #c4b5fd;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  font-size: .93rem;
+}
+.komp-rule-box strong { color: #5b21b6; }
+
+/* ── Hobbies ─────────────────────────────── */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px,1fr));
+  gap: 12px;
+  margin: 1.2rem 0;
+}
+.hobby-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: .9rem .8rem;
+  text-align: center;
+  border: 1.5px solid #e9d5ff;
+  box-shadow: 0 2px 8px rgba(124,58,237,.1);
+  transition: transform .15s, box-shadow .15s;
+}
+.hobby-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(124,58,237,.2); }
+.hobby-card .hc-emoji { font-size: 2rem; }
+.hobby-card .hc-de   { font-size: .95rem; font-weight: 800; color: #5b21b6; margin-top: .3rem; }
+.hobby-card .hc-en   { font-size: .78rem; color: #6b7280; margin-top: 2px; }
+
+.freq-bar-wrap { margin: 1rem 0; }
+.freq-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: .45rem 0;
+}
+.freq-label { width: 130px; font-weight: 700; font-size: .88rem; color: #5b21b6; flex-shrink: 0; }
+.freq-en    { width: 90px; font-size: .8rem; color: #6b7280; flex-shrink: 0; }
+.freq-bar-bg { flex: 1; background: #e9d5ff; border-radius: 50px; height: 12px; overflow: hidden; }
+.freq-bar    { height: 100%; border-radius: 50px; background: linear-gradient(90deg,#7c3aed,#c026d3); }
+
+.order-box {
+  background: #fff;
+  border: 2px solid #e9d5ff;
+  border-radius: 14px;
+  padding: 1rem 1.3rem;
+  margin: .8rem 0;
+}
+.order-row { display: flex; gap: 6px; flex-wrap: wrap; margin: .5rem 0; align-items: baseline; }
+.ord-cell {
+  border-radius: 8px;
+  padding: .3rem .7rem;
+  font-weight: 800;
+  font-size: .93rem;
+}
+.ord-pos1  { background: #ede9fe; color: #5b21b6; }
+.ord-pos2  { background: #fce7f3; color: #be185d; }
+.ord-pos3  { background: #d1fae5; color: #065f46; }
+.ord-rest  { background: #f3f4f6; color: #374151; }
+.ord-label { font-size: .75rem; color: #9ca3af; font-weight: 600; margin-top: 2px; text-align: center; }</style>
+
+<style>
+.table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+.md-table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.md-table th { background: #7c3aed; color: #fff; padding: .55rem .9rem; text-align: left; }
+.md-table td { padding: .45rem .9rem; border-bottom: 1px solid #e9d5ff; }
+.md-table tr:nth-child(even) td { background: #f5f0ff; }
+</style>
+
+</head>
+<body>
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab active" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script>/* ── German A1 — shared app script ─────────────────────────────── */
+
+const subheadings = {
+  communication: [
+    { label: "Introductions", id: "sub-introductions" },
+    { label: "Greetings & Farewells", id: "sub-greetings" },
+    { label: "Feelings & Wellbeing", id: "sub-feelings" },
+  ],
+  countries: [
+    { label: "Countries (Länder)", id: "sub-countries-list" },
+    { label: "Languages (Sprachen)", id: "sub-languages" },
+  ],
+  personal: [
+    { label: "Names & Forms of Address", id: "sub-names" },
+    { label: "Age, Address & Contact", id: "sub-contact" },
+    { label: "Marital Status & Children", id: "sub-marital" },
+  ],
+  numbers: [
+    { label: "0 – 19", id: "sub-num0" },
+    { label: "20 – 99", id: "sub-num20" },
+    { label: "Hundreds (100–900)", id: "sub-hundreds" },
+    { label: "Thousands (1,000–10,000)", id: "sub-thousands" },
+    { label: "Number Converter", id: "sub-converter" },
+  ],
+  alphabet: [
+    { label: "The German Alphabet", id: "sub-alpha" },
+    { label: "Special Characters (Umlauts)", id: "sub-umlauts" },
+  ],
+  colors: [
+    { label: "Color Swatches", id: "sub-colorswatches" },
+    { label: "Talking About Colors", id: "sub-colortalk" },
+  ],
+  grammar: [
+    { label: "sein & haben", id: "sub-seinhabn" },
+    { label: "Regular Verb Conjugation", id: "sub-regverbs" },
+    { label: "Articles & Nouns", id: "sub-articles" },
+    { label: "Plural Forms", id: "sub-plurals" },
+    { label: "Possessive Pronouns", id: "sub-poss" },
+    { label: "Personal Pronouns", id: "sub-persp" },
+  ],
+  family: [
+    { label: "Family Members", id: "sub-familymembers" },
+    { label: "Possessive Sentences", id: "sub-familysent" },
+    { label: "Possessives with Nouns (Class)", id: "sub-possnouns" },
+  ],
+  school: [
+    { label: "School Vocabulary", id: "sub-schoolvocab" },
+    { label: "School Subjects", id: "sub-subjects" },
+    { label: "Timetable Phrases", id: "sub-timetable" },
+    { label: "Classroom Objects", id: "sub-classobj" },
+    { label: "Classroom Language", id: "sub-classlang" },
+    { label: "Class Exercises (Notebook)", id: "sub-classexercise" },
+  ],
+  time: [
+    { label: "Days of the Week", id: "sub-days" },
+    { label: "Months", id: "sub-months" },
+    { label: "Seasons", id: "sub-seasons" },
+    { label: "Time Expressions", id: "sub-timeexpr" },
+    { label: "Telling the Time", id: "sub-telling" },
+    { label: "von/bis/ab (Ranges)", id: "sub-vonbis" },
+    { label: "Time Prepositions: um/im/am", id: "sub-timeprep" },
+    { label: "Example Sentences", id: "sub-timesentences" },
+  ],
+  komposita: [
+    { label: "Nomen + Nomen", id: "sub-komp-nn" },
+    { label: "Verb + Nomen",  id: "sub-komp-vn" },
+    { label: "Adjektiv + Nomen", id: "sub-komp-adj" },
+    { label: "Adverb + Nomen",  id: "sub-komp-adv" },
+    { label: "Kettenkomposita", id: "sub-komp-chain" },
+  ],
+  hobbies: [
+    { label: "Hobby-Verben", id: "sub-hob-verbs" },
+    { label: "Wie oft? (Frequency)", id: "sub-hob-freq" },
+    { label: "Wortstellung (Word Order)", id: "sub-hob-order" },
+    { label: "Fragen über Hobbys", id: "sub-hob-questions" },
+  ],
+};
+
+function getCurrentSection() {
+  const active = document.querySelector('.nav-tab.active');
+  if (!active) return null;
+  const href = active.getAttribute('href') || '';
+  const match = href.match(/([^/]+)\.html$/);
+  return match ? match[1] : null;
+}
+
+function scrollToSub(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const navbar = document.getElementById('top-navbar');
+  const offset = (navbar ? navbar.offsetHeight : 0) + 12;
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+}
+
+function buildDropdown() {
+  const dropdown = document.getElementById('nav-dropdown');
+  if (!dropdown) return;
+  const sec = getCurrentSection();
+  const subs = (sec && subheadings[sec]) || [];
+  if (subs.length) {
+    dropdown.innerHTML = subs.map(s =>
+      `<div class="nav-sub" onclick="scrollToSub('${s.id}')">${s.label}</div>`
+    ).join('');
+    dropdown.classList.add('open');
+  } else {
+    dropdown.innerHTML = '';
+    dropdown.classList.remove('open');
+  }
+}
+
+/* Number Converter */
+const ones = ['','ein','zwei','drei','vier','fünf','sechs','sieben','acht','neun',
+               'zehn','elf','zwölf','dreizehn','vierzehn','fünfzehn','sechzehn',
+               'siebzehn','achtzehn','neunzehn'];
+const tens = ['','','zwanzig','dreißig','vierzig','fünfzig','sechzig','siebzig','achtzig','neunzig'];
+
+function numToGerman(n) {
+  if (n === 0) return 'null';
+  if (n === 1) return 'eins';
+  let r = '';
+  if (n >= 100000) return 'hunderttausend';
+  if (n >= 1000)  { const t=Math.floor(n/1000); r+=(t===1?'ein':numToGerman(t))+'tausend'; n%=1000; if(!n) return r; }
+  if (n >= 100)   { const h=Math.floor(n/100);  r+=(h===1?'ein':ones[h])+'hundert'; n%=100; if(!n) return r; }
+  if (n >= 20)    { const u=n%10,t=Math.floor(n/10); r+=u>0?ones[u]+'und'+tens[t]:tens[t]; }
+  else if (n > 0) { r+=ones[n]; }
+  return r;
+}
+
+const pronMap = {
+  'null':'[nool]','eins':'[ines]','zwei':'[tsvye]','drei':'[drye]','vier':'[feer]',
+  'fünf':'[fuenf]','sechs':'[zeks]','sieben':'[ZEE-ben]','acht':'[akht]','neun':'[noyn]',
+  'zehn':'[tsayn]','elf':'[elf]','zwölf':'[tsvurlf]','zwanzig':'[TSVAN-tsish]',
+  'dreißig':'[DRY-ssish]','vierzig':'[FEER-tsish]','fünfzig':'[FUENF-tsish]',
+  'sechzig':'[ZEKH-tsish]','siebzig':'[ZEEP-tsish]','achtzig':'[AHKH-tsish]',
+  'neunzig':'[NOYN-tsish]','hundert':'[HOON-dert]','tausend':'[TOW-zent]',
+};
+
+function convertNumber() {
+  const input=document.getElementById('num-input'),
+        resultDiv=document.getElementById('num-result'),
+        errorDiv=document.getElementById('num-error');
+  const val=parseInt(input.value,10);
+  resultDiv.style.display='none'; errorDiv.style.display='none';
+  if (isNaN(val)||val<0||val>100000) {
+    errorDiv.textContent='⚠️ Please enter a number between 0 and 100,000.';
+    errorDiv.style.display='block'; return;
+  }
+  const word=numToGerman(val);
+  document.getElementById('res-number').textContent=val.toLocaleString('de-DE');
+  document.getElementById('res-word').textContent=word;
+  let pron='';
+  for (const [k,v] of Object.entries(pronMap)) { if(word===k){pron=v;break;} }
+  document.getElementById('res-pron').textContent=pron;
+  resultDiv.style.display='block';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  buildDropdown();
+  const inp=document.getElementById('num-input');
+  if (inp) inp.addEventListener('keydown', e=>{ if(e.key==='Enter') convertNumber(); });
+});
+</script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🎯 Hobbies</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div><!-- ═══════════════════════════ SECTION: Hobbies ═══════════════════════════ -->
+<section id="sec-hobbies"><div class="topic-banner">
+  <div><span class="de-word">Hobbys</span></div>
+  <div class="pron-word">[HOB-ees]</div>
+  <div class="en-word">Hobbies — activities, frequency &amp; word order</div>
+</div><h2 id="sub-hob-verbs" style="margin:1.4rem 0 .6rem;color:#2d2250;">Hobby-Verben</h2>
+<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">Many hobby phrases use the structure <strong>Verb + gern</strong> (like/enjoy doing).<br> Example: <strong>Ich höre gern Musik.</strong> = I like listening to music.</p>
+</div>
+</div>
+<div class="hobby-grid">
+  <div class="hobby-card"><div class="hc-emoji">🚴</div><div class="hc-de">Fahrrad fahren</div><div class="hc-en">cycling</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏍️</div><div class="hc-de">Motorrad fahren</div><div class="hc-en">motorcycle riding</div></div>
+  <div class="hobby-card"><div class="hc-emoji">⚽</div><div class="hc-de">Fußball spielen</div><div class="hc-en">play football</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎾</div><div class="hc-de">Tennis spielen</div><div class="hc-en">play tennis</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎸</div><div class="hc-de">Gitarre spielen</div><div class="hc-en">play guitar</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎹</div><div class="hc-de">Klavier spielen</div><div class="hc-en">play piano</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎻</div><div class="hc-de">Geige spielen</div><div class="hc-en">play violin</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🥁</div><div class="hc-de">Schlagzeug spielen</div><div class="hc-en">play drums</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎵</div><div class="hc-de">Musik hören</div><div class="hc-en">listen to music</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎤</div><div class="hc-de">singen</div><div class="hc-en">sing</div></div>
+  <div class="hobby-card"><div class="hc-emoji">💃</div><div class="hc-de">tanzen</div><div class="hc-en">dance</div></div>
+  <div class="hobby-card"><div class="hc-emoji">⛷️</div><div class="hc-de">Ski fahren</div><div class="hc-en">skiing</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📚</div><div class="hc-de">lesen / Romane lesen</div><div class="hc-en">read / read novels</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📰</div><div class="hc-de">Zeitung lesen</div><div class="hc-en">read the newspaper</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏊</div><div class="hc-de">schwimmen</div><div class="hc-en">swimming</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏃</div><div class="hc-de">joggen</div><div class="hc-en">jogging</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🚶</div><div class="hc-de">spazieren gehen</div><div class="hc-en">go for a walk</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🥾</div><div class="hc-de">wandern</div><div class="hc-en">hiking</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎮</div><div class="hc-de">Videospiele spielen</div><div class="hc-en">play video games</div></div>
+  <div class="hobby-card"><div class="hc-emoji">💬</div><div class="hc-de">chatten</div><div class="hc-en">chat (online)</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🌐</div><div class="hc-de">im Internet surfen</div><div class="hc-en">surf the internet</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📷</div><div class="hc-de">fotografieren</div><div class="hc-en">photography</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎨</div><div class="hc-de">malen / zeichnen</div><div class="hc-en">paint / draw</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🍳</div><div class="hc-de">kochen</div><div class="hc-en">cook</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🧵</div><div class="hc-de">nähen</div><div class="hc-en">sew</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🛍️</div><div class="hc-de">einkaufen</div><div class="hc-en">shopping</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎪</div><div class="hc-de">basteln</div><div class="hc-en">craft / make things</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🌱</div><div class="hc-de">im Garten arbeiten</div><div class="hc-en">gardening</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📫</div><div class="hc-de">Briefmarken sammeln</div><div class="hc-en">collect stamps</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🪙</div><div class="hc-de">Alte Münzen sammeln</div><div class="hc-en">collect old coins</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏕️</div><div class="hc-de">zelten / Camping</div><div class="hc-en">camping</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🐴</div><div class="hc-de">reiten</div><div class="hc-en">horse riding</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎭</div><div class="hc-de">ins Theater gehen</div><div class="hc-en">go to the theatre</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎬</div><div class="hc-de">ins Kino gehen</div><div class="hc-en">go to the cinema</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📺</div><div class="hc-de">fernsehen</div><div class="hc-en">watch TV</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🧹</div><div class="hc-de">aufräumen / putzen</div><div class="hc-en">tidy up / clean</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🐱</div><div class="hc-de">Haustiere haben</div><div class="hc-en">have / care for pets</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📞</div><div class="hc-de">telefonieren</div><div class="hc-en">make phone calls</div></div>
+  <div class="hobby-card"><div class="hc-emoji">👫</div><div class="hc-de">Freunde treffen</div><div class="hc-en">meet friends</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🃏</div><div class="hc-de">Karten spielen</div><div class="hc-en">play cards</div></div>
+  <div class="hobby-card"><div class="hc-emoji">♟️</div><div class="hc-de">Schach spielen</div><div class="hc-en">play chess</div></div>
+  <div class="hobby-card"><div class="hc-emoji">✈️</div><div class="hc-de">reisen</div><div class="hc-en">travel</div></div>
+  <div class="hobby-card"><div class="hc-emoji">😴</div><div class="hc-de">schlafen</div><div class="hc-en">sleep</div></div>
+</div><h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Talking About Your Hobbies</h3>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>German</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>Was ist dein Hobby?</td><td>What is your hobby?</td></tr>
+<tr><td>Mein Hobby ist …</td><td>My hobby is …</td></tr>
+<tr><td>Was sind deine Hobbys?</td><td>What are your hobbies?</td></tr>
+<tr><td>Meine Hobbys sind …</td><td>My hobbies are …</td></tr>
+<tr><td>Was machst du gern?</td><td>What do you like doing? (informal)</td></tr>
+<tr><td>Was machen Sie gern?</td><td>What do you like doing? (formal)</td></tr>
+<tr><td>Was machst du nicht so gern?</td><td>What do you not like doing?</td></tr>
+<tr><td>Das mache ich sehr gern. 😊</td><td>I like doing that very much.</td></tr>
+<tr><td>Das mache ich nicht so gern. ☹️</td><td>I don't really like doing that.</td></tr>
+</tbody>
+</table></div>
+<h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Gern / Nicht so gern — Examples</h3>
+<div class="dialogue" style="background:#f5f3ff;border-radius:12px;padding:1rem 1.4rem;margin:1.2rem 0;"><p style="margin:.5rem 0 .8rem;line-height:1.7;"><p><span class="speaker-a">Ich schlafe sehr gern.</span> — I really like sleeping.</p> <p><span class="speaker-a">Ich höre gerne Musik.</span> — I like listening to music.</p> <p><span class="speaker-a">Ich sehe gerne Filme.</span> — I like watching films.</p> <p><span class="speaker-b">Ich chatte nicht so gern.</span> — I don't really like chatting.</p> <p><span class="speaker-b">Ich koche nicht so gern.</span> — I don't really like cooking.</p> <p><span class="speaker-b">Ich gehe nicht so gern Camping.</span> — I don't really like going camping.</p></p>
+</div>
+<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
+<h2 id="sub-hob-freq" style="margin:1.4rem 0 .6rem;color:#2d2250;">Wie oft? — Frequency</h2>
+<div class="freq-bar-wrap">
+  <div class="freq-row"><span class="freq-label">immer</span><span class="freq-en">always</span><div class="freq-bar-bg"><div class="freq-bar" style="width:100%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">jeden Tag / täglich</span><span class="freq-en">every day</span><div class="freq-bar-bg"><div class="freq-bar" style="width:92%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">oft</span><span class="freq-en">often</span><div class="freq-bar-bg"><div class="freq-bar" style="width:78%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">manchmal</span><span class="freq-en">sometimes</span><div class="freq-bar-bg"><div class="freq-bar" style="width:55%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">ab und zu</span><span class="freq-en">now and then</span><div class="freq-bar-bg"><div class="freq-bar" style="width:42%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">nicht so oft</span><span class="freq-en">not so often</span><div class="freq-bar-bg"><div class="freq-bar" style="width:30%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">selten</span><span class="freq-en">rarely</span><div class="freq-bar-bg"><div class="freq-bar" style="width:18%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">ganz selten</span><span class="freq-en">very rarely</span><div class="freq-bar-bg"><div class="freq-bar" style="width:8%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">nie</span><span class="freq-en">never</span><div class="freq-bar-bg"><div class="freq-bar" style="width:2%"></div></div></div>
+</div><div class="table-wrap"><table class="md-table">
+<thead><tr><th>German</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>zweimal / einmal / dreimal pro Woche</td><td>twice / once / three times a week</td></tr>
+<tr><td>pro Monat / pro Jahr</td><td>per month / per year</td></tr>
+<tr><td>am Wochenende</td><td>at the weekend</td></tr>
+<tr><td>jede Woche / jeden Monat / jedes Jahr / jedes Wochenende</td><td>every week / month / year / weekend</td></tr>
+<tr><td>monatlich / wöchentlich / jährlich</td><td>monthly / weekly / yearly</td></tr>
+</tbody>
+</table></div>
+<h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Asking About Frequency</h3>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>German</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>Wann gehen Sie ins Kino?</td><td>When do you go to the cinema?</td></tr>
+<tr><td>Wie oft sehen Sie Filme?</td><td>How often do you watch films?</td></tr>
+<tr><td>Wann hören Sie Musik?</td><td>When do you listen to music?</td></tr>
+<tr><td>Wie oft gehen Sie einkaufen?</td><td>How often do you go shopping?</td></tr>
+<tr><td>Wann gehen Sie ins Café?</td><td>When do you go to the café?</td></tr>
+</tbody>
+</table></div>
+<h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Antworten (Possible answers)</h3>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>German</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>Ja, sehr gern.</td><td>Yes, very much.</td></tr>
+<tr><td>Es geht.</td><td>It's OK / so-so.</td></tr>
+<tr><td>Nein, nicht so gern.</td><td>No, not really.</td></tr>
+<tr><td>Chatten Sie gern? / Chattest du gern?</td><td>Do you like chatting?</td></tr>
+<tr><td>Hören Sie gern Musik? / Hörst du gern Musik?</td><td>Do you like listening to music?</td></tr>
+<tr><td>Surfen Sie gern im Internet? / Surfst du gern im Internet?</td><td>Do you like surfing the internet?</td></tr>
+</tbody>
+</table></div>
+<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
+<h2 id="sub-hob-order" style="margin:1.4rem 0 .6rem;color:#2d2250;">Wortstellung — Word Order</h2>
+<div class="callout callout-important" style="background:#fee2e2;border-left:4px solid #991b1b;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#991b1b;margin-bottom:.4rem;">🔴 Important</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;"><strong>The Two Rules of German Word Order:</strong><br> ① The <strong>verb</strong> always stands at <strong>position 2</strong>.<br> ② The <strong>subject</strong> stands at either <strong>position 1</strong> or <strong>position 3</strong>.</p>
+</div>
+</div>
+<div class="order-box">
+  <p style="font-weight:800;color:#5b21b6;margin-bottom:.5rem">Normal order (subject first):</p>
+  <div class="order-row">
+    <div><div class="ord-cell ord-pos1">Ich</div><div class="ord-label">Pos. 1 (Subj.)</div></div>
+    <div><div class="ord-cell ord-pos2">gehe</div><div class="ord-label">Pos. 2 (Verb)</div></div>
+    <div><div class="ord-cell ord-pos3">jeden Tag</div><div class="ord-label">Pos. 3</div></div>
+    <div><div class="ord-cell ord-rest">schwimmen.</div><div class="ord-label">rest</div></div>
+  </div>
+  <p style="font-weight:800;color:#5b21b6;margin:.9rem 0 .5rem">Inverted order (time adverb first):</p>
+  <div class="order-row">
+    <div><div class="ord-cell ord-pos1">Jeden Tag</div><div class="ord-label">Pos. 1 (Time)</div></div>
+    <div><div class="ord-cell ord-pos2">gehe</div><div class="ord-label">Pos. 2 (Verb)</div></div>
+    <div><div class="ord-cell ord-pos3">ich</div><div class="ord-label">Pos. 3 (Subj.)</div></div>
+    <div><div class="ord-cell ord-rest">schwimmen.</div><div class="ord-label">rest</div></div>
+  </div>
+</div>
+
+<div class="order-box">
+  <p style="font-weight:800;color:#5b21b6;margin-bottom:.5rem">Three ways to say the same sentence:</p>
+  <div class="order-row" style="margin-bottom:.3rem">
+    <div class="ord-cell ord-pos1">Du</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-rest">dreimal pro Woche ins Fitness-Studio.</div>
+  </div>
+  <div class="order-row" style="margin-bottom:.3rem">
+    <div class="ord-cell ord-pos1">Dreimal pro Woche</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-pos3">du</div>
+    <div class="ord-cell ord-rest">ins Fitness-Studio.</div>
+  </div>
+  <div class="order-row">
+    <div class="ord-cell ord-pos1">Ins Fitness-Studio</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-pos3">du</div>
+    <div class="ord-cell ord-rest">dreimal pro Woche.</div>
+  </div>
+  <p style="font-size:.82rem;color:#6b7280;margin-top:.7rem">All three mean: <em>You go to the gym three times a week.</em></p>
+</div><hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
+<h2 id="sub-hob-questions" style="margin:1.4rem 0 .6rem;color:#2d2250;">Fragen über Hobbys</h2>
+<div class="komp-rule-box">
+  Ask about hobbies with <strong>Wann</strong> (when) and <strong>Wie oft</strong> (how often).
+  Also use <strong>gern</strong> to ask about likes: <em>Spielst du gern Fußball?</em>
+</div><div class="table-wrap"><table class="md-table">
+<thead><tr><th>Formal (Sie)</th><th>Informal (du)</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>Hören Sie gern Musik?</td><td>Hörst du gern Musik?</td><td>Do you like listening to music?</td></tr>
+<tr><td>Surfen Sie gern im Internet?</td><td>Surfst du gern im Internet?</td><td>Do you like surfing online?</td></tr>
+<tr><td>Fahren Sie gern Motorrad?</td><td>Fährst du gern Motorrad?</td><td>Do you like riding a motorcycle?</td></tr>
+<tr><td>Gehen Sie gern Camping?</td><td>Gehst du gern Camping?</td><td>Do you like going camping?</td></tr>
+<tr><td>Sehen Sie gern fern?</td><td>Siehst du gern fern?</td><td>Do you like watching TV?</td></tr>
+<tr><td>Kochen Sie gern?</td><td>Kochst du gern?</td><td>Do you like cooking?</td></tr>
+<tr><td>Sammeln Sie gern Briefmarken?</td><td>Sammelst du gern Briefmarken?</td><td>Do you like collecting stamps?</td></tr>
+<tr><td>Gehen Sie gern ins Kino?</td><td>Gehst du gern ins Kino?</td><td>Do you like going to the cinema?</td></tr>
+<tr><td>Spielen Sie gern Fußball?</td><td>Spielst du gern Fußball?</td><td>Do you like playing football?</td></tr>
+<tr><td>Lesen Sie gern?</td><td>Liest du gern?</td><td>Do you like reading?</td></tr>
+</tbody>
+</table></div>
+</section>
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  🎉 <strong>Herzlichen Glückwunsch</strong> — you've reviewed all sections! Keep practising every day. <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content --><div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+</body>
+</html>

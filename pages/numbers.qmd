@@ -25,6 +25,7 @@ format:
     <a class="nav-tab" href="communication.html">🗣️ Communication</a>
     <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
     <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
     <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
     <a class="nav-tab" href="grammar.html">📐 Grammar</a>
     <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
