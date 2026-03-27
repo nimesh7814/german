@@ -1,0 +1,622 @@
+---
+title: "🔗 Komposita"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab active" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🔗 Komposita</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Komposita ═══════════════════════════ -->
+
+::: {#sec-komposita }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-word">Komposita</span></div>
+  <div class="pron-word">[kom-POH-zi-tah]</div>
+  <div class="en-word">Compound Nouns — building new words by joining two or more words</div>
+</div>
+```
+
+::: {.callout-note}
+**The Golden Rule of Komposita:**  
+The **article** of the compound always comes from the **last noun**.  
+The **first letter** of the second word stays **lowercase** when joined.  
+Colour coding: <span style="color:#2563eb;font-weight:800;">first part (blue)</span> + <span style="color:#db2777;font-weight:800;">last part (pink)</span> = **compound**.
+:::
+
+## Nomen + Nomen {#sub-komp-nn}
+
+```{=html}
+<div class="komp-rule-box">
+  <strong>Pattern:</strong> Nomen + Nomen = Nomen &nbsp;|&nbsp; Article = article of the <em>last</em> noun
+</div>
+
+<div class="komp-grid">
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🌧️</span>
+      <span class="komp-word">Regen</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🧥</span>
+      <span class="komp-word">Mantel</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Regen</span><span class="part-b">mantel</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">raincoat</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🤚</span>
+      <span class="komp-word">Hand</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">👟</span>
+      <span class="komp-word">Schuh</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Hand</span><span class="part-b">schuh</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">glove (lit. hand-shoe)</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">📱</span>
+      <span class="komp-word">Telefon</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🔢</span>
+      <span class="komp-word">Nummer</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Telefon</span><span class="part-b">nummer</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">phone number</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🍞</span>
+      <span class="komp-word">Brot</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🔪</span>
+      <span class="komp-word">Messer</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Brot</span><span class="part-b">messer</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">bread knife</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🥛</span>
+      <span class="komp-word">Milch</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🦷</span>
+      <span class="komp-word">Zahn</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Milch</span><span class="part-b">zahn</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">milk tooth</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🐾</span>
+      <span class="komp-word">Tier</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🌳</span>
+      <span class="komp-word">Garten</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Tier</span><span class="part-b">garten</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">zoo (lit. animal garden)</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="komp-rule-box" style="margin-top:1rem">
+  <strong>Practice list — Nomen + Nomen:</strong><br>
+  <span style="color:#2563eb">Schokoladen</span><span style="color:#db2777">kuchen</span> (der) · chocolate cake &nbsp;|&nbsp;
+  <span style="color:#2563eb">Weihnachts</span><span style="color:#db2777">baum</span> (der) · Christmas tree &nbsp;|&nbsp;
+  <span style="color:#2563eb">Schul</span><span style="color:#db2777">bus</span> (der) · school bus &nbsp;|&nbsp;
+  <span style="color:#2563eb">Klassen</span><span style="color:#db2777">zimmer</span> (das) · classroom &nbsp;|&nbsp;
+  <span style="color:#2563eb">Bad</span><span style="color:#db2777">wanne</span> (die) · bathtub &nbsp;|&nbsp;
+  <span style="color:#2563eb">Garten</span><span style="color:#db2777">arbeit</span> (die) · gardening &nbsp;|&nbsp;
+  <span style="color:#2563eb">Kaffee</span><span style="color:#db2777">maschine</span> (die) · coffee machine &nbsp;|&nbsp;
+  <span style="color:#2563eb">Sonnen</span><span style="color:#db2777">brille</span> (die) · sunglasses &nbsp;|&nbsp;
+  <span style="color:#2563eb">Nacht</span><span style="color:#db2777">lampe</span> (die) · night lamp &nbsp;|&nbsp;
+  <span style="color:#2563eb">Tisch</span><span style="color:#db2777">lampe</span> (die) · table lamp
+</div>
+```
+
+---
+
+## Verb + Nomen {#sub-komp-vn}
+
+```{=html}
+<div class="komp-rule-box">
+  <strong>Pattern:</strong> Verb stem + Nomen = Nomen &nbsp;|&nbsp; The verb loses its <em>-en</em> ending (stem only).
+</div>
+
+<div class="komp-grid">
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🥤</span>
+      <span class="komp-word">trink<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🍶</span>
+      <span class="komp-word">Flasche</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Trink</span><span class="part-b">flasche</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">drinking bottle</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🍳</span>
+      <span class="komp-word">koch<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">📖</span>
+      <span class="komp-word">Buch</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Koch</span><span class="part-b">buch</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">cookbook</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🛒</span>
+      <span class="komp-word">kauf<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🏢</span>
+      <span class="komp-word">Haus</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Kauf</span><span class="part-b">haus</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">department store / mall</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">💃</span>
+      <span class="komp-word">tanz<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🏫</span>
+      <span class="komp-word">Schule</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Tanz</span><span class="part-b">schule</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">dance school</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🛁</span>
+      <span class="komp-word">bad<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🚪</span>
+      <span class="komp-word">Zimmer</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Bade</span><span class="part-b">zimmer</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">bathroom</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">✍️</span>
+      <span class="komp-word">schreib<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🪑</span>
+      <span class="komp-word">Tisch</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Schreib</span><span class="part-b">tisch</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">desk (writing table)</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🚗</span>
+      <span class="komp-word">fahr<span style="color:#9ca3af;text-decoration:line-through">en</span></span>
+      <span class="komp-article" style="background:#6b7280">verb</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">⚙️</span>
+      <span class="komp-word">Rad</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Fahr</span><span class="part-b">rad</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">bicycle</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="komp-rule-box">
+  <strong>Verb + Nomen — Room names to know:</strong><br>
+  <span style="color:#2563eb">Schlaf</span><span style="color:#db2777">zimmer</span> (das) · bedroom &nbsp;|&nbsp;
+  <span style="color:#2563eb">Arbeits</span><span style="color:#db2777">zimmer</span> (das) · office room &nbsp;|&nbsp;
+  <span style="color:#2563eb">Ess</span><span style="color:#db2777">zimmer</span> (das) · dining room &nbsp;|&nbsp;
+  <span style="color:#2563eb">Wohn</span><span style="color:#db2777">zimmer</span> (das) · living room &nbsp;|&nbsp;
+  <span style="color:#2563eb">Schwimm</span><span style="color:#db2777">bad</span> (das) · swimming pool
+</div>
+```
+
+---
+
+## Adjektiv + Nomen {#sub-komp-adj}
+
+```{=html}
+<div class="komp-rule-box">
+  <strong>Pattern:</strong> Adjektiv + Nomen = Nomen &nbsp;|&nbsp; Article = article of the noun.
+</div>
+
+<div class="komp-grid">
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🥛</span>
+      <span class="komp-word">frisch</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🥛</span>
+      <span class="komp-word">Milch</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Frisch</span><span class="part-b">milch</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">fresh milk</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">📰</span>
+      <span class="komp-word">alt</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🗞️</span>
+      <span class="komp-word">Papier</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Alt</span><span class="part-b">papier</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">waste paper / recycling paper</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🏙️</span>
+      <span class="komp-word">alt</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🏛️</span>
+      <span class="komp-word">Stadt</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Alt</span><span class="part-b">stadt</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">old town / historic city centre</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🌆</span>
+      <span class="komp-word">groß</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🏙️</span>
+      <span class="komp-word">Stadt</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Groß</span><span class="part-b">stadt</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">big city / metropolis</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🎨</span>
+      <span class="komp-word">bunt</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">✏️</span>
+      <span class="komp-word">Stift</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Bunt</span><span class="part-b">stift</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">colour pencil / crayon</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🥩</span>
+      <span class="komp-word">frisch</span>
+      <span class="komp-article" style="background:#6b7280">adj</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🥩</span>
+      <span class="komp-word">Fleisch</span>
+      <span class="komp-article das">das</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Frisch</span><span class="part-b">fleisch</span></span>
+      <span class="komp-article das" style="align-self:flex-start">das</span>
+      <span class="komp-result-en">fresh meat</span>
+    </div>
+  </div>
+
+</div>
+```
+
+---
+
+## Adverb + Nomen {#sub-komp-adv}
+
+```{=html}
+<div class="komp-rule-box">
+  <strong>Pattern:</strong> Adverb + Nomen = Nomen &nbsp;|&nbsp; Article = article of the noun.
+</div>
+
+<div class="komp-grid">
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">⬅️</span>
+      <span class="komp-word">links</span>
+      <span class="komp-article" style="background:#6b7280">adv</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">↩️</span>
+      <span class="komp-word">Kurve</span>
+      <span class="komp-article die">die</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Links</span><span class="part-b">kurve</span></span>
+      <span class="komp-article die" style="align-self:flex-start">die</span>
+      <span class="komp-result-en">left bend / left curve</span>
+    </div>
+  </div>
+
+  <div class="komp-equation">
+    <div class="komp-part">
+      <span class="komp-emoji">🚭</span>
+      <span class="komp-word">nicht</span>
+      <span class="komp-article" style="background:#6b7280">adv</span>
+    </div>
+    <span class="komp-op">+</span>
+    <div class="komp-part">
+      <span class="komp-emoji">🚬</span>
+      <span class="komp-word">Raucher</span>
+      <span class="komp-article der">der</span>
+    </div>
+    <span class="komp-arrow">⟹</span>
+    <div class="komp-result">
+      <span class="komp-result-word"><span class="part-a">Nicht</span><span class="part-b">raucher</span></span>
+      <span class="komp-article der" style="align-self:flex-start">der</span>
+      <span class="komp-result-en">non-smoker</span>
+    </div>
+  </div>
+
+</div>
+```
+
+---
+
+## Kettenkomposita (Chain Compounds) {#sub-komp-chain}
+
+::: {.callout-tip}
+**German can chain 3+ words into one compound!**  
+Still follows the same rule — article = article of the **last** noun.
+:::
+
+```{=html}
+<div class="komp-equation" style="flex-direction:column;align-items:flex-start;gap:6px;">
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <div class="komp-part"><span class="komp-emoji">💼</span><span class="komp-word" style="color:#2563eb">arbeiten</span><span class="komp-article" style="background:#6b7280">verb</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">🚪</span><span class="komp-word" style="color:#9333ea">Zimmer</span><span class="komp-article das">das</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">✍️</span><span class="komp-word" style="color:#db2777">Schreibtisch</span><span class="komp-article der">der</span></div>
+    <span class="komp-arrow">⟹</span>
+  </div>
+  <div class="komp-result" style="margin-left:1rem">
+    <span class="komp-result-word" style="font-size:1.05rem"><span style="color:#2563eb">Arbeits</span><span style="color:#9333ea">zimmer</span><span style="color:#db2777">schreibtisch</span></span>
+    <span class="komp-article der" style="align-self:flex-start">der</span>
+    <span class="komp-result-en">office-room desk</span>
+  </div>
+</div>
+
+<div class="komp-equation" style="flex-direction:column;align-items:flex-start;gap:6px;margin-top:.8rem">
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <div class="komp-part"><span class="komp-emoji">😴</span><span class="komp-word" style="color:#2563eb">schlafen</span><span class="komp-article" style="background:#6b7280">verb</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">🚪</span><span class="komp-word" style="color:#9333ea">Zimmer</span><span class="komp-article das">das</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">🌙</span><span class="komp-word" style="color:#7c3aed">Nacht</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">🪑</span><span class="komp-word" style="color:#059669">Tisch</span></div>
+    <span class="komp-op">+</span>
+    <div class="komp-part"><span class="komp-emoji">💡</span><span class="komp-word" style="color:#db2777">Lampe</span><span class="komp-article die">die</span></div>
+    <span class="komp-arrow">⟹</span>
+  </div>
+  <div class="komp-result" style="margin-left:1rem">
+    <span class="komp-result-word" style="font-size:1rem"><span style="color:#2563eb">Schlaf</span><span style="color:#9333ea">zimmer</span><span style="color:#7c3aed">nacht</span><span style="color:#059669">tisch</span><span style="color:#db2777">lampe</span></span>
+    <span class="komp-article die" style="align-self:flex-start">die</span>
+    <span class="komp-result-en">bedroom bedside table lamp</span>
+  </div>
+</div>
+```
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

@@ -1,0 +1,209 @@
+---
+title: "🇩🇪 German A1 — Study Notes"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="shared/_styles.css">
+        <style>
+          /* ── Index-specific styles ─────────────────── */
+          .index-navbar {
+            position: sticky; top: 0; z-index: 1000;
+            background: linear-gradient(135deg, #3b1fa3 0%, #7c3aed 60%, #c026d3 100%);
+            box-shadow: 0 4px 20px rgba(60,20,163,.35);
+            padding: .8rem 1.4rem;
+            display: flex; align-items: center; gap: 1rem;
+          }
+          .index-navbar .site-title {
+            color: #fff; font-size: 1.1rem; font-weight: 900; letter-spacing: .02em;
+          }
+          .index-navbar .site-sub {
+            color: rgba(255,255,255,.7); font-size: .82rem; font-weight: 400;
+          }
+
+          .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 18px;
+            margin: 2rem 0 3rem;
+          }
+          .topic-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 1.4rem 1.3rem 1.2rem;
+            border: 2px solid #e9d5ff;
+            box-shadow: 0 3px 12px rgba(124,58,237,.1);
+            text-decoration: none;
+            color: inherit;
+            display: flex; flex-direction: column; gap: .5rem;
+            transition: transform .15s, box-shadow .15s, border-color .15s;
+          }
+          .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(124,58,237,.22);
+            border-color: #a78bfa;
+          }
+          .topic-card .tc-emoji { font-size: 2.2rem; line-height: 1; }
+          .topic-card .tc-title {
+            font-size: 1.05rem; font-weight: 800; color: #2d2250; margin-top: .2rem;
+          }
+          .topic-card .tc-de {
+            font-size: .82rem; color: #7c3aed; font-weight: 600;
+          }
+          .topic-card .tc-subs {
+            font-size: .78rem; color: #9ca3af; line-height: 1.5; margin-top: .3rem;
+          }
+          .topic-card .tc-arrow {
+            margin-top: auto; padding-top: .6rem;
+            font-size: .82rem; font-weight: 700; color: #7c3aed;
+          }
+
+          .section-divider {
+            border: none; border-top: 2px solid #e9d5ff; margin: 2.5rem 0 1.5rem;
+          }
+          .section-label {
+            font-size: .78rem; font-weight: 700; color: #9ca3af;
+            text-transform: uppercase; letter-spacing: .1em; margin-bottom: .8rem;
+          }
+        </style>
+---
+
+```{=html}
+<div class="index-navbar">
+  <div>
+    <div class="site-title">🇩🇪 German A1 Language</div>
+    <div class="site-sub">Complete Beginner Study Notes — Click any topic to open</div>
+  </div>
+</div>
+
+<div id="main-content">
+
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>German A1 Study Notes</h1>
+    <p>Beginner Level · 12 Topics · With Pronunciation &amp; English Translations</p>
+  </div>
+
+  <div class="section-label">All Topics</div>
+
+  <div class="topic-grid">
+
+    <a class="topic-card" href="pages/communication.html">
+      <div class="tc-emoji">🗣️</div>
+      <div class="tc-title">Communication</div>
+      <div class="tc-de">Kommunikation</div>
+      <div class="tc-subs">Introductions · Greetings · Farewells · Feelings</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/countries.html">
+      <div class="tc-emoji">🌍</div>
+      <div class="tc-title">Countries &amp; Languages</div>
+      <div class="tc-de">Länder &amp; Sprachen</div>
+      <div class="tc-subs">Country names · Languages · Nationalities</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/personal.html">
+      <div class="tc-emoji">👤</div>
+      <div class="tc-title">Personal Info</div>
+      <div class="tc-de">Persönliches</div>
+      <div class="tc-subs">Name · Age · Address · Marital Status</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/numbers.html">
+      <div class="tc-emoji">🔢</div>
+      <div class="tc-title">Numbers</div>
+      <div class="tc-de">Zahlen</div>
+      <div class="tc-subs">0–19 · 20–99 · Hundreds · Thousands · Converter</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/alphabet.html">
+      <div class="tc-emoji">🔤</div>
+      <div class="tc-title">Alphabet</div>
+      <div class="tc-de">Das Alphabet</div>
+      <div class="tc-subs">A–Z · Umlauts (Ä Ö Ü) · ß · Spelling</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/colors.html">
+      <div class="tc-emoji">🎨</div>
+      <div class="tc-title">Colors</div>
+      <div class="tc-de">Farben</div>
+      <div class="tc-subs">Color swatches · Talking about colors</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/grammar.html">
+      <div class="tc-emoji">📐</div>
+      <div class="tc-title">Grammar</div>
+      <div class="tc-de">Grammatik</div>
+      <div class="tc-subs">sein/haben · Conjugation · Articles · Plurals · Pronouns</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/family.html">
+      <div class="tc-emoji">👨‍👩‍👧‍👦</div>
+      <div class="tc-title">Family</div>
+      <div class="tc-de">Familie</div>
+      <div class="tc-subs">Family members · Possessives · Class sentences</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/school.html">
+      <div class="tc-emoji">🏫</div>
+      <div class="tc-title">School</div>
+      <div class="tc-de">Schule</div>
+      <div class="tc-subs">Subjects · Timetable · Classroom · Notebook exercises</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/time.html">
+      <div class="tc-emoji">📅</div>
+      <div class="tc-title">Time &amp; Calendar</div>
+      <div class="tc-de">Zeit &amp; Kalender</div>
+      <div class="tc-subs">Days · Months · Seasons · von/bis/ab · um/am/im</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/komposita.html">
+      <div class="tc-emoji">🔗</div>
+      <div class="tc-title">Komposita</div>
+      <div class="tc-de">Komposita</div>
+      <div class="tc-subs">Noun+Noun · Verb+Noun · Adj+Noun · Chain compounds</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+    <a class="topic-card" href="pages/hobbies.html">
+      <div class="tc-emoji">🎯</div>
+      <div class="tc-title">Hobbies</div>
+      <div class="tc-de">Hobbys</div>
+      <div class="tc-subs">Hobby verbs · Frequency · Word order · Questions</div>
+      <div class="tc-arrow">Open topic →</div>
+    </a>
+
+
+    <a class="topic-card" href="pages/game.html" style="border-color:#fde68a;background:linear-gradient(135deg,#fffbeb,#fff);">
+      <div class="tc-emoji">🎮</div>
+      <div class="tc-title">Flashcard Game</div>
+      <div class="tc-de">Karteikarten-Spiel</div>
+      <div class="tc-subs">90+ nouns · Flip cards · Filter by gender · Shuffle</div>
+      <div class="tc-arrow" style="color:#d97706;">Open game →</div>
+    </a>
+
+  </div>
+
+  <hr class="section-divider">
+  <div style="text-align:center;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+    🎉 <strong>Herzlichen Glückwunsch</strong> — Keep practising every day. <em>Viel Erfolg!</em>
+  </div>
+
+</div><!-- /main-content -->
+```

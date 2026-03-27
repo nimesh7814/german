@@ -1,0 +1,376 @@
+---
+title: "📅 Time & Calendar"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab active" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>📅 Time & Calendar</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Time & Calendar ═══════════════════════════ -->
+
+::: {#sec-time }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Zeit und der Kalender</span></div>
+  <div class="pron-word">[tsyte oont dare kah-LEN-der]</div>
+  <div class="en-word">Time and Calendar</div>
+</div>
+```
+
+## Days of the Week {#sub-days}
+
+::: {.callout-note}
+Days of the week are all **masculine (der)**. Use without an article.  
+To say **'on Monday'**: use **'am Montag'** (am = an + dem).
+:::
+
+| German | Pronunciation | English | Short |
+|--------|---------------|---------|-------|
+| (der) Montag | [MON-tahk] | Monday | Mo |
+| (der) Dienstag | [DEENS-tahk] | Tuesday | Di |
+| (der) Mittwoch | [MIT-vokh] | Wednesday | Mi |
+| (der) Donnerstag | [DON-ners-tahk] | Thursday | Do |
+| (der) Freitag | [FRY-tahk] | Friday | Fr |
+| (der) Samstag | [ZAM-stahk] | Saturday | Sa |
+| (der) Sonntag | [ZON-tahk] | Sunday | So |
+| das Wochenende | [VO-khen-en-deh] | weekend | |
+
+---
+
+## Months {#sub-months}
+
+::: {.callout-note}
+Months are **masculine (der)**. Use **'im Januar'** to say 'in January'.
+:::
+
+```{=html}
+<div class="num-grid">
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Jan</div><div class="word">Januar</div></div>
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Feb</div><div class="word">Februar</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Mär</div><div class="word">März</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Apr</div><div class="word">April</div></div>
+  <div class="num-card" style="border-color:#86efac"><div class="num" style="font-size:.95rem">Mai</div><div class="word">Mai</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Jun</div><div class="word">Juni</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Jul</div><div class="word">Juli</div></div>
+  <div class="num-card" style="border-color:#fde047"><div class="num" style="font-size:.95rem">Aug</div><div class="word">August</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Sep</div><div class="word">September</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Okt</div><div class="word">Oktober</div></div>
+  <div class="num-card" style="border-color:#fb923c"><div class="num" style="font-size:.95rem">Nov</div><div class="word">November</div></div>
+  <div class="num-card" style="border-color:#93c5fd"><div class="num" style="font-size:.95rem">Dez</div><div class="word">Dezember</div></div>
+</div>
+```
+
+---
+
+## Seasons {#sub-seasons}
+
+```{=html}
+<div class="season-grid">
+  <div class="season-card winter"><div class="icon">❄️</div><div class="name">der Winter</div><div class="eng">winter</div><div class="months">Dez · Jan · Feb</div></div>
+  <div class="season-card spring"><div class="icon">🌸</div><div class="name">der Frühling</div><div class="eng">spring</div><div class="months">Mär · Apr · Mai</div></div>
+  <div class="season-card summer"><div class="icon">☀️</div><div class="name">der Sommer</div><div class="eng">summer</div><div class="months">Jun · Jul · Aug</div></div>
+  <div class="season-card autumn"><div class="icon">🍂</div><div class="name">der Herbst</div><div class="eng">autumn / fall</div><div class="months">Sep · Okt · Nov</div></div>
+</div>
+```
+
+::: {.callout-tip}
+All four seasons are **masculine (der)**. Use **'im Sommer'**, **'im Winter'** etc.  
+**'In welchem Monat hast du Geburtstag?'** = In which month is your birthday?
+:::
+
+---
+
+## Useful Time Expressions {#sub-timeexpr}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| heute | [HOY-teh] | today |
+| morgen | [MOR-gen] | tomorrow |
+| übermorgen | [UE-ber-mor-gen] | day after tomorrow |
+| gestern | [GES-tern] | yesterday |
+| vorgestern | [FOR-ges-tern] | day before yesterday |
+| diese Woche | [DEE-zeh VO-kheh] | this week |
+| nächste Woche | [NEKH-steh VO-kheh] | next week |
+| letzte Woche | [LETS-teh VO-kheh] | last week |
+| am Montag | [am MON-tahk] | on Monday |
+| im Januar | [im YAH-noo-ar] | in January |
+
+---
+
+## Telling the Time {#sub-telling}
+
+### Asking the Time
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Wie spät ist es? | [vee shpayt ist ess] | What time is it? |
+| Um wie viel Uhr ist es jetzt? | [oom vee feel oor ist ess yetst] | At what time is it now? |
+| Es ist ___. | [ess ist] | It is ___. |
+
+### Official Time (24-hour clock)
+
+| Time | German | English |
+|------|--------|---------|
+| 8:00 | Es ist acht Uhr. | It is 8 o'clock. |
+| 8:05 | Es ist acht Uhr fünf. | It is 8:05. |
+| 8:15 | Es ist acht Uhr fünfzehn. | It is 8:15. |
+| 8:30 | Es ist acht Uhr dreißig. | It is 8:30. |
+| 13:00 | Es ist dreizehn Uhr. | It is 1pm. |
+
+### Informal Time (12-hour with words)
+
+::: {.callout-warning}
+**⚠️ CRITICAL:** **'halb acht'** = **7:30**, NOT 8:30!  
+It means *'half [on the way to] eight'*.
+:::
+
+```{=html}
+<div class="clock-row">
+  <div class="clock-item"><div class="time">7:30</div><div class="de">halb acht</div><div class="en">half [to] eight → 7:30!</div></div>
+  <div class="clock-item"><div class="time">8:15</div><div class="de">Viertel nach acht</div><div class="en">quarter past eight</div></div>
+  <div class="clock-item"><div class="time">8:45</div><div class="de">Viertel vor neun</div><div class="en">quarter to nine</div></div>
+  <div class="clock-item"><div class="time">8:05</div><div class="de">fünf nach acht</div><div class="en">five past eight</div></div>
+  <div class="clock-item"><div class="time">8:55</div><div class="de">fünf vor neun</div><div class="en">five to nine</div></div>
+</div>
+```
+
+### Time Periods of the Day
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| der Morgen / früh | [MOR-gen / frue] | morning |
+| der Vormittag | [FOR-mit-tahk] | before noon |
+| der Mittag | [MIT-tahk] | noon |
+| der Nachmittag | [NAHKH-mit-tahk] | afternoon |
+| der Abend | [AH-bent] | evening |
+| die Nacht | [nakht] | night |
+| die Mitternacht | [MIT-ter-nakht] | midnight |
+
+---
+
+## von … bis / ab — Time Ranges {#sub-vonbis}
+
+::: {.callout-note}
+Use **von … bis** to say *from … to/until* and **ab** for *from [a point] onward*.
+Use **bis** alone for *until / up to*.
+:::
+
+```{=html}
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:1rem 0;">
+
+  <div style="background:#fff;border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.2rem;font-weight:900;color:#5b21b6;margin-bottom:.3rem">von … bis</div>
+    <div style="font-size:.88rem;color:#6b7280;margin-bottom:.6rem"><em>from … to / until</em> — a defined range</div>
+    <div style="font-size:.92rem;line-height:1.7">
+      <span style="color:#5b21b6;font-weight:700">Von</span> Montag <span style="color:#5b21b6;font-weight:700">bis</span> Freitag<br>
+      <span style="color:#9ca3af;font-size:.82rem">Monday to Friday</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Von</span> 7 Uhr <span style="color:#5b21b6;font-weight:700">bis</span> 12 Uhr<br>
+      <span style="color:#9ca3af;font-size:.82rem">from 7 o'clock until 12 o'clock</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Von</span> Dienstag <span style="color:#5b21b6;font-weight:700">bis</span> Freitag<br>
+      <span style="color:#9ca3af;font-size:.82rem">from Tuesday until Friday</span>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.2rem;font-weight:900;color:#5b21b6;margin-bottom:.3rem">bis</div>
+    <div style="font-size:.88rem;color:#6b7280;margin-bottom:.6rem"><em>until / up to / by</em> — end point only</div>
+    <div style="font-size:.92rem;line-height:1.7">
+      <span style="color:#5b21b6;font-weight:700">Bis</span> Mitternacht<br>
+      <span style="color:#9ca3af;font-size:.82rem">until midnight</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Bis</span> 24 Uhr / 00.00 Uhr<br>
+      <span style="color:#9ca3af;font-size:.82rem">until midnight (24:00)</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Bis</span> nächste Woche!<br>
+      <span style="color:#9ca3af;font-size:.82rem">Until next week! (see you next week)</span>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.2rem;font-weight:900;color:#5b21b6;margin-bottom:.3rem">ab</div>
+    <div style="font-size:.88rem;color:#6b7280;margin-bottom:.6rem"><em>from … onward / starting from</em> — open end</div>
+    <div style="font-size:.92rem;line-height:1.7">
+      Ich habe <span style="color:#5b21b6;font-weight:700">ab</span> 10 Uhr frei.<br>
+      <span style="color:#9ca3af;font-size:.82rem">I'm free from 10 o'clock (onward).</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Ab</span> morgen arbeite ich nicht.<br>
+      <span style="color:#9ca3af;font-size:.82rem">From tomorrow onward I'm not working.</span><br><br>
+      <span style="color:#5b21b6;font-weight:700">Ab</span> Januar lerne ich Deutsch.<br>
+      <span style="color:#9ca3af;font-size:.82rem">Starting from January I'm learning German.</span>
+    </div>
+  </div>
+
+</div>
+```
+
+| Preposition | Use | Example | English |
+|-------------|-----|---------|---------|
+| **von** | start of range | von 8 Uhr | from 8 o'clock |
+| **bis** | end of range / deadline | bis 12 Uhr | until 12 o'clock |
+| **von … bis** | full range | von 8 bis 12 Uhr | from 8 to 12 |
+| **ab** | from a point onward (open) | ab 10 Uhr | from 10 o'clock onward |
+
+---
+
+## Time Prepositions: um / im / am {#sub-timeprep}
+
+::: {.callout-important}
+Three small words do a lot of work with time in German. Choose the right one based on what you are talking about!
+:::
+
+```{=html}
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:1rem 0;">
+
+  <div style="background:linear-gradient(135deg,#ede9fe,#fdf4ff);border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.3rem;font-weight:900;color:#5b21b6">um</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-bottom:.5rem"><em>at (a specific clock time)</em></div>
+    <div style="font-size:.88rem;line-height:1.8">
+      um <strong>8 Uhr</strong> — at 8 o'clock<br>
+      um <strong>10.30 Uhr</strong> — at 10:30<br>
+      um <strong>Mitternacht</strong> — at midnight<br>
+      um <strong>Mittag</strong> — at noon
+    </div>
+  </div>
+
+  <div style="background:linear-gradient(135deg,#ede9fe,#fdf4ff);border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.3rem;font-weight:900;color:#5b21b6">am</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-bottom:.5rem"><em>on (a day or part of day)</em> — am = an + dem</div>
+    <div style="font-size:.88rem;line-height:1.8">
+      am <strong>Montag</strong> — on Monday<br>
+      am <strong>Donnerstag</strong> — on Thursday<br>
+      am <strong>Wochenende</strong> — at the weekend<br>
+      am <strong>Morgen / Abend</strong> — in the morning / evening
+    </div>
+  </div>
+
+  <div style="background:linear-gradient(135deg,#ede9fe,#fdf4ff);border:2px solid #c4b5fd;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:1.3rem;font-weight:900;color:#5b21b6">im</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-bottom:.5rem"><em>in (a month or season)</em> — im = in + dem</div>
+    <div style="font-size:.88rem;line-height:1.8">
+      im <strong>Januar</strong> — in January<br>
+      im <strong>August</strong> — in August<br>
+      im <strong>Sommer</strong> — in summer<br>
+      im <strong>Winter</strong> — in winter
+    </div>
+  </div>
+
+</div>
+```
+
+| What | Preposition | Example |
+|------|-------------|---------|
+| Clock time | **um** | um 22 Uhr |
+| Day of week | **am** | am Donnerstag |
+| Weekend | **am** | am Wochenende |
+| Month | **im** | im August |
+| Season | **im** | im Sommer |
+| Day period (Abend etc.) | **heute** + period | heute Abend |
+
+---
+
+## Example Sentences with Time {#sub-timesentences}
+
+::: {.callout-tip}
+These sentences practise **um**, **am**, **im**, **von…bis**, **ab**, and **bis** — all from class!
+:::
+
+```{=html}
+<div style="display:flex;flex-direction:column;gap:10px;margin:1rem 0;">
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Ich komme heute <span style="color:#7c3aed">um 22.00 Uhr</span>.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">I'm coming today at 22:00. <span style="color:#9ca3af">→ also: Ich komme heute Abend um 10 Uhr.</span></div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Wir arbeiten <span style="color:#7c3aed">von 7 Uhr bis 12 Uhr</span>.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">We work from 7 o'clock until 12 o'clock.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Wir lernen Deutsch <span style="color:#7c3aed">bis Mitternacht</span>. / <span style="color:#7c3aed">bis 00.00 Uhr</span>. / <span style="color:#7c3aed">bis 24 Uhr</span>.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">We're learning German until midnight.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Wir fliegen <span style="color:#7c3aed">im Sommer</span> nach Sri Lanka.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">We're flying to Sri Lanka in the summer.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Ich arbeite nicht <span style="color:#7c3aed">am Wochenende</span>.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">I don't work at the weekend.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Der Deutschkurs ist <span style="color:#7c3aed">am Donnerstag</span>.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">The German course is on Thursday.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Mein Geburtstag ist <span style="color:#7c3aed">im August</span>. / Ich habe <span style="color:#7c3aed">im August</span> Geburtstag.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">My birthday is in August. / I have my birthday in August.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem">Ich habe <span style="color:#7c3aed">ab 10 Uhr</span> frei.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">I'm free from 10 o'clock onward.</div>
+  </div>
+
+  <div style="background:#fff;border-radius:12px;padding:.75rem 1.1rem;border-left:5px solid #7c3aed;box-shadow:0 2px 8px rgba(124,58,237,.08)">
+    <div style="font-weight:800;color:#2d2250;font-size:.97rem"><span style="color:#7c3aed">Von Dienstag bis Freitag</span> koche ich nicht.</div>
+    <div style="font-size:.82rem;color:#6b7280;margin-top:2px">From Tuesday to Friday I don't cook. <em>(inverted word order — time phrase at position 1)</em></div>
+  </div>
+
+</div>
+```
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

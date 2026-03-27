@@ -1,0 +1,504 @@
+---
+title: "🃏 Flashcard Game"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab active" href="flashcards.html">🃏 Flashcard Game</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+```{=html}
+<style>
+  /* Reset body padding for iframe-style embed */
+  #flashcard-embed {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* Inject the full flashcard game inline */
+</style>
+
+<div id="main-content" style="padding:0;max-width:100%;">
+
+<style>
+  :root {
+    --bg: #0e0b1a;
+    --surface: #17122b;
+    --card-bg: #1e1836;
+    --border: #2d2450;
+    --accent: #7c3aed;
+    --accent2: #a855f7;
+    --glow: rgba(124,58,237,.35);
+    --der: #3b82f6;
+    --die: #ec4899;
+    --das: #10b981;
+    --text: #e8e0f8;
+    --muted: #7d6fa0;
+    --mono: 'Fira Code', monospace;
+  }
+  .fc-page { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); border-radius: 16px; overflow: hidden; margin: 1rem 0; }
+  .fc-header { background: linear-gradient(135deg, #1a0a3c 0%, #0d1a3c 50%, #0a2d1a 100%); border-bottom: 2px solid var(--border); padding: 1.5rem 2rem 1.2rem; text-align: center; position: relative; }
+  .fc-header::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(124,58,237,.2) 0%, transparent 70%); }
+  .fc-header h2 { font-size: clamp(1.3rem, 3vw, 2rem); font-weight: 900; letter-spacing: -.02em; background: linear-gradient(135deg, #c4b5fd, #a78bfa, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; position: relative; margin:0; }
+  .fc-header p { color: var(--muted); font-size: .82rem; margin-top: .3rem; position: relative; }
+  .fc-flags { font-size: 1.4rem; margin-bottom: .4rem; position: relative; }
+
+  .fc-topic-nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: .8rem 1rem; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; justify-content: center; }
+  .fc-topic-btn { background: var(--card-bg); border: 1.5px solid var(--border); color: var(--muted); border-radius: 50px; padding: .35rem .9rem; font-size: .76rem; font-weight: 700; font-family: 'Nunito', sans-serif; cursor: pointer; transition: all .2s; white-space: nowrap; }
+  .fc-topic-btn:hover { border-color: var(--accent); color: var(--text); }
+  .fc-topic-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 0 16px var(--glow); }
+  .fc-topic-btn.t-der.active { background: linear-gradient(135deg, #1d4ed8, #3b82f6); border-color:transparent; }
+  .fc-topic-btn.t-die.active { background: linear-gradient(135deg, #be185d, #ec4899); border-color:transparent; }
+  .fc-topic-btn.t-das.active { background: linear-gradient(135deg, #065f46, #10b981); border-color:transparent; }
+
+  .fc-stats-bar { background: var(--surface); padding: .7rem 1.2rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-bottom: 1px solid var(--border); }
+  .fc-stat-chip { background: var(--card-bg); border: 1.5px solid var(--border); border-radius: 50px; padding: .22rem .7rem; font-size: .74rem; font-weight: 700; color: var(--muted); }
+  .fc-stat-chip span { color: var(--accent2); }
+  .fc-shuffle-btn { margin-left: auto; background: linear-gradient(135deg, #5b21b6, #7c3aed); color: #fff; border: none; border-radius: 50px; padding: .38rem 1.1rem; font-size: .78rem; font-weight: 800; font-family: 'Nunito', sans-serif; cursor: pointer; transition: all .2s; box-shadow: 0 0 12px var(--glow); }
+  .fc-shuffle-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 20px var(--glow); }
+
+  .fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; padding: 1.5rem; max-width: 100%; }
+  .fc-section-label { grid-column: 1/-1; color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: .4rem 0 .1rem; border-top: 1px solid var(--border); margin-top: .4rem; }
+  .fc-section-label:first-child { border-top: none; margin-top: 0; }
+
+  .fc-flip { perspective: 900px; height: 280px; cursor: pointer; }
+  .fc-flip-inner { position: relative; width: 100%; height: 100%; transition: transform .55s cubic-bezier(.4,0,.2,1); transform-style: preserve-3d; }
+  .fc-flip.flipped .fc-flip-inner { transform: rotateY(180deg); }
+  .fc-front, .fc-back { position: absolute; inset: 0; border-radius: 18px; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+  .fc-front { background: var(--card-bg); border: 2px solid var(--border); display: flex; flex-direction: column; align-items: center; padding: .85rem .75rem .55rem; transition: border-color .2s, box-shadow .2s; }
+  .fc-flip:hover .fc-front { border-color: var(--accent); box-shadow: 0 0 22px var(--glow); }
+  .fc-front.fc-der { border-color: rgba(59,130,246,.5); }
+  .fc-front.fc-die { border-color: rgba(236,72,153,.5); }
+  .fc-front.fc-das { border-color: rgba(16,185,129,.5); }
+  .fc-art-badge { align-self: flex-start; font-size: .65rem; font-weight: 800; color: #fff; border-radius: 5px; padding: 2px 8px; margin-bottom: .35rem; font-family: var(--mono); letter-spacing: .04em; }
+  .fc-badge-der { background: var(--der); }
+  .fc-badge-die { background: var(--die); }
+  .fc-badge-das { background: var(--das); }
+  .fc-emoji-wrap { flex: 1; display: flex; align-items: center; justify-content: center; }
+  .fc-emoji { font-size: 3.4rem; line-height: 1; filter: drop-shadow(0 4px 10px rgba(0,0,0,.4)); }
+  .fc-de-word { font-size: .95rem; font-weight: 900; color: var(--text); text-align: center; margin-top: .15rem; }
+  .fc-pron { font-size: .65rem; color: var(--accent2); font-family: var(--mono); text-align: center; margin-top: 2px; }
+  .fc-spell-btn { margin-top: .45rem; background: transparent; border: 1.5px solid var(--border); border-radius: 50px; padding: .2rem .7rem; font-size: .66rem; font-weight: 700; color: var(--muted); font-family: 'Nunito', sans-serif; cursor: pointer; transition: all .18s; display: flex; align-items: center; gap: 4px; }
+  .fc-spell-btn:hover { border-color: var(--accent2); color: var(--accent2); background: rgba(168,85,247,.08); }
+  .fc-spell-btn.speaking { border-color: var(--accent2); color: var(--accent2); background: rgba(168,85,247,.15); animation: fc-pulse .8s ease infinite; }
+  @keyframes fc-pulse { 0%,100%{box-shadow:0 0 6px rgba(168,85,247,.3)} 50%{box-shadow:0 0 16px rgba(168,85,247,.7)} }
+  .fc-hint { font-size: .58rem; color: #4a3d6a; margin-top: .25rem; }
+
+  .fc-back { transform: rotateY(180deg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .3rem; padding: 1rem; text-align: center; }
+  .fc-back.fc-der { background: linear-gradient(135deg, #0f1f4a, #1a2f5e); border: 2px solid rgba(59,130,246,.4); }
+  .fc-back.fc-die { background: linear-gradient(135deg, #3d0a24, #5c1035); border: 2px solid rgba(236,72,153,.4); }
+  .fc-back.fc-das { background: linear-gradient(135deg, #052a1a, #0a3d28); border: 2px solid rgba(16,185,129,.4); }
+  .fc-back.fc-neu { background: linear-gradient(135deg, #1a1030, #2a1a4a); border: 2px solid rgba(124,58,237,.4); }
+  .fc-back-art { font-size: .72rem; font-weight: 800; color: #fff; border-radius: 5px; padding: 2px 10px; font-family: var(--mono); }
+  .fc-back-de { font-size: 1.2rem; font-weight: 900; color: #fff; }
+  .fc-back-pron { font-size: .67rem; font-family: var(--mono); color: rgba(255,255,255,.5); }
+  .fc-back-div { width: 34px; height: 2px; border-radius: 2px; margin: .18rem 0; opacity: .6; }
+  .fc-div-der { background: var(--der); }
+  .fc-div-die { background: var(--die); }
+  .fc-div-das { background: var(--das); }
+  .fc-div-neu { background: var(--accent2); }
+  .fc-back-en { font-size: 1.05rem; font-weight: 800; color: rgba(255,255,255,.9); }
+  .fc-back-cat { font-size: .62rem; color: rgba(255,255,255,.3); margin-top: .08rem; text-transform: uppercase; letter-spacing: .06em; }
+  .fc-back-spell { margin-top: .35rem; background: rgba(255,255,255,.1); border: 1.5px solid rgba(255,255,255,.2); border-radius: 50px; padding: .2rem .7rem; font-size: .66rem; font-weight: 700; color: rgba(255,255,255,.7); font-family: 'Nunito', sans-serif; cursor: pointer; transition: all .18s; display: flex; align-items: center; gap: 4px; }
+  .fc-back-spell:hover { background: rgba(255,255,255,.2); color: #fff; }
+  .fc-back-spell.speaking { background: rgba(255,255,255,.2); color: #fff; animation: fc-pulse .8s ease infinite; }
+  .fc-no-cards { grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--muted); font-size: .95rem; font-weight: 700; }
+</style>
+
+<div class="fc-page">
+  <div class="fc-header">
+    <div class="fc-flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h2>🃏 Full A1 Flashcard Game</h2>
+    <p>220+ words from all topics · Click card to flip · 🔊 Spell to hear letter-by-letter</p>
+  </div>
+
+  <div class="fc-topic-nav" id="fcTopicNav"></div>
+
+  <div class="fc-stats-bar">
+    <div class="fc-stat-chip">Total: <span id="fcTotal">0</span></div>
+    <div class="fc-stat-chip">Showing: <span id="fcShowing">0</span></div>
+    <div class="fc-stat-chip">Flipped: <span id="fcFlipped">0</span></div>
+    <button class="fc-shuffle-btn" onclick="fcShuffle()">🔀 Shuffle</button>
+  </div>
+
+  <div class="fc-grid" id="fcGrid"></div>
+</div>
+
+<script>
+const FC_TOPICS = {
+  communication:"🗣️ Communication", family:"👨‍👩‍👧‍👦 Family", school:"🏫 School",
+  time:"📅 Time & Calendar", food:"🍽️ Food & Drink", home:"🏠 Home",
+  transport:"🚗 Transport", nature:"🌿 Nature", colors:"🎨 Colors",
+  personal:"👤 Personal", numbers:"🔢 Numbers", countries:"🌍 Countries",
+  grammar:"📐 Verbs", hobbies:"🎯 Hobbies"
+};
+
+const FC_NOUNS = [
+  {art:"der",de:"Mann",pron:"[man]",en:"man",emoji:"🧔",topic:"communication"},
+  {art:"die",de:"Frau",pron:"[frow]",en:"woman / Mrs",emoji:"👩",topic:"communication"},
+  {art:"das",de:"Kind",pron:"[kint]",en:"child",emoji:"🧒",topic:"family"},
+  {art:"der",de:"Junge",pron:"[YOONG-eh]",en:"boy",emoji:"👦",topic:"family"},
+  {art:"das",de:"Mädchen",pron:"[MAYD-khen]",en:"girl",emoji:"👧",topic:"family"},
+  {art:"der",de:"Herr",pron:"[hair]",en:"Mr / sir",emoji:"🎩",topic:"communication"},
+  {art:"die",de:"Dame",pron:"[DAH-meh]",en:"lady",emoji:"👒",topic:"communication"},
+  {art:"die",de:"Mutter",pron:"[MOOT-er]",en:"mother",emoji:"👩‍👦",topic:"family"},
+  {art:"der",de:"Vater",pron:"[FAH-ter]",en:"father",emoji:"👨‍👦",topic:"family"},
+  {art:"die",de:"Eltern",pron:"[EL-tern]",en:"parents",emoji:"👨‍👩‍👦",topic:"family"},
+  {art:"der",de:"Bruder",pron:"[BROO-der]",en:"brother",emoji:"👦",topic:"family"},
+  {art:"die",de:"Schwester",pron:"[SHVES-ter]",en:"sister",emoji:"👧",topic:"family"},
+  {art:"der",de:"Sohn",pron:"[zohn]",en:"son",emoji:"👦",topic:"family"},
+  {art:"die",de:"Tochter",pron:"[TOKH-ter]",en:"daughter",emoji:"👧",topic:"family"},
+  {art:"der",de:"Onkel",pron:"[ONK-el]",en:"uncle",emoji:"👨",topic:"family"},
+  {art:"die",de:"Tante",pron:"[TAN-teh]",en:"aunt",emoji:"👩",topic:"family"},
+  {art:"der",de:"Großvater",pron:"[GROHS-fah-ter]",en:"grandfather",emoji:"👴",topic:"family"},
+  {art:"die",de:"Großmutter",pron:"[GROHS-moot-er]",en:"grandmother",emoji:"👵",topic:"family"},
+  {art:"der",de:"Cousin",pron:"[koo-ZAN]",en:"cousin (m)",emoji:"🧑",topic:"family"},
+  {art:"die",de:"Cousine",pron:"[koo-ZEE-neh]",en:"cousin (f)",emoji:"🧑",topic:"family"},
+  {art:"der",de:"Neffe",pron:"[NEF-eh]",en:"nephew",emoji:"🧒",topic:"family"},
+  {art:"die",de:"Nichte",pron:"[NIK-teh]",en:"niece",emoji:"🧒",topic:"family"},
+  {art:"der",de:"Ehemann",pron:"[EH-eh-man]",en:"husband",emoji:"🤵",topic:"family"},
+  {art:"die",de:"Ehefrau",pron:"[EH-eh-frow]",en:"wife",emoji:"👰",topic:"family"},
+  {art:"die",de:"Tafel",pron:"[TAH-fel]",en:"blackboard",emoji:"🖊️",topic:"school"},
+  {art:"die",de:"Tasche",pron:"[TASH-eh]",en:"bag",emoji:"👜",topic:"school"},
+  {art:"das",de:"Laptop",pron:"[LAP-top]",en:"laptop",emoji:"💻",topic:"school"},
+  {art:"das",de:"Fenster",pron:"[FEN-ster]",en:"window",emoji:"🪟",topic:"school"},
+  {art:"die",de:"Tür",pron:"[tueer]",en:"door",emoji:"🚪",topic:"school"},
+  {art:"der",de:"Kuli",pron:"[KOO-lee]",en:"ballpoint pen",emoji:"🖊️",topic:"school"},
+  {art:"das",de:"Buch",pron:"[bookh]",en:"book",emoji:"📖",topic:"school"},
+  {art:"der",de:"Rucksack",pron:"[ROOK-zak]",en:"backpack",emoji:"🎒",topic:"school"},
+  {art:"der",de:"Computer",pron:"[kom-PYOO-ter]",en:"computer",emoji:"🖥️",topic:"school"},
+  {art:"der",de:"Stift",pron:"[shtift]",en:"pen / marker",emoji:"✏️",topic:"school"},
+  {art:"der",de:"Bleistift",pron:"[BLY-shtift]",en:"pencil",emoji:"✏️",topic:"school"},
+  {art:"der",de:"Radiergummi",pron:"[rah-DEER-goom-ee]",en:"eraser",emoji:"🧹",topic:"school"},
+  {art:"der",de:"Tisch",pron:"[tish]",en:"table / desk",emoji:"🪑",topic:"school"},
+  {art:"der",de:"Stuhl",pron:"[shtool]",en:"chair",emoji:"🪑",topic:"school"},
+  {art:"die",de:"Uhr",pron:"[oor]",en:"clock / watch",emoji:"🕐",topic:"school"},
+  {art:"das",de:"Heft",pron:"[heft]",en:"notebook",emoji:"📓",topic:"school"},
+  {art:"das",de:"Lineal",pron:"[lin-ay-AHL]",en:"ruler",emoji:"📏",topic:"school"},
+  {art:"das",de:"Handy",pron:"[HEN-dee]",en:"mobile phone",emoji:"📱",topic:"school"},
+  {art:"die",de:"Schere",pron:"[SHAY-reh]",en:"scissors",emoji:"✂️",topic:"school"},
+  {art:"die",de:"Schule",pron:"[SHOO-leh]",en:"school",emoji:"🏫",topic:"school"},
+  {art:"das",de:"Fach",pron:"[fakh]",en:"subject",emoji:"📚",topic:"school"},
+  {art:"die",de:"Pause",pron:"[POW-zeh]",en:"break / interval",emoji:"☕",topic:"school"},
+  {art:"die",de:"Klasse",pron:"[KLAS-seh]",en:"class",emoji:"🏫",topic:"school"},
+  {art:"der",de:"Stundenplan",pron:"[SHTOON-den-plan]",en:"timetable",emoji:"📋",topic:"school"},
+  {art:"die",de:"Stunde",pron:"[SHTOON-deh]",en:"period / hour",emoji:"⏱️",topic:"school"},
+  {art:"der",de:"Montag",pron:"[MON-tahk]",en:"Monday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Dienstag",pron:"[DEENS-tahk]",en:"Tuesday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Mittwoch",pron:"[MIT-vokh]",en:"Wednesday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Donnerstag",pron:"[DON-ners-tahk]",en:"Thursday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Freitag",pron:"[FRY-tahk]",en:"Friday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Samstag",pron:"[ZAM-stahk]",en:"Saturday",emoji:"📅",topic:"time"},
+  {art:"der",de:"Sonntag",pron:"[ZON-tahk]",en:"Sunday",emoji:"☀️",topic:"time"},
+  {art:"das",de:"Wochenende",pron:"[VO-khen-en-deh]",en:"weekend",emoji:"🎉",topic:"time"},
+  {art:"der",de:"Morgen",pron:"[MOR-gen]",en:"morning",emoji:"🌅",topic:"time"},
+  {art:"der",de:"Mittag",pron:"[MIT-tahk]",en:"noon",emoji:"☀️",topic:"time"},
+  {art:"der",de:"Abend",pron:"[AH-bent]",en:"evening",emoji:"🌆",topic:"time"},
+  {art:"die",de:"Nacht",pron:"[nakht]",en:"night",emoji:"🌙",topic:"time"},
+  {art:"die",de:"Mitternacht",pron:"[MIT-ter-nakht]",en:"midnight",emoji:"🌃",topic:"time"},
+  {art:"die",de:"Woche",pron:"[VO-kheh]",en:"week",emoji:"🗓️",topic:"time"},
+  {art:"der",de:"Monat",pron:"[MOH-nat]",en:"month",emoji:"📆",topic:"time"},
+  {art:"das",de:"Jahr",pron:"[yahr]",en:"year",emoji:"🎆",topic:"time"},
+  {art:"der",de:"Winter",pron:"[VIN-ter]",en:"winter",emoji:"❄️",topic:"time"},
+  {art:"der",de:"Frühling",pron:"[FRUE-ling]",en:"spring",emoji:"🌸",topic:"time"},
+  {art:"der",de:"Sommer",pron:"[ZOM-er]",en:"summer",emoji:"☀️",topic:"time"},
+  {art:"der",de:"Herbst",pron:"[hairpst]",en:"autumn / fall",emoji:"🍂",topic:"time"},
+  {art:"der",de:"Januar",pron:"[YAH-noo-ar]",en:"January",emoji:"❄️",topic:"time"},
+  {art:"der",de:"Februar",pron:"[FEH-broo-ar]",en:"February",emoji:"❄️",topic:"time"},
+  {art:"der",de:"März",pron:"[merts]",en:"March",emoji:"🌱",topic:"time"},
+  {art:"der",de:"April",pron:"[ah-PRIL]",en:"April",emoji:"🌦️",topic:"time"},
+  {art:"der",de:"Mai",pron:"[my]",en:"May",emoji:"🌸",topic:"time"},
+  {art:"der",de:"Juni",pron:"[YOO-nee]",en:"June",emoji:"☀️",topic:"time"},
+  {art:"der",de:"Juli",pron:"[YOO-lee]",en:"July",emoji:"🏖️",topic:"time"},
+  {art:"der",de:"August",pron:"[OW-goost]",en:"August",emoji:"☀️",topic:"time"},
+  {art:"der",de:"September",pron:"[zep-TEM-ber]",en:"September",emoji:"🍂",topic:"time"},
+  {art:"der",de:"Oktober",pron:"[ok-TOH-ber]",en:"October",emoji:"🍁",topic:"time"},
+  {art:"der",de:"November",pron:"[no-VEM-ber]",en:"November",emoji:"🍂",topic:"time"},
+  {art:"der",de:"Dezember",pron:"[deh-TSEM-ber]",en:"December",emoji:"🎄",topic:"time"},
+  {art:"die",de:"Sprache",pron:"[SHPRAH-kheh]",en:"language",emoji:"💬",topic:"communication"},
+  {art:"das",de:"Land",pron:"[lant]",en:"country",emoji:"🗺️",topic:"communication"},
+  {art:"die",de:"Stadt",pron:"[shtat]",en:"city",emoji:"🏙️",topic:"communication"},
+  {art:"die",de:"Adresse",pron:"[ah-DRES-eh]",en:"address",emoji:"📮",topic:"communication"},
+  {art:"die",de:"Telefonnummer",pron:"[teh-leh-FOHN-noom-er]",en:"phone number",emoji:"📞",topic:"communication"},
+  {art:"der",de:"Name",pron:"[NAH-meh]",en:"name",emoji:"🪪",topic:"communication"},
+  {art:"das",de:"Alter",pron:"[AL-ter]",en:"age",emoji:"🎂",topic:"personal"},
+  {art:"der",de:"Beruf",pron:"[beh-ROOF]",en:"job / profession",emoji:"💼",topic:"personal"},
+  {art:"die",de:"Nationalität",pron:"[nat-see-oh-na-lee-TAYT]",en:"nationality",emoji:"🏳️",topic:"personal"},
+  {art:"der",de:"Vorname",pron:"[FOR-nah-meh]",en:"first name",emoji:"🪪",topic:"personal"},
+  {art:"der",de:"Nachname",pron:"[NAHKH-nah-meh]",en:"surname",emoji:"🪪",topic:"personal"},
+  {art:"die",de:"Straße",pron:"[SHTRAH-seh]",en:"street",emoji:"🛣️",topic:"personal"},
+  {art:"das",de:"Brot",pron:"[broht]",en:"bread",emoji:"🍞",topic:"food"},
+  {art:"die",de:"Milch",pron:"[milkh]",en:"milk",emoji:"🥛",topic:"food"},
+  {art:"der",de:"Kaffee",pron:"[KAF-feh]",en:"coffee",emoji:"☕",topic:"food"},
+  {art:"der",de:"Tee",pron:"[tay]",en:"tea",emoji:"🍵",topic:"food"},
+  {art:"das",de:"Wasser",pron:"[VAS-er]",en:"water",emoji:"💧",topic:"food"},
+  {art:"der",de:"Wein",pron:"[vine]",en:"wine",emoji:"🍷",topic:"food"},
+  {art:"das",de:"Bier",pron:"[beer]",en:"beer",emoji:"🍺",topic:"food"},
+  {art:"der",de:"Kuchen",pron:"[KOO-khen]",en:"cake",emoji:"🎂",topic:"food"},
+  {art:"die",de:"Butter",pron:"[BOOT-er]",en:"butter",emoji:"🧈",topic:"food"},
+  {art:"der",de:"Käse",pron:"[KAY-zeh]",en:"cheese",emoji:"🧀",topic:"food"},
+  {art:"das",de:"Fleisch",pron:"[flysh]",en:"meat",emoji:"🥩",topic:"food"},
+  {art:"der",de:"Fisch",pron:"[fish]",en:"fish",emoji:"🐟",topic:"food"},
+  {art:"das",de:"Gemüse",pron:"[geh-MUE-zeh]",en:"vegetables",emoji:"🥦",topic:"food"},
+  {art:"das",de:"Obst",pron:"[ohpst]",en:"fruit",emoji:"🍎",topic:"food"},
+  {art:"die",de:"Flasche",pron:"[FLASH-eh]",en:"bottle",emoji:"🍾",topic:"food"},
+  {art:"das",de:"Haus",pron:"[hows]",en:"house",emoji:"🏠",topic:"home"},
+  {art:"die",de:"Wohnung",pron:"[VOH-noong]",en:"apartment",emoji:"🏢",topic:"home"},
+  {art:"das",de:"Zimmer",pron:"[TSIM-er]",en:"room",emoji:"🚪",topic:"home"},
+  {art:"die",de:"Küche",pron:"[KUE-kheh]",en:"kitchen",emoji:"🍳",topic:"home"},
+  {art:"das",de:"Badezimmer",pron:"[BAH-deh-tsim-er]",en:"bathroom",emoji:"🛁",topic:"home"},
+  {art:"das",de:"Schlafzimmer",pron:"[SHLAHF-tsim-er]",en:"bedroom",emoji:"🛏️",topic:"home"},
+  {art:"das",de:"Wohnzimmer",pron:"[VOHN-tsim-er]",en:"living room",emoji:"🛋️",topic:"home"},
+  {art:"der",de:"Garten",pron:"[GAR-ten]",en:"garden",emoji:"🌳",topic:"home"},
+  {art:"das",de:"Auto",pron:"[OW-toh]",en:"car",emoji:"🚗",topic:"transport"},
+  {art:"der",de:"Bus",pron:"[boos]",en:"bus",emoji:"🚌",topic:"transport"},
+  {art:"der",de:"Zug",pron:"[tsook]",en:"train",emoji:"🚆",topic:"transport"},
+  {art:"das",de:"Fahrrad",pron:"[FAR-raht]",en:"bicycle",emoji:"🚲",topic:"transport"},
+  {art:"das",de:"Flugzeug",pron:"[FLOOK-tsoyk]",en:"aeroplane",emoji:"✈️",topic:"transport"},
+  {art:"der",de:"Baum",pron:"[bowm]",en:"tree",emoji:"🌳",topic:"nature"},
+  {art:"die",de:"Blume",pron:"[BLOO-meh]",en:"flower",emoji:"🌸",topic:"nature"},
+  {art:"der",de:"Hund",pron:"[hoont]",en:"dog",emoji:"🐕",topic:"nature"},
+  {art:"die",de:"Katze",pron:"[KAT-seh]",en:"cat",emoji:"🐱",topic:"nature"},
+  {art:"der",de:"Vogel",pron:"[FOH-gel]",en:"bird",emoji:"🐦",topic:"nature"},
+  {art:"die",de:"Sonne",pron:"[ZON-neh]",en:"sun",emoji:"☀️",topic:"nature"},
+  {art:"der",de:"Regen",pron:"[RAY-gen]",en:"rain",emoji:"🌧️",topic:"nature"},
+  {art:"der",de:"Schnee",pron:"[shnay]",en:"snow",emoji:"❄️",topic:"nature"},
+  {art:null,de:"rot",pron:"[roht]",en:"red",emoji:"🔴",topic:"colors"},
+  {art:null,de:"blau",pron:"[blow]",en:"blue",emoji:"🔵",topic:"colors"},
+  {art:null,de:"grün",pron:"[gruen]",en:"green",emoji:"🟢",topic:"colors"},
+  {art:null,de:"gelb",pron:"[gelp]",en:"yellow",emoji:"🟡",topic:"colors"},
+  {art:null,de:"schwarz",pron:"[shvarts]",en:"black",emoji:"⚫",topic:"colors"},
+  {art:null,de:"weiß",pron:"[vice]",en:"white",emoji:"⚪",topic:"colors"},
+  {art:null,de:"grau",pron:"[grow]",en:"grey",emoji:"🩶",topic:"colors"},
+  {art:null,de:"braun",pron:"[brown]",en:"brown",emoji:"🟤",topic:"colors"},
+  {art:null,de:"orange",pron:"[oh-RAN-zheh]",en:"orange",emoji:"🟠",topic:"colors"},
+  {art:null,de:"rosa",pron:"[ROH-za]",en:"pink",emoji:"🌸",topic:"colors"},
+  {art:null,de:"lila",pron:"[LEE-la]",en:"purple",emoji:"🟣",topic:"colors"},
+  {art:null,de:"türkis",pron:"[tuer-KEES]",en:"turquoise",emoji:"🩵",topic:"colors"},
+  {art:null,de:"null",pron:"[nool]",en:"zero (0)",emoji:"0️⃣",topic:"numbers"},
+  {art:null,de:"eins",pron:"[ines]",en:"one (1)",emoji:"1️⃣",topic:"numbers"},
+  {art:null,de:"zwei",pron:"[tsvye]",en:"two (2)",emoji:"2️⃣",topic:"numbers"},
+  {art:null,de:"drei",pron:"[drye]",en:"three (3)",emoji:"3️⃣",topic:"numbers"},
+  {art:null,de:"vier",pron:"[feer]",en:"four (4)",emoji:"4️⃣",topic:"numbers"},
+  {art:null,de:"fünf",pron:"[fuenf]",en:"five (5)",emoji:"5️⃣",topic:"numbers"},
+  {art:null,de:"sechs",pron:"[zeks]",en:"six (6)",emoji:"6️⃣",topic:"numbers"},
+  {art:null,de:"sieben",pron:"[ZEE-ben]",en:"seven (7)",emoji:"7️⃣",topic:"numbers"},
+  {art:null,de:"acht",pron:"[akht]",en:"eight (8)",emoji:"8️⃣",topic:"numbers"},
+  {art:null,de:"neun",pron:"[noyn]",en:"nine (9)",emoji:"9️⃣",topic:"numbers"},
+  {art:null,de:"zehn",pron:"[tsayn]",en:"ten (10)",emoji:"🔟",topic:"numbers"},
+  {art:null,de:"zwanzig",pron:"[TSVAN-tsish]",en:"twenty (20)",emoji:"✌️",topic:"numbers"},
+  {art:null,de:"dreißig",pron:"[DRY-ssish]",en:"thirty (30)",emoji:"🔢",topic:"numbers"},
+  {art:null,de:"hundert",pron:"[HOON-dert]",en:"hundred (100)",emoji:"💯",topic:"numbers"},
+  {art:null,de:"tausend",pron:"[TOW-zent]",en:"thousand (1000)",emoji:"🔢",topic:"numbers"},
+  {art:null,de:"Deutschland",pron:"[DOYCH-lant]",en:"Germany",emoji:"🇩🇪",topic:"countries"},
+  {art:null,de:"Österreich",pron:"[OH-ster-rike]",en:"Austria",emoji:"🇦🇹",topic:"countries"},
+  {art:"die",de:"Schweiz",pron:"[shvites]",en:"Switzerland",emoji:"🇨🇭",topic:"countries"},
+  {art:"die",de:"Türkei",pron:"[tuer-KY]",en:"Turkey",emoji:"🇹🇷",topic:"countries"},
+  {art:null,de:"England",pron:"[ENG-lant]",en:"England",emoji:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",topic:"countries"},
+  {art:null,de:"Deutsch",pron:"[doych]",en:"German (language)",emoji:"💬",topic:"countries"},
+  {art:null,de:"Englisch",pron:"[ENG-lish]",en:"English (language)",emoji:"💬",topic:"countries"},
+  {art:null,de:"Französisch",pron:"[fran-TSUR-zish]",en:"French (language)",emoji:"💬",topic:"countries"},
+  {art:null,de:"Spanisch",pron:"[SHPAH-nish]",en:"Spanish (language)",emoji:"💬",topic:"countries"},
+  {art:null,de:"kommen",pron:"[KOM-en]",en:"to come",emoji:"🚶",topic:"grammar"},
+  {art:null,de:"wohnen",pron:"[VO-nen]",en:"to live / reside",emoji:"🏠",topic:"grammar"},
+  {art:null,de:"gehen",pron:"[GAY-en]",en:"to go",emoji:"🚶",topic:"grammar"},
+  {art:null,de:"trinken",pron:"[TRIN-ken]",en:"to drink",emoji:"🥤",topic:"grammar"},
+  {art:null,de:"essen",pron:"[ES-sen]",en:"to eat",emoji:"🍽️",topic:"grammar"},
+  {art:null,de:"kochen",pron:"[KO-khen]",en:"to cook",emoji:"🍳",topic:"grammar"},
+  {art:null,de:"schlafen",pron:"[SHLAH-fen]",en:"to sleep",emoji:"😴",topic:"grammar"},
+  {art:null,de:"sprechen",pron:"[SHPREKH-en]",en:"to speak",emoji:"💬",topic:"grammar"},
+  {art:null,de:"arbeiten",pron:"[AR-by-ten]",en:"to work",emoji:"💼",topic:"grammar"},
+  {art:null,de:"lesen",pron:"[LAY-zen]",en:"to read",emoji:"📖",topic:"grammar"},
+  {art:null,de:"schreiben",pron:"[SHRY-ben]",en:"to write",emoji:"✍️",topic:"grammar"},
+  {art:null,de:"lernen",pron:"[LAIR-nen]",en:"to learn",emoji:"📚",topic:"grammar"},
+  {art:null,de:"fahren",pron:"[FAH-ren]",en:"to drive",emoji:"🚗",topic:"grammar"},
+  {art:null,de:"fliegen",pron:"[FLEE-gen]",en:"to fly",emoji:"✈️",topic:"grammar"},
+  {art:null,de:"spielen",pron:"[SHPEE-len]",en:"to play",emoji:"🎮",topic:"grammar"},
+  {art:null,de:"schwimmen",pron:"[SHVIM-en]",en:"to swim",emoji:"🏊",topic:"grammar"},
+  {art:null,de:"sein",pron:"[zine]",en:"to be",emoji:"💫",topic:"grammar"},
+  {art:null,de:"haben",pron:"[HAH-ben]",en:"to have",emoji:"✋",topic:"grammar"},
+  {art:null,de:"heißen",pron:"[HY-sen]",en:"to be called",emoji:"🏷️",topic:"grammar"},
+  {art:null,de:"machen",pron:"[MAH-khen]",en:"to make / do",emoji:"🔧",topic:"grammar"},
+  {art:null,de:"Fußball spielen",pron:"[FOOS-bal SHPEE-len]",en:"play football",emoji:"⚽",topic:"hobbies"},
+  {art:null,de:"Tennis spielen",pron:"[TEN-is SHPEE-len]",en:"play tennis",emoji:"🎾",topic:"hobbies"},
+  {art:null,de:"Musik hören",pron:"[moo-ZEEK HUR-en]",en:"listen to music",emoji:"🎵",topic:"hobbies"},
+  {art:null,de:"schwimmen",pron:"[SHVIM-en]",en:"swimming",emoji:"🏊",topic:"hobbies"},
+  {art:null,de:"joggen",pron:"[JOG-en]",en:"jogging",emoji:"🏃",topic:"hobbies"},
+  {art:null,de:"wandern",pron:"[VAN-dern]",en:"hiking",emoji:"🥾",topic:"hobbies"},
+  {art:null,de:"reisen",pron:"[RY-zen]",en:"to travel",emoji:"✈️",topic:"hobbies"},
+  {art:null,de:"tanzen",pron:"[TAN-tsen]",en:"to dance",emoji:"💃",topic:"hobbies"},
+  {art:null,de:"singen",pron:"[ZING-en]",en:"to sing",emoji:"🎤",topic:"hobbies"},
+  {art:null,de:"fotografieren",pron:"[fo-to-gra-FEE-ren]",en:"photography",emoji:"📷",topic:"hobbies"},
+  {art:null,de:"malen",pron:"[MAH-len]",en:"to paint",emoji:"🎨",topic:"hobbies"},
+  {art:null,de:"fernsehen",pron:"[FERN-zay-en]",en:"watch TV",emoji:"📺",topic:"hobbies"},
+  {art:null,de:"zelten",pron:"[TSEL-ten]",en:"camping",emoji:"🏕️",topic:"hobbies"},
+  {art:null,de:"Schach spielen",pron:"[shakh SHPEE-len]",en:"play chess",emoji:"♟️",topic:"hobbies"},
+];
+
+let fcFilter = 'all', fcOrder = [...FC_NOUNS.keys()], fcFlipped = 0;
+
+function fcSpell(word, btn, e) {
+  e.stopPropagation();
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  btn.classList.add('speaking');
+  const letters = [...word];
+  let i = 0;
+  function next() {
+    if (i < letters.length) {
+      const u = new SpeechSynthesisUtterance(letters[i++]);
+      u.lang = 'de-DE'; u.rate = 0.8;
+      u.onend = () => setTimeout(next, 130);
+      window.speechSynthesis.speak(u);
+    } else {
+      const u = new SpeechSynthesisUtterance(word);
+      u.lang = 'de-DE'; u.rate = 0.75;
+      u.onend = () => btn.classList.remove('speaking');
+      window.speechSynthesis.speak(u);
+    }
+  }
+  next();
+}
+
+function fcBuildCard(n, idx) {
+  const a = n.art;
+  const frontCls = a ? `fc-${a}` : '';
+  const badgeCls = a ? `fc-badge-${a}` : '';
+  const backCls  = a ? `fc-${a}` : 'fc-neu';
+  const divCls   = a ? `fc-div-${a}` : 'fc-div-neu';
+  const label    = a ? `${a} ${n.de}` : n.de;
+  const safeWord = n.de.replace(/'/g,"\\'");
+  return `<div class="fc-flip ${frontCls}" id="fcard-${idx}" onclick="fcFlip(this)">
+  <div class="fc-flip-inner">
+    <div class="fc-front ${frontCls}">
+      ${a ? `<span class="fc-art-badge ${badgeCls}">${a}</span>` : `<span style="display:block;height:20px;margin-bottom:.35rem"></span>`}
+      <div class="fc-emoji-wrap"><span class="fc-emoji">${n.emoji}</span></div>
+      <div class="fc-de-word">${label}</div>
+      <div class="fc-pron">${n.pron}</div>
+      <button class="fc-spell-btn" onclick="fcSpell('${safeWord}',this,event)">🔊 Spell</button>
+      <div class="fc-hint">tap to flip →</div>
+    </div>
+    <div class="fc-back ${backCls}">
+      ${a ? `<span class="fc-back-art fc-badge-${a}">${a}</span>` : ''}
+      <div class="fc-back-de">${n.de}</div>
+      <div class="fc-back-pron">${n.pron}</div>
+      <div class="fc-back-div ${divCls}"></div>
+      <div class="fc-back-en">${n.en}</div>
+      <div class="fc-back-cat">${FC_TOPICS[n.topic]||n.topic}</div>
+      <button class="fc-back-spell" onclick="fcSpell('${safeWord}',this,event)">🔊 Spell</button>
+    </div>
+  </div>
+</div>`;
+}
+
+function fcGetFiltered() {
+  if (fcFilter==='all') return fcOrder;
+  if (['der','die','das'].includes(fcFilter)) return fcOrder.filter(i=>FC_NOUNS[i].art===fcFilter);
+  return fcOrder.filter(i=>FC_NOUNS[i].topic===fcFilter);
+}
+
+function fcRender() {
+  const grid = document.getElementById('fcGrid');
+  const idx = fcGetFiltered();
+  if (!idx.length) { grid.innerHTML='<div class="fc-no-cards">No cards match.</div>'; return; }
+  if (fcFilter==='all') {
+    let html='';
+    Object.keys(FC_TOPICS).forEach(topic=>{
+      const ti=idx.filter(i=>FC_NOUNS[i].topic===topic);
+      if(!ti.length) return;
+      html+=`<div class="fc-section-label">${FC_TOPICS[topic]} (${ti.length})</div>`;
+      html+=ti.map(i=>fcBuildCard(FC_NOUNS[i],i)).join('');
+    });
+    grid.innerHTML=html;
+  } else {
+    grid.innerHTML=idx.map(i=>fcBuildCard(FC_NOUNS[i],i)).join('');
+  }
+  fcFlipped=0;
+  document.getElementById('fcTotal').textContent=FC_NOUNS.length;
+  document.getElementById('fcShowing').textContent=idx.length;
+  document.getElementById('fcFlipped').textContent=0;
+}
+
+function fcFlip(el) {
+  const was=el.classList.contains('flipped');
+  el.classList.toggle('flipped');
+  fcFlipped+=was?-1:1;
+  document.getElementById('fcFlipped').textContent=fcFlipped;
+}
+
+function fcSetFilter(btn, filter) {
+  document.querySelectorAll('.fc-topic-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  fcFilter=filter; fcOrder=[...FC_NOUNS.keys()]; fcRender();
+}
+
+function fcShuffle() { fcOrder=fcOrder.sort(()=>Math.random()-.5); fcRender(); }
+
+function fcBuildNav() {
+  const nav=document.getElementById('fcTopicNav');
+  const btns=[
+    {k:'all',l:'🌟 All',c:''},
+    {k:'der',l:'🔵 der',c:'t-der'},
+    {k:'die',l:'🔴 die',c:'t-die'},
+    {k:'das',l:'🟢 das',c:'t-das'},
+    {k:'communication',l:'🗣️ Comm.',c:''},
+    {k:'family',l:'👨‍👩‍👧‍👦 Family',c:''},
+    {k:'school',l:'🏫 School',c:''},
+    {k:'time',l:'📅 Time',c:''},
+    {k:'food',l:'🍽️ Food',c:''},
+    {k:'home',l:'🏠 Home',c:''},
+    {k:'transport',l:'🚗 Transport',c:''},
+    {k:'nature',l:'🌿 Nature',c:''},
+    {k:'colors',l:'🎨 Colors',c:''},
+    {k:'personal',l:'👤 Personal',c:''},
+    {k:'numbers',l:'🔢 Numbers',c:''},
+    {k:'countries',l:'🌍 Countries',c:''},
+    {k:'grammar',l:'📐 Verbs',c:''},
+    {k:'hobbies',l:'🎯 Hobbies',c:''},
+  ];
+  nav.innerHTML=btns.map(b=>`<button class="fc-topic-btn ${b.c}${b.k==='all'?' active':''}" onclick="fcSetFilter(this,'${b.k}')">${b.l}</button>`).join('');
+}
+
+fcBuildNav(); fcRender();
+</script>
+
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

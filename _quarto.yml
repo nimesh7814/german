@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - pages/*.qmd
+
+website:
+  title: "🇩🇪 German A1"
+  navbar: false
+
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true

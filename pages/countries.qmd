@@ -1,0 +1,117 @@
+---
+title: "🌍 Countries & Languages"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab active" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🌍 Countries & Languages</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Countries ═══════════════════════════ -->
+
+::: {#sec-countries }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Länder und Sprachen</span></div>
+  <div class="pron-word">[LEND-er oont SHPRAH-khen]</div>
+  <div class="en-word">Countries and Languages</div>
+</div>
+```
+
+## Countries (Länder) {#sub-countries-list}
+
+::: {.callout-note}
+Most countries have **NO article**. Exceptions: **die Schweiz**, **die Türkei**, **die Ukraine**, **die USA** (plural → den USA).
+:::
+
+| German | Pronunciation | English | Ich komme aus... |
+|--------|---------------|---------|-----------------|
+| Deutschland | [DOYCH-lant] | Germany | ... Deutschland |
+| Österreich | [OH-ster-rike] | Austria | ... Österreich |
+| die Schweiz | [dee shvites] | Switzerland | ... **der** Schweiz |
+| die Türkei | [dee tuer-KY] | Turkey | ... **der** Türkei |
+| die Ukraine | [dee oo-KRAY-neh] | Ukraine | ... **der** Ukraine |
+| die USA | [dee oo-es-AH] | USA | ... **den** USA |
+| Sri Lanka | [shree LAN-kah] | Sri Lanka | ... Sri Lanka |
+| England | [ENG-lant] | England | ... England |
+
+---
+
+## Languages (Sprachen) {#sub-languages}
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Deutsch</div><div class="pron">[doych]</div><div class="en">German</div></div>
+  <div class="vocab-card"><div class="de">Englisch</div><div class="pron">[ENG-lish]</div><div class="en">English</div></div>
+  <div class="vocab-card"><div class="de">Französisch</div><div class="pron">[fran-TSUR-zish]</div><div class="en">French</div></div>
+  <div class="vocab-card"><div class="de">Spanisch</div><div class="pron">[SHPAH-nish]</div><div class="en">Spanish</div></div>
+  <div class="vocab-card"><div class="de">Singhalesisch</div><div class="pron">[zing-hah-LAY-zish]</div><div class="en">Sinhala</div></div>
+  <div class="vocab-card"><div class="de">Tamil</div><div class="pron">[TAH-mil]</div><div class="en">Tamil</div></div>
+</div>
+```
+
+### Asking About Languages
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Welche Sprachen sprechen Sie? | [VEL-kheh SHPRAH-khen SHPREKH-en zee] | Which languages do you speak? (formal) |
+| Welche Sprachen sprichst du? | [VEL-kheh SHPRAH-khen shprikhst doo] | Which languages do you speak? (informal) |
+| Ich spreche Deutsch und etwas Englisch. | [ikh SHPREKH-eh...ET-vass] | I speak German and a little English. |
+| Was ist Ihre Muttersprache? | [vass ist EE-reh MOO-ter-shprah-kheh] | What is your mother tongue? |
+
+::: {.callout-tip}
+**'etwas'** or **'ein bisschen'** = a little.  
+*'Ich spreche ein bisschen Deutsch.'* — I speak a little German.
+:::
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

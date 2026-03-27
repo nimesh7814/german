@@ -1,0 +1,117 @@
+---
+title: "🔤 Alphabet"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab active" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🔤 Alphabet</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Alphabet ═══════════════════════════ -->
+
+::: {#sec-alphabet }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">das</span><span class="de-word">Alphabet</span></div>
+  <div class="pron-word">[al-fah-BAYT]</div>
+  <div class="en-word">The Alphabet</div>
+</div>
+```
+
+## The German Alphabet {#sub-alpha}
+
+::: {.callout-note}
+German has **26 standard letters** plus **4 special characters**: Ä/ä, Ö/ö, Ü/ü (Umlauts) and **ß** (Eszett).  
+**ALL nouns are capitalized** in German, regardless of position in the sentence!
+:::
+
+```{=html}
+<table class="alpha-table">
+<thead><tr><th>Letter</th><th>German Name</th><th>Letter</th><th>German Name</th><th>Letter</th><th>German Name</th></tr></thead>
+<tbody>
+<tr><td>A a</td><td>ah</td>        <td>J j</td><td>yot</td>      <td>S s</td><td>ess</td></tr>
+<tr><td>B b</td><td>beh</td>       <td>K k</td><td>kah</td>      <td>T t</td><td>teh</td></tr>
+<tr><td>C c</td><td>tseh</td>      <td>L l</td><td>ell</td>      <td>U u</td><td>oo</td></tr>
+<tr><td>D d</td><td>deh</td>       <td>M m</td><td>emm</td>      <td>V v</td><td>fow</td></tr>
+<tr><td>E e</td><td>eh</td>        <td>N n</td><td>enn</td>      <td>W w</td><td>veh</td></tr>
+<tr><td>F f</td><td>eff</td>       <td>O o</td><td>oh</td>       <td>X x</td><td>iks</td></tr>
+<tr><td>G g</td><td>geh</td>       <td>P p</td><td>peh</td>      <td>Y y</td><td>üp-si-lon</td></tr>
+<tr><td>H h</td><td>hah</td>       <td>Q q</td><td>koo</td>      <td>Z z</td><td>tset</td></tr>
+<tr><td>I i</td><td>ee</td>        <td>R r</td><td>err</td>      <td></td><td></td></tr>
+</tbody>
+</table>
+```
+
+::: {.callout-tip}
+**Spelling out a name in German:** Germans use city names as reference.  
+e.g. "H wie Hamburg, E wie Emil, R wie Richard" = H-E-R  
+Use: A-Anton, B-Berta, C-Cäsar, D-Dora, E-Emil, F-Friedrich, G-Gustav, H-Heinrich, I-Ida, J-Julius, K-Kaufmann, L-Ludwig, M-Martha, N-Nordpol, O-Otto, P-Paula, Q-Quelle, R-Richard, S-Samuel, T-Theodor, U-Ulrich, V-Viktor, W-Wilhelm, X-Xanthippe, Y-Ypsilon, Z-Zacharias
+:::
+
+---
+
+## Special Characters (Umlauts & ß) {#sub-umlauts}
+
+| Character | Name | Sounds like | Examples | Keyboard alternative |
+|-----------|------|-------------|----------|----------------------|
+| **Ä / ä** | A-Umlaut | 'e' in 'bed' | Äpfel (apples), Käse (cheese) | ä → **ae** |
+| **Ö / ö** | O-Umlaut | 'u' in 'burn' | Möhren (carrots), Österreich | ö → **oe** |
+| **Ü / ü** | U-Umlaut | French 'u' | Tür (door), müde (tired) | ü → **ue** |
+| **ß** | Eszett / scharfes S | double 's' | heißen, Straße, groß | ß → **ss** |
+
+::: {.callout-tip}
+No umlaut on your keyboard? Write: **ä = ae**, **ö = oe**, **ü = ue**, **ß = ss**.  
+Example: Müller = **Mueller**, Straße = **Strasse**.
+:::
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

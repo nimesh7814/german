@@ -1,0 +1,355 @@
+---
+title: "📐 Grammar"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab active" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>📐 Grammar</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Grammar ═══════════════════════════ -->
+
+::: {#sec-grammar }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Grammatik</span></div>
+  <div class="pron-word">[gra-MAH-tik]</div>
+  <div class="en-word">Grammar</div>
+</div>
+```
+
+## Verbs: sein & haben {#sub-seinhabn}
+
+::: {.callout-important}
+**'sein'** (to be) and **'haben'** (to have) are the **TWO most important verbs** in German. They are irregular — memorize them!
+:::
+
+```{=html}
+<div class="conj-box">
+  <div class="conj-card">
+    <h5>🔵 sein — to be (Present)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th><th>Pron.</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>bin</b></td><td>[bin]</td></tr>
+        <tr><td>du</td><td><b>bist</b></td><td>[bist]</td></tr>
+        <tr><td>er/sie/es</td><td><b>ist</b></td><td>[ist]</td></tr>
+        <tr><td>wir</td><td><b>sind</b></td><td>[zint]</td></tr>
+        <tr><td>ihr</td><td><b>seid</b></td><td>[zite]</td></tr>
+        <tr><td>Sie/sie</td><td><b>sind</b></td><td>[zint]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🟢 haben — to have (Present)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th><th>Pron.</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>habe</b></td><td>[HAH-beh]</td></tr>
+        <tr><td>du</td><td><b>hast</b></td><td>[hast]</td></tr>
+        <tr><td>er/sie/es</td><td><b>hat</b></td><td>[hat]</td></tr>
+        <tr><td>wir</td><td><b>haben</b></td><td>[HAH-ben]</td></tr>
+        <tr><td>ihr</td><td><b>habt</b></td><td>[hahbt]</td></tr>
+        <tr><td>Sie/sie</td><td><b>haben</b></td><td>[HAH-ben]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🔵 waren — were (Past)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>war</b> [var]</td></tr>
+        <tr><td>du</td><td><b>warst</b> [varst]</td></tr>
+        <tr><td>er/sie/es</td><td><b>war</b> [var]</td></tr>
+        <tr><td>wir</td><td><b>waren</b> [VAH-ren]</td></tr>
+        <tr><td>ihr</td><td><b>wart</b> [vart]</td></tr>
+        <tr><td>Sie/sie</td><td><b>waren</b> [VAH-ren]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conj-card">
+    <h5>🟢 hatten — had (Past)</h5>
+    <table>
+      <thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+      <tbody>
+        <tr><td>ich</td><td><b>hatte</b> [HAT-eh]</td></tr>
+        <tr><td>du</td><td><b>hattest</b> [HAT-test]</td></tr>
+        <tr><td>er/sie/es</td><td><b>hatte</b> [HAT-eh]</td></tr>
+        <tr><td>wir</td><td><b>hatten</b> [HAT-en]</td></tr>
+        <tr><td>ihr</td><td><b>hattet</b> [HAT-tet]</td></tr>
+        <tr><td>Sie/sie</td><td><b>hatten</b> [HAT-en]</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+```
+
+::: {.callout-tip}
+**WORD ORDER RULE:** The verb is **ALWAYS in position 2** in a main sentence.  
+✅ *'Gestern war ich...'* — NOT ❌ *'Gestern ich war...'*
+:::
+
+---
+
+## Regular Verb Conjugation {#sub-regverbs}
+
+::: {.callout-note}
+**99% of German verbs** end in **'-en'** in their infinitive form.  
+Remove **'-en'** → get the **stem** → add the correct ending.
+:::
+
+### Standard Endings
+
+| Pronoun | Ending | kommen | wohnen | trinken |
+|---------|--------|--------|--------|---------|
+| ich | **-e** | komme | wohne | trinke |
+| du | **-st** | kommst | wohnst | trinkst |
+| er/sie/es | **-t** | kommt | wohnt | trinkt |
+| wir | **-en** | kommen | wohnen | trinken |
+| ihr | **-t** | kommt | wohnt | trinkt |
+| Sie/sie | **-en** | kommen | wohnen | trinken |
+
+### Verbs Ending in -t / -d (insert extra 'e')
+
+::: {.callout-note}
+If the verb stem ends in **'t'** or **'d'**, insert an extra **'e'** before -st and -t.
+:::
+
+| Pronoun | arbeiten | warten | reden |
+|---------|----------|--------|-------|
+| ich | arbeite | warte | rede |
+| du | arbeit**e**st | wart**e**st | red**e**st |
+| er/sie/es | arbeit**e**t | wart**e**t | red**e**t |
+| wir | arbeiten | warten | reden |
+| ihr | arbeitet | wartet | redet |
+| Sie/sie | arbeiten | warten | reden |
+
+### Irregular Verbs (stem-vowel change)
+
+| Pronoun | essen (eat) | lesen (read) | heißen (be named) |
+|---------|-------------|--------------|-------------------|
+| ich | esse | lese | heiße |
+| du | **isst** | **liest** | heißt |
+| er/sie/es | **isst** | **liest** | heißt |
+| wir | essen | lesen | heißen |
+| ihr | esst | lest | heißt |
+| Sie/sie | essen | lesen | heißen |
+
+### Common Verb Vocabulary
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">kommen</div><div class="pron">[KOM-en]</div><div class="en">to come</div></div>
+  <div class="vocab-card"><div class="de">wohnen</div><div class="pron">[VO-nen]</div><div class="en">to live / reside</div></div>
+  <div class="vocab-card"><div class="de">gehen</div><div class="pron">[GAY-en]</div><div class="en">to go</div></div>
+  <div class="vocab-card"><div class="de">trinken</div><div class="pron">[TRIN-ken]</div><div class="en">to drink</div></div>
+  <div class="vocab-card"><div class="de">essen</div><div class="pron">[ES-sen]</div><div class="en">to eat</div></div>
+  <div class="vocab-card"><div class="de">kochen</div><div class="pron">[KO-khen]</div><div class="en">to cook</div></div>
+  <div class="vocab-card"><div class="de">schlafen</div><div class="pron">[SHLAH-fen]</div><div class="en">to sleep</div></div>
+  <div class="vocab-card"><div class="de">sprechen</div><div class="pron">[SHPREKH-en]</div><div class="en">to speak</div></div>
+  <div class="vocab-card"><div class="de">arbeiten</div><div class="pron">[AR-by-ten]</div><div class="en">to work</div></div>
+  <div class="vocab-card"><div class="de">lesen</div><div class="pron">[LAY-zen]</div><div class="en">to read</div></div>
+  <div class="vocab-card"><div class="de">schreiben</div><div class="pron">[SHRY-ben]</div><div class="en">to write</div></div>
+  <div class="vocab-card"><div class="de">lernen</div><div class="pron">[LAIR-nen]</div><div class="en">to learn</div></div>
+  <div class="vocab-card"><div class="de">fahren</div><div class="pron">[FAH-ren]</div><div class="en">to drive</div></div>
+  <div class="vocab-card"><div class="de">fliegen</div><div class="pron">[FLEE-gen]</div><div class="en">to fly</div></div>
+  <div class="vocab-card"><div class="de">spielen</div><div class="pron">[SHPEE-len]</div><div class="en">to play</div></div>
+  <div class="vocab-card"><div class="de">schwimmen</div><div class="pron">[SHVIM-en]</div><div class="en">to swim</div></div>
+</div>
+```
+
+---
+
+## Articles & Nouns {#sub-articles}
+
+::: {.callout-important}
+German nouns have **THREE genders**: **Maskulin** (der), **Feminin** (die), **Neutrum** (das).  
+The plural article for ALL genders is **'die'**. Always learn the article with every noun!
+:::
+
+```{=html}
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:1rem 0;">
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#dbeafe,#eff6ff);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #93c5fd;">
+    <div style="font-size:2rem;font-weight:900;color:#1d4ed8">der</div>
+    <div style="font-size:.9rem;color:#1e40af;font-weight:700">Maskulin (m)</div>
+    <div style="font-size:.8rem;color:#3b82f6;margin-top:.4rem">der Computer<br>der Mann</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#fce7f3,#fdf2f8);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #f9a8d4;">
+    <div style="font-size:2rem;font-weight:900;color:#be185d">die</div>
+    <div style="font-size:.9rem;color:#9d174d;font-weight:700">Feminin (f)</div>
+    <div style="font-size:.8rem;color:#ec4899;margin-top:.4rem">die Tasche<br>die Frau</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#d1fae5,#ecfdf5);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #6ee7b7;">
+    <div style="font-size:2rem;font-weight:900;color:#065f46">das</div>
+    <div style="font-size:.9rem;color:#047857;font-weight:700">Neutrum (n)</div>
+    <div style="font-size:.8rem;color:#10b981;margin-top:.4rem">das Buch<br>das Kind</div>
+  </div>
+  <div style="flex:1;min-width:140px;background:linear-gradient(135deg,#fef3c7,#fffbeb);border-radius:14px;padding:1.2rem;text-align:center;border:2px solid #fcd34d;">
+    <div style="font-size:2rem;font-weight:900;color:#92400e">die</div>
+    <div style="font-size:.9rem;color:#78350f;font-weight:700">Plural (pl)</div>
+    <div style="font-size:.8rem;color:#d97706;margin-top:.4rem">die Bücher<br>die Kinder</div>
+  </div>
+</div>
+```
+
+### Definite / Indefinite / Negation
+
+| | Maskulin | Feminin | Neutrum | Plural |
+|--|----------|---------|---------|--------|
+| **the** (definite) | **der** | **die** | **das** | **die** |
+| **a/an** (indefinite) | **ein** | **eine** | **ein** | — |
+| **not a / no** (negation) | **kein** | **keine** | **kein** | **keine** |
+
+### Article Colour Code
+
+::: {.callout-tip}
+Use these colours consistently in your notes — it's one of the most powerful ways to remember gender!
+:::
+
+```{=html}
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:1rem 0;">
+  <div style="background:#dbeafe;border:3px solid #2563eb;border-radius:12px;padding:.8rem 1.3rem;text-align:center;flex:1;min-width:130px;">
+    <div style="font-size:1.4rem;font-weight:900;color:#1d4ed8">der</div>
+    <div style="font-size:.88rem;font-weight:700;color:#1e40af">Masculine</div>
+    <div style="font-size:.78rem;color:#3b82f6;margin-top:3px">🖊️ Write in <strong>Blue</strong></div>
+  </div>
+  <div style="background:#fce7f3;border:3px solid #ec4899;border-radius:12px;padding:.8rem 1.3rem;text-align:center;flex:1;min-width:130px;">
+    <div style="font-size:1.4rem;font-weight:900;color:#be185d">die</div>
+    <div style="font-size:.88rem;font-weight:700;color:#9d174d">Feminine</div>
+    <div style="font-size:.78rem;color:#ec4899;margin-top:3px">🖊️ Write in <strong>Red</strong></div>
+  </div>
+  <div style="background:#d1fae5;border:3px solid #10b981;border-radius:12px;padding:.8rem 1.3rem;text-align:center;flex:1;min-width:130px;">
+    <div style="font-size:1.4rem;font-weight:900;color:#065f46">das</div>
+    <div style="font-size:.88rem;font-weight:700;color:#047857">Neuter</div>
+    <div style="font-size:.78rem;color:#10b981;margin-top:3px">🖊️ Write in <strong>Green</strong></div>
+  </div>
+  <div style="background:#f3f4f6;border:3px solid #374151;border-radius:12px;padding:.8rem 1.3rem;text-align:center;flex:1;min-width:130px;">
+    <div style="font-size:1.4rem;font-weight:900;color:#111827">die</div>
+    <div style="font-size:.88rem;font-weight:700;color:#374151">Plural</div>
+    <div style="font-size:.78rem;color:#6b7280;margin-top:3px">🖊️ Write in <strong>Black</strong></div>
+  </div>
+</div>
+```
+
+### Example Sentences
+
+| German | English |
+|--------|---------|
+| Das ist **der** Kuli. / Das ist **ein** Kuli. / Das ist **kein** Kuli. | This is the pen. / a pen. / not a pen. (m) |
+| Das ist **die** Tasche. / Das ist **eine** Tasche. / Das ist **keine** Tasche. | This is the bag. / a bag. / not a bag. (f) |
+| Das sind **die** Bücher. / Das sind **keine** Bücher. | These are the books. / not books. (pl) |
+
+---
+
+## Plural Forms {#sub-plurals}
+
+::: {.callout-note}
+German plurals are complex — many patterns exist. Best approach: **learn each noun WITH its plural from the start**.
+:::
+
+| Pattern | Rule | Singular | Plural | English |
+|---------|------|----------|--------|---------|
+| **-e** | Add -e | der Tag | die Tage | day/days |
+| **-̈e** | Umlaut + -e | der Arzt | die Ärzte | doctor/doctors |
+| **-er** | Add -er | das Kind | die Kinder | child/children |
+| **-̈er** | Umlaut + -er | das Buch | die Bücher | book/books |
+| **-n** | Add -n | die Stunde | die Stunden | hour/hours |
+| **-en** | Add -en | der Patient | die Patienten | patient/patients |
+| **-s** | Add -s | das Auto | die Autos | car/cars |
+| **ü--** | Umlaut only | die Mutter | die Mütter | mother/mothers |
+| **—** | No change | der Kilometer | die Kilometer | kilometer/s |
+
+---
+
+## Possessive Pronouns {#sub-poss}
+
+::: {.callout-note}
+Possessive pronouns change their endings depending on the **gender** of the noun that follows.
+:::
+
+| Pronoun | Meaning | der (m) | die (f) | das (n) | die (pl) |
+|---------|---------|---------|---------|---------|---------|
+| ich | I / my | mein | meine | mein | meine |
+| du | you / your | dein | deine | dein | deine |
+| er | he / his | sein | seine | sein | seine |
+| sie | she / her | ihr | ihre | ihr | ihre |
+| wir | we / our | unser | unsere | unser | unsere |
+| ihr | you all / your | euer | eure | euer | eure |
+| **Sie** | you (formal) | **Ihr** | **Ihre** | **Ihr** | **Ihre** |
+| sie | they / their | ihr | ihre | ihr | ihre |
+
+---
+
+## Personal Pronouns {#sub-persp}
+
+```{=html}
+<div class="pronoun-grid">
+  <div class="pronoun-badge">ich <span class="eng">I</span></div>
+  <div class="pronoun-badge">du <span class="eng">you (informal)</span></div>
+  <div class="pronoun-badge">er <span class="eng">he</span></div>
+  <div class="pronoun-badge">sie <span class="eng">she</span></div>
+  <div class="pronoun-badge">es <span class="eng">it</span></div>
+  <div class="pronoun-badge">wir <span class="eng">we</span></div>
+  <div class="pronoun-badge">ihr <span class="eng">you all</span></div>
+  <div class="pronoun-badge" style="background:linear-gradient(135deg,#059669,#10b981)">Sie <span class="eng">you (FORMAL)</span></div>
+  <div class="pronoun-badge">sie <span class="eng">they</span></div>
+</div>
+```
+
+::: {.callout-warning}
+**'Sie'** (formal you, capital S) sounds exactly like **'sie'** (she/they, lowercase s).  
+Context and verb conjugation tell them apart.
+:::
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

@@ -1,0 +1,242 @@
+---
+title: "🏫 School"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab active" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🏫 School</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: School ═══════════════════════════ -->
+
+::: {#sec-school }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Schule</span></div>
+  <div class="pron-word">[SHOO-leh]</div>
+  <div class="en-word">School</div>
+</div>
+```
+
+## School Vocabulary {#sub-schoolvocab}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| die Schule | [dee SHOO-leh] | school |
+| das Fach / die Fächer | [dass fakh / dee FEH-kher] | subject / subjects |
+| der Stundenplan | [dare SHTOON-den-plan] | timetable |
+| die Stunde | [dee SHTOON-deh] | period (1 hour) |
+| die Pause | [dee POW-zeh] | break / interval |
+| die Klasse | [dee KLAS-seh] | class |
+| frei | [fry] | free (no class) |
+
+---
+
+## School Subjects {#sub-subjects}
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Mathematik</div><div class="en">Mathematics</div></div>
+  <div class="vocab-card"><div class="de">Deutsch</div><div class="en">German</div></div>
+  <div class="vocab-card"><div class="de">Englisch</div><div class="en">English</div></div>
+  <div class="vocab-card"><div class="de">Französisch</div><div class="en">French</div></div>
+  <div class="vocab-card"><div class="de">Spanisch</div><div class="en">Spanish</div></div>
+  <div class="vocab-card"><div class="de">Geographie</div><div class="en">Geography</div></div>
+  <div class="vocab-card"><div class="de">Geschichte</div><div class="en">History</div></div>
+  <div class="vocab-card"><div class="de">Physik</div><div class="en">Physics</div></div>
+  <div class="vocab-card"><div class="de">Chemie</div><div class="en">Chemistry</div></div>
+  <div class="vocab-card"><div class="de">Biologie</div><div class="en">Biology</div></div>
+  <div class="vocab-card"><div class="de">Informatik</div><div class="en">IT / Computer Science</div></div>
+  <div class="vocab-card"><div class="de">Kunst</div><div class="en">Art</div></div>
+  <div class="vocab-card"><div class="de">Musik</div><div class="en">Music</div></div>
+  <div class="vocab-card"><div class="de">Sport</div><div class="en">Physical Education</div></div>
+  <div class="vocab-card"><div class="de">Religion</div><div class="en">Religious Studies</div></div>
+  <div class="vocab-card"><div class="de">Literatur</div><div class="en">Literature</div></div>
+</div>
+```
+
+---
+
+## Talking About Your Timetable {#sub-timetable}
+
+| German | English |
+|--------|---------|
+| Am Montag habe ich zwei Stunden Religion. | On Monday I have two periods of Religion. |
+| Wann hast du Mathematik? | When do you have Mathematics? |
+| Am Montag in der ersten Stunde habe ich ___. | On Monday in the first period I have ___. |
+| Am Freitag in der vierten Stunde habe ich frei. | On Friday in the fourth period I have a free period. |
+| Jeden Tag habe ich ___. | Every day I have ___. |
+
+### Ordinal Numbers for Periods
+
+| Ordinal | German | English |
+|---------|--------|---------|
+| 1. | erste(n) | first |
+| 2. | zweite(n) | second |
+| 3. | dritte(n) | third |
+| 4. | vierte(n) | fourth |
+| 5. | fünfte(n) | fifth |
+| 6. | sechste(n) | sixth |
+| 7. | siebte(n) | seventh |
+| 8. | achte(n) | eighth |
+
+---
+
+## Classroom Objects {#sub-classobj}
+
+| German | Article | English | German | Article | English |
+|--------|---------|---------|--------|---------|---------|
+| Tafel | die | blackboard | Stift | der | pen/marker |
+| Tasche | die | bag | Bleistift | der | pencil |
+| Laptop | das | laptop | Radiergummi | der | eraser |
+| Fenster | das | window | Tisch | der | table |
+| Tür | die | door | Stuhl | der | chair |
+| Kuli | der | ballpoint pen | Uhr | die | clock |
+| Buch | das | book | Heft | das | notebook |
+| Rucksack | der | backpack | Lineal | das | ruler |
+| Computer | der | computer | Handy | das | mobile phone |
+
+---
+
+## Classroom Language {#sub-classlang}
+
+| German | English |
+|--------|---------|
+| Lesen Sie bitte vor. | Please read aloud. |
+| Noch einmal, bitte. | Once more, please. |
+| Ergänzen Sie. | Fill in / Complete. |
+| Wie heißt das auf Deutsch? | How do you say that in German? |
+| Können Sie das wiederholen, bitte? | Can you repeat that, please? |
+| Ich verstehe das nicht. | I don't understand that. |
+| Ich brauche Hilfe. | I need help. |
+| Was sind die Hausaufgaben? | What is the homework? |
+| Wann ist die Pause? | When is the break? |
+| Darf ich kurz auf die Toilette gehen? | May I quickly go to the toilet? |
+
+---
+
+## Class Exercises — Bitte schreiben Sie die Sätze {#sub-classexercise}
+
+::: {.callout-tip}
+These sentence patterns come from class notebook exercises. Each picture prompt shows an object, and you practise **Ist das ein/eine …?** (singular) and **Sind das …?** (plural).
+:::
+
+### Pattern: Singular — Ist das ein …? / Nein, das ist kein …
+
+```{=html}
+<div style="display:flex;flex-direction:column;gap:12px;margin:1rem 0;">
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">das Auto / der Bus 🚗</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Ist das ein Auto?</span> <span style="color:#6b7280;font-size:.88rem">— Is that a car?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Ja, das ist ein Auto.</span> <span style="color:#6b7280;font-size:.88rem">— Yes, that is a car.</span></div>
+    <hr style="border-color:#e9d5ff;margin:.5rem 0">
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Ist das ein Bus?</span> <span style="color:#6b7280;font-size:.88rem">— Is that a bus?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Nein, das ist kein Bus. Das ist ein Auto.</span> <span style="color:#6b7280;font-size:.88rem">— No, that is not a bus. That is a car.</span></div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">der Mann / die Frau 🧍</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Ist das eine Frau?</span> <span style="color:#6b7280;font-size:.88rem">— Is that a woman?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Nein, das ist keine Frau. Das ist ein Mann.</span> <span style="color:#6b7280;font-size:.88rem">— No, that is not a woman. That is a man.</span></div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">der Computer / das Buch 💻</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Ist das ein Buch?</span> <span style="color:#6b7280;font-size:.88rem">— Is that a book?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Nein, das ist kein Buch. Das ist ein Computer.</span> <span style="color:#6b7280;font-size:.88rem">— No, that is not a book. That is a computer.</span></div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">der Bleistift / die Schere ✏️</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Ist das eine Schere?</span> <span style="color:#6b7280;font-size:.88rem">— Is that a pair of scissors?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Nein, das ist keine Schere. Das ist ein Bleistift.</span> <span style="color:#6b7280;font-size:.88rem">— No, that is not scissors. That is a pencil.</span></div>
+  </div>
+
+</div>
+```
+
+### Pattern: Plural — Sind das …? / Nein, das sind keine …
+
+```{=html}
+<div style="display:flex;flex-direction:column;gap:12px;margin:1rem 0;">
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">die Flaschen 🍾🍾🍾</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Sind das Flaschen?</span> <span style="color:#6b7280;font-size:.88rem">— Are those bottles?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Ja, das sind Flaschen.</span> <span style="color:#6b7280;font-size:.88rem">— Yes, those are bottles.</span></div>
+  </div>
+
+  <div style="background:#fff;border:2px solid #e9d5ff;border-radius:14px;padding:1rem 1.2rem;">
+    <div style="font-size:.78rem;font-weight:700;color:#9333ea;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">die Flaschen / die Kulis 🍾 / 🖊️</div>
+    <div style="margin:.2rem 0"><span style="color:#5b21b6;font-weight:700">Sind das Kulis?</span> <span style="color:#6b7280;font-size:.88rem">— Are those ballpoint pens?</span></div>
+    <div style="margin:.2rem 0"><span style="color:#0369a1;font-weight:700">Nein, das sind keine Kulis. Das sind Flaschen.</span> <span style="color:#6b7280;font-size:.88rem">— No, those are not pens. Those are bottles.</span></div>
+  </div>
+
+</div>
+```
+
+::: {.callout-note}
+**Key grammar note — kein / keine:**  
+Use **kein** to negate nouns with **der** or **das** articles.  
+Use **keine** to negate nouns with **die** articles (including all plurals).
+
+| Article | Positive | Negative |
+|---------|----------|----------|
+| der (m) | ein Mann | kein Mann |
+| die (f) | eine Frau | keine Frau |
+| das (n) | ein Auto | kein Auto |
+| Plural | — Flaschen | keine Flaschen |
+:::
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

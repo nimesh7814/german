@@ -1,0 +1,115 @@
+---
+title: "👤 Personal Info"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab active" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>👤 Personal Info</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Personal Info ═══════════════════════════ -->
+
+::: {#sec-personal }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Persönliche Informationen</span></div>
+  <div class="pron-word">[per-ZURN-likh-eh in-for-ma-TSYOH-nen]</div>
+  <div class="en-word">Personal Information</div>
+</div>
+```
+
+## Names & Forms of Address {#sub-names}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| der Vorname | [dare FOR-nah-meh] | First / Given name |
+| der Nachname / Familienname | [NAHKH-nah-meh] | Surname / Last name |
+| Frau | [frow] | Ms. / Mrs. |
+| Herr | [hair] | Mr. |
+| Wie ist Ihr Vorname? | [vee ist eer FOR-nah-meh] | What is your first name? (formal) |
+| Mein Vorname ist ___. | [mine FOR-nah-meh ist] | My first name is ___. |
+
+---
+
+## Age, Address & Contact {#sub-contact}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Wie alt sind Sie? | [vee alt zint zee] | How old are you? (formal) |
+| Wie alt bist du? | [vee alt bist doo] | How old are you? (informal) |
+| Ich bin 29 Jahre alt. | [ikh bin...YAH-reh alt] | I am 29 years old. |
+| die Straße | [dee SHTRAH-seh] | Street |
+| die Hausnummer | [dee HOWS-noo-mer] | House number |
+| die Postleitzahl (PLZ) | [dee POST-lite-tsahl] | Postal code |
+| die Telefonnummer | [dee teh-leh-FON-noo-mer] | Phone number |
+| die Handynummer | [dee HEN-dee-noo-mer] | Mobile number |
+| die E-Mail-Adresse | [dee ee-MAIL ah-DRESS-eh] | Email address |
+| @ = at | [ET] | at sign |
+| . = Punkt | [poonkt] | dot |
+
+---
+
+## Marital Status & Children {#sub-marital}
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Sind Sie verheiratet? | [zint zee fer-HY-rah-tet] | Are you married? (formal) |
+| Ja, ich bin verheiratet. | [yah, ikh bin] | Yes, I am married. |
+| Nein, ich bin ledig. | [nine, ikh bin LAY-dikh] | No, I am single. |
+| geschieden | [geh-SHEE-den] | divorced |
+| verwitwet | [fer-VIT-vet] | widowed |
+| Haben Sie Kinder? | [HAH-ben zee KIN-der] | Do you have children? (formal) |
+| Nein, ich habe keine Kinder. | [nine, ikh HAH-beh KY-neh] | No, I have no children. |
+| Ja, ich habe zwei Kinder. | [yah, ikh HAH-beh tsvye] | Yes, I have two children. |
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

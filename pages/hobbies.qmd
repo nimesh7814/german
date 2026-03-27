@@ -1,0 +1,280 @@
+---
+title: "🎯 Hobbies"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab active" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🎯 Hobbies</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Hobbies ═══════════════════════════ -->
+
+::: {#sec-hobbies }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-word">Hobbys</span></div>
+  <div class="pron-word">[HOB-ees]</div>
+  <div class="en-word">Hobbies — activities, frequency &amp; word order</div>
+</div>
+```
+
+## Hobby-Verben {#sub-hob-verbs}
+
+::: {.callout-note}
+Many hobby phrases use the structure **Verb + gern** (like/enjoy doing).  
+Example: **Ich höre gern Musik.** = I like listening to music.
+:::
+
+```{=html}
+<div class="hobby-grid">
+  <div class="hobby-card"><div class="hc-emoji">🚴</div><div class="hc-de">Fahrrad fahren</div><div class="hc-en">cycling</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏍️</div><div class="hc-de">Motorrad fahren</div><div class="hc-en">motorcycle riding</div></div>
+  <div class="hobby-card"><div class="hc-emoji">⚽</div><div class="hc-de">Fußball spielen</div><div class="hc-en">play football</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎾</div><div class="hc-de">Tennis spielen</div><div class="hc-en">play tennis</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎸</div><div class="hc-de">Gitarre spielen</div><div class="hc-en">play guitar</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎹</div><div class="hc-de">Klavier spielen</div><div class="hc-en">play piano</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎻</div><div class="hc-de">Geige spielen</div><div class="hc-en">play violin</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🥁</div><div class="hc-de">Schlagzeug spielen</div><div class="hc-en">play drums</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎵</div><div class="hc-de">Musik hören</div><div class="hc-en">listen to music</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎤</div><div class="hc-de">singen</div><div class="hc-en">sing</div></div>
+  <div class="hobby-card"><div class="hc-emoji">💃</div><div class="hc-de">tanzen</div><div class="hc-en">dance</div></div>
+  <div class="hobby-card"><div class="hc-emoji">⛷️</div><div class="hc-de">Ski fahren</div><div class="hc-en">skiing</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📚</div><div class="hc-de">lesen / Romane lesen</div><div class="hc-en">read / read novels</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📰</div><div class="hc-de">Zeitung lesen</div><div class="hc-en">read the newspaper</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏊</div><div class="hc-de">schwimmen</div><div class="hc-en">swimming</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏃</div><div class="hc-de">joggen</div><div class="hc-en">jogging</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🚶</div><div class="hc-de">spazieren gehen</div><div class="hc-en">go for a walk</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🥾</div><div class="hc-de">wandern</div><div class="hc-en">hiking</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎮</div><div class="hc-de">Videospiele spielen</div><div class="hc-en">play video games</div></div>
+  <div class="hobby-card"><div class="hc-emoji">💬</div><div class="hc-de">chatten</div><div class="hc-en">chat (online)</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🌐</div><div class="hc-de">im Internet surfen</div><div class="hc-en">surf the internet</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📷</div><div class="hc-de">fotografieren</div><div class="hc-en">photography</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎨</div><div class="hc-de">malen / zeichnen</div><div class="hc-en">paint / draw</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🍳</div><div class="hc-de">kochen</div><div class="hc-en">cook</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🧵</div><div class="hc-de">nähen</div><div class="hc-en">sew</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🛍️</div><div class="hc-de">einkaufen</div><div class="hc-en">shopping</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎪</div><div class="hc-de">basteln</div><div class="hc-en">craft / make things</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🌱</div><div class="hc-de">im Garten arbeiten</div><div class="hc-en">gardening</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📫</div><div class="hc-de">Briefmarken sammeln</div><div class="hc-en">collect stamps</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🪙</div><div class="hc-de">Alte Münzen sammeln</div><div class="hc-en">collect old coins</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🏕️</div><div class="hc-de">zelten / Camping</div><div class="hc-en">camping</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🐴</div><div class="hc-de">reiten</div><div class="hc-en">horse riding</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎭</div><div class="hc-de">ins Theater gehen</div><div class="hc-en">go to the theatre</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🎬</div><div class="hc-de">ins Kino gehen</div><div class="hc-en">go to the cinema</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📺</div><div class="hc-de">fernsehen</div><div class="hc-en">watch TV</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🧹</div><div class="hc-de">aufräumen / putzen</div><div class="hc-en">tidy up / clean</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🐱</div><div class="hc-de">Haustiere haben</div><div class="hc-en">have / care for pets</div></div>
+  <div class="hobby-card"><div class="hc-emoji">📞</div><div class="hc-de">telefonieren</div><div class="hc-en">make phone calls</div></div>
+  <div class="hobby-card"><div class="hc-emoji">👫</div><div class="hc-de">Freunde treffen</div><div class="hc-en">meet friends</div></div>
+  <div class="hobby-card"><div class="hc-emoji">🃏</div><div class="hc-de">Karten spielen</div><div class="hc-en">play cards</div></div>
+  <div class="hobby-card"><div class="hc-emoji">♟️</div><div class="hc-de">Schach spielen</div><div class="hc-en">play chess</div></div>
+  <div class="hobby-card"><div class="hc-emoji">✈️</div><div class="hc-de">reisen</div><div class="hc-en">travel</div></div>
+  <div class="hobby-card"><div class="hc-emoji">😴</div><div class="hc-de">schlafen</div><div class="hc-en">sleep</div></div>
+</div>
+```
+
+### Talking About Your Hobbies
+
+| German | English |
+|--------|---------|
+| Was ist dein Hobby? | What is your hobby? |
+| Mein Hobby ist … | My hobby is … |
+| Was sind deine Hobbys? | What are your hobbies? |
+| Meine Hobbys sind … | My hobbies are … |
+| Was machst du gern? | What do you like doing? (informal) |
+| Was machen Sie gern? | What do you like doing? (formal) |
+| Was machst du nicht so gern? | What do you not like doing? |
+| Das mache ich sehr gern. 😊 | I like doing that very much. |
+| Das mache ich nicht so gern. ☹️ | I don't really like doing that. |
+
+### Gern / Nicht so gern — Examples
+
+::: {.dialogue}
+<p><span class="speaker-a">Ich schlafe sehr gern.</span> — I really like sleeping.</p>
+<p><span class="speaker-a">Ich höre gerne Musik.</span> — I like listening to music.</p>
+<p><span class="speaker-a">Ich sehe gerne Filme.</span> — I like watching films.</p>
+<p><span class="speaker-b">Ich chatte nicht so gern.</span> — I don't really like chatting.</p>
+<p><span class="speaker-b">Ich koche nicht so gern.</span> — I don't really like cooking.</p>
+<p><span class="speaker-b">Ich gehe nicht so gern Camping.</span> — I don't really like going camping.</p>
+:::
+
+---
+
+## Wie oft? — Frequency {#sub-hob-freq}
+
+```{=html}
+<div class="freq-bar-wrap">
+  <div class="freq-row"><span class="freq-label">immer</span><span class="freq-en">always</span><div class="freq-bar-bg"><div class="freq-bar" style="width:100%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">jeden Tag / täglich</span><span class="freq-en">every day</span><div class="freq-bar-bg"><div class="freq-bar" style="width:92%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">oft</span><span class="freq-en">often</span><div class="freq-bar-bg"><div class="freq-bar" style="width:78%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">manchmal</span><span class="freq-en">sometimes</span><div class="freq-bar-bg"><div class="freq-bar" style="width:55%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">ab und zu</span><span class="freq-en">now and then</span><div class="freq-bar-bg"><div class="freq-bar" style="width:42%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">nicht so oft</span><span class="freq-en">not so often</span><div class="freq-bar-bg"><div class="freq-bar" style="width:30%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">selten</span><span class="freq-en">rarely</span><div class="freq-bar-bg"><div class="freq-bar" style="width:18%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">ganz selten</span><span class="freq-en">very rarely</span><div class="freq-bar-bg"><div class="freq-bar" style="width:8%"></div></div></div>
+  <div class="freq-row"><span class="freq-label">nie</span><span class="freq-en">never</span><div class="freq-bar-bg"><div class="freq-bar" style="width:2%"></div></div></div>
+</div>
+```
+
+| German | English |
+|--------|---------|
+| zweimal / einmal / dreimal pro Woche | twice / once / three times a week |
+| pro Monat / pro Jahr | per month / per year |
+| am Wochenende | at the weekend |
+| jede Woche / jeden Monat / jedes Jahr / jedes Wochenende | every week / month / year / weekend |
+| monatlich / wöchentlich / jährlich | monthly / weekly / yearly |
+
+### Asking About Frequency
+
+| German | English |
+|--------|---------|
+| Wann gehen Sie ins Kino? | When do you go to the cinema? |
+| Wie oft sehen Sie Filme? | How often do you watch films? |
+| Wann hören Sie Musik? | When do you listen to music? |
+| Wie oft gehen Sie einkaufen? | How often do you go shopping? |
+| Wann gehen Sie ins Café? | When do you go to the café? |
+
+### Antworten (Possible answers)
+
+| German | English |
+|--------|---------|
+| Ja, sehr gern. | Yes, very much. |
+| Es geht. | It's OK / so-so. |
+| Nein, nicht so gern. | No, not really. |
+| Chatten Sie gern? / Chattest du gern? | Do you like chatting? |
+| Hören Sie gern Musik? / Hörst du gern Musik? | Do you like listening to music? |
+| Surfen Sie gern im Internet? / Surfst du gern im Internet? | Do you like surfing the internet? |
+
+---
+
+## Wortstellung — Word Order {#sub-hob-order}
+
+::: {.callout-important}
+**The Two Rules of German Word Order:**  
+① The **verb** always stands at **position 2**.  
+② The **subject** stands at either **position 1** or **position 3**.
+:::
+
+```{=html}
+<div class="order-box">
+  <p style="font-weight:800;color:#5b21b6;margin-bottom:.5rem">Normal order (subject first):</p>
+  <div class="order-row">
+    <div><div class="ord-cell ord-pos1">Ich</div><div class="ord-label">Pos. 1 (Subj.)</div></div>
+    <div><div class="ord-cell ord-pos2">gehe</div><div class="ord-label">Pos. 2 (Verb)</div></div>
+    <div><div class="ord-cell ord-pos3">jeden Tag</div><div class="ord-label">Pos. 3</div></div>
+    <div><div class="ord-cell ord-rest">schwimmen.</div><div class="ord-label">rest</div></div>
+  </div>
+  <p style="font-weight:800;color:#5b21b6;margin:.9rem 0 .5rem">Inverted order (time adverb first):</p>
+  <div class="order-row">
+    <div><div class="ord-cell ord-pos1">Jeden Tag</div><div class="ord-label">Pos. 1 (Time)</div></div>
+    <div><div class="ord-cell ord-pos2">gehe</div><div class="ord-label">Pos. 2 (Verb)</div></div>
+    <div><div class="ord-cell ord-pos3">ich</div><div class="ord-label">Pos. 3 (Subj.)</div></div>
+    <div><div class="ord-cell ord-rest">schwimmen.</div><div class="ord-label">rest</div></div>
+  </div>
+</div>
+
+<div class="order-box">
+  <p style="font-weight:800;color:#5b21b6;margin-bottom:.5rem">Three ways to say the same sentence:</p>
+  <div class="order-row" style="margin-bottom:.3rem">
+    <div class="ord-cell ord-pos1">Du</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-rest">dreimal pro Woche ins Fitness-Studio.</div>
+  </div>
+  <div class="order-row" style="margin-bottom:.3rem">
+    <div class="ord-cell ord-pos1">Dreimal pro Woche</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-pos3">du</div>
+    <div class="ord-cell ord-rest">ins Fitness-Studio.</div>
+  </div>
+  <div class="order-row">
+    <div class="ord-cell ord-pos1">Ins Fitness-Studio</div>
+    <div class="ord-cell ord-pos2">gehst</div>
+    <div class="ord-cell ord-pos3">du</div>
+    <div class="ord-cell ord-rest">dreimal pro Woche.</div>
+  </div>
+  <p style="font-size:.82rem;color:#6b7280;margin-top:.7rem">All three mean: <em>You go to the gym three times a week.</em></p>
+</div>
+```
+
+---
+
+## Fragen über Hobbys {#sub-hob-questions}
+
+```{=html}
+<div class="komp-rule-box">
+  Ask about hobbies with <strong>Wann</strong> (when) and <strong>Wie oft</strong> (how often).
+  Also use <strong>gern</strong> to ask about likes: <em>Spielst du gern Fußball?</em>
+</div>
+```
+
+| Formal (Sie) | Informal (du) | English |
+|---|---|---|
+| Hören Sie gern Musik? | Hörst du gern Musik? | Do you like listening to music? |
+| Surfen Sie gern im Internet? | Surfst du gern im Internet? | Do you like surfing online? |
+| Fahren Sie gern Motorrad? | Fährst du gern Motorrad? | Do you like riding a motorcycle? |
+| Gehen Sie gern Camping? | Gehst du gern Camping? | Do you like going camping? |
+| Sehen Sie gern fern? | Siehst du gern fern? | Do you like watching TV? |
+| Kochen Sie gern? | Kochst du gern? | Do you like cooking? |
+| Sammeln Sie gern Briefmarken? | Sammelst du gern Briefmarken? | Do you like collecting stamps? |
+| Gehen Sie gern ins Kino? | Gehst du gern ins Kino? | Do you like going to the cinema? |
+| Spielen Sie gern Fußball? | Spielst du gern Fußball? | Do you like playing football? |
+| Lesen Sie gern? | Liest du gern? | Do you like reading? |
+
+:::
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  🎉 <strong>Herzlichen Glückwunsch</strong> — you've reviewed all sections! Keep practising every day. <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

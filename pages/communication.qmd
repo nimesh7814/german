@@ -1,0 +1,199 @@
+---
+title: "🗣️ Communication"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab active" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
+    <h1>🗣️ Communication</h1>
+    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
+  </div>
+```
+
+<!-- ═══════════════════════════ SECTION: Communication ═══════════════════════════ -->
+
+::: {#sec-communication }
+
+```{=html}
+<div class="topic-banner">
+  <div><span class="de-article">die</span><span class="de-word">Kommunikation</span></div>
+  <div class="pron-word">[ko-moo-ni-ka-TSYOHN]</div>
+  <div class="en-word">Communication</div>
+</div>
+```
+
+## Introductions {#sub-introductions}
+
+> **💡 DID YOU KNOW?** German is spoken in three countries: **Deutschland** (Germany), **Österreich** (Austria), and **die Schweiz** (Switzerland). Together called the **DACH** countries.
+
+### Formal (Sie) vs. Informal (du)
+
+::: {.callout-note}
+**Sie** (capital S) = formal/polite, used with strangers, elders, professionals.  
+**du** = informal/casual, used with friends, family, children.
+:::
+
+| Context | Question | Pronunciation | Meaning |
+|---------|----------|---------------|---------|
+| Formal (Sie) | Wie heißen Sie? | [vee HY-sen zee] | What is your name? |
+| Informal (du) | Wie heißt du? | [vee HYst doo] | What is your name? |
+| Answer 1 | Ich heiße ___. | [ikh HY-seh] | My name is ___. |
+| Answer 2 | Ich bin ___. | [ikh bin] | I am ___. |
+| Answer 3 | Mein Name ist ___. | [mine NAH-meh ist] | My name is ___. |
+
+### Asking Where Someone Is From
+
+| Type | German | Pronunciation | English |
+|------|--------|---------------|---------|
+| Formal Q | Woher kommen Sie? | [vo-HAIR KOM-en zee] | Where do you come from? |
+| Informal Q | Woher kommst du? | [vo-HAIR komst doo] | Where do you come from? |
+| Answer | Ich komme aus ___. | [ikh KOM-eh owss] | I come from ___. |
+
+### Asking Where Someone Lives
+
+| Type | German | Pronunciation | English |
+|------|--------|---------------|---------|
+| Formal Q | Wo wohnen Sie? | [vo VO-nen zee] | Where do you live? |
+| Informal Q | Wo wohnst du? | [vo vohnst doo] | Where do you live? |
+| Answer | Ich wohne in ___. | [ikh VO-neh in] | I live in ___. |
+
+### Self-Introduction Example
+
+::: {.dialogue}
+<p><span class="speaker-a">Ich heiße Nimesh.</span> — My name is Nimesh.</p>
+<p><span class="speaker-a">Ich komme aus Sri Lanka.</span> — I come from Sri Lanka.</p>
+<p><span class="speaker-a">Ich wohne in Münster.</span> — I live in Münster.</p>
+:::
+
+---
+
+## Greetings & Farewells {#sub-greetings}
+
+### Greetings by Time of Day
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Hallo!</div><div class="pron">[HA-lo]</div><div class="en">Hello – anytime</div></div>
+  <div class="vocab-card"><div class="de">Guten Morgen</div><div class="pron">[GOO-ten MOR-gen]</div><div class="en">Good morning</div></div>
+  <div class="vocab-card"><div class="de">Guten Tag</div><div class="pron">[GOO-ten tahk]</div><div class="en">Good day – daytime</div></div>
+  <div class="vocab-card"><div class="de">Guten Abend</div><div class="pron">[GOO-ten AH-bent]</div><div class="en">Good evening (after 6pm)</div></div>
+  <div class="vocab-card"><div class="de">Gute Nacht</div><div class="pron">[GOO-teh nakht]</div><div class="en">Good night – only at bedtime</div></div>
+  <div class="vocab-card"><div class="de">Servus!</div><div class="pron">[ZER-voos]</div><div class="en">Hi/Bye – Austrian/Bavarian</div></div>
+  <div class="vocab-card"><div class="de">Grüß Gott!</div><div class="pron">[groos got]</div><div class="en">Hello – Southern Germany</div></div>
+  <div class="vocab-card"><div class="de">Moin!</div><div class="pron">[moyn]</div><div class="en">Hello – Northern Germany</div></div>
+</div>
+```
+
+### Farewells
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Tschüs / Tschau / Ciao! | [choos / chow] | Bye |
+| Auf Wiedersehen! | [owf VEE-der-zayn] | Goodbye (formal) |
+| Bis morgen! | [biss MOR-gen] | See you tomorrow |
+| Bis dann! | [biss dan] | See you then |
+| Bis später! | [biss SHPAY-ter] | See you later |
+| Bis gleich! | [biss glysh] | See you soon |
+| Schönes Wochenende! | [SHUR-nes VO-khen-en-deh] | Have a nice weekend! |
+| Mach's gut! | [makhs goot] | Take care |
+
+### Useful Everyday Expressions
+
+| German | Pronunciation | English |
+|--------|---------------|---------|
+| Danke / Vielen Dank | [DAN-keh] | Thank you / Many thanks |
+| Bitte | [BIT-eh] | Please / You're welcome |
+| Entschuldigung | [ent-SHOOL-dee-goong] | Excuse me |
+| Es tut mir leid | [ess toot meer lyte] | I am sorry |
+| Gesundheit! | [geh-ZOONT-hyte] | Bless you (after sneezing) |
+| Prost! / Zum Wohl! | [prohst / tsoom vohl] | Cheers! |
+| Ja / Nein | [yah / nine] | Yes / No |
+
+---
+
+## Feelings & Wellbeing {#sub-feelings}
+
+### How to Ask
+
+| German | Pronunciation | English | Register |
+|--------|---------------|---------|----------|
+| Wie geht es Ihnen? | [vee gayt ess EE-nen] | How are you? | Formal |
+| Wie geht es dir? | [vee gayt ess deer] | How are you? | Informal |
+| Wie geht's? | [vee gayts] | How's it going? | Casual |
+| Alles klar? | [AL-less klahr] | Everything OK? | Informal |
+
+### Sample Conversation
+
+::: {.dialogue}
+<p><span class="speaker-a">A: Wie geht es Ihnen?</span> — How are you?</p>
+<p><span class="speaker-b">B: Es geht mir gut, danke. Und Ihnen?</span> — I'm fine, thank you. And you?</p>
+<p><span class="speaker-a">A: Es geht mir auch gut, danke.</span> — I'm also fine, thank you.</p>
+:::
+
+### Responses — from 😊 to 😞
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Fantastisch!</div><div class="en">Fantastic!</div></div>
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Sehr gut!</div><div class="en">Very good!</div></div>
+  <div class="vocab-card" style="border-color:#10b981"><div class="de">Super / Prima</div><div class="en">Great!</div></div>
+  <div class="vocab-card" style="border-color:#3b82f6"><div class="de">Gut</div><div class="en">Good</div></div>
+  <div class="vocab-card" style="border-color:#3b82f6"><div class="de">Ganz gut</div><div class="en">Pretty good</div></div>
+  <div class="vocab-card" style="border-color:#f59e0b"><div class="de">Es geht</div><div class="en">Okay / So-so</div></div>
+  <div class="vocab-card" style="border-color:#f59e0b"><div class="de">So la la</div><div class="en">So-so</div></div>
+  <div class="vocab-card" style="border-color:#ef4444"><div class="de">Nicht gut</div><div class="en">Not good</div></div>
+  <div class="vocab-card" style="border-color:#ef4444"><div class="de">Sehr schlecht</div><div class="en">Very bad</div></div>
+</div>
+```
+
+::: {.callout-tip}
+**'auch'** = also/too.  **'Und dir?'** (informal) / **'Und Ihnen?'** (formal) = And you?
+:::
+
+:::
+
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```
