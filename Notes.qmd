@@ -1,0 +1,1240 @@
+---
+title: "German A1 – Complete Class Notes"
+subtitle: "Comprehensive Reference with Pronunciation & Meanings"
+author: "Nimesh"
+date: today
+format:
+  pdf:
+    documentclass: article
+    geometry: "a4paper, margin=2cm"
+    fontsize: 11pt
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    keep-tex: false
+lang: en
+---
+
+\newpage
+
+# Introduction to German
+
+**Deutsch** *(doytch)* – The German language
+
+German is the official language of three major countries:
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Deutschland | *doytch-lant* | Germany |
+| Österreich | *oes-ter-rykh* | Austria |
+| Schweiz | *shvytes* | Switzerland |
+
+> **Note:** German is spoken not only in Germany but also in Austria and Switzerland. Learning German opens doors to all three countries.
+
+---
+
+# Greetings & Farewells *(Grüße / Sich begrüßen)*
+
+## Formal & Informal Address
+
+German has two ways to say "you":
+
+| German | Pronunciation | Usage |
+|--------|--------------|-------|
+| **Sie** | *zee* | Formal – used with strangers, elders, in official settings |
+| **du** | *doo* | Informal – used with friends, family, children |
+
+## Basic Greetings
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Hallo | *hah-loh* | Hello |
+| Hi | *hee* | Hi |
+| Hey | *hay* | Hey |
+| Guten Morgen | *goo-ten mor-gen* | Good Morning |
+| Guten Tag | *goo-ten tahk* | Good Day / Good Afternoon |
+| Guten Abend | *goo-ten ah-bent* | Good Evening (after 6 pm) |
+| Gute Nacht | *goo-teh nakht* | Good Night (only when going to sleep) |
+
+### Regional Greetings
+
+| German | Pronunciation | Region / Meaning |
+|--------|--------------|-----------------|
+| Servus! | *zair-voos* | Hello/Bye – used in Bavaria & Austria |
+| Grüß Gott! | *groos got* | Hello – used in southern Germany & Austria |
+| Moin! | *moyn* | Hello – used in northern Germany |
+
+## Farewells
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Tschüs | *choos* | Bye |
+| Ciao / Tschau | *chow* | Goodbye (informal) |
+| Auf Wiedersehen! | *owf vee-der-zay-en* | See you / Goodbye (formal) |
+| Auf Wiederhören! | *owf vee-der-hoe-ren* | Call you again / Goodbye (on phone) |
+| Bis morgen! | *bis mor-gen* | See you tomorrow |
+| Bis dann! | *bis dan* | See you then |
+| Bis später! | *bis shpay-ter* | See you later |
+| Bis gleich! | *bis glykh* | See you soon |
+| Bis nächste Woche! | *bis nekhs-teh vo-kheh* | See you next week |
+| Bis Montag! | *bis mon-tahk* | See you on Monday |
+| Bis zum nächsten Mal! | *bis tsum nekhs-ten mahl* | See you next time |
+
+## Useful Polite Expressions
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Danke | *dan-keh* | Thank you |
+| Vielen Dank | *fee-len dank* | Thank you very much |
+| Bitte | *bit-teh* | Please / You're welcome |
+| Danke schön | *dan-keh shoen* | Thanks a lot |
+| Bitte schön | *bit-teh shoen* | You're welcome |
+| Gern geschehen | *gairn geh-sheh-en* | It's my pleasure |
+| Entschuldigung | *ent-shool-dee-goong* | Excuse me (casual) |
+| Verzeihung | *fair-tsy-oong* | Excuse me / Pardon (formal) |
+| Es tut mir leid | *es toot meer lyte* | I am sorry |
+| Prost! / Zum Wohl! | *prohst / tsum vohl* | Cheers! |
+| Schönen Tag noch! | *shoe-nen tahk nokh* | Have a nice day! |
+| Schönen Abend noch! | *shoe-nen ah-bent nokh* | Have a nice evening! |
+| Schönes Wochenende! | *shoe-nes vo-khen-en-deh* | Have a nice weekend! |
+| Mach's gut! | *makhs goot* | Stay well / Take care |
+| Viel Spaß! | *feel shpahs* | Have fun / Enjoy! |
+| Pass auf dich auf! | *pas owf dikh owf* | Take care of yourself |
+| Bis zum nächsten Mal! | *bis tsum nekhs-ten mahl* | See you next time! |
+
+## How Are You?
+
+### Formal (Sie)
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie geht es Ihnen? | *vee gayt es ee-nen* | How are you? (formal) |
+| Es geht mir gut. Danke. Und Ihnen? | *es gayt meer goot. dan-keh. oont ee-nen* | I am well. Thank you. And you? |
+| Mir geht es gut. | *meer gayt es goot* | I am fine. |
+
+### Informal (du)
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie geht es dir? / Wie geht's? | *vee gayt es deer / vee gayts* | How are you? (informal) |
+| Danke. Und dir? / Und selbst? | *dan-keh. oont deer / oont zelpst* | Thanks. And you? |
+| Es geht mir auch gut. | *es gayt meer owkh goot* | I'm also fine. |
+
+### Common Responses
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Sehr gut / Super / Prima / Toll / Wunderbar / Fantastisch | *zair goot / zoo-per / pree-mah / tol / voon-der-bar / fan-tas-tish* | Very good / Excellent |
+| Es geht / So la la / Okay | *es gayt / zo la la / oh-kay* | Okay / So-so |
+| Nicht gut / Schlecht | *nikht goot / shlekht* | Not good |
+| Sehr schlecht / Total schlimm | *zair shlekht / toh-tal shlim* | Very bad |
+| Überhaupt nicht gut | *oo-ber-howpt nikht goot* | Not good at all |
+| Nichts Besonderes | *nikhts beh-zon-der-es* | Nothing special |
+| Immer das Gleiche | *im-er das gly-kheh* | Always the same |
+
+### Other Common Questions & Answers
+
+| Question | Answer |
+|----------|--------|
+| Alles klar? *(al-es klahr?)* – Everything clear? | Ja, alles klar. *(yah, al-es klahr)* – Yes, everything's clear. |
+| Alles in Ordnung? *(al-es in ord-noong?)* – Everything okay? | Ja, alles in Ordnung. / Ja, kein Problem. |
+| Na, wie geht's? *(nah, vee gayts?)* – So, how's it going? | Ganz gut. / Naja, es geht. |
+
+## Special Expressions
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Gute Besserung! | *goo-teh bes-er-oong* | Get well soon! |
+| Gesundheit! | *geh-zoont-hyte* | Bless you! (after sneezing) |
+
+---
+
+# Introducing Yourself *(Sich vorstellen)*
+
+## Asking for a Name
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie heißen Sie? | *vee hy-sen zee* | What is your name? (formal) |
+| Wie heißt du? | *vee hytst doo* | What is your name? (informal) |
+| Wie ist Ihr Vorname? | *vee ist eer for-nah-meh* | What is your first name? (formal) |
+| Wie ist dein Vorname? | *vee ist dyne for-nah-meh* | What is your first name? (informal) |
+| Wie ist Ihr Nachname? | *vee ist eer nakh-nah-meh* | What is your last name? (formal) |
+| Wie ist dein Nachname? | *vee ist dyne nakh-nah-meh* | What is your last name? (informal) |
+| Wer ist das? | *vair ist das* | Who is this? |
+
+### Vocabulary
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| der Name | *dair nah-meh* | name |
+| der Vorname | *dair for-nah-meh* | first name / given name |
+| der Nachname / Familienname / Geburtsname | *dair nakh-nah-meh* | surname / family name |
+| Frau | *frow* | Mrs. / Miss / Ms. |
+| Herr | *hair* | Mr. |
+
+## Answering – Name
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Ich heiße [Name]. | *ikh hy-seh* | My name is ... / I am called ... |
+| Ich bin [Name]. | *ikh bin* | I am ... |
+| Mein Name ist [Name]. | *myne nah-meh ist* | My name is ... |
+| Mein Vorname ist ___. | | My first name is ___. |
+| Mein Nachname ist ___. | | My last name is ___. |
+
+## Spelling Your Name *(Buchstabieren)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Können Sie bitte buchstabieren? | *koe-nen zee bit-teh bookh-stah-bee-ren* | Can you please spell it? (formal) |
+| Kannst du bitte buchstabieren? | *kanst doo bit-teh bookh-stah-bee-ren* | Can you please spell it? (informal) |
+
+> **Example (HIRUNI):** H wie Henry, I wie Inge, R wie René, U wie Ute, N wie Nordpol, I wie Inge
+
+## Country of Origin *(Land / Herkunft)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Woher kommen Sie? | *vo-hair ko-men zee* | Where are you from? (formal) |
+| Woher kommst du? | *vo-hair komst doo* | Where are you from? (informal) |
+| Ich komme aus Sri Lanka. | *ikh ko-meh ows...* | I come from Sri Lanka. |
+| Ich komme aus der Schweiz. | | I come from Switzerland. |
+| Ich komme aus der Ukraine. | | I come from Ukraine. |
+| Ich komme aus der Türkei. | | I come from Turkey. |
+| Ich komme aus den USA. | | I come from the USA. |
+
+> **Grammar Note:** Some countries need an article before them: *aus der Schweiz, aus der Ukraine, aus der Türkei, aus den USA*. Most countries have no article: *aus Deutschland, aus Sri Lanka.*
+
+## Place of Residence *(Wohnort)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wo wohnen Sie? | *vo vo-nen zee* | Where do you live? (formal) |
+| Wo wohnst du? | *vo vohnst doo* | Where do you live? (informal) |
+| Ich wohne in Münster. | *ikh vo-neh in moon-ster* | I live in Münster. |
+
+## Age *(Alter)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie alt sind Sie? | *vee alt zint zee* | How old are you? (formal) |
+| Wie alt bist du? | *vee alt bist doo* | How old are you? (informal) |
+| Ich bin 29 Jahre alt. | *ikh bin... yah-reh alt* | I am 29 years old. |
+
+## Marital Status *(Familienstand)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Sind Sie verheiratet? | *zint zee fair-hy-rah-tet* | Are you married? (formal) |
+| Bist du verheiratet? | *bist doo fair-hy-rah-tet* | Are you married? (informal) |
+| Ja, ich bin verheiratet. | | Yes, I am married. |
+| Nein, ich bin nicht verheiratet. | | No, I am not married. |
+| ledig | *lay-dikh* | single (never married) |
+| Single | *sing-el* | single |
+| geschieden | *geh-shee-den* | divorced |
+| verwitwet | *fair-vit-vet* | widowed |
+
+## Children *(Kinder)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Haben Sie Kinder? | *hah-ben zee kin-der* | Do you have children? (formal) |
+| Hast du Kinder? | *hast doo kin-der* | Do you have children? (informal) |
+| Nein, ich habe keine Kinder. | *kyne kin-der* | No, I don't have children. |
+| Ja, ich habe ein Kind. | *ayn kint* | Yes, I have one child. |
+| Ja, ich habe 2/3... Kinder. | | Yes, I have 2/3... children. |
+
+## Languages *(Sprachen)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Welche Sprachen sprechen Sie? | *vel-kheh shprah-khen shpre-khen zee* | Which languages do you speak? (formal) |
+| Welche Sprachen sprichst du? | *vel-kheh shprah-khen shprikhst doo* | Which languages do you speak? (informal) |
+| Ich spreche Singhalesisch, Tamil, Englisch und etwas Deutsch. | | I speak Sinhala, Tamil, English and a little German. |
+| Ich lerne Deutsch. | *ikh lair-neh doytch* | I am learning German. |
+| Was ist Ihre Muttersprache? | *vas ist ee-reh moo-ter-shprah-kheh* | What is your mother tongue? (formal) |
+| Meine Muttersprache ist ___. | | My mother tongue is ___. |
+| Welche Sprache spricht man in Deutschland? | | Which language is spoken in Germany? |
+| In Deutschland spricht man Deutsch. | | In Germany, people speak German. |
+
+> **Note:** *etwas / ein bisschen* *(et-vas / ayn bis-khen)* = a little / a bit
+
+## Address *(Adresse)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie ist Ihre / deine Adresse? | *vee ist ee-reh / dye-neh ah-dres-seh* | What is your address? |
+| Meine Adresse ist ... | | My address is ... |
+| die Straße | *dee shtrahs-seh* | street / road |
+| die Hausnummer | *dee hows-noo-mer* | house number |
+| die Postleitzahl (PLZ) | *dee post-lyte-tsahl* | postal code / ZIP code |
+
+## Phone Numbers *(Telefonnummer)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie ist Ihre Telefonnummer? | *teh-leh-fon-noo-mer* | What is your phone number? (formal) |
+| Wie ist deine Telefonnummer? | | What is your phone number? (informal) |
+| Meine Telefonnummer ist ... | | My phone number is ... |
+| die Handynummer | *han-dee-noo-mer* | mobile number |
+| die Festnetznummer | *fest-nets-noo-mer* | landline number |
+| die Faxnummer | *fax-noo-mer* | fax number |
+| die Vorwahl | *dee for-vahl* | country/area code |
+| Wie ist die Vorwahl von Sri Lanka? | | What is the country code for Sri Lanka? → 0094 |
+| Wie ist die Vorwahl von Deutschland? | | What is the country code for Germany? → 0049 |
+
+## E-Mail Address *(E-Mail-Adresse)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie ist deine E-Mail-Adresse? | | What is your email address? (informal) |
+| Wie ist Ihre E-Mail-Adresse? | | What is your email address? (formal) |
+| Meine E-Mail-Adresse ist ... | | My email address is ... |
+| @ | *at* | at |
+| . | *Punkt (poonkt)* | dot |
+| - | *Minus (mee-noos)* | hyphen / minus |
+| _ | *Unterstrich (oon-ter-strikh)* | underscore |
+| + | *Plus (ploos)* | plus |
+
+## Introducing Someone Else
+
+Use **Das ist** *(das ist)* = "This is ..." to introduce a third person:
+
+```
+Das ist [Name].
+___ kommt aus Sri Lanka.       He/She comes from Sri Lanka.
+___ wohnt in Kassel.           He/She lives in Kassel.
+___ ist 20 Jahre alt.          He/She is 20 years old.
+___ ist verheiratet.           He/She is married.
+___ hat ein Kind.              He/She has one child.
+___ spricht Singhalesisch, Englisch, Deutsch und etwas Tamil.
+```
+
+> **Note:** *Das* *(das)* is similar to "this/that" in English and is used for introduction regardless of gender.
+
+---
+
+# The German Alphabet *(Das deutsche Alphabet)*
+
+## Letters
+
+| A a *(ah)* | H h *(hah)* | O o *(oh)* | V v *(fow)* |
+|---|---|---|---|
+| B b *(bay)* | I i *(ee)* | P p *(pay)* | W w *(vay)* |
+| C c *(tsay)* | J j *(yot)* | Q q *(koo)* | X x *(iks)* |
+| D d *(day)* | K k *(kah)* | R r *(air)* | Y y *(oopsilon)* |
+| E e *(ay)* | L l *(el)* | S s *(es)* | Z z *(tset)* |
+| F f *(ef)* | M m *(em)* | T t *(tay)* | |
+| G g *(gay)* | N n *(en)* | U u *(oo)* | |
+
+## Special Characters
+
+| Character | Name | Pronunciation | Notes |
+|-----------|------|--------------|-------|
+| **ß** | Eszett / Scharfes S | *es-tset* | Sounds like double "ss" |
+| **Ä ä** | A-Umlaut | *eh* | Like "e" in "bed" – e.g., Äpfel (apples), Käse (cheese) |
+| **Ö ö** | O-Umlaut | *oe* | e.g., Möhren (carrots), Österreich |
+| **Ü ü** | U-Umlaut | *ue* | e.g., Tür (door), müde (tired) |
+
+> **Note:** When an umlaut (ä, ö, ü) cannot be typed, replace it with: **ä → ae, ö → oe, ü → ue** (e.g., *Kaese* instead of *Käse*)
+
+---
+
+# Numbers *(Die Zahlen)*
+
+## 0 – 12
+
+| Number | German | Pronunciation |
+|--------|--------|--------------|
+| 0 | null | *nool* |
+| 1 | eins | *ayns* |
+| 2 | zwei | *tsvye* |
+| 3 | drei | *dry* |
+| 4 | vier | *feer* |
+| 5 | fünf | *fuenf* |
+| 6 | sechs | *zeks* |
+| 7 | sieben | *zee-ben* |
+| 8 | acht | *akht* |
+| 9 | neun | *noyn* |
+| 10 | zehn | *tsayn* |
+| 11 | elf | *elf* |
+| 12 | zwölf | *tsvolf* |
+
+## 13 – 19 (Pattern: units + zehn)
+
+| Number | German | Pronunciation |
+|--------|--------|--------------|
+| 13 | dreizehn | *dry-tsayn* |
+| 14 | vierzehn | *feer-tsayn* |
+| 15 | fünfzehn | *fuenf-tsayn* |
+| 16 | sechzehn | *zekh-tsayn* |
+| 17 | siebzehn | *zeep-tsayn* |
+| 18 | achtzehn | *akht-tsayn* |
+| 19 | neunzehn | *noyn-tsayn* |
+
+## 20 – 100 (Pattern: units + -zig/-ßig)
+
+| Number | German | Pronunciation |
+|--------|--------|--------------|
+| 20 | zwanzig | *tsvan-tsikh* |
+| 30 | dreißig | *dry-sikh* |
+| 40 | vierzig | *feer-tsikh* |
+| 50 | fünfzig | *fuenf-tsikh* |
+| 60 | sechzig | *zekh-tsikh* |
+| 70 | siebzig | *zeep-tsikh* |
+| 80 | achtzig | *akht-tsikh* |
+| 90 | neunzig | *noyn-tsikh* |
+| 100 | hundert / einhundert | *hoon-dert* |
+
+> **Pattern for 21–99:** units **und** tens → e.g., 21 = **einundzwanzig**, 35 = **fünfunddreißig**, 47 = **siebenundvierzig**
+
+## Hundreds *(Hunderte)*
+
+| Number | German |
+|--------|--------|
+| 100 | einhundert / hundert |
+| 200 | zweihundert |
+| 300 | dreihundert |
+| 400 | vierhundert |
+| 500 | fünfhundert |
+| 600 | sechshundert |
+| 700 | siebenhundert |
+| 800 | achthundert |
+| 900 | neunhundert |
+
+**Examples:** 101 = einhunderteins | 210 = zweihundertzehn | 523 = fünfhundertdreiundzwanzig | 998 = neunhundertachtundneunzig
+
+## Thousands *(Tausende)*
+
+| Number | German |
+|--------|--------|
+| 1,000 | eintausend / tausend |
+| 2,000 | zweitausend |
+| 5,000 | fünftausend |
+| 10,000 | zehntausend |
+| 25,000 | fünfundzwanzigtausend |
+| 100,000 | hunderttausend |
+
+**Examples:** 1,001 = eintausendeins | 5,732 = fünftausendsiebenhundertzweiunddreißig | 23,843 = dreiundwanzigtausendachthundertdreiundvierzig
+
+---
+
+# Grammar: Articles *(Artikel)*
+
+German nouns have **three genders**: masculine, feminine, and neuter.
+
+## Definite Articles (*the*)
+
+| Gender | Article | Example |
+|--------|---------|---------|
+| Maskulin (masculine) | **der** | der Computer *(dair)* |
+| Feminin (feminine) | **die** | die Tasche *(dee)* |
+| Neutrum (neuter) | **das** | das Buch *(das)* |
+| Plural (all genders) | **die** | die Bücher |
+
+## Indefinite Articles (*a/an*)
+
+| Gender | Article | Example |
+|--------|---------|---------|
+| Maskulin | **ein** | ein Computer |
+| Feminin | **eine** | eine Tasche |
+| Neutrum | **ein** | ein Buch |
+| Plural | *(no article)* | Bücher |
+
+## Negation Articles (*not a / no*)
+
+| Gender | Article | Example |
+|--------|---------|---------|
+| Maskulin | **kein** | kein Computer |
+| Feminin | **keine** | keine Tasche |
+| Neutrum | **kein** | kein Buch |
+| Plural | **keine** | keine Bücher |
+
+> **Key Rule:** In German, **every noun is always written with a capital letter**, no matter where it appears in a sentence.
+
+## Pronouns Replacing Articles
+
+| Article | Pronoun | Example |
+|---------|---------|---------|
+| der | er *(air)* | Das ist der Computer. Er ist alt. |
+| die | sie *(zee)* | Das ist die Tasche. Sie ist neu. |
+| das | es *(es)* | Das ist das Buch. Es ist gut. |
+| die (pl.) | sie *(zee)* | Das sind die Bücher. Sie sind super. |
+
+## Das ist / Das sind
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Das ist ... | *das ist* | This is ... |
+| Das sind ... | *das zint* | These are ... |
+
+---
+
+# Grammar: Plural Forms *(Pluralbildung)*
+
+German plurals follow different patterns — always learn the plural with the noun!
+
+| Plural Pattern | Singular | Plural |
+|---------------|----------|--------|
+| **..e** (umlaut + e) | der Arzt (doctor) | die Ärzte |
+| **e** | der Tag (day) | die Tage |
+| **..er** (umlaut + er) | das Buch (book) | die Bücher |
+| **–** (no change) | der Kilometer | die Kilometer |
+| **n** | die Stunde (hour) | die Stunden |
+| **er** | das Ei (egg) | die Eier |
+| **en** | der Patient | die Patienten |
+| **s** | das Auto (vehicle) | die Autos |
+| **..** (umlaut only) | die Mutter (mother) | die Mütter |
+
+**Common Plurals:**
+
+| Singular | Plural | English |
+|----------|--------|---------|
+| der Bus | die Busse | bus(es) |
+| das Kind | die Kinder | child(ren) |
+| der Bruder | die Brüder | brother(s) |
+| die Frau | die Frauen | woman/women |
+| der Tag | die Tage | day(s) |
+| der Mann | die Männer | man/men |
+| das Brot | die Brote | bread(s) |
+| die Uhr | die Uhren | clock(s) |
+| die Hose | die Hosen | trousers |
+| das Fahrrad | die Fahrräder | bicycle(s) |
+| der Garten | die Gärten | garden(s) |
+
+---
+
+# Grammar: Personal Pronouns *(Personalpronomen)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| ich | *ikh* | I |
+| du | *doo* | you (informal singular) |
+| er | *air* | he |
+| sie | *zee* | she |
+| es | *es* | it |
+| wir | *veer* | we |
+| ihr | *eer* | you (informal plural) |
+| Sie | *zee* | you (formal – singular & plural) |
+| sie | *zee* | they |
+
+---
+
+# Grammar: Verb Conjugation *(Verben konjugieren)*
+
+## Regular Verbs – Endings
+
+| Person | Ending | Example (kommen) |
+|--------|--------|-----------------|
+| ich | **-e** | komm**e** |
+| du | **-st** | komm**st** |
+| er/sie/es | **-t** | komm**t** |
+| wir | **-en** | komm**en** |
+| ihr | **-t** | komm**t** |
+| Sie/sie | **-en** | komm**en** |
+
+> **Key Rule:** 99% of German verbs end in **-en** in the infinitive (base form).
+
+## Conjugation Table
+
+|  | kommen *(to come)* | wohnen *(to live)* | trinken *(to drink)* | gehen *(to go)* |
+|--|---|---|---|---|
+| ich | komme | wohne | trinke | gehe |
+| du | kommst | wohnst | trinkst | gehst |
+| er/sie/es | kommt | wohnt | trinkt | geht |
+| wir | kommen | wohnen | trinken | gehen |
+| ihr | kommt | wohnt | trinkt | geht |
+| Sie/sie | kommen | wohnen | trinken | gehen |
+
+## Verbs with Stem Change
+
+Some verbs change their stem vowel for *du* and *er/sie/es*:
+
+| | essen *(to eat)* | lesen *(to read)* | heißen *(to be called)* |
+|--|---|---|---|
+| ich | esse | lese | heiße |
+| du | **isst** | **liest** | heißt |
+| er/sie/es | **isst** | **liest** | heißt |
+| wir | essen | lesen | heißen |
+| ihr | esst | lest | heißt |
+| Sie/sie | essen | lesen | heißen |
+
+## Verbs with -d/-t Stem (add extra -e-)
+
+Verbs like *arbeiten, warten, reden, baden*: add **-e-** before endings starting with *-st* and *-t*:
+
+| | arbeiten *(to work)* | warten *(to wait)* |
+|--|---|---|
+| ich | arbeite | warte |
+| du | arbeit**e**st | wart**e**st |
+| er/sie/es | arbeit**e**t | wart**e**t |
+| wir | arbeiten | warten |
+| ihr | arbeit**e**t | wart**e**t |
+| Sie/sie | arbeiten | warten |
+
+---
+
+# Grammar: haben & sein
+
+## haben *(hah-ben)* – to have
+
+| Person | Present | Past (hatte) |
+|--------|---------|-------------|
+| ich | **habe** | hatte |
+| du | **hast** | hattest |
+| er/sie/es | **hat** | hatte |
+| wir | **haben** | hatten |
+| ihr | **habt** | hattet |
+| Sie/sie | **haben** | hatten |
+
+## sein *(zyne)* – to be
+
+| Person | Present | Past (war) |
+|--------|---------|-----------|
+| ich | **bin** | war |
+| du | **bist** | warst |
+| er/sie/es | **ist** | war |
+| wir | **sind** | waren |
+| ihr | **seid** | wart |
+| Sie/sie | **sind** | waren |
+
+---
+
+# Grammar: Possessive Pronouns *(Possessivpronomen)*
+
+| Pronoun | der (masc.) | die (fem.) | das (neut.) | die (plural) |
+|---------|-------------|------------|-------------|--------------|
+| ich | **mein** | **meine** | **mein** | **meine** |
+| du | **dein** | **deine** | **dein** | **deine** |
+| er | **sein** | **seine** | **sein** | **seine** |
+| sie (she) | **ihr** | **ihre** | **ihr** | **ihre** |
+| es | **sein** | **seine** | **sein** | **seine** |
+| wir | **unser** | **unsere** | **unser** | **unsere** |
+| ihr | **euer** | **eure** | **euer** | **eure** |
+| Sie (formal) | **Ihr** | **Ihre** | **Ihr** | **Ihre** |
+| sie (they) | **ihr** | **ihre** | **ihr** | **ihre** |
+
+---
+
+# Grammar: Sentence Structure *(Satzbau)*
+
+> **Key Rule:** The **verb is always in position 2** in a German statement.
+
+**Examples:**
+
+- Ich **wohne** in Münster. *(I live in Münster.)*
+- Gestern **war** ich im Büro. *(Yesterday I was in the office.)*
+- Jeden Tag **gehe** ich schwimmen. *(Every day I go swimming.)*
+
+The subject can be in position 1 or position 3, but the **verb stays at position 2**.
+
+---
+
+# Grammar: Questions *(Fragen)*
+
+## W-Questions *(W-Fragen)*
+
+The W-question word is at **position 1**, the verb at **position 2**:
+
+| W-Word | Pronunciation | English |
+|--------|--------------|---------|
+| Wie | *vee* | How |
+| Wo | *voh* | Where |
+| Wer | *vair* | Who |
+| Wann | *van* | When |
+| Was | *vas* | What |
+| Woher | *vo-hair* | Where from |
+| Wohin | *vo-hin* | Where to |
+| Warum | *vah-room* | Why |
+| Welche/r/s | *vel-kheh* | Which |
+| Wie lange | *vee lang-eh* | How long |
+| Wie viel | *vee feel* | How much |
+| Wie viele | *vee fee-leh* | How many |
+| Um wie viel Uhr | *oom vee feel oor* | At what time |
+| Mit wem | *mit vaym* | With whom |
+| Für wen | *fuer vayn* | For whom |
+| Von wann bis wann | *fon van bis van* | From when until when |
+
+## Yes/No Questions *(Ja-Nein-Fragen)*
+
+The **verb comes at position 1**. The answer is always *ja* or *nein*:
+
+- Wohnst du in Colombo? – Ja, ich wohne in Colombo.
+- Kommst du aus Italien? – Nein, ich komme aus Polen.
+- Trinken Sie Cola? – Nein, ich trinke keine Cola.
+
+---
+
+# Grammar: Modal Verbs *(Modalverben)*
+
+| Verb | Pronunciation | English |
+|------|--------------|---------|
+| können | *koe-nen* | can / to be able to |
+| müssen | *mues-sen* | must / to have to |
+| wollen | *vol-len* | want to |
+| dürfen | *duer-fen* | may / to be allowed to |
+| sollen | *zol-len* | should / supposed to |
+| möchten | *moekh-ten* | would like to |
+| mögen | *moe-gen* | to like |
+
+## Modal Verb Conjugation
+
+| | können | müssen | wollen | dürfen | sollen | möchten |
+|--|---|---|---|---|---|---|
+| ich | kann | muss | will | darf | soll | möchte |
+| du | kannst | musst | willst | darfst | sollst | möchtest |
+| er/sie/es | kann | muss | will | darf | soll | möchte |
+| wir | können | müssen | wollen | dürfen | sollen | möchten |
+| ihr | könnt | müsst | wollt | dürft | sollt | möchtet |
+| Sie/sie | können | müssen | wollen | dürfen | sollen | möchten |
+
+## mögen *(to like)*
+
+| ich | du | er/sie/es | wir | ihr | Sie/sie |
+|-----|-----|-----------|-----|-----|---------|
+| mag | magst | mag | mögen | mögt | mögen |
+
+> **Grammar Rule:** The modal verb goes at **position 2** (conjugated). The main verb goes at the **end** in the **infinitive** form.
+
+**Examples:**
+
+- Ich **kann** ein bisschen Deutsch **sprechen**. *(I can speak a little German.)*
+- Ich **muss** viele Hausaufgaben **machen**. *(I must do a lot of homework.)*
+- Ich **möchte** jetzt einen Tee **trinken**. *(I would like to drink a tea now.)*
+- Du **darfst** hier nicht **schwimmen**. *(You are not allowed to swim here.)*
+
+---
+
+# Grammar: Separable Verbs *(Trennbare Verben)*
+
+Many German verbs have a separable prefix. In a sentence, the **verb stem goes to position 2** (conjugated), and the **prefix goes to the end**.
+
+**Examples:**
+
+| Infinitive | Prefix | Meaning | Example Sentence |
+|-----------|--------|---------|-----------------|
+| aufstehen | auf- | to get up | Ich **stehe** um 6 Uhr **auf**. |
+| anziehen | an- | to put on (clothes) | Ich **ziehe** meine Kleidung **an**. |
+| losfahren | los- | to set off | Du **fährst** um 8 Uhr **los**. |
+| ankommen | an- | to arrive | Er **kommt** um 9 Uhr an. |
+| anfangen | an- | to start/begin | Wir **fangen** den Kurs um 18 Uhr **an**. |
+| einkaufen | ein- | to go shopping | Ich **kaufe** jeden Samstag **ein**. |
+| anrufen | an- | to call | Wir **rufen** unsere Freunde **an**. |
+| fernsehen | fern- | to watch TV | Ich **sehe** um 20 Uhr **fern**. |
+| aufmachen | auf- | to open | Ich **mache** die Tür **auf**. |
+| zumachen | zu- | to close | Ich **mache** die Tür **zu**. |
+| einladen | ein- | to invite | Ich **lade** Anna heute **ein**. |
+| ausschalten | aus- | to turn off | Er **schaltet** das Licht **aus**. |
+| einschalten | ein- | to turn on | Er **schaltet** den Computer **ein**. |
+
+> **With Modal Verbs:** Modal verb at position 2 (conjugated), separable verb (as whole infinitive) at the end. Example: *Ich muss jetzt aufstehen.* *(I must get up now.)*
+
+---
+
+# Vocabulary: Common Verbs *(Verben)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| kommen | *ko-men* | to come |
+| wohnen | *vo-nen* | to live / to reside |
+| gehen | *gay-en* | to go |
+| trinken | *trin-ken* | to drink |
+| essen | *es-sen* | to eat |
+| kochen | *ko-khen* | to cook |
+| backen | *bak-ken* | to bake |
+| machen | *ma-khen* | to do / to make |
+| schlafen | *shlah-fen* | to sleep |
+| schwimmen | *shvim-men* | to swim |
+| duschen | *doo-shen* | to shower |
+| fahren | *fah-ren* | to drive / travel |
+| fliegen | *flee-gen* | to fly |
+| spielen | *shpee-len* | to play |
+| bringen | *brin-gen* | to bring |
+| laufen | *low-fen* | to run |
+| lesen | *lay-zen* | to read |
+| lernen | *lair-nen* | to learn |
+| hören | *hoe-ren* | to hear / listen |
+| schreiben | *shry-ben* | to write |
+| sprechen | *shpre-khen* | to speak |
+| arbeiten | *ar-by-ten* | to work |
+| malen | *mah-len* | to paint / draw |
+| sehen | *zay-en* | to see / watch |
+| kaufen | *kow-fen* | to buy |
+| tanzen | *tan-tsen* | to dance |
+| singen | *zing-en* | to sing |
+| reisen | *ry-zen* | to travel |
+| sammeln | *za-meln* | to collect |
+| fotografieren | *fo-to-gra-fee-ren* | to photograph |
+| telefonieren | *teh-leh-fo-nee-ren* | to make a call |
+
+---
+
+# Family *(Meine Familie / Meine Verwandte)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| die Eltern | *dee el-tern* | parents |
+| der Vater / der Papa | *dair fah-ter / pah-pah* | father / dad |
+| die Mutter / die Mama | *dee moo-ter / mah-mah* | mother / mom |
+| der Bruder | *dair broo-der* | brother |
+| die Schwester | *dee shves-ter* | sister |
+| die Geschwister | *dee geh-shvis-ter* | siblings |
+| der Sohn | *dair zohn* | son |
+| die Tochter | *dee tokh-ter* | daughter |
+| die Kinder | *dee kin-der* | children |
+| der Großvater / der Opa | *dair grohs-fah-ter / oh-pah* | grandfather / grandpa |
+| die Großmutter / die Oma | *dee grohs-moo-ter / oh-mah* | grandmother / grandma |
+| die Großeltern | *dee grohs-el-tern* | grandparents |
+| der Urgroßvater | *dair oor-grohs-fah-ter* | great-grandfather |
+| die Urgroßmutter | *dee oor-grohs-moo-ter* | great-grandmother |
+| der Enkelsohn | *dair en-kel-zohn* | grandson |
+| die Enkeltochter | *dee en-kel-tokh-ter* | granddaughter |
+| die Enkelkinder | *dee en-kel-kin-der* | grandchildren |
+| der Ehemann | *dair ay-eh-man* | husband |
+| die Ehefrau | *dee ay-eh-frow* | wife |
+| das Ehepaar | *das ay-eh-paar* | married couple |
+| der Onkel | *dair on-kel* | uncle |
+| die Tante | *dee tan-teh* | aunt |
+| der Cousin | *dair koo-zan* | cousin (male) |
+| die Cousine | *dee koo-zee-neh* | cousin (female) |
+| der Schwiegervater | *dair shvee-ger-fah-ter* | father-in-law |
+| die Schwiegermutter | *dee shvee-ger-moo-ter* | mother-in-law |
+| der Schwiegersohn | *dair shvee-ger-zohn* | son-in-law |
+| die Schwiegertochter | *dee shvee-ger-tokh-ter* | daughter-in-law |
+| der Schwager | *dair shvah-ger* | brother-in-law |
+| die Schwägerin | *dee shvay-geh-rin* | sister-in-law |
+| der Neffe | *dair nef-feh* | nephew |
+| die Nichte | *dee nikh-teh* | niece |
+| die Verwandten | *dee fair-van-ten* | relatives |
+
+---
+
+# School Subjects *(Meine Schulfächer)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| das Fach | *das fakh* | subject (singular) |
+| die Fächer | *dee fe-kher* | subjects (plural) |
+| der Stundenplan | *dair shtoon-den-plan* | timetable |
+| die Stunde | *dee shtoon-deh* | period / lesson (1 hour) |
+| die Pause | *dee pow-zeh* | break / interval |
+| Englisch | *eng-lish* | English |
+| Mathematik | *mah-teh-mah-teek* | Maths |
+| Französisch | *fran-tsoe-zish* | French |
+| Deutsch | *doytch* | German |
+| Sport | *shport* | Sports / PE |
+| Physik | *foo-zeek* | Physics |
+| Biologie | *bee-oh-loh-ghee* | Biology |
+| Kunst | *koonst* | Art |
+| Musik | *moo-zeek* | Music |
+| Informatik | *in-for-mah-teek* | IT / Computer Science |
+| Geographie | *gheh-oh-gra-fee* | Geography |
+| Spanisch | *shpah-nish* | Spanish |
+| Literatur | *lee-teh-rah-toor* | Literature |
+| Schwimmen | *shvim-men* | Swimming |
+| Geschichte | *geh-shikh-teh* | History |
+| Tanzen | *tan-tsen* | Dancing |
+| Wissenschaft | *vis-en-shaft* | Science |
+| frei | *fry* | free period |
+
+---
+
+# Classroom *(Sprache im Kurs)*
+
+## People in Class
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| die Lehrkraft | *dee lair-kraft* | teacher (generic) |
+| der Lehrer | *dair lair-er* | teacher (male) |
+| die Lehrerin | *dee lair-er-in* | teacher (female) |
+| der Kursteilnehmer | *dair koors-tile-nay-mer* | course participant (male) |
+| die Kursteilnehmerin | | course participant (female) |
+| der Schüler | *dair shoo-ler* | student (male, school) |
+| die Schülerin | | student (female, school) |
+| der Student | *dair shtoo-dent* | university student (male) |
+| die Studentin | | university student (female) |
+| der Kommilitone | *dair kom-ee-lee-toh-neh* | classmate (male) |
+| die Kommilitonin | | classmate (female) |
+
+## Objects in Class
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| die Tafel | *dee tah-fel* | blackboard |
+| das Buch | *das bookh* | book |
+| das Heft | *das heft* | exercise book |
+| der Kuli / Stift | *dair koo-lee / shtift* | pen |
+| der Bleistift | *dair bly-shtift* | pencil |
+| der Radiergummi | *dair ra-deer-goo-mee* | eraser |
+| die Schere | *dee sheh-reh* | scissors |
+| das Lineal | *das lee-neh-ahl* | ruler |
+| der Spitzer | *dair shpit-ser* | pencil sharpener |
+| der Tisch | *dair tish* | table |
+| der Stuhl | *dair shtool* | chair |
+| das Handy | *das han-dee* | mobile phone |
+| das Laptop | *das lap-top* | laptop |
+| der Computer | *dair com-pyoo-ter* | computer |
+| das Wörterbuch | *das voer-ter-bookh* | dictionary |
+
+## Classroom Instructions
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Lesen Sie. | *lay-zen zee* | Read. |
+| Lesen Sie bitte vor. | | Please read aloud. |
+| Noch einmal, bitte. | *nokh ayn-mahl bit-teh* | Once more, please. |
+| Ergänzen Sie. | *air-gen-tsen zee* | Fill in / complete. |
+| Ordnen Sie zu. | *ord-nen zee tsoo* | Sort / arrange. |
+| Ist das richtig? | | Is that correct? |
+| Ich habe eine Frage. | | I have a question. |
+| Wie heißt das auf Deutsch? | | What is that called in German? |
+| Schreiben Sie / Notieren Sie. | | Write / Note it down. |
+| Unterstreichen Sie. | *oon-ter-shty-khen zee* | Underline. |
+| Können Sie das wiederholen, bitte? | | Can you repeat that, please? |
+| Hören Sie. | | Listen. |
+| Erklären Sie! | *air-kleh-ren zee* | Explain! |
+| Kreuzen Sie an. | *kroy-tsen zee an* | Tick / cross. |
+| Markieren Sie. | *mar-kee-ren zee* | Mark. |
+| Ich verstehe das nicht. | | I don't understand this. |
+| Können Sie mir helfen? | | Can you help me? (formal) |
+| Darf ich kurz auf die Toilette gehen? | | May I quickly go to the toilet? |
+| Was sind die Hausaufgaben? | *hows-owf-gah-ben* | What is the homework? |
+| Wann ist die Prüfung? | *proo-foong* | When is the exam? |
+| Wie viel kostet der Kurs? | | How much does the course cost? |
+
+---
+
+# Time *(Zeit)*
+
+## Days of the Week *(Wochentage)*
+
+All days of the week are **masculine (der)**. With days, use **am**:
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Montag | *mon-tahk* | Monday |
+| Dienstag | *deens-tahk* | Tuesday |
+| Mittwoch | *mit-vokh* | Wednesday |
+| Donnerstag | *don-ners-tahk* | Thursday |
+| Freitag | *fry-tahk* | Friday |
+| Samstag | *zams-tahk* | Saturday |
+| Sonntag | *zon-tahk* | Sunday |
+| das Wochenende | *das vo-khen-en-deh* | the weekend |
+
+> **Usage:** *am Montag* = on Monday | *am Wochenende* = at the weekend
+
+## Months *(Monate)*
+
+All months are **masculine (der)**. With months, use **im**:
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Januar | *yah-noo-ar* | January |
+| Februar | *fay-broo-ar* | February |
+| März | *mairts* | March |
+| April | *ah-pril* | April |
+| Mai | *my* | May |
+| Juni | *yoo-nee* | June |
+| Juli | *yoo-lee* | July |
+| August | *ow-goost* | August |
+| September | *zep-tem-ber* | September |
+| Oktober | *ok-toh-ber* | October |
+| November | *no-vem-ber* | November |
+| Dezember | *deh-tsem-ber* | December |
+
+> **Usage:** *im August* = in August | *im Winter* = in winter
+
+## Seasons *(Jahreszeiten)*
+
+| German | Pronunciation | Months |
+|--------|--------------|--------|
+| der Winter | *dair vin-ter* | December, January, February |
+| der Frühling | *dair froo-ling* | March, April, May |
+| der Sommer | *dair zo-mer* | June, July, August |
+| der Herbst | *dair hairbst* | September, October, November |
+
+## Time Expressions
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| heute | *hoy-teh* | today |
+| morgen | *mor-gen* | tomorrow |
+| übermorgen | *oo-ber-mor-gen* | day after tomorrow |
+| gestern | *ges-tern* | yesterday |
+| vorgestern | *for-ges-tern* | day before yesterday |
+| diese Woche | *dee-zeh vo-kheh* | this week |
+| nächste Woche | *nekhs-teh vo-kheh* | next week |
+| übernächste Woche | *oo-ber-nekhs-teh vo-kheh* | the week after next |
+| letzte Woche | *lets-teh vo-kheh* | last week |
+| vorletzte Woche | *for-lets-teh vo-kheh* | the week before last |
+
+## Parts of the Day
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Vormittag | *for-mi-tahk* | morning (before 12) |
+| Mittag | *mi-tahk* | noon |
+| Nachmittag | *nakh-mi-tahk* | afternoon (after 12) |
+| Abend | *ah-bent* | evening |
+| Nacht | *nakht* | night |
+| Mitternacht | *mi-ter-nakht* | midnight |
+| morgen früh | *mor-gen froo* | early morning / tomorrow morning |
+
+## Telling the Time *(Uhrzeit)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie spät ist es? | *vee shpayt ist es* | What time is it? |
+| Wie spät ist es jetzt? | | What time is it now? |
+| Um wie viel Uhr ist es jetzt? | | At what time is it now? |
+| Es ist ... Uhr. | *es ist ... oor* | It is ... o'clock. |
+
+### Official Time (24-hour / formal)
+
+| Time | German |
+|------|--------|
+| 8:00 | Es ist acht Uhr. |
+| 8:05 | Es ist acht Uhr fünf. |
+| 8:15 | Es ist acht Uhr fünfzehn. |
+| 8:30 | Es ist acht Uhr dreißig. |
+| 8:45 | Es ist acht Uhr fünfundvierzig. |
+| 13:00 | Es ist dreizehn Uhr. |
+
+### Informal Time
+
+| Word | Pronunciation | Meaning |
+|------|--------------|---------|
+| nach | *nakh* | past / after |
+| vor | *for* | before / to |
+| kurz | *koorts* | just / a little |
+| halb | *halp* | half (past the previous hour!) |
+| Viertel | *feer-tel* | quarter |
+
+> **Important:** *halb acht* = **half past seven** (7:30), NOT half past eight! It means "halfway to eight."
+
+---
+
+# Hobbies *(Hobbys)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Fahrrad fahren | *fah-rat fah-ren* | cycling |
+| Motorrad fahren | *mo-tor-rat fah-ren* | riding a motorcycle |
+| Fußball spielen | *foos-bal shpee-len* | playing football |
+| Tennis spielen | *te-nis shpee-len* | playing tennis |
+| Gitarre spielen | *ghi-ta-reh shpee-len* | playing guitar |
+| Klavier spielen | *klah-veer shpee-len* | playing piano |
+| Tanzen | *tan-tsen* | dancing |
+| Singen | *zing-en* | singing |
+| Ski fahren | *shee fah-ren* | skiing |
+| Musik hören | *moo-zeek hoe-ren* | listening to music |
+| Spazieren gehen | *shpa-tsee-ren gay-en* | going for a walk |
+| Wandern | *van-dern* | hiking |
+| Schwimmen | *shvim-men* | swimming |
+| Joggen | *yo-gen* | jogging |
+| Lesen | *lay-zen* | reading |
+| Zeitung lesen | *tsye-toong lay-zen* | reading newspapers |
+| Chatten | *cha-ten* | chatting (online) |
+| Karten spielen | *kar-ten shpee-len* | playing cards |
+| Reisen | *ry-zen* | travelling |
+| Am Computer spielen | | playing on the computer |
+| Fernsehen | *faihrn-zay-en* | watching TV |
+| Einkaufen | *ayn-kow-fen* | shopping |
+| Kochen | *ko-khen* | cooking |
+| Nähen | *nay-en* | sewing |
+| Telefonieren | | calling / phoning |
+| Briefmarken sammeln | *breef-mar-ken za-meln* | stamp collecting |
+| Ins Kino gehen | *ins kee-no gay-en* | going to the cinema |
+| Ins Theater gehen | | going to the theatre |
+| Fotografie | *fo-to-gra-fee* | photography |
+| Im Internet surfen | | internet surfing |
+| Videospiele spielen | | playing video games |
+| Schlafen | *shlah-fen* | sleeping |
+| Basteln | *bas-teln* | crafting / DIY |
+| Zelten / Camping | *tsel-ten* | camping |
+
+## Talking About Hobbies
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Was ist dein Hobby? | | What is your hobby? |
+| Was sind deine Hobbys? | | What are your hobbies? |
+| Mein Hobby ist ... | | My hobby is ... |
+| Was machen Sie gern? | *gairn* | What do you like to do? (formal) |
+| Was machst du gern? | | What do you like to do? (informal) |
+| Das mache ich sehr gern. | | I really enjoy doing that. |
+| Das mache ich nicht so gern. | | I don't enjoy that so much. |
+| Ich schlafe sehr gern. | | I love sleeping. |
+| Ich chatte nicht so gern. | | I don't really like chatting. |
+
+## Frequency Words
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| immer | *im-er* | always |
+| oft | *oft* | often |
+| manchmal | *mankh-mahl* | sometimes |
+| selten | *zel-ten* | rarely |
+| nie | *nee* | never |
+| ab und zu | *ap oont tsoo* | now and then |
+| jeden Tag / täglich | *yay-den tahk / teg-likh* | every day |
+| nicht so oft | | not so often |
+| ganz selten | *gants zel-ten* | very rarely |
+| am Wochenende | | at the weekend |
+| zweimal / dreimal pro Woche | *tsvy-mahl / dry-mahl pro vo-kheh* | twice / three times a week |
+| monatlich | *mo-nat-likh* | monthly |
+| wöchentlich | *voe-khent-likh* | weekly |
+| jährlich | *yair-likh* | yearly / annually |
+
+---
+
+# Colors *(Die Farben)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| grün | *groon* | green |
+| gelb | *gelp* | yellow |
+| schwarz | *shvarts* | black |
+| blau | *blow* | blue |
+| lila | *lee-lah* | purple / lilac |
+| braun | *brown* | brown |
+| rosa / pink | *ro-zah / pink* | pink |
+| rot | *roht* | red |
+| orange | *oh-ran-zheh* | orange |
+| weiß | *vyes* | white |
+| grau | *grow* | grey |
+| türkis | *tuer-kees* | cyan / turquoise |
+| bunt | *boont* | colorful |
+
+**Shades:** hell- *(hel)* = light | dunkel- *(doon-kel)* = dark
+- hellgrün = light green | dunkelblau = dark blue
+
+## Talking About Colors
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Was ist deine Lieblingsfarbe? | | What is your favorite color? |
+| Meine Lieblingsfarbe ist ... | | My favorite color is ... |
+| Magst du blau? | *magst doo blow* | Do you like blue? |
+| Ja, blau mag ich. / Ja, ich mag blau. | | Yes, I like blue. |
+| Ja, rot finde ich schön. | *fin-deh ikh shoen* | Yes, I find red beautiful. |
+| Ja, rot gefällt mir. | *geh-felt meer* | Yes, I like red. |
+
+---
+
+# Weather *(Das Wetter)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Wie ist das Wetter heute? | | What is the weather like today? |
+| Heute haben wir 20 Grad. | | Today we have 20 degrees. |
+| Wie war das Wetter? | | What was the weather like? |
+| der Regen | *dair ray-gen* | rain |
+| die Sonne | *dee zo-neh* | sun |
+| der Schnee | *dair shnay* | snow |
+| der Wind | *dair vint* | wind |
+| der Hagel | *dair hah-gel* | hail |
+| der Nebel | *dair nay-bel* | fog |
+| die Hitze | *dee hit-tseh* | heat |
+| die Kälte | *dee kel-teh* | cold |
+| das Gewitter | *das geh-vi-ter* | thunderstorm |
+| der Blitz | *dair blits* | lightning |
+| der Donner | *dair do-ner* | thunder |
+
+## Weather Expressions
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| Es regnet. | *es rayg-net* | It is raining. |
+| Es ist sonnig. | *es ist zo-nikh* | It is sunny. |
+| Die Sonne scheint. | *dee zo-neh shynt* | The sun is shining. |
+| Es schneit. | *es shnyte* | It is snowing. |
+| Es blitzt. | *es blitst* | There is lightning. |
+| Es donnert. | *es do-nert* | It is thundering. |
+| Es gewittert. | *es geh-vi-tert* | There is a thunderstorm. |
+| Es hagelt. | *es hah-gelt* | It is hailing. |
+| Es ist heiß. | *es ist hys* | It is hot. |
+| Es ist warm. | *es ist varm* | It is warm. |
+| Es ist kalt. | *es ist kalt* | It is cold. |
+| Es ist kühl. | *es ist kool* | It is cool. |
+| Es ist eisig. | *es ist ay-zikh* | It is icy. |
+| Es ist bewölkt / wolkig. | *es ist beh-voelkt / vol-kikh* | It is cloudy. |
+| Es ist windig. | *es ist vin-dikh* | It is windy. |
+| Es ist neblig. | *es ist nay-blikh* | It is foggy. |
+| Mir ist warm. | *meer ist varm* | I feel warm. |
+| Mir ist kalt / kühl. | *meer ist kalt / kool* | I feel cold. |
+
+### Past Weather
+
+To talk about past weather, change *ist* to *war* or use *hat ... geregnet* etc.:
+
+- Es **war** sonnig. *(It was sunny.)*
+- Es **hat** geregnet. *(It rained.)*
+- Es **hat** geschneit. *(It snowed.)*
+
+---
+
+# Composites *(Komposita)*
+
+German loves to combine words to create new nouns. The **article of the last noun** determines the composite's article. The **first letter of the second noun becomes lowercase**.
+
+| Formula | Example | Meaning |
+|---------|---------|---------|
+| Noun + Noun | der Regen + der Mantel = **der Regenmantel** | raincoat |
+| Noun + Noun | die Hand + der Schuh = **der Handschuh** | glove |
+| Noun + Noun | das Brot + das Messer = **das Brotmesser** | bread knife |
+| Noun + Noun | die Milch + der Zahn = **der Milchzahn** | milk tooth |
+| Noun + Noun | das Tier + der Garten = **der Tiergarten** | zoo |
+| Noun + Noun | das Telefon + die Nummer = **die Telefonnummer** | phone number |
+| Verb + Noun | trinken + die Flasche = **die Trinkflasche** | water bottle |
+| Verb + Noun | kochen + das Buch = **das Kochbuch** | cookbook |
+| Verb + Noun | kaufen + das Haus = **das Kaufhaus** | department store |
+| Verb + Noun | tanzen + die Schule = **die Tanzschule** | dance school |
+| Verb + Noun | fahren + das Rad = **das Fahrrad** | bicycle |
+| Verb + Noun | schreiben + der Tisch = **der Schreibtisch** | desk |
+| Verb + Noun | schlafen + das Zimmer = **das Schlafzimmer** | bedroom |
+| Verb + Noun | essen + das Zimmer = **das Esszimmer** | dining room |
+| Verb + Noun | wohnen + das Zimmer = **das Wohnzimmer** | living room |
+| Verb + Noun | arbeiten + das Zimmer = **das Arbeitszimmer** | office room |
+| Verb + Noun | schwimmen + das Bad = **das Schwimmbad** | swimming pool |
+| Verb + Noun | baden + das Zimmer = **das Badezimmer** | bathroom |
+| Adjective + Noun | frisch + die Milch = **die Frischmilch** | fresh milk |
+| Adjective + Noun | alt + die Stadt = **die Altstadt** | old town |
+| Adjective + Noun | groß + die Stadt = **die Großstadt** | big city |
+
+---
+
+# Daily Routine *(Tagesablauf)*
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| aufstehen | *owf-shtay-en* | to get up |
+| duschen | *doo-shen* | to shower |
+| frühstücken | *froo-shtoo-ken* | to have breakfast |
+| anziehen | *an-tsee-en* | to get dressed |
+| losgehen | *los-gay-en* | to set off |
+| ankommen | *an-ko-men* | to arrive |
+| anfangen | *an-fan-gen* | to start / begin |
+| in der Mensa essen | *men-zah* | to eat in the canteen |
+| Hausaufgaben machen | *hows-owf-gah-ben* | to do homework |
+| einkaufen | *ayn-kow-fen* | to go shopping |
+| anrufen | *an-roo-fen* | to call someone |
+| fernsehen | *fairn-zay-en* | to watch TV |
+| schlafen gehen | | to go to sleep |
+
+---
+
+# Yes & No
+
+| German | Pronunciation | English |
+|--------|--------------|---------|
+| ja | *yah* | yes |
+| nein | *nyne* | no |
+| nö / nee | *noe / nay* | nope (informal) |
+
+---
+
+*End of German A1 Notes — Viel Erfolg beim Deutschlernen! (Much success in learning German!)*
