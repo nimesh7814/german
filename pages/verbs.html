@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>📝 Verbs — German Verb Reference</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
 <style>/* ── Reset & Base ─────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -451,8 +450,6 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
 .md-table tr:nth-child(even) td { background: #f5f0ff; }
 </style>
 
-
-
 </head>
 <body>
 <div id="top-navbar">
@@ -465,20 +462,20 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
     <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
     <a class="nav-tab" href="colors.html">🎨 Colors</a>
     <a class="nav-tab" href="communication.html">🗣️ Communication</a>
-    <a class="nav-tab" href="countries.html">🌍 Countries &amp; Languages</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
     <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
-    <a class="nav-tab" href="game.html">🎮 Noun Game</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
     <a class="nav-tab" href="grammar.html">📐 Grammar</a>
-    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen</a>
-    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
-    <a class="nav-tab active" href="verbs.html">📝 Verbs</a>
-    <a class="nav-tab" href="wetter.html">🌤️ Wetter</a>
     <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
     <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
     <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
     <a class="nav-tab" href="personal.html">👤 Personal Info</a>
     <a class="nav-tab" href="school.html">🏫 School</a>
-    <a class="nav-tab" href="time.html">📅 Time &amp; Calendar</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+    <a class="nav-tab active" href="verbs.html">📝 Verbs — German Verb Reference</a>
+    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen & Ja/Nein-Fragen</a>
+    <a class="nav-tab" href="wetter.html">🌤️ Das Wetter — The Weather</a>
     <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
 </div>
 <!-- AUTO-NAV-END -->
@@ -646,17 +643,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (inp) inp.addEventListener('keydown', e=>{ if(e.key==='Enter') convertNumber(); });
 });
 </script>
+
 <div id="main-content">
-
-<div class="hero">
-  <div class="flags">📝 🇩🇪 🔤</div>
-  <h1>Verben — German Verbs</h1>
-  <p>Regular verbs, conjugation, separable verbs and a student's daily routine</p>
+  <div class="hero">
+    <div class="flags">📝 🇩🇪 🔤</div>
+    <h1>Verben — German Verbs</h1>
+    <p>Regular verbs, conjugation, separable verbs and a student's daily routine</p>
+  </div><section id="sec-verbs"><h2 id="sub-verbvokabeln" style="margin:1.4rem 0 .6rem;color:#2d2250;">Key Verb Vocabulary (Infinitiv)</h2>
+<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">The <strong>infinitive</strong> is the base form of the verb (e.g. <em>kommen</em>, <em>wohnen</em>, <em>arbeiten</em>). To <strong>conjugate</strong> (konjugieren) means to change the verb ending to match the subject.</p>
 </div>
-
-<h2>Key Verb Vocabulary (Infinitiv)</h2>
-<div class="callout-note"><p>The <strong>infinitive</strong> is the base form of the verb (e.g. <em>kommen</em>, <em>wohnen</em>, <em>arbeiten</em>). To <strong>conjugate</strong> (konjugieren) means to change the verb ending to match the subject.</p></div>
-
+</div>
 <div class="vocab-grid">
   <div class="vocab-card"><div class="de">kommen</div><div class="pron">[KOM-en]</div><div class="en">to come</div></div>
   <div class="vocab-card"><div class="de">wohnen</div><div class="pron">[VOH-nen]</div><div class="en">to live / reside</div></div>
@@ -678,10 +676,12 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="vocab-card"><div class="de">spielen</div><div class="pron">[SHPEE-len]</div><div class="en">to play</div></div>
   <div class="vocab-card"><div class="de">schwimmen</div><div class="pron">[SHVIM-en]</div><div class="en">to swim</div></div>
   <div class="vocab-card"><div class="de">fliegen</div><div class="pron">[FLEE-gen]</div><div class="en">to fly</div></div>
+</div><h2 id="sub-regverbs" style="margin:1.4rem 0 .6rem;color:#2d2250;">Regular Verb Conjugation</h2>
+<div class="callout callout-tip" style="background:#dcfce7;border-left:4px solid #166534;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#166534;margin-bottom:.4rem;">✅ Tip</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">✅ Regular verbs drop <strong>-en</strong> from the infinitive and add endings: <strong>-e, -st, -t, -en, -t, -en</strong></p>
 </div>
-
-<h2>Regular Verb Conjugation — kommen</h2>
-<div class="callout-tip"><p>✅ Regular verbs drop <strong>-en</strong> from the infinitive and add endings: <strong>-e, -st, -t, -en, -t, -en</strong></p></div>
+</div>
 <div class="conj-box">
   <div class="conj-card">
     <h5>kommen — to come</h5>
@@ -707,51 +707,50 @@ document.addEventListener('DOMContentLoaded', () => {
       <tr><td>Sie/sie</td><td>wohn<strong>en</strong></td></tr>
     </tbody></table>
   </div>
+</div><h2 id="sub-trennbar" style="margin:1.4rem 0 .6rem;color:#2d2250;">Trennbare Verben (Separable Verbs)</h2>
+<div class="callout callout-important" style="background:#fee2e2;border-left:4px solid #991b1b;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#991b1b;margin-bottom:.4rem;">🔴 Important</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">📌 Separable verbs have a <strong>prefix</strong> (Vorsilbe) that splits off and goes to the <strong>END</strong> of the sentence in statements. Verb on Position 2, prefix at the END.</p>
 </div>
-
-<h2>Trennbare Verben (Separable Verbs)</h2>
-<div class="callout-important"><p>📌 Separable verbs have a <strong>prefix</strong> (Vorsilbe) that splits off and goes to the <strong>END</strong> of the sentence in statements. In a normal statement: verb on Position 2, prefix at the END.</p></div>
-
-<h3>Common Separable Verbs</h3>
-<div class="table-wrap"><table>
-  <thead><tr><th>Infinitiv</th><th>Meaning</th><th>Prefix</th></tr></thead>
-  <tbody>
-    <tr><td>auf·stehen</td><td>to get up</td><td>auf-</td></tr>
-    <tr><td>an·ziehen</td><td>to get dressed / put on</td><td>an-</td></tr>
-    <tr><td>los·fahren</td><td>to set off / depart</td><td>los-</td></tr>
-    <tr><td>an·kommen</td><td>to arrive</td><td>an-</td></tr>
-    <tr><td>an·fangen</td><td>to begin / start</td><td>an-</td></tr>
-    <tr><td>ein·kaufen</td><td>to go shopping</td><td>ein-</td></tr>
-    <tr><td>an·rufen</td><td>to call (phone)</td><td>an-</td></tr>
-    <tr><td>fern·sehen</td><td>to watch TV</td><td>fern-</td></tr>
-    <tr><td>mit·kommen</td><td>to come along</td><td>mit-</td></tr>
-    <tr><td>auf·machen</td><td>to open</td><td>auf-</td></tr>
-    <tr><td>zu·machen</td><td>to close</td><td>zu-</td></tr>
-    <tr><td>auf·räumen</td><td>to tidy up</td><td>auf-</td></tr>
-    <tr><td>auf·hören</td><td>to stop</td><td>auf-</td></tr>
-    <tr><td>ein·laden</td><td>to invite</td><td>ein-</td></tr>
-    <tr><td>mit·bringen</td><td>to bring along</td><td>mit-</td></tr>
-    <tr><td>aus·gehen</td><td>to go out</td><td>aus-</td></tr>
-    <tr><td>an·machen</td><td>to turn on</td><td>an-</td></tr>
-    <tr><td>aus·machen</td><td>to turn off</td><td>aus-</td></tr>
-    <tr><td>ein·schalten</td><td>to switch on</td><td>ein-</td></tr>
-    <tr><td>aus·schalten</td><td>to switch off</td><td>aus-</td></tr>
-    <tr><td>ab·sagen</td><td>to cancel</td><td>ab-</td></tr>
-    <tr><td>zu·sagen</td><td>to accept invitation</td><td>zu-</td></tr>
-    <tr><td>zu·stimmen</td><td>to agree</td><td>zu-</td></tr>
-    <tr><td>zu·hören</td><td>to listen</td><td>zu-</td></tr>
-    <tr><td>aus·füllen</td><td>to fill in/out</td><td>aus-</td></tr>
-    <tr><td>aus·sehen</td><td>to look / appear</td><td>aus-</td></tr>
-    <tr><td>an·haben</td><td>to wear (clothing)</td><td>an-</td></tr>
-    <tr><td>statt·finden</td><td>to take place</td><td>statt-</td></tr>
-    <tr><td>um·ziehen</td><td>to move house / change clothes</td><td>um-</td></tr>
-    <tr><td>ein·ziehen</td><td>to move in</td><td>ein-</td></tr>
-    <tr><td>ab·fahren</td><td>to depart</td><td>ab-</td></tr>
-    <tr><td>mit·machen</td><td>to participate</td><td>mit-</td></tr>
-  </tbody>
+</div>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>Infinitiv</th><th>Meaning</th><th>Prefix</th></tr></thead>
+<tbody>
+<tr><td>auf·stehen</td><td>to get up</td><td>auf-</td></tr>
+<tr><td>an·ziehen</td><td>to get dressed / put on</td><td>an-</td></tr>
+<tr><td>los·fahren</td><td>to set off / depart</td><td>los-</td></tr>
+<tr><td>an·kommen</td><td>to arrive</td><td>an-</td></tr>
+<tr><td>an·fangen</td><td>to begin / start</td><td>an-</td></tr>
+<tr><td>ein·kaufen</td><td>to go shopping</td><td>ein-</td></tr>
+<tr><td>an·rufen</td><td>to call (phone)</td><td>an-</td></tr>
+<tr><td>fern·sehen</td><td>to watch TV</td><td>fern-</td></tr>
+<tr><td>mit·kommen</td><td>to come along</td><td>mit-</td></tr>
+<tr><td>auf·machen</td><td>to open</td><td>auf-</td></tr>
+<tr><td>zu·machen</td><td>to close</td><td>zu-</td></tr>
+<tr><td>auf·räumen</td><td>to tidy up</td><td>auf-</td></tr>
+<tr><td>auf·hören</td><td>to stop</td><td>auf-</td></tr>
+<tr><td>ein·laden</td><td>to invite</td><td>ein-</td></tr>
+<tr><td>mit·bringen</td><td>to bring along</td><td>mit-</td></tr>
+<tr><td>aus·gehen</td><td>to go out</td><td>aus-</td></tr>
+<tr><td>an·machen</td><td>to turn on</td><td>an-</td></tr>
+<tr><td>aus·machen</td><td>to turn off</td><td>aus-</td></tr>
+<tr><td>ein·schalten</td><td>to switch on</td><td>ein-</td></tr>
+<tr><td>aus·schalten</td><td>to switch off</td><td>aus-</td></tr>
+<tr><td>ab·sagen</td><td>to cancel</td><td>ab-</td></tr>
+<tr><td>zu·sagen</td><td>to accept invitation</td><td>zu-</td></tr>
+<tr><td>zu·stimmen</td><td>to agree</td><td>zu-</td></tr>
+<tr><td>zu·hören</td><td>to listen</td><td>zu-</td></tr>
+<tr><td>aus·füllen</td><td>to fill in/out</td><td>aus-</td></tr>
+<tr><td>aus·sehen</td><td>to look / appear</td><td>aus-</td></tr>
+<tr><td>an·haben</td><td>to wear (clothing)</td><td>an-</td></tr>
+<tr><td>statt·finden</td><td>to take place</td><td>statt-</td></tr>
+<tr><td>um·ziehen</td><td>to move house / change clothes</td><td>um-</td></tr>
+<tr><td>ein·ziehen</td><td>to move in</td><td>ein-</td></tr>
+<tr><td>ab·fahren</td><td>to depart</td><td>ab-</td></tr>
+<tr><td>mit·machen</td><td>to participate</td><td>mit-</td></tr>
+</tbody>
 </table></div>
-
-<h2>Separable Verb Sentence Structure</h2>
+<h2 id="sub-trennbarstruktur" style="margin:1.4rem 0 .6rem;color:#2d2250;">Separable Verb Structure</h2>
 <div class="order-box">
   <p style="font-weight:700;color:#5b21b6;margin-bottom:.6rem;">Aussagesätze (Statements)</p>
   <div class="order-row">
@@ -761,41 +760,26 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="ord-cell ord-pos3">auf.</div>
   </div>
   <div style="font-size:.8rem;color:#9ca3af;margin-top:.3rem;">Verb (Pos 2) &nbsp;·&nbsp; Prefix at END (Vorsilbe)</div>
+</div><h2 id="sub-tagesablauf" style="margin:1.4rem 0 .6rem;color:#2d2250;">Tagesablauf — Student's Daily Routine</h2>
+<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">Notice how the separable prefix goes to the END in each statement.</p>
 </div>
-
-<h2>A Student's Daily Routine — Tagesablauf</h2>
-<div class="callout-note"><p>Notice how the separable prefix goes to the END in each statement.</p></div>
-<table>
-  <thead><tr><th>Time</th><th>German</th><th>English</th><th>Verb</th><th>Prefix</th></tr></thead>
-  <tbody>
-    <tr><td>①</td><td>Ich stehe um 6 Uhr <strong>auf</strong>.</td><td>I get up at 6.</td><td>stehe</td><td>auf</td></tr>
-    <tr><td>②</td><td>Ich ziehe meine Kleidung <strong>an</strong>.</td><td>I get dressed.</td><td>ziehe</td><td>an</td></tr>
-    <tr><td>③</td><td>Du fährst um 8 Uhr <strong>los</strong>.</td><td>You set off at 8.</td><td>fährst</td><td>los</td></tr>
-    <tr><td>④</td><td>Er kommt um 9 Uhr in der Universität <strong>an</strong>.</td><td>He arrives at uni at 9.</td><td>kommt</td><td>an</td></tr>
-    <tr><td>⑤</td><td>Wir fangen den Deutschkurs um 10 Uhr <strong>an</strong>.</td><td>We start German class at 10.</td><td>fangen</td><td>an</td></tr>
-    <tr><td>⑥</td><td>Ich kaufe am Nachmittag bei Lidl <strong>ein</strong>.</td><td>I go shopping at Lidl in the afternoon.</td><td>kaufe</td><td>ein</td></tr>
-    <tr><td>⑦</td><td>Wir rufen meine Freunde <strong>an</strong>.</td><td>We call my friends.</td><td>rufen</td><td>an</td></tr>
-    <tr><td>⑧</td><td>Ich sehe um 20:00 Uhr <strong>fern</strong>.</td><td>I watch TV at 8pm.</td><td>sehe</td><td>fern</td></tr>
-  </tbody>
-</table>
-
-<h2>Full Tagesablauf Word List</h2>
-<div class="vocab-grid">
-  <div class="vocab-card"><div class="de">aufstehen</div><div class="en">to get up</div></div>
-  <div class="vocab-card"><div class="de">duschen</div><div class="en">showering</div></div>
-  <div class="vocab-card"><div class="de">frühstücken</div><div class="en">to have breakfast</div></div>
-  <div class="vocab-card"><div class="de">anziehen</div><div class="en">to get dressed</div></div>
-  <div class="vocab-card"><div class="de">losgehen</div><div class="en">to set off (walking)</div></div>
-  <div class="vocab-card"><div class="de">ankommen</div><div class="en">to arrive</div></div>
-  <div class="vocab-card"><div class="de">anfangen</div><div class="en">to begin</div></div>
-  <div class="vocab-card"><div class="de">in der Mensa essen</div><div class="en">to eat in the canteen</div></div>
-  <div class="vocab-card"><div class="de">Hausaufgaben machen</div><div class="en">to do homework</div></div>
-  <div class="vocab-card"><div class="de">einkaufen</div><div class="en">to go shopping</div></div>
-  <div class="vocab-card"><div class="de">anrufen</div><div class="en">to phone / call</div></div>
-  <div class="vocab-card"><div class="de">fernsehen</div><div class="en">to watch TV</div></div>
 </div>
-
-<h2>W-Fragen &amp; Ja-Nein with Separable Verbs</h2>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>Time</th><th>German</th><th>English</th><th>Verb</th><th>Prefix</th></tr></thead>
+<tbody>
+<tr><td>①</td><td>Ich stehe um 6 Uhr <strong>auf</strong>.</td><td>I get up at 6.</td><td>stehe</td><td>auf</td></tr>
+<tr><td>②</td><td>Ich ziehe meine Kleidung <strong>an</strong>.</td><td>I get dressed.</td><td>ziehe</td><td>an</td></tr>
+<tr><td>③</td><td>Du fährst um 8 Uhr <strong>los</strong>.</td><td>You set off at 8.</td><td>fährst</td><td>los</td></tr>
+<tr><td>④</td><td>Er kommt um 9 Uhr in der Universität <strong>an</strong>.</td><td>He arrives at uni at 9.</td><td>kommt</td><td>an</td></tr>
+<tr><td>⑤</td><td>Wir fangen den Deutschkurs um 10 Uhr <strong>an</strong>.</td><td>We start German class at 10.</td><td>fangen</td><td>an</td></tr>
+<tr><td>⑥</td><td>Ich kaufe am Nachmittag bei Lidl <strong>ein</strong>.</td><td>I go shopping at Lidl in the afternoon.</td><td>kaufe</td><td>ein</td></tr>
+<tr><td>⑦</td><td>Wir rufen meine Freunde <strong>an</strong>.</td><td>We call my friends.</td><td>rufen</td><td>an</td></tr>
+<tr><td>⑧</td><td>Ich sehe um 20:00 Uhr <strong>fern</strong>.</td><td>I watch TV at 8pm.</td><td>sehe</td><td>fern</td></tr>
+</tbody>
+</table></div>
+<h2 id="sub-trennbarfragen" style="margin:1.4rem 0 .6rem;color:#2d2250;">W-Fragen & Ja-Nein with Separable Verbs</h2>
 <div class="conj-box">
   <div class="conj-card">
     <h5>❓ W-Fragen</h5>
@@ -811,20 +795,21 @@ document.addEventListener('DOMContentLoaded', () => {
     <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Kauft er bei Arpico <strong>ein</strong>?</p>
     <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Kommst du heute <strong>mit</strong>?</p>
   </div>
+</div><h2 id="sub-wortstellung" style="margin:1.4rem 0 .6rem;color:#2d2250;">Word-Order Flexibility — Topicalization</h2>
+<div class="callout callout-tip" style="background:#dcfce7;border-left:4px solid #166534;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#166534;margin-bottom:.4rem;">✅ Tip</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">In German you can move an element to Position 1 to emphasize it. The verb always stays in Position 2.</p>
 </div>
-
-<h2>Word-Order Flexibility — Topicalization</h2>
-<div class="callout-tip"><p>In German you can move an element to Position 1 to emphasize it. The verb always stays in Position 2.</p></div>
-<table>
-  <thead><tr><th>Position 1</th><th>Verb (P2)</th><th>Subject</th><th>Rest</th></tr></thead>
-  <tbody>
-    <tr><td>Ich</td><td>kaufe</td><td>—</td><td>jeden Samstag bei Edeka für meine Familie ein.</td></tr>
-    <tr><td>Jeden Samstag</td><td>kaufe</td><td>ich</td><td>bei Edeka für meine Familie ein.</td></tr>
-    <tr><td>Bei Edeka</td><td>kaufe</td><td>ich</td><td>jeden Samstag für meine Familie ein.</td></tr>
-  </tbody>
-</table>
-
-
+</div>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>Position 1</th><th>Verb (P2)</th><th>Subject</th><th>Rest</th></tr></thead>
+<tbody>
+<tr><td>Ich</td><td>kaufe</td><td>—</td><td>jeden Samstag bei Edeka für meine Familie ein.</td></tr>
+<tr><td>Jeden Samstag</td><td>kaufe</td><td>ich</td><td>bei Edeka für meine Familie ein.</td></tr>
+<tr><td>Bei Edeka</td><td>kaufe</td><td>ich</td><td>jeden Samstag für meine Familie ein.</td></tr>
+</tbody>
+</table></div>
+</section>
 <div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
   <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
   &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)

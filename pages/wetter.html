@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🌤️ Das Wetter — The Weather</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
 <style>/* ── Reset & Base ─────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -442,6 +441,23 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
 .ord-pos3  { background: #d1fae5; color: #065f46; }
 .ord-rest  { background: #f3f4f6; color: #374151; }
 .ord-label { font-size: .75rem; color: #9ca3af; font-weight: 600; margin-top: 2px; text-align: center; }</style>
+<style>
+.weather-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; margin:1.2rem 0; }
+.weather-card { background:#fff; border-radius:16px; padding:1rem; border:2px solid #e9d5ff; box-shadow:0 2px 10px rgba(124,58,237,.1); text-align:center; transition:transform .15s,box-shadow .15s; }
+.weather-card:hover { transform:translateY(-3px); box-shadow:0 6px 20px rgba(124,58,237,.2); }
+.weather-card .wc-emoji { font-size:2.2rem; }
+.weather-card .wc-noun { font-size:1rem; font-weight:900; color:#5b21b6; margin-top:.4rem; }
+.weather-card .wc-verb { font-size:.85rem; color:#7c3aed; font-weight:700; margin-top:.15rem; }
+.weather-card .wc-en   { font-size:.78rem; color:#6b7280; margin-top:.2rem; }
+.season-box { border-radius:16px; padding:1.2rem 1.4rem; margin:.8rem 0; border:2px solid; }
+.season-box h4 { font-size:1.1rem; margin-bottom:.6rem; }
+.season-box ul { list-style:none; padding:0; }
+.season-box ul li { font-size:.92rem; margin:.3rem 0; }
+.winter-box { background:linear-gradient(135deg,#dbeafe,#eff6ff); border-color:#93c5fd; color:#1e40af; }
+.spring-box { background:linear-gradient(135deg,#dcfce7,#f0fdf4); border-color:#86efac; color:#166534; }
+.summer-box { background:linear-gradient(135deg,#fef9c3,#fefce8); border-color:#fde047; color:#713f12; }
+.autumn-box { background:linear-gradient(135deg,#ffedd5,#fff7ed); border-color:#fb923c; color:#7c2d12; }
+</style>
 
 <style>
 .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
@@ -451,42 +467,6 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
 .md-table tr:nth-child(even) td { background: #f5f0ff; }
 </style>
 
-
-<style>
-.weather-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 14px;
-  margin: 1.2rem 0;
-}
-.weather-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 1rem;
-  border: 2px solid #e9d5ff;
-  box-shadow: 0 2px 10px rgba(124,58,237,.1);
-  text-align: center;
-  transition: transform .15s, box-shadow .15s;
-}
-.weather-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(124,58,237,.2); }
-.weather-card .wc-emoji { font-size: 2.2rem; }
-.weather-card .wc-noun { font-size: 1rem; font-weight: 900; color: #5b21b6; margin-top: .4rem; }
-.weather-card .wc-verb { font-size: .85rem; color: #7c3aed; font-weight: 700; margin-top: .15rem; }
-.weather-card .wc-en   { font-size: .78rem; color: #6b7280; margin-top: .2rem; }
-.season-box {
-  border-radius: 16px;
-  padding: 1.2rem 1.4rem;
-  margin: .8rem 0;
-  border: 2px solid;
-}
-.season-box h4 { font-size: 1.1rem; margin-bottom: .6rem; }
-.season-box ul { list-style: none; padding: 0; }
-.season-box ul li { font-size: .92rem; margin: .3rem 0; }
-.winter-box { background: linear-gradient(135deg,#dbeafe,#eff6ff); border-color: #93c5fd; color: #1e40af; }
-.spring-box { background: linear-gradient(135deg,#dcfce7,#f0fdf4); border-color: #86efac; color: #166534; }
-.summer-box { background: linear-gradient(135deg,#fef9c3,#fefce8); border-color: #fde047; color: #713f12; }
-.autumn-box { background: linear-gradient(135deg,#ffedd5,#fff7ed); border-color: #fb923c; color: #7c2d12; }
-</style>
 </head>
 <body>
 <div id="top-navbar">
@@ -499,20 +479,20 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
     <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
     <a class="nav-tab" href="colors.html">🎨 Colors</a>
     <a class="nav-tab" href="communication.html">🗣️ Communication</a>
-    <a class="nav-tab" href="countries.html">🌍 Countries &amp; Languages</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
     <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
-    <a class="nav-tab" href="game.html">🎮 Noun Game</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
     <a class="nav-tab" href="grammar.html">📐 Grammar</a>
-    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen</a>
-    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
-    <a class="nav-tab" href="verbs.html">📝 Verbs</a>
-    <a class="nav-tab active" href="wetter.html">🌤️ Wetter</a>
     <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
     <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
     <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
     <a class="nav-tab" href="personal.html">👤 Personal Info</a>
     <a class="nav-tab" href="school.html">🏫 School</a>
-    <a class="nav-tab" href="time.html">📅 Time &amp; Calendar</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+    <a class="nav-tab" href="verbs.html">📝 Verbs — German Verb Reference</a>
+    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen & Ja/Nein-Fragen</a>
+    <a class="nav-tab active" href="wetter.html">🌤️ Das Wetter — The Weather</a>
     <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
 </div>
 <!-- AUTO-NAV-END -->
@@ -680,15 +660,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (inp) inp.addEventListener('keydown', e=>{ if(e.key==='Enter') convertNumber(); });
 });
 </script>
+
 <div id="main-content">
-
-<div class="hero">
-  <div class="flags">🌤️ 🌧️ ❄️</div>
-  <h1>Das Wetter — The Weather</h1>
-  <p>Weather vocabulary, expressions, seasons and how to describe weather in German</p>
-</div>
-
-<h2>Asking About the Weather</h2>
+  <div class="hero">
+    <div class="flags">🌤️ 🌧️ ❄️</div>
+    <h1>Das Wetter — The Weather</h1>
+    <p>Weather vocabulary, expressions, seasons and how to describe weather in German</p>
+  </div><section id="sec-wetter"><h2 id="sub-wetterfragen" style="margin:1.4rem 0 .6rem;color:#2d2250;">Asking About the Weather</h2>
 <div class="dialogue">
   <p><span class="speaker-a">Q:</span> Wie ist das Wetter heute?</p>
   <p><span class="speaker-b">A:</span> Heute haben wir 20 Grad. <em>(Today we have 20 degrees.)</em></p>
@@ -697,17 +675,13 @@ document.addEventListener('DOMContentLoaded', () => {
   <p><span class="speaker-a">Q:</span> Wie war das Wetter? <em>(How was the weather?)</em></p>
   <p><span class="speaker-b">A:</span> Das Wetter war sehr schön. Es war sonnig und warm.</p>
   <p><span class="speaker-b">Or:</span> Das Wetter war nicht gut. Es hat ganze Zeit geregnet.</p>
-</div>
-
-<h2>Personal Weather Phrases</h2>
+</div><h2 id="sub-mirwetter" style="margin:1.4rem 0 .6rem;color:#2d2250;">Personal Weather Phrases</h2>
 <div class="vocab-grid">
   <div class="vocab-card"><div class="de">Mir ist warm.</div><div class="en">I feel warm.</div></div>
   <div class="vocab-card"><div class="de">Mir ist heiß.</div><div class="en">I feel hot.</div></div>
   <div class="vocab-card"><div class="de">Mir ist kalt.</div><div class="en">I feel cold.</div></div>
   <div class="vocab-card"><div class="de">Mir ist kühl.</div><div class="en">I feel cool.</div></div>
-</div>
-
-<h2>Weather Vocabulary — Nouns &amp; Verbs</h2>
+</div><h2 id="sub-wettervokabeln" style="margin:1.4rem 0 .6rem;color:#2d2250;">Weather Vocabulary — Nouns & Verbs</h2>
 <div class="weather-grid">
   <div class="weather-card"><div class="wc-emoji">🌧️</div><div class="wc-noun">der Regen</div><div class="wc-verb">Es regnet.</div><div class="wc-en">rain / It is raining.</div></div>
   <div class="weather-card"><div class="wc-emoji">☀️</div><div class="wc-noun">die Sonne</div><div class="wc-verb">Es ist sonnig.</div><div class="wc-en">sun / It is sunny.</div></div>
@@ -725,41 +699,44 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="weather-card"><div class="wc-emoji">🧊</div><div class="wc-noun">das Eis</div><div class="wc-verb">Es ist eisig.</div><div class="wc-en">ice / It is icy.</div></div>
   <div class="weather-card"><div class="wc-emoji">☁️</div><div class="wc-noun">die Wolke</div><div class="wc-verb">Es ist bewölkt.</div><div class="wc-en">cloud / It is cloudy.</div></div>
   <div class="weather-card"><div class="wc-emoji">💨</div><div class="wc-noun">der Wind</div><div class="wc-verb">Es ist windig.</div><div class="wc-en">wind / It is windy.</div></div>
+</div><h2 id="sub-wettervergangenheit" style="margin:1.4rem 0 .6rem;color:#2d2250;">Present → Past (Perfekt / war)</h2>
+<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;"><strong>sein</strong> verbs use <em>war</em> for simple past. Weather verbs with <em>haben</em> use <em>hat + past participle</em>.</p>
 </div>
-
-<h2>Present → Past (Perfekt / war)</h2>
-<div class="callout-note"><p><strong>sein</strong> verbs use <em>war</em> for simple past. Weather verbs with <em>haben</em> use <em>hat + past participle</em>.</p></div>
-<div class="table-wrap"><table>
-  <thead><tr><th>Present</th><th>Past</th></tr></thead>
-  <tbody>
-    <tr><td>Es regnet.</td><td>Es hat geregnet.</td></tr>
-    <tr><td>Es ist sonnig.</td><td>Es war sonnig.</td></tr>
-    <tr><td>Die Sonne scheint.</td><td>Es war sonnig.</td></tr>
-    <tr><td>Es blitzt.</td><td>Es hat geblitzt.</td></tr>
-    <tr><td>Es donnert.</td><td>Es hat gedonnert.</td></tr>
-    <tr><td>Es gewittert.</td><td>Es hat gewittert.</td></tr>
-    <tr><td>Es schneit.</td><td>Es hat geschneit.</td></tr>
-    <tr><td>Es hagelt.</td><td>Es hat gehagelt.</td></tr>
-    <tr><td>Es ist neblig.</td><td>Es war neblig.</td></tr>
-    <tr><td>Es ist heiß.</td><td>Es war heiß.</td></tr>
-    <tr><td>Es ist warm.</td><td>Es war warm.</td></tr>
-    <tr><td>Es ist kühl.</td><td>Es war kühl.</td></tr>
-    <tr><td>Es ist eisig.</td><td>Es war eisig.</td></tr>
-    <tr><td>Es ist bewölkt / wolkig.</td><td>Es war bewölkt / wolkig.</td></tr>
-    <tr><td>Es ist windig.</td><td>Es war windig.</td></tr>
-  </tbody>
+</div>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>Present</th><th>Past</th></tr></thead>
+<tbody>
+<tr><td>Es regnet.</td><td>Es hat geregnet.</td></tr>
+<tr><td>Es ist sonnig.</td><td>Es war sonnig.</td></tr>
+<tr><td>Die Sonne scheint.</td><td>Es war sonnig.</td></tr>
+<tr><td>Es blitzt.</td><td>Es hat geblitzt.</td></tr>
+<tr><td>Es donnert.</td><td>Es hat gedonnert.</td></tr>
+<tr><td>Es gewittert.</td><td>Es hat gewittert.</td></tr>
+<tr><td>Es schneit.</td><td>Es hat geschneit.</td></tr>
+<tr><td>Es hagelt.</td><td>Es hat gehagelt.</td></tr>
+<tr><td>Es ist neblig.</td><td>Es war neblig.</td></tr>
+<tr><td>Es ist heiß.</td><td>Es war heiß.</td></tr>
+<tr><td>Es ist warm.</td><td>Es war warm.</td></tr>
+<tr><td>Es ist kühl.</td><td>Es war kühl.</td></tr>
+<tr><td>Es ist eisig.</td><td>Es war eisig.</td></tr>
+<tr><td>Es ist bewölkt / wolkig.</td><td>Es war bewölkt / wolkig.</td></tr>
+<tr><td>Es ist windig.</td><td>Es war windig.</td></tr>
+</tbody>
 </table></div>
-
-<h2>Weather in Sri Lanka</h2>
-<div class="callout-tip"><p>Sri Lanka does not have 4 seasons. Only Regenzeit (rainy season) and Trockenzeit (dry season).</p></div>
+<h2 id="sub-srilanka" style="margin:1.4rem 0 .6rem;color:#2d2250;">Weather in Sri Lanka</h2>
+<div class="callout callout-tip" style="background:#dcfce7;border-left:4px solid #166534;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
+<div style="font-weight:800;color:#166534;margin-bottom:.4rem;">✅ Tip</div>
+<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">Sri Lanka does not have 4 seasons. Only Regenzeit (rainy season) and Trockenzeit (dry season).</p>
+</div>
+</div>
 <div class="dialogue">
   <p><span class="speaker-a">Q:</span> Wie ist das Wetter in Sri Lanka?</p>
   <p><span class="speaker-b">A:</span> In Sri Lanka ist es immer sonnig und warm. Manchmal regnet es.</p>
   <p><span class="speaker-b"> </span> Wir haben keine Jahreszeiten in Sri Lanka.</p>
   <p><span class="speaker-b"> </span> Wir haben nur Regenzeit und Trockenzeit.</p>
-</div>
-
-<h2>Die vier Jahreszeiten — Germany's 4 Seasons</h2>
+</div><h2 id="sub-jahreszeiten" style="margin:1.4rem 0 .6rem;color:#2d2250;">Die vier Jahreszeiten — Germany's 4 Seasons</h2>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1rem 0;">
   <div class="season-box winter-box">
     <h4>❄️ Winter</h4>
@@ -793,20 +770,17 @@ document.addEventListener('DOMContentLoaded', () => {
       <li>Es ist windig.</li>
     </ul>
   </div>
-</div>
-
-<h2>Wie ist das Wetter in Deutschland?</h2>
-<table>
-  <thead><tr><th>Jahreszeit</th><th>Typical Weather</th></tr></thead>
-  <tbody>
-    <tr><td>❄️ Winter</td><td>Es schneit. Es ist eisig und dunkel.</td></tr>
-    <tr><td>🌸 Frühling</td><td>Es ist kühl. Die Sonne scheint manchmal.</td></tr>
-    <tr><td>☀️ Sommer</td><td>Es ist warm und sonnig. Es ist hell.</td></tr>
-    <tr><td>🍂 Herbst</td><td>Es regnet. Es ist nass, kalt und windig.</td></tr>
-  </tbody>
-</table>
-
-
+</div><h2 id="sub-deutschlandwetter" style="margin:1.4rem 0 .6rem;color:#2d2250;">Wie ist das Wetter in Deutschland?</h2>
+<div class="table-wrap"><table class="md-table">
+<thead><tr><th>Jahreszeit</th><th>Typical Weather</th></tr></thead>
+<tbody>
+<tr><td>❄️ Winter</td><td>Es schneit. Es ist eisig und dunkel.</td></tr>
+<tr><td>🌸 Frühling</td><td>Es ist kühl. Die Sonne scheint manchmal.</td></tr>
+<tr><td>☀️ Sommer</td><td>Es ist warm und sonnig. Es ist hell.</td></tr>
+<tr><td>🍂 Herbst</td><td>Es regnet. Es ist nass, kalt und windig.</td></tr>
+</tbody>
+</table></div>
+</section>
 <div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
   <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
   &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)

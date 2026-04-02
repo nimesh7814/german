@@ -29,10 +29,14 @@ format:
     <a class="nav-tab" href="grammar.html">📐 Grammar</a>
     <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
     <a class="nav-tab active" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
     <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
     <a class="nav-tab" href="personal.html">👤 Personal Info</a>
     <a class="nav-tab" href="school.html">🏫 School</a>
     <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+    <a class="nav-tab" href="verbs.html">📝 Verbs — German Verb Reference</a>
+    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen & Ja/Nein-Fragen</a>
+    <a class="nav-tab" href="wetter.html">🌤️ Das Wetter — The Weather</a>
     <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
 </div>
 <!-- AUTO-NAV-END -->

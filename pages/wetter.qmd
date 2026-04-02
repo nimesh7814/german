@@ -1,0 +1,217 @@
+---
+title: "🌤️ Das Wetter — The Weather"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+        <style>
+        .weather-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; margin:1.2rem 0; }
+        .weather-card { background:#fff; border-radius:16px; padding:1rem; border:2px solid #e9d5ff; box-shadow:0 2px 10px rgba(124,58,237,.1); text-align:center; transition:transform .15s,box-shadow .15s; }
+        .weather-card:hover { transform:translateY(-3px); box-shadow:0 6px 20px rgba(124,58,237,.2); }
+        .weather-card .wc-emoji { font-size:2.2rem; }
+        .weather-card .wc-noun { font-size:1rem; font-weight:900; color:#5b21b6; margin-top:.4rem; }
+        .weather-card .wc-verb { font-size:.85rem; color:#7c3aed; font-weight:700; margin-top:.15rem; }
+        .weather-card .wc-en   { font-size:.78rem; color:#6b7280; margin-top:.2rem; }
+        .season-box { border-radius:16px; padding:1.2rem 1.4rem; margin:.8rem 0; border:2px solid; }
+        .season-box h4 { font-size:1.1rem; margin-bottom:.6rem; }
+        .season-box ul { list-style:none; padding:0; }
+        .season-box ul li { font-size:.92rem; margin:.3rem 0; }
+        .winter-box { background:linear-gradient(135deg,#dbeafe,#eff6ff); border-color:#93c5fd; color:#1e40af; }
+        .spring-box { background:linear-gradient(135deg,#dcfce7,#f0fdf4); border-color:#86efac; color:#166534; }
+        .summer-box { background:linear-gradient(135deg,#fef9c3,#fefce8); border-color:#fde047; color:#713f12; }
+        .autumn-box { background:linear-gradient(135deg,#ffedd5,#fff7ed); border-color:#fb923c; color:#7c2d12; }
+        </style>
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+    <a class="nav-tab" href="verbs.html">📝 Verbs — German Verb Reference</a>
+    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen & Ja/Nein-Fragen</a>
+    <a class="nav-tab active" href="wetter.html">🌤️ Das Wetter — The Weather</a>
+    <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">🌤️ 🌧️ ❄️</div>
+    <h1>Das Wetter — The Weather</h1>
+    <p>Weather vocabulary, expressions, seasons and how to describe weather in German</p>
+  </div>
+```
+
+::: {#sec-wetter}
+
+## Asking About the Weather {#sub-wetterfragen}
+
+```{=html}
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie ist das Wetter heute?</p>
+  <p><span class="speaker-b">A:</span> Heute haben wir 20 Grad. <em>(Today we have 20 degrees.)</em></p>
+</div>
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie war das Wetter? <em>(How was the weather?)</em></p>
+  <p><span class="speaker-b">A:</span> Das Wetter war sehr schön. Es war sonnig und warm.</p>
+  <p><span class="speaker-b">Or:</span> Das Wetter war nicht gut. Es hat ganze Zeit geregnet.</p>
+</div>
+```
+
+## Personal Weather Phrases {#sub-mirwetter}
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Mir ist warm.</div><div class="en">I feel warm.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist heiß.</div><div class="en">I feel hot.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist kalt.</div><div class="en">I feel cold.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist kühl.</div><div class="en">I feel cool.</div></div>
+</div>
+```
+
+## Weather Vocabulary — Nouns & Verbs {#sub-wettervokabeln}
+
+```{=html}
+<div class="weather-grid">
+  <div class="weather-card"><div class="wc-emoji">🌧️</div><div class="wc-noun">der Regen</div><div class="wc-verb">Es regnet.</div><div class="wc-en">rain / It is raining.</div></div>
+  <div class="weather-card"><div class="wc-emoji">☀️</div><div class="wc-noun">die Sonne</div><div class="wc-verb">Es ist sonnig.</div><div class="wc-en">sun / It is sunny.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌞</div><div class="wc-noun">der Sonnenschein</div><div class="wc-verb">Die Sonne scheint.</div><div class="wc-en">sunshine / The sun shines.</div></div>
+  <div class="weather-card"><div class="wc-emoji">⚡</div><div class="wc-noun">der Blitz</div><div class="wc-verb">Es blitzt.</div><div class="wc-en">lightning / There's lightning.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌩️</div><div class="wc-noun">der Donner</div><div class="wc-verb">Es donnert.</div><div class="wc-en">thunder / It thunders.</div></div>
+  <div class="weather-card"><div class="wc-emoji">⛈️</div><div class="wc-noun">das Gewitter</div><div class="wc-verb">Es gewittert.</div><div class="wc-en">thunderstorm</div></div>
+  <div class="weather-card"><div class="wc-emoji">❄️</div><div class="wc-noun">der Schnee</div><div class="wc-verb">Es schneit.</div><div class="wc-en">snow / It is snowing.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌨️</div><div class="wc-noun">der Hagel</div><div class="wc-verb">Es hagelt.</div><div class="wc-en">hail / It is hailing.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌫️</div><div class="wc-noun">der Nebel</div><div class="wc-verb">Es ist neblig.</div><div class="wc-en">fog / It is foggy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🔥</div><div class="wc-noun">die Hitze</div><div class="wc-verb">Es ist heiß.</div><div class="wc-en">heat / It is hot.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌡️</div><div class="wc-noun">die Wärme</div><div class="wc-verb">Es ist warm.</div><div class="wc-en">warmth / It is warm.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🥶</div><div class="wc-noun">die Kälte</div><div class="wc-verb">Es ist kalt.</div><div class="wc-en">cold (noun) / It is cold.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌬️</div><div class="wc-noun">die Kühle</div><div class="wc-verb">Es ist kühl.</div><div class="wc-en">coolness / It is cool.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🧊</div><div class="wc-noun">das Eis</div><div class="wc-verb">Es ist eisig.</div><div class="wc-en">ice / It is icy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">☁️</div><div class="wc-noun">die Wolke</div><div class="wc-verb">Es ist bewölkt.</div><div class="wc-en">cloud / It is cloudy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">💨</div><div class="wc-noun">der Wind</div><div class="wc-verb">Es ist windig.</div><div class="wc-en">wind / It is windy.</div></div>
+</div>
+```
+
+## Present → Past (Perfekt / war) {#sub-wettervergangenheit}
+
+::: {.callout-note}
+**sein** verbs use *war* for simple past. Weather verbs with *haben* use *hat + past participle*.
+:::
+
+| Present | Past |
+|---|---|
+| Es regnet. | Es hat geregnet. |
+| Es ist sonnig. | Es war sonnig. |
+| Die Sonne scheint. | Es war sonnig. |
+| Es blitzt. | Es hat geblitzt. |
+| Es donnert. | Es hat gedonnert. |
+| Es gewittert. | Es hat gewittert. |
+| Es schneit. | Es hat geschneit. |
+| Es hagelt. | Es hat gehagelt. |
+| Es ist neblig. | Es war neblig. |
+| Es ist heiß. | Es war heiß. |
+| Es ist warm. | Es war warm. |
+| Es ist kühl. | Es war kühl. |
+| Es ist eisig. | Es war eisig. |
+| Es ist bewölkt / wolkig. | Es war bewölkt / wolkig. |
+| Es ist windig. | Es war windig. |
+
+## Weather in Sri Lanka {#sub-srilanka}
+
+::: {.callout-tip}
+Sri Lanka does not have 4 seasons. Only Regenzeit (rainy season) and Trockenzeit (dry season).
+:::
+
+```{=html}
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie ist das Wetter in Sri Lanka?</p>
+  <p><span class="speaker-b">A:</span> In Sri Lanka ist es immer sonnig und warm. Manchmal regnet es.</p>
+  <p><span class="speaker-b"> </span> Wir haben keine Jahreszeiten in Sri Lanka.</p>
+  <p><span class="speaker-b"> </span> Wir haben nur Regenzeit und Trockenzeit.</p>
+</div>
+```
+
+## Die vier Jahreszeiten — Germany's 4 Seasons {#sub-jahreszeiten}
+
+```{=html}
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1rem 0;">
+  <div class="season-box winter-box">
+    <h4>❄️ Winter</h4>
+    <ul>
+      <li>Es schneit.</li>
+      <li>Es ist eisig.</li>
+      <li>Es ist dunkel.</li>
+    </ul>
+  </div>
+  <div class="season-box spring-box">
+    <h4>🌸 Frühling (Spring)</h4>
+    <ul>
+      <li>Es ist kühl.</li>
+      <li>Die Sonne scheint.</li>
+    </ul>
+  </div>
+  <div class="season-box summer-box">
+    <h4>☀️ Sommer (Summer)</h4>
+    <ul>
+      <li>Es ist warm.</li>
+      <li>Es ist sonnig.</li>
+      <li>Es ist hell.</li>
+    </ul>
+  </div>
+  <div class="season-box autumn-box">
+    <h4>🍂 Herbst (Autumn)</h4>
+    <ul>
+      <li>Es regnet.</li>
+      <li>Es ist nass.</li>
+      <li>Es ist kalt.</li>
+      <li>Es ist windig.</li>
+    </ul>
+  </div>
+</div>
+```
+
+## Wie ist das Wetter in Deutschland? {#sub-deutschlandwetter}
+
+| Jahreszeit | Typical Weather |
+|---|---|
+| ❄️ Winter | Es schneit. Es ist eisig und dunkel. |
+| 🌸 Frühling | Es ist kühl. Die Sonne scheint manchmal. |
+| ☀️ Sommer | Es ist warm und sonnig. Es ist hell. |
+| 🍂 Herbst | Es regnet. Es ist nass, kalt und windig. |
+
+:::
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```

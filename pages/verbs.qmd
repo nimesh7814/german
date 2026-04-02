@@ -1,0 +1,237 @@
+---
+title: "📝 Verbs — German Verb Reference"
+format:
+  html:
+    toc: false
+    theme: none
+    page-layout: full
+    embed-resources: true
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../shared/_styles.css">
+---
+
+```{=html}
+<div id="top-navbar">
+  <div id="nav-title">
+    🇩🇪 German A1 Language
+    <span class="subtitle">Beginner Study Notes · <a href="../index.html" style="color:rgba(255,255,255,.75);text-decoration:none">← Back to Home</a></span>
+  </div>
+  <!-- AUTO-NAV-START -->
+<div id="nav-tabs">
+    <a class="nav-tab" href="alphabet.html">🔤 Alphabet</a>
+    <a class="nav-tab" href="colors.html">🎨 Colors</a>
+    <a class="nav-tab" href="communication.html">🗣️ Communication</a>
+    <a class="nav-tab" href="countries.html">🌍 Countries & Languages</a>
+    <a class="nav-tab" href="family.html">👨‍👩‍👧‍👦 Family</a>
+    <a class="nav-tab" href="game.html">🎮 Noun Flashcard Game</a>
+    <a class="nav-tab" href="grammar.html">📐 Grammar</a>
+    <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
+    <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
+    <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="personal.html">👤 Personal Info</a>
+    <a class="nav-tab" href="school.html">🏫 School</a>
+    <a class="nav-tab" href="time.html">📅 Time & Calendar</a>
+    <a class="nav-tab active" href="verbs.html">📝 Verbs — German Verb Reference</a>
+    <a class="nav-tab" href="w-fragen.html">❓ W-Fragen & Ja/Nein-Fragen</a>
+    <a class="nav-tab" href="wetter.html">🌤️ Das Wetter — The Weather</a>
+    <a class="nav-tab" href="flashcards.html">🃏 Flashcard Game</a>
+</div>
+<!-- AUTO-NAV-END -->
+  <div id="nav-dropdown"></div>
+</div>
+<script src="../shared/_app.js"></script>
+
+<div id="main-content">
+  <div class="hero">
+    <div class="flags">📝 🇩🇪 🔤</div>
+    <h1>Verben — German Verbs</h1>
+    <p>Regular verbs, conjugation, separable verbs and a student's daily routine</p>
+  </div>
+```
+
+::: {#sec-verbs}
+
+## Key Verb Vocabulary (Infinitiv) {#sub-verbvokabeln}
+
+::: {.callout-note}
+The **infinitive** is the base form of the verb (e.g. *kommen*, *wohnen*, *arbeiten*). To **conjugate** (konjugieren) means to change the verb ending to match the subject.
+:::
+
+```{=html}
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">kommen</div><div class="pron">[KOM-en]</div><div class="en">to come</div></div>
+  <div class="vocab-card"><div class="de">wohnen</div><div class="pron">[VOH-nen]</div><div class="en">to live / reside</div></div>
+  <div class="vocab-card"><div class="de">arbeiten</div><div class="pron">[AR-by-ten]</div><div class="en">to work</div></div>
+  <div class="vocab-card"><div class="de">gehen</div><div class="pron">[GAY-en]</div><div class="en">to go</div></div>
+  <div class="vocab-card"><div class="de">fahren</div><div class="pron">[FAH-ren]</div><div class="en">to drive / travel</div></div>
+  <div class="vocab-card"><div class="de">sein</div><div class="pron">[zine]</div><div class="en">to be</div></div>
+  <div class="vocab-card"><div class="de">haben</div><div class="pron">[HAH-ben]</div><div class="en">to have</div></div>
+  <div class="vocab-card"><div class="de">heißen</div><div class="pron">[HY-sen]</div><div class="en">to be called</div></div>
+  <div class="vocab-card"><div class="de">sprechen</div><div class="pron">[SHPREKH-en]</div><div class="en">to speak</div></div>
+  <div class="vocab-card"><div class="de">lernen</div><div class="pron">[LAIR-nen]</div><div class="en">to learn</div></div>
+  <div class="vocab-card"><div class="de">trinken</div><div class="pron">[TRIN-ken]</div><div class="en">to drink</div></div>
+  <div class="vocab-card"><div class="de">essen</div><div class="pron">[ES-en]</div><div class="en">to eat</div></div>
+  <div class="vocab-card"><div class="de">kochen</div><div class="pron">[KO-khen]</div><div class="en">to cook</div></div>
+  <div class="vocab-card"><div class="de">schlafen</div><div class="pron">[SHLAH-fen]</div><div class="en">to sleep</div></div>
+  <div class="vocab-card"><div class="de">lesen</div><div class="pron">[LAY-zen]</div><div class="en">to read</div></div>
+  <div class="vocab-card"><div class="de">schreiben</div><div class="pron">[SHRY-ben]</div><div class="en">to write</div></div>
+  <div class="vocab-card"><div class="de">machen</div><div class="pron">[MAH-khen]</div><div class="en">to make / do</div></div>
+  <div class="vocab-card"><div class="de">spielen</div><div class="pron">[SHPEE-len]</div><div class="en">to play</div></div>
+  <div class="vocab-card"><div class="de">schwimmen</div><div class="pron">[SHVIM-en]</div><div class="en">to swim</div></div>
+  <div class="vocab-card"><div class="de">fliegen</div><div class="pron">[FLEE-gen]</div><div class="en">to fly</div></div>
+</div>
+```
+
+## Regular Verb Conjugation {#sub-regverbs}
+
+::: {.callout-tip}
+✅ Regular verbs drop **-en** from the infinitive and add endings: **-e, -st, -t, -en, -t, -en**
+:::
+
+```{=html}
+<div class="conj-box">
+  <div class="conj-card">
+    <h5>kommen — to come</h5>
+    <table><thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+    <tbody>
+      <tr><td>ich</td><td>komm<strong>e</strong></td></tr>
+      <tr><td>du</td><td>komm<strong>st</strong></td></tr>
+      <tr><td>er/sie/es</td><td>komm<strong>t</strong></td></tr>
+      <tr><td>wir</td><td>komm<strong>en</strong></td></tr>
+      <tr><td>ihr</td><td>komm<strong>t</strong></td></tr>
+      <tr><td>Sie/sie</td><td>komm<strong>en</strong></td></tr>
+    </tbody></table>
+  </div>
+  <div class="conj-card">
+    <h5>wohnen — to live</h5>
+    <table><thead><tr><th>Pronoun</th><th>Form</th></tr></thead>
+    <tbody>
+      <tr><td>ich</td><td>wohn<strong>e</strong></td></tr>
+      <tr><td>du</td><td>wohn<strong>st</strong></td></tr>
+      <tr><td>er/sie/es</td><td>wohn<strong>t</strong></td></tr>
+      <tr><td>wir</td><td>wohn<strong>en</strong></td></tr>
+      <tr><td>ihr</td><td>wohn<strong>t</strong></td></tr>
+      <tr><td>Sie/sie</td><td>wohn<strong>en</strong></td></tr>
+    </tbody></table>
+  </div>
+</div>
+```
+
+## Trennbare Verben (Separable Verbs) {#sub-trennbar}
+
+::: {.callout-important}
+📌 Separable verbs have a **prefix** (Vorsilbe) that splits off and goes to the **END** of the sentence in statements. Verb on Position 2, prefix at the END.
+:::
+
+| Infinitiv | Meaning | Prefix |
+|---|---|---|
+| auf·stehen | to get up | auf- |
+| an·ziehen | to get dressed / put on | an- |
+| los·fahren | to set off / depart | los- |
+| an·kommen | to arrive | an- |
+| an·fangen | to begin / start | an- |
+| ein·kaufen | to go shopping | ein- |
+| an·rufen | to call (phone) | an- |
+| fern·sehen | to watch TV | fern- |
+| mit·kommen | to come along | mit- |
+| auf·machen | to open | auf- |
+| zu·machen | to close | zu- |
+| auf·räumen | to tidy up | auf- |
+| auf·hören | to stop | auf- |
+| ein·laden | to invite | ein- |
+| mit·bringen | to bring along | mit- |
+| aus·gehen | to go out | aus- |
+| an·machen | to turn on | an- |
+| aus·machen | to turn off | aus- |
+| ein·schalten | to switch on | ein- |
+| aus·schalten | to switch off | aus- |
+| ab·sagen | to cancel | ab- |
+| zu·sagen | to accept invitation | zu- |
+| zu·stimmen | to agree | zu- |
+| zu·hören | to listen | zu- |
+| aus·füllen | to fill in/out | aus- |
+| aus·sehen | to look / appear | aus- |
+| an·haben | to wear (clothing) | an- |
+| statt·finden | to take place | statt- |
+| um·ziehen | to move house / change clothes | um- |
+| ein·ziehen | to move in | ein- |
+| ab·fahren | to depart | ab- |
+| mit·machen | to participate | mit- |
+
+## Separable Verb Structure {#sub-trennbarstruktur}
+
+```{=html}
+<div class="order-box">
+  <p style="font-weight:700;color:#5b21b6;margin-bottom:.6rem;">Aussagesätze (Statements)</p>
+  <div class="order-row">
+    <div class="ord-cell ord-pos1">Ich</div>
+    <div class="ord-cell ord-pos2">stehe</div>
+    <div class="ord-cell ord-rest">um 7 Uhr</div>
+    <div class="ord-cell ord-pos3">auf.</div>
+  </div>
+  <div style="font-size:.8rem;color:#9ca3af;margin-top:.3rem;">Verb (Pos 2) &nbsp;·&nbsp; Prefix at END (Vorsilbe)</div>
+</div>
+```
+
+## Tagesablauf — Student's Daily Routine {#sub-tagesablauf}
+
+::: {.callout-note}
+Notice how the separable prefix goes to the END in each statement.
+:::
+
+| Time | German | English | Verb | Prefix |
+|---|---|---|---|---|
+| ① | Ich stehe um 6 Uhr **auf**. | I get up at 6. | stehe | auf |
+| ② | Ich ziehe meine Kleidung **an**. | I get dressed. | ziehe | an |
+| ③ | Du fährst um 8 Uhr **los**. | You set off at 8. | fährst | los |
+| ④ | Er kommt um 9 Uhr in der Universität **an**. | He arrives at uni at 9. | kommt | an |
+| ⑤ | Wir fangen den Deutschkurs um 10 Uhr **an**. | We start German class at 10. | fangen | an |
+| ⑥ | Ich kaufe am Nachmittag bei Lidl **ein**. | I go shopping at Lidl in the afternoon. | kaufe | ein |
+| ⑦ | Wir rufen meine Freunde **an**. | We call my friends. | rufen | an |
+| ⑧ | Ich sehe um 20:00 Uhr **fern**. | I watch TV at 8pm. | sehe | fern |
+
+## W-Fragen & Ja-Nein with Separable Verbs {#sub-trennbarfragen}
+
+```{=html}
+<div class="conj-box">
+  <div class="conj-card">
+    <h5>❓ W-Fragen</h5>
+    <p style="font-size:.9rem;margin:.4rem 0;">Verb Pos 2, prefix at END</p>
+    <p style="font-size:.9rem;color:#5b21b6;">Wann stehst du <strong>auf</strong>?</p>
+    <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Wo kauft er <strong>ein</strong>?</p>
+    <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Warum kommst du <strong>mit</strong>?</p>
+  </div>
+  <div class="conj-card">
+    <h5>✅ Ja-Nein-Fragen</h5>
+    <p style="font-size:.9rem;margin:.4rem 0;">Verb Pos 1, prefix at END</p>
+    <p style="font-size:.9rem;color:#5b21b6;">Stehst du um 7 Uhr <strong>auf</strong>?</p>
+    <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Kauft er bei Arpico <strong>ein</strong>?</p>
+    <p style="font-size:.9rem;color:#5b21b6;margin-top:.4rem;">Kommst du heute <strong>mit</strong>?</p>
+  </div>
+</div>
+```
+
+## Word-Order Flexibility — Topicalization {#sub-wortstellung}
+
+::: {.callout-tip}
+In German you can move an element to Position 1 to emphasize it. The verb always stays in Position 2.
+:::
+
+| Position 1 | Verb (P2) | Subject | Rest |
+|---|---|---|---|
+| Ich | kaufe | — | jeden Samstag bei Edeka für meine Familie ein. |
+| Jeden Samstag | kaufe | ich | bei Edeka für meine Familie ein. |
+| Bei Edeka | kaufe | ich | jeden Samstag für meine Familie ein. |
+
+:::
+
+```{=html}
+<div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
+  <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
+  &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
+</div>
+</div><!-- /main-content -->
+```
