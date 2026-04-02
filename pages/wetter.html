@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🔢 Numbers</title>
+<title>🌤️ Das Wetter — The Weather</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
 <style>/* ── Reset & Base ─────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -450,6 +451,42 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
 .md-table tr:nth-child(even) td { background: #f5f0ff; }
 </style>
 
+
+<style>
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 1.2rem 0;
+}
+.weather-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 2px solid #e9d5ff;
+  box-shadow: 0 2px 10px rgba(124,58,237,.1);
+  text-align: center;
+  transition: transform .15s, box-shadow .15s;
+}
+.weather-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(124,58,237,.2); }
+.weather-card .wc-emoji { font-size: 2.2rem; }
+.weather-card .wc-noun { font-size: 1rem; font-weight: 900; color: #5b21b6; margin-top: .4rem; }
+.weather-card .wc-verb { font-size: .85rem; color: #7c3aed; font-weight: 700; margin-top: .15rem; }
+.weather-card .wc-en   { font-size: .78rem; color: #6b7280; margin-top: .2rem; }
+.season-box {
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  margin: .8rem 0;
+  border: 2px solid;
+}
+.season-box h4 { font-size: 1.1rem; margin-bottom: .6rem; }
+.season-box ul { list-style: none; padding: 0; }
+.season-box ul li { font-size: .92rem; margin: .3rem 0; }
+.winter-box { background: linear-gradient(135deg,#dbeafe,#eff6ff); border-color: #93c5fd; color: #1e40af; }
+.spring-box { background: linear-gradient(135deg,#dcfce7,#f0fdf4); border-color: #86efac; color: #166534; }
+.summer-box { background: linear-gradient(135deg,#fef9c3,#fefce8); border-color: #fde047; color: #713f12; }
+.autumn-box { background: linear-gradient(135deg,#ffedd5,#fff7ed); border-color: #fb923c; color: #7c2d12; }
+</style>
 </head>
 <body>
 <div id="top-navbar">
@@ -469,10 +506,10 @@ hr { border: none; border-top: 2px solid #e9d5ff; margin: 2rem 0; }
     <a class="nav-tab" href="w-fragen.html">❓ W-Fragen</a>
     <a class="nav-tab" href="modal-verben.html">🔧 Modal Verben</a>
     <a class="nav-tab" href="verbs.html">📝 Verbs</a>
-    <a class="nav-tab" href="wetter.html">🌤️ Wetter</a>
+    <a class="nav-tab active" href="wetter.html">🌤️ Wetter</a>
     <a class="nav-tab" href="hobbies.html">🎯 Hobbies</a>
     <a class="nav-tab" href="komposita.html">🔗 Komposita</a>
-    <a class="nav-tab active" href="numbers.html">🔢 Numbers</a>
+    <a class="nav-tab" href="numbers.html">🔢 Numbers</a>
     <a class="nav-tab" href="personal.html">👤 Personal Info</a>
     <a class="nav-tab" href="school.html">🏫 School</a>
     <a class="nav-tab" href="time.html">📅 Time &amp; Calendar</a>
@@ -643,150 +680,133 @@ document.addEventListener('DOMContentLoaded', () => {
   if (inp) inp.addEventListener('keydown', e=>{ if(e.key==='Enter') convertNumber(); });
 });
 </script>
-
 <div id="main-content">
-  <div class="hero">
-    <div class="flags">🇩🇪 🇦🇹 🇨🇭</div>
-    <h1>🔢 Numbers</h1>
-    <p>German A1 Study Notes · Beginner Level · <a href="../index.html" style="color:rgba(255,255,255,.75)">← All Topics</a></p>
-  </div><!-- ═══════════════════════════ SECTION: Numbers ═══════════════════════════ -->
-<section id="sec-numbers"><div class="topic-banner">
-  <div><span class="de-article">die</span><span class="de-word">Zahlen</span></div>
-  <div class="pron-word">[TSAH-len]</div>
-  <div class="en-word">Numbers</div>
-</div><h2 id="sub-num0" style="margin:1.4rem 0 .6rem;color:#2d2250;">0 – 19</h2>
-<div class="num-grid">
-  <div class="num-card"><div class="num">0</div><div class="word">null</div><div class="pron">[nool]</div></div>
-  <div class="num-card"><div class="num">1</div><div class="word">eins</div><div class="pron">[ines]</div></div>
-  <div class="num-card"><div class="num">2</div><div class="word">zwei</div><div class="pron">[tsvye]</div></div>
-  <div class="num-card"><div class="num">3</div><div class="word">drei</div><div class="pron">[drye]</div></div>
-  <div class="num-card"><div class="num">4</div><div class="word">vier</div><div class="pron">[feer]</div></div>
-  <div class="num-card"><div class="num">5</div><div class="word">fünf</div><div class="pron">[fuenf]</div></div>
-  <div class="num-card"><div class="num">6</div><div class="word">sechs</div><div class="pron">[zeks]</div></div>
-  <div class="num-card"><div class="num">7</div><div class="word">sieben</div><div class="pron">[ZEE-ben]</div></div>
-  <div class="num-card"><div class="num">8</div><div class="word">acht</div><div class="pron">[akht]</div></div>
-  <div class="num-card"><div class="num">9</div><div class="word">neun</div><div class="pron">[noyn]</div></div>
-  <div class="num-card"><div class="num">10</div><div class="word">zehn</div><div class="pron">[tsayn]</div></div>
-  <div class="num-card"><div class="num">11</div><div class="word">elf</div><div class="pron">[elf]</div></div>
-  <div class="num-card"><div class="num">12</div><div class="word">zwölf</div><div class="pron">[tsvurlf]</div></div>
-  <div class="num-card"><div class="num">13</div><div class="word">dreizehn</div><div class="pron">[DRYE-tsayn]</div></div>
-  <div class="num-card"><div class="num">14</div><div class="word">vierzehn</div><div class="pron">[FEER-tsayn]</div></div>
-  <div class="num-card"><div class="num">15</div><div class="word">fünfzehn</div><div class="pron">[FUENF-tsayn]</div></div>
-  <div class="num-card"><div class="num">16</div><div class="word">sechzehn</div><div class="pron">[ZEKH-tsayn]</div></div>
-  <div class="num-card"><div class="num">17</div><div class="word">siebzehn</div><div class="pron">[ZEEP-tsayn]</div></div>
-  <div class="num-card"><div class="num">18</div><div class="word">achtzehn</div><div class="pron">[AHKHT-tsayn]</div></div>
-  <div class="num-card"><div class="num">19</div><div class="word">neunzehn</div><div class="pron">[NOYN-tsayn]</div></div>
-</div><div class="callout callout-warning" style="background:#fef9c3;border-left:4px solid #854d0e;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#854d0e;margin-bottom:.4rem;">⚠️ Warning</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">⚠️ <strong>16 = sechzehn</strong> (NOT sechszehn — the 's' drops!) · <strong>17 = siebzehn</strong> (NOT siebenzehn — the 'en' drops!)</p>
+
+<div class="hero">
+  <div class="flags">🌤️ 🌧️ ❄️</div>
+  <h1>Das Wetter — The Weather</h1>
+  <p>Weather vocabulary, expressions, seasons and how to describe weather in German</p>
 </div>
+
+<h2>Asking About the Weather</h2>
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie ist das Wetter heute?</p>
+  <p><span class="speaker-b">A:</span> Heute haben wir 20 Grad. <em>(Today we have 20 degrees.)</em></p>
 </div>
-<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
-<h2 id="sub-num20" style="margin:1.4rem 0 .6rem;color:#2d2250;">20 – 99</h2>
-<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">German builds compound numbers by saying the <strong>unit FIRST</strong>, then <strong>'und'</strong>, then the ten.<br> <strong>21 = einundzwanzig</strong> (one-and-twenty) — opposite to English!<br> The <strong>-zig</strong> suffix sounds like <strong>[-tsish]</strong>.</p>
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie war das Wetter? <em>(How was the weather?)</em></p>
+  <p><span class="speaker-b">A:</span> Das Wetter war sehr schön. Es war sonnig und warm.</p>
+  <p><span class="speaker-b">Or:</span> Das Wetter war nicht gut. Es hat ganze Zeit geregnet.</p>
 </div>
+
+<h2>Personal Weather Phrases</h2>
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Mir ist warm.</div><div class="en">I feel warm.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist heiß.</div><div class="en">I feel hot.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist kalt.</div><div class="en">I feel cold.</div></div>
+  <div class="vocab-card"><div class="de">Mir ist kühl.</div><div class="en">I feel cool.</div></div>
 </div>
-<div class="num-grid">
-  <div class="num-card"><div class="num">20</div><div class="word">zwanzig</div><div class="pron">[TSVAN-tsish]</div></div>
-  <div class="num-card"><div class="num">30</div><div class="word">dreißig</div><div class="pron">[DRY-ssish]</div></div>
-  <div class="num-card"><div class="num">40</div><div class="word">vierzig</div><div class="pron">[FEER-tsish]</div></div>
-  <div class="num-card"><div class="num">50</div><div class="word">fünfzig</div><div class="pron">[FUENF-tsish]</div></div>
-  <div class="num-card"><div class="num">60</div><div class="word">sechzig</div><div class="pron">[ZEKH-tsish]</div></div>
-  <div class="num-card"><div class="num">70</div><div class="word">siebzig</div><div class="pron">[ZEEP-tsish]</div></div>
-  <div class="num-card"><div class="num">80</div><div class="word">achtzig</div><div class="pron">[AHKH-tsish]</div></div>
-  <div class="num-card"><div class="num">90</div><div class="word">neunzig</div><div class="pron">[NOYN-tsish]</div></div>
-  <div class="num-card"><div class="num">21</div><div class="word">einund­zwanzig</div><div class="pron">[INE-oont-TSVAN-tsish]</div></div>
-  <div class="num-card"><div class="num">35</div><div class="word">fünfund­dreißig</div><div class="pron">[FUENF-oont-DRY-ssish]</div></div>
-  <div class="num-card"><div class="num">47</div><div class="word">siebenund­vierzig</div><div class="pron">[ZEE-ben-oont-FEER-tsish]</div></div>
-  <div class="num-card"><div class="num">99</div><div class="word">neunund­neunzig</div><div class="pron">[NOYN-oont-NOYN-tsish]</div></div>
-</div><div class="callout callout-tip" style="background:#dcfce7;border-left:4px solid #166534;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#166534;margin-bottom:.4rem;">✅ Tip</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;"><strong>Pattern for -zig numbers:</strong> unit + <strong>und</strong> + ten<br> e.g. 63 = <strong>drei</strong>und<strong>sechzig</strong> · 78 = <strong>acht</strong>und<strong>siebzig</strong><br> Note: <strong>dreißig</strong> (30) is spelled with <strong>-ßig</strong>, not -zig — it's the only exception!</p>
+
+<h2>Weather Vocabulary — Nouns &amp; Verbs</h2>
+<div class="weather-grid">
+  <div class="weather-card"><div class="wc-emoji">🌧️</div><div class="wc-noun">der Regen</div><div class="wc-verb">Es regnet.</div><div class="wc-en">rain / It is raining.</div></div>
+  <div class="weather-card"><div class="wc-emoji">☀️</div><div class="wc-noun">die Sonne</div><div class="wc-verb">Es ist sonnig.</div><div class="wc-en">sun / It is sunny.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌞</div><div class="wc-noun">der Sonnenschein</div><div class="wc-verb">Die Sonne scheint.</div><div class="wc-en">sunshine / The sun shines.</div></div>
+  <div class="weather-card"><div class="wc-emoji">⚡</div><div class="wc-noun">der Blitz</div><div class="wc-verb">Es blitzt.</div><div class="wc-en">lightning / There's lightning.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌩️</div><div class="wc-noun">der Donner</div><div class="wc-verb">Es donnert.</div><div class="wc-en">thunder / It thunders.</div></div>
+  <div class="weather-card"><div class="wc-emoji">⛈️</div><div class="wc-noun">das Gewitter</div><div class="wc-verb">Es gewittert.</div><div class="wc-en">thunderstorm</div></div>
+  <div class="weather-card"><div class="wc-emoji">❄️</div><div class="wc-noun">der Schnee</div><div class="wc-verb">Es schneit.</div><div class="wc-en">snow / It is snowing.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌨️</div><div class="wc-noun">der Hagel</div><div class="wc-verb">Es hagelt.</div><div class="wc-en">hail / It is hailing.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌫️</div><div class="wc-noun">der Nebel</div><div class="wc-verb">Es ist neblig.</div><div class="wc-en">fog / It is foggy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🔥</div><div class="wc-noun">die Hitze</div><div class="wc-verb">Es ist heiß.</div><div class="wc-en">heat / It is hot.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌡️</div><div class="wc-noun">die Wärme</div><div class="wc-verb">Es ist warm.</div><div class="wc-en">warmth / It is warm.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🥶</div><div class="wc-noun">die Kälte</div><div class="wc-verb">Es ist kalt.</div><div class="wc-en">cold (noun) / It is cold.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🌬️</div><div class="wc-noun">die Kühle</div><div class="wc-verb">Es ist kühl.</div><div class="wc-en">coolness / It is cool.</div></div>
+  <div class="weather-card"><div class="wc-emoji">🧊</div><div class="wc-noun">das Eis</div><div class="wc-verb">Es ist eisig.</div><div class="wc-en">ice / It is icy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">☁️</div><div class="wc-noun">die Wolke</div><div class="wc-verb">Es ist bewölkt.</div><div class="wc-en">cloud / It is cloudy.</div></div>
+  <div class="weather-card"><div class="wc-emoji">💨</div><div class="wc-noun">der Wind</div><div class="wc-verb">Es ist windig.</div><div class="wc-en">wind / It is windy.</div></div>
 </div>
-</div>
-<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
-<h2 id="sub-hundreds" style="margin:1.4rem 0 .6rem;color:#2d2250;">Hundreds (100 – 900)</h2>
-<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">Hundreds are formed by placing the digit before <strong>hundert</strong>.<br> 100 can be <strong>einhundert</strong> or just <strong>hundert</strong>. No space is written between parts.</p>
-</div>
-</div>
-<div class="num-grid">
-  <div class="num-card"><div class="num">100</div><div class="word">hundert</div><div class="pron">[HOON-dert]</div></div>
-  <div class="num-card"><div class="num">200</div><div class="word">zwei­hundert</div><div class="pron">[TSVYE-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">300</div><div class="word">drei­hundert</div><div class="pron">[DRYE-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">400</div><div class="word">vier­hundert</div><div class="pron">[FEER-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">500</div><div class="word">fünf­hundert</div><div class="pron">[FUENF-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">600</div><div class="word">sechs­hundert</div><div class="pron">[ZEKS-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">700</div><div class="word">sieben­hundert</div><div class="pron">[ZEE-ben-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">800</div><div class="word">acht­hundert</div><div class="pron">[AHKHT-hoon-dert]</div></div>
-  <div class="num-card"><div class="num">900</div><div class="word">neun­hundert</div><div class="pron">[NOYN-hoon-dert]</div></div>
-</div><h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Combined Hundreds Examples</h3>
-<div class="table-wrap"><table class="md-table">
-<thead><tr><th>#</th><th>German</th><th>Pattern</th></tr></thead>
-<tbody>
-<tr><td>101</td><td>einhunderteins</td><td>hundert + eins</td></tr>
-<tr><td>115</td><td>einhundertfünfzehn</td><td>hundert + fünfzehn</td></tr>
-<tr><td>250</td><td>zweihundertfünfzig</td><td>zweihundert + fünfzig</td></tr>
-<tr><td>316</td><td>dreihundertsechzehn</td><td>dreihundert + sechzehn</td></tr>
-<tr><td>472</td><td>vierhundertzweiundsiebzig</td><td>vierhundert + zweiundsiebzig</td></tr>
-<tr><td>999</td><td>neunhundertneunundneunzig</td><td>neunhundert + neunundneunzig</td></tr>
-</tbody>
+
+<h2>Present → Past (Perfekt / war)</h2>
+<div class="callout-note"><p><strong>sein</strong> verbs use <em>war</em> for simple past. Weather verbs with <em>haben</em> use <em>hat + past participle</em>.</p></div>
+<div class="table-wrap"><table>
+  <thead><tr><th>Present</th><th>Past</th></tr></thead>
+  <tbody>
+    <tr><td>Es regnet.</td><td>Es hat geregnet.</td></tr>
+    <tr><td>Es ist sonnig.</td><td>Es war sonnig.</td></tr>
+    <tr><td>Die Sonne scheint.</td><td>Es war sonnig.</td></tr>
+    <tr><td>Es blitzt.</td><td>Es hat geblitzt.</td></tr>
+    <tr><td>Es donnert.</td><td>Es hat gedonnert.</td></tr>
+    <tr><td>Es gewittert.</td><td>Es hat gewittert.</td></tr>
+    <tr><td>Es schneit.</td><td>Es hat geschneit.</td></tr>
+    <tr><td>Es hagelt.</td><td>Es hat gehagelt.</td></tr>
+    <tr><td>Es ist neblig.</td><td>Es war neblig.</td></tr>
+    <tr><td>Es ist heiß.</td><td>Es war heiß.</td></tr>
+    <tr><td>Es ist warm.</td><td>Es war warm.</td></tr>
+    <tr><td>Es ist kühl.</td><td>Es war kühl.</td></tr>
+    <tr><td>Es ist eisig.</td><td>Es war eisig.</td></tr>
+    <tr><td>Es ist bewölkt / wolkig.</td><td>Es war bewölkt / wolkig.</td></tr>
+    <tr><td>Es ist windig.</td><td>Es war windig.</td></tr>
+  </tbody>
 </table></div>
-<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
-<h2 id="sub-thousands" style="margin:1.4rem 0 .6rem;color:#2d2250;">Thousands (1,000 – 10,000)</h2>
-<div class="callout callout-note" style="background:#dbeafe;border-left:4px solid #1e40af;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#1e40af;margin-bottom:.4rem;">💡 Note</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">Thousands are formed by placing the digit before <strong>tausend</strong>.<br> 1,000 = <strong>eintausend</strong> or just <strong>tausend</strong>. No space within a compound number.</p>
+
+<h2>Weather in Sri Lanka</h2>
+<div class="callout-tip"><p>Sri Lanka does not have 4 seasons. Only Regenzeit (rainy season) and Trockenzeit (dry season).</p></div>
+<div class="dialogue">
+  <p><span class="speaker-a">Q:</span> Wie ist das Wetter in Sri Lanka?</p>
+  <p><span class="speaker-b">A:</span> In Sri Lanka ist es immer sonnig und warm. Manchmal regnet es.</p>
+  <p><span class="speaker-b"> </span> Wir haben keine Jahreszeiten in Sri Lanka.</p>
+  <p><span class="speaker-b"> </span> Wir haben nur Regenzeit und Trockenzeit.</p>
 </div>
-</div>
-<div class="num-grid">
-  <div class="num-card"><div class="num">1.000</div><div class="word">tausend</div><div class="pron">[TOW-zent]</div></div>
-  <div class="num-card"><div class="num">2.000</div><div class="word">zwei­tausend</div><div class="pron">[TSVYE-tow-zent]</div></div>
-  <div class="num-card"><div class="num">3.000</div><div class="word">drei­tausend</div><div class="pron">[DRYE-tow-zent]</div></div>
-  <div class="num-card"><div class="num">4.000</div><div class="word">vier­tausend</div><div class="pron">[FEER-tow-zent]</div></div>
-  <div class="num-card"><div class="num">5.000</div><div class="word">fünf­tausend</div><div class="pron">[FUENF-tow-zent]</div></div>
-  <div class="num-card"><div class="num">6.000</div><div class="word">sechs­tausend</div><div class="pron">[ZEKS-tow-zent]</div></div>
-  <div class="num-card"><div class="num">7.000</div><div class="word">sieben­tausend</div><div class="pron">[ZEE-ben-tow-zent]</div></div>
-  <div class="num-card"><div class="num">8.000</div><div class="word">acht­tausend</div><div class="pron">[AHKHT-tow-zent]</div></div>
-  <div class="num-card"><div class="num">9.000</div><div class="word">neun­tausend</div><div class="pron">[NOYN-tow-zent]</div></div>
-  <div class="num-card"><div class="num">10.000</div><div class="word">zehn­tausend</div><div class="pron">[TSAYN-tow-zent]</div></div>
-  <div class="num-card" style="border-color:#c4b5fd"><div class="num" style="font-size:1rem">100.000</div><div class="word">hundert­tausend</div><div class="pron">[HOON-dert-tow-zent]</div></div>
-</div><h3 style="margin:1.4rem 0 .6rem;color:#2d2250;">Combined Thousands Examples</h3>
-<div class="table-wrap"><table class="md-table">
-<thead><tr><th>#</th><th>German</th></tr></thead>
-<tbody>
-<tr><td>1,001</td><td>eintausendeins</td></tr>
-<tr><td>2,500</td><td>zweitausendfünfhundert</td></tr>
-<tr><td>5,732</td><td>fünftausendsiebenhundertzweiunddreißig</td></tr>
-<tr><td>12,000</td><td>zwölftausend</td></tr>
-<tr><td>25,000</td><td>fünfundzwanzigtausend</td></tr>
-<tr><td>75,361</td><td>fünfundsiebzigtausend­dreihundert­einundsechzig</td></tr>
-<tr><td>100,000</td><td>hunderttausend</td></tr>
-</tbody>
-</table></div>
-<div class="callout callout-tip" style="background:#dcfce7;border-left:4px solid #166534;border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0;">
-<div style="font-weight:800;color:#166534;margin-bottom:.4rem;">✅ Tip</div>
-<div style="color:#1a1a2e;"><p style="margin:.5rem 0 .8rem;line-height:1.7;">🇩🇪 <strong>German uses a period as a thousands separator</strong> and a comma as the decimal separator — the opposite of English!<br> 1.000 = one thousand · 1,5 = one and a half</p>
-</div>
-</div>
-<hr style="border:none;border-top:2px solid #e9d5ff;margin:2rem 0;">
-<h2 id="sub-converter" style="margin:1.4rem 0 .6rem;color:#2d2250;">Number Converter</h2>
-<div class="num-converter">
-  <h4>🔢 Type a number (0 – 100,000) → get the German word</h4>
-  <div class="num-converter-row">
-    <input type="number" id="num-input" min="0" max="100000" placeholder="e.g. 4567" />
-    <button onclick="convertNumber()">Übersetzen →</button>
+
+<h2>Die vier Jahreszeiten — Germany's 4 Seasons</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1rem 0;">
+  <div class="season-box winter-box">
+    <h4>❄️ Winter</h4>
+    <ul>
+      <li>Es schneit.</li>
+      <li>Es ist eisig.</li>
+      <li>Es ist dunkel.</li>
+    </ul>
   </div>
-  <div class="num-converter-error" id="num-error"></div>
-  <div class="num-converter-result" id="num-result">
-    <div class="result-number" id="res-number"></div>
-    <div class="result-word" id="res-word"></div>
-    <div class="result-pron" id="res-pron"></div>
+  <div class="season-box spring-box">
+    <h4>🌸 Frühling (Spring)</h4>
+    <ul>
+      <li>Es ist kühl.</li>
+      <li>Die Sonne scheint.</li>
+    </ul>
   </div>
-</div></section>
+  <div class="season-box summer-box">
+    <h4>☀️ Sommer (Summer)</h4>
+    <ul>
+      <li>Es ist warm.</li>
+      <li>Es ist sonnig.</li>
+      <li>Es ist hell.</li>
+    </ul>
+  </div>
+  <div class="season-box autumn-box">
+    <h4>🍂 Herbst (Autumn)</h4>
+    <ul>
+      <li>Es regnet.</li>
+      <li>Es ist nass.</li>
+      <li>Es ist kalt.</li>
+      <li>Es ist windig.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Wie ist das Wetter in Deutschland?</h2>
+<table>
+  <thead><tr><th>Jahreszeit</th><th>Typical Weather</th></tr></thead>
+  <tbody>
+    <tr><td>❄️ Winter</td><td>Es schneit. Es ist eisig und dunkel.</td></tr>
+    <tr><td>🌸 Frühling</td><td>Es ist kühl. Die Sonne scheint manchmal.</td></tr>
+    <tr><td>☀️ Sommer</td><td>Es ist warm und sonnig. Es ist hell.</td></tr>
+    <tr><td>🍂 Herbst</td><td>Es regnet. Es ist nass, kalt und windig.</td></tr>
+  </tbody>
+</table>
+
+
 <div style="text-align:center;margin-top:3rem;padding:1.5rem;color:#9333ea;font-size:.9rem;">
   <a href="../index.html" style="color:#7c3aed;font-weight:700;text-decoration:none">← Back to All Topics</a>
   &nbsp;·&nbsp; <em>Viel Erfolg!</em> (Good luck!)
